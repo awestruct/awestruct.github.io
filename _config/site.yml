@@ -1,1 +1,2 @@
-base_url: http://staging.awestruct.org
+base_url: http://awestruct.org
+gem_version: 0.0.3

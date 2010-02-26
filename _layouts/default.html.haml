@@ -12,9 +12,13 @@ layout: base
     ~ content
 
   #sidebar
+    #latest-version
+      Latest version is #{site.gem_version}
     %ul
       %li 
         %a{:href=>'/'} Home
+      %li 
+        %a{:href=>'/news/'} News
       %li 
         %a{:href=>'/getting_started/'} Getting Started
       %li 
@@ -33,7 +37,9 @@ layout: base
       %li 
         %a{:href=>'/gallery/'} Gallery
       %li 
-        %a{:href=>'/news/'} News
+        %a{:href=>'/source/'} Source Code
+      %li 
+        %a{:href=>'/yardoc/'} API Documentation
 
   #footer{:style=>'clear: both;'}
     .text
