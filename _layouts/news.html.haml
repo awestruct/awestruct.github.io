@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+.post
+  %h1.title
+    %a{:href=>page.url}= page.title
+  .byline
+    .author
+      = page.author
+    .date
+      #{page.date.strftime( '%d %B %Y' )}
+
+  ~ content
+  .comments
+    :javascript
+      var idcomments_acct = 'fa224495874e8d96bbf6f2dbcc26dac5';
+      var idcomments_post_id;
+      var idcomments_post_url;
+  %span#IDCommentsPostTitle{:style=>'display:none'}
+  %script{ :type=>'text/javascript', :src=>'http://www.intensedebate.com/js/genericCommentWrapperV2.js' }

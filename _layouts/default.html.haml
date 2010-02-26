@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+#layout
+  #header
+    #logo
+      %a{:href=>'/'}
+        %img{:src=>'/images/logo.png'}
+
+  #primary
+    ~ content
+
+  #sidebar
+    %ul
+      %li 
+        %a{:href=>'/'} Home
+      %li 
+        %a{:href=>'/getting_started/'} Getting Started
+      %li 
+        %a{:href=>'/layout/'} Project Layout
+      %li 
+        %a{:href=>'/file_types/'} File Types
+      %li 
+        %a{:href=>'/template_context/'} Template Context
+      %li 
+        %a{:href=>'/extensions/'} Extensions
+        %ul 
+          %li 
+            %a{:href=>'/extensions/posts/'} Blog posts
+          %li 
+            %a{:href=>'/extensions/indexifier/'} URL Indexifier
+      %li 
+        %a{:href=>'/gallery/'} Gallery
+      %li 
+        %a{:href=>'/news/'} News
+
+  #footer{:style=>'clear: both;'}
+    .text
+      Copyright 2010 Bob McWhirter

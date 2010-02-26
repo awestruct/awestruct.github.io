@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+%h1 Gallery
+:markdown
+  Sites using *awestruct*.
+
+.gallery
+  .gallery-entry
+    %h2
+      %a{:href=>'http://awestruct.org/'} Awestruct
+  
+    .description
+      :markdown
+        You're soaking in it.
+   
+        This site uses the [`Posts` extension](/extensions/posts/)
+        and the [`Indexifier` extension](/extensions/indexifier/).
+  
+    .image
+      %a{:href=>'http://awestruct.org/'}
+        %img{:src=>'/images/gallery/awestruct.png'}
+    .clear
+      &nbsp;
+  .gallery-entry
+    %h2
+      %a{:href=>'http://torquebox.org/'} TorqueBox
+  
+    .description
+      :markdown
+        In addition to the [`Posts` extension](/extensions/posts/), the TorqueBox site
+        includes a custom extension to retrieve file sizes for the generated 
+        [downloads page](http://torquebox.org/download/).
+  
+    .image
+      %a{:href=>'http://torquebox.org/'}
+        %img{:src=>'/images/gallery/torquebox.png'}
+    .clear
+      &nbsp;
