@@ -18,7 +18,7 @@ class Yard
       doc_dir = File.join( gem_dir, 'doc' ) 
       if ( ! File.exist?( doc_dir ) )
         Dir.chdir( gem_dir ) do
-          puts `ruby -S yardoc lib/**/*.rb`
+          puts `ruby -S yardoc lib/awestruct/**/*.rb`
         end
       end
 
