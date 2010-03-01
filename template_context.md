@@ -74,3 +74,7 @@ should simply specify front-matter such as
 
 The correct layout extension (`.html`) will be selected based upon the page's
 own extension.
+
+## Additional helpers
+
+Additional [helpers may be configured into the pipeline](/helpers/).

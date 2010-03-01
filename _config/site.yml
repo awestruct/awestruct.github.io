@@ -1,2 +1,18 @@
-base_url: http://awestruct.org
+
+title: Awestruct
 gem_version: 0.0.4
+
+
+profiles:
+  development:
+  staging:
+    base_url: http://staging.awestruct.org/
+    deploy:
+      host: awestruct.org
+      path: /var/www/domains/awestruct.org/staging/htdocs/ 
+  production:
+    base_url: http://awestruct.org/
+    deploy:
+      host: awestruct.org
+      path: /var/www/domains/awestruct.org/www/htdocs/ 
+

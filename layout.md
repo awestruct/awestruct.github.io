@@ -89,3 +89,8 @@ are executed, in order, and provided the `site` variable.
 The generated files are placed under the `_site/` directory.
 When you use `--server` mode, the server simply serves from
 this directory.
+
+### `_tmp/`
+
+A temporary directory is created for extensions to cache
+things, if necessary.  It's available as `site.tmp_dir`.

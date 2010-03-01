@@ -8,8 +8,8 @@ title: home
 by the awesome [Jekyll](http://github.com/mojombo/jekyll) utility in the
 same genre.
 
-Additionally, *awestruct* integrates [Compass](http://compass-style.org/)
-and [Haml](http://haml-lang.com/).
+Additionally, *awestruct* integrates [Compass](http://compass-style.org/),
+[Maruku](http://maruku.rubyforge.org/) and [Haml](http://haml-lang.com/).
 
 The core concept of *awestruct* is that of _structures_, specifically
 Ruby `OpenStruct` structures.  The struct aspect allows arbitrary,
