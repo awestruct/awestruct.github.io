@@ -72,7 +72,11 @@ templates such as
 
 Unlike all other YAML files, the contents of `site.yml` are
 added directly to the `site` object.  One property, `base_url` 
-is always available, and defaults to `localhost`. 
+is always available, and defaults to `localhost` or other 
+appropriate value.
+
+Additionally, [specific conditional profiles](/profiles/) may be defined
+to affect property values easily from the commandline.
 
 ### `_ext/`
 

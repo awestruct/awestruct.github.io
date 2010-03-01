@@ -52,6 +52,8 @@ as the name to paginate.
 The extension slices the data from the `site` object based upon `opts[:per_page]`,
 and assigns the resulting slices to `page` object under the same name.
 
+![Slicing](/images/paginator.png){:.centered}
+
 ### Page association
 
 The second parameter, specifying the simple name of the template to use,
@@ -61,6 +63,8 @@ behavior described above.
 The first page injected into the site will match the name of the input
 template, with the appropriate output extension.  Subsequent pages, 
 if necessary, will be named `page1.html`, `page2.html` etc.
+
+![Slicing](/images/pagination_template.png){:.centered}
 
 ### Pagination Templates
 

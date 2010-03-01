@@ -51,4 +51,4 @@ simply add your helper definition there.
 `my_template.html.haml`
 
     %h1
-      Generated #{right_now}
+      Generated \#{right_now}
