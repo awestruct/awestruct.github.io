@@ -1,16 +1,28 @@
-@import blueprint/reset.sass
-@import partials/base.sass
-@import blueprint
-@import blueprint/modules/scaffolding.sass
+@import "blueprint/reset"
+@import "blueprint/typography"
+@import "blueprint/interaction"
+@import "blueprint/form"
+@import "blueprint/utilities"
+@import "blueprint/debug"
+@import "blueprint/grid"
 
-@import compass/utilities
+//@import "partials/base"
+//@import "blueprint"
+//@import "blueprint/modules/scaffolding"
 
-+blueprint-typography("body.bp")
-+blueprint-scaffolding("body.bp")
+@import "compass/utilities"
+
+//+blueprint-typography("body.bp")
+//+blueprint-typography(true)
+//+blueprint-scaffolding("body.bp")
+
+
 body.bp
+  +blueprint-global-reset
+  +blueprint-typography(true)
+  +blueprint-interaction
   +blueprint-utilities
   +blueprint-debug
-  +blueprint-interaction
 form.bp
   +blueprint-form
 
@@ -49,6 +61,8 @@ form.bp
     :background-color #eee
     :font-size 120%
     ul
+      +reset-list-style
+      :padding-left 1.5em
       :font-weight bold
       +no-bullets
       li

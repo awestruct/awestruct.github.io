@@ -59,7 +59,7 @@ the opportunity to do wild manipulations to the state of the site.
 
 ### Posts
 
-The [`Posts` extension](/extensions/posts/) makes any *awestruct* site
+The [`Posts` extension](/extensions/posts/) makes any *Awestruct* site
 "blog-aware".  It scans all pages under a given sub-tree, and if they match
 a particular naming convention, it does some work.
 

@@ -86,7 +86,7 @@ It's often useful to maintain an `.htaccess` file for Apache along
 with your site, for configuring items such as `ErrorDocument` or
 rewrite rules.  
 
-For this reason, *awestruct* will include `.htaccess` access files
+For this reason, *Awestruct* will include `.htaccess` access files
 when generating the output tree.
 
 ### Everything else (`*.*`)

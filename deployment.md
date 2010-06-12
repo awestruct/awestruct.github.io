@@ -5,7 +5,7 @@ layout: default
 
 # Deploy
 
-By using [site profiles](/profiles/), *awestruct* can also deploy 
+By using [site profiles](/profiles/), *Awestruct* can also deploy 
 the resulting site using `rsync`.
 
 ## Profile configuration
