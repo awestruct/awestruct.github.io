@@ -53,6 +53,14 @@ Ruby `String`, allowing for expressions such as
 
     # This is the \#{page.title}
 
+### Org-mode (`.org`)
+
+[Org-Mode](http://orgmode.org/) files should *not* include the `.html` secondary
+extension.  Simply name your file `mything.org` and not
+`mything.html.org`.
+
+Org-mode support is new, and fairly untested.
+
 ## Stylesheets
 
 ### Sass (`.sass`)

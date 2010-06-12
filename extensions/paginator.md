@@ -88,7 +88,7 @@ through the sequence of pages.
 
 Method | Result | Description |
 -------|--------|-------------|
-`pagination_links` | String of HTML | An HTML string including page navigation links |
+`links` | String of HTML | An HTML string including page navigation links |
 
 ## Example
 
@@ -118,7 +118,7 @@ The `/news/index.html.haml` template may look akin to
         .content
           = post.content
 
-    = page.posts.pagination_links
+    = page.posts.links
 
 ## See also
 
