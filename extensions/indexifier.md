@@ -1,4 +1,5 @@
 ---
+title: Indexifier Extension
 layout: default
 ---
 

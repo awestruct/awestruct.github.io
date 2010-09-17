@@ -1,21 +1,22 @@
 ---
+title: GoogleAnalytics Helper
 layout: default
-title: Google Analytics Extension
 ---
 
-# Google Analytics Integration
+# `GoogleAnalytics` Helper
 
-[Google Analytics](http://google.com/analytics/) is a website traffic monitoring tool.
+The `GoogleAnalytics` helper provides easy insertion of Google Analytics
+tracking code into your site.
 
 ## Install
 
-To use the Google Analytics integration, you simply need add a helper to the
-pipeline in your `_ext/pipeline.rb` file.  
-
-
+To use the `GoogleAnalytics` helper, simply configure it into your `_ext/pipeline.rb`
+file.
+    
     Awestruct::Extensions::Pipeline.new do
       helper Awestruct::Extensions::GoogleAnalytics
     end
+
 
 ## Configure
 
@@ -24,14 +25,10 @@ with your account identifier.
 
 Property | Description |
 ---------|----------------------------------------------------------|
-google_analytics | The identifier for your Google Analytics profile |
+google_analytics | The identifier for your Google Analytics site tracking |
 
-## Use the extension
+## Use the helper
 
-On pages you wish to track with Google Analytics, simply use the `google_analytics`
-helper.  Typically this may be done in the lowest-level layout, such as `base.html.haml`
+Typically in a core HTML layout, simply invoke the helper
 
-
-    %body
-      ~ content
-      = google_analytics
+    = google_analytics

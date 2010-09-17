@@ -1,5 +1,5 @@
 ---
-title: atomizer extension
+title: Atomizer Extension
 layout: default
 ---
 

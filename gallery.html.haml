@@ -34,11 +34,49 @@ layout: default
         In addition to the [`Posts` extension](/extensions/posts/), the TorqueBox site
         includes a custom extension to retrieve file sizes for the generated 
         [downloads page](http://torquebox.org/download/).
+
+        It additionally uses the [skins](/skins/) functionality to
+        share a look and feel with the SteamCannon site below.
   
         [Site source](http://github.com/torquebox/torquebox.org/)
+        [Skin source](http://github.com/projectodd/site-skin/)
     .image
       %a{:href=>'http://torquebox.org/'}
         %img{:src=>'/images/gallery/torquebox.png'}
+    .clear
+      &nbsp;
+
+  .gallery-entry
+    %h2
+      %a{:href=>'http://steamcannon.org/'} SteamCannon
+
+    .description
+      :markdown
+        The SteamCannon site uses the [skins](/skins/) functionality to 
+        share a look and feel with the TorqueBox site above.
+
+        [Site source](http://github.com/steamcannon/steamcannon.org/)
+        [Skin source](http://github.com/projectodd/site-skin/)
+    .image
+      %a{:href=>'http://steamcannon.org/'}
+        %img{:src=>'/images/gallery/steamcannon.png'}
+    .clear
+      &nbsp;
+
+  .gallery-entry
+    %h2
+      %a{:href=>'http://bob.mcwhirter.org/'} Bob's Blog
+ 
+    .description
+      :markdown
+        In addition to the [`Posts` extension](/extensions/posts/), Bob's blog
+        takes advantage of the [`Tagger`](/extensions/tagger) and [`TagCloud`](/extensions/tag_cloud)
+        extensions to provide browsing of tagged blog posts.
+ 
+        [Site source](http://github.com/bobmcwhirter/bob.mcwhirter.org/)
+    .image
+      %a{:href=>'http://bob.mcwhirter.org/'}
+        %img{:src=>'/images/gallery/bobmcwhirter.png'}
     .clear
       &nbsp;
 

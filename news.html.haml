@@ -13,6 +13,8 @@ layout: default
         #{post.date.strftime( '%d %B %Y' )}
     .body
       = post.content
+    .comments
+      = post.intense_debate_comments_link
 
 %a{:href=>'/news/archives'} browse the full archives of older news and release announcements.
     

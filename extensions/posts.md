@@ -1,4 +1,5 @@
 ---
+title: Posts Extension
 layout: default
 ---
 
@@ -76,3 +77,4 @@ To create a "latest news" type of page, you could have a template such as
 
 * [`Atomizer` Extension](/extensions/atomizer/) to automatically create Atom feeds.
 * [`Paginator` Extension](/extensions/paginator/) to automatically paginate collections of items, such as blog posts.
+* [`TagCloud` Extension](/extensions/tag_cloud/) to automatically generate a tag cloud from items.
