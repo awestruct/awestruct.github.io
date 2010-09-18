@@ -25,7 +25,7 @@ with your account identifier.
 
 Property | Description |
 ---------|----------------------------------------------------------|
-intense_debate_acct | The identifier for your IntenseDebate account |
+intense_debate_acct | The identifier for your IntenseDebate account 
 
 ## Use the extension
 

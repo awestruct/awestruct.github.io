@@ -14,7 +14,10 @@ To use the `Tagger` extension, simply configure it into your `_ext/pipeline.rb`
 file.
     
     Awestruct::Extensions::Pipeline.new do
-      extension Awestruct::Extensions::Tagger.new( :posts, '/index', '/blog/tags', :per_page=>10 )
+      extension Awestruct::Extensions::Tagger.new( :posts, 
+                                                   '/index', 
+                                                   '/blog/tags', 
+                                                   :per_page=>10 )
     end
 
 ### Parameters

@@ -40,6 +40,6 @@ file.
     DataDir.new( data_dir='_data' )
 
 Name | Description |
-data_dir | Directory containing data directories, defaults to `_data/` |
+data_dir | Directory containing data directories, defaults to `_data/` 
 
 

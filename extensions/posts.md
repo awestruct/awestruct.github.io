@@ -35,11 +35,11 @@ properties added or manipulated:
 
 Property          | Description
 :-----------------|:---------------------|
-`page.next_XXX` | Points to the next most recent post page, or `nil`  if the current page is the latest post |
-`page.previous_XXX` | Points to the previous most recent page, or `nil` if the current page is the oldest post |
-`page.date`  | A `Time` object encoding the date from the path |
-`page.output_path`  | Adjusted to use directory layouts for the path segments representing date parts |
-`page.content` | Provide the rendered content of the page, without any layout applied.  Normally only used for providing summaries |
+`page.next_XXX` | Points to the next most recent post page, or `nil`  if the current page is the latest post 
+`page.previous_XXX` | Points to the previous most recent page, or `nil` if the current page is the oldest post 
+`page.date`  | A `Time` object encoding the date from the path 
+`page.output_path`  | Adjusted to use directory layouts for the path segments representing date parts 
+`page.content` | Provide the rendered content of the page, without any layout applied.  Normally only used for providing summaries 
 
 The navigational `next_XXX` and `previous_XXX` properties are named
 after the singular form of the assignment property.  By default,

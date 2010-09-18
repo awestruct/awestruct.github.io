@@ -23,8 +23,8 @@ file.
 
 Name | Description |
 -----|-------------|
-`var_name` | Name of property on `site` to act as source of posts, typically an array |
-`output_path` | Path to emit the resulting Atom feed |
+`var_name` | Name of property on `site` to act as source of posts, typically an array 
+`output_path` | Path to emit the resulting Atom feed 
 
 ## Feed items
 
@@ -33,10 +33,10 @@ in terms of properties returning data:
 
 Property | Description |
 ---------|-------------|
-`title`  | Title of the entry |
-`date`  | Date of the entry |
-`author` | Either a simple string, or an object providing `name` and `email` properties |
-`content` | The full content of the entry (HTML is allowed) |
+`title`  | Title of the entry 
+`date`  | Date of the entry 
+`author` | Either a simple string, or an object providing `name` and `email` properties 
+`content` | The full content of the entry (HTML is allowed) 
 
 ## See also
 * [`Posts` extension](/extensions/posts/) for making a site "blog-aware"

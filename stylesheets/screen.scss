@@ -21,7 +21,12 @@ body.bp {
   @include blueprint-typography(true);
   @include blueprint-interaction;
   @include blueprint-utilities;
-  @include blueprint-debug; }
+  @include blueprint-debug; 
+
+  a, a:visited {
+    color: #337;
+  }
+}
 
 form.bp {
   @include blueprint-form; }
@@ -112,3 +117,16 @@ form.bp {
 
 .clear {
   clear: both; }
+
+body.bp {
+  table {
+    border-collapse: collapse;
+    th {
+      background-color: #ccc
+    }
+    th, td {
+      
+      border: 1px solid #999
+    }
+  }
+}

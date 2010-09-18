@@ -29,7 +29,7 @@ non-page data loaded from YAML files.  The `page` variable contains
 any page-specific data loaded from the front-matter or other
 sources.
 
-![Structs](/images/structs.png){.centered}
+![Structs](/images/structs.png)
 
 Additionally, *Awestruct* allows for recursive layouts, to allow
 building variation into sites in a consistent manner.

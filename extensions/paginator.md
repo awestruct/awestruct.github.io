@@ -15,7 +15,9 @@ To use the `Paginator` extension, simply configure it into your `_ext/pipeline.r
 file.
     
     Awestruct::Extensions::Pipeline.new do
-      extension Awestruct::Extensions::Paginator.new( :posts, '/news/index', :per_page=>5 )
+      extension Awestruct::Extensions::Paginator.new( :posts, 
+                                                      '/news/index', 
+                                                      :per_page=>5 )
     end
 
 ### Parameters
@@ -24,9 +26,9 @@ file.
 
 Parameter | Description |
 ----------|-------------|
-`var_name` | Name of variable to paginate from `site` into each `page` |
-`input_template` | Simple path (without extension) to template  to use for each page |
-`opts`  | Options for pagination and linking (see below) |
+`var_name` | Name of variable to paginate from `site` into each `page` 
+`input_template` | Simple path (without extension) to template  to use for each page 
+`opts`  | Options for pagination and linking (see below) 
 
 #### Options
 
@@ -34,8 +36,8 @@ Available options are
 
 Option | Default | Description |
 -------|--------:|-------------|
-`per_page` | 20 | Items per page |
-`window_size` | 2 | Number of pages to display on either side of first, last, and current page when drawing links |
+`per_page` | 20 | Items per page 
+`window_size` | 2 | Number of pages to display on either side of first, last, and current page when drawing links
 
 ## Pagination
 
@@ -52,7 +54,7 @@ as the name to paginate.
 The extension slices the data from the `site` object based upon `opts[:per_page]`,
 and assigns the resulting slices to `page` object under the same name.
 
-![Slicing](/images/paginator.png){:.centered}
+![Slicing](/images/paginator.png)
 
 ### Page association
 
@@ -77,18 +79,18 @@ it has additional properties to aid in rendering of the page.
 
 Property | Type | Description |
 ---------|-----:|-------------|
-`next_page` | *Page* | Reference to the next page in the pagination sequence, or `nil` |
-`previous_page` | *Page* | Reference to the previous page in the pagination sequence, or `nil` |
-`current_page` | *Page* | Reference to the current page (should be equal to `page`) |
-`current_page_index` | integer | 0-based index of the current page in the pagination sequence |
-`pages` | Array of *Page* | The full sequence of pagination pages |
+`next_page` | *Page* | Reference to the next page in the pagination sequence, or `nil` 
+`previous_page` | *Page* | Reference to the previous page in the pagination sequence, or `nil` 
+`current_page` | *Page* | Reference to the current page (should be equal to `page`) 
+`current_page_index` | integer | 0-based index of the current page in the pagination sequence 
+`pages` | Array of *Page* | The full sequence of pagination pages 
 
 It also provides a single extra method to draw pagination links for navigating
 through the sequence of pages.
 
 Method | Result | Description |
 -------|--------|-------------|
-`links` | String of HTML | An HTML string including page navigation links |
+`links` | String of HTML | An HTML string including page navigation links 
 
 ## Example
 

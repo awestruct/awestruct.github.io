@@ -25,7 +25,7 @@ with your account identifier.
 
 Property | Description |
 ---------|----------------------------------------------------------|
-google_analytics | The identifier for your Google Analytics site tracking |
+google_analytics | The identifier for your Google Analytics site tracking 
 
 ## Use the helper
 
