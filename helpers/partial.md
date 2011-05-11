@@ -10,7 +10,7 @@ page.
 
 ## Install
 
-To use the `Partial` extension, simply configure it into your `_ext/pipeline.rb`
+To use the `Partial` helper, simply configure it into your `_ext/pipeline.rb`
 file.
     
     Awestruct::Extensions::Pipeline.new do
