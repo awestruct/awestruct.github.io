@@ -20,10 +20,21 @@ would result in a map at `site.team` with the value of
     {  :bob=><page for bob.md>,
        :jim=><page for jim.md> }
 
+The bob.md page may look like
+
+    ---
+    name: Bob McWhirter
+    blog_url: http://bob.mcwhirter.org/
+    ---
+
+    Bob started Project:odd (as [Odd Thesis](http://oddthesis.org/))in September 2008. He currently contributes to 
+    [Deltacloud.org](http://deltacloud.org).  He's also the lead on [TorqueBox](http://torquebox.org/).
+
 The rendered page content (without layout) and the page
 data may be access from any other page.
 
     \#{site.team[:bob].name}
+    \#{site.team[:bob].blog_url}
     \#{site.team[:bob].content}
 
 ## Install
