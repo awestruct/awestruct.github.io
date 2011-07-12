@@ -10,22 +10,37 @@ which is perfect for static websites.
 
 ## Install
 
-To use the IntenseDebate integration, you simply need add a helper to the
+To use the IntenseDebate integration, you simply need add an extension to the
 pipeline in your `_ext/pipeline.rb` file.  
 
-
+    require 'intense_debate'
+    
     Awestruct::Extensions::Pipeline.new do
       extension Awestruct::Extensions::IntenseDebate.new
     end
 
+Don't forget to add the require import.
+
 ## Configure
+
 
 Your `_config/site.yml` needs to include the property `intense_debate_acct`
 with your account identifier.
 
-Property | Description |
----------|----------------------------------------------------------|
-intense_debate_acct | The identifier for your IntenseDebate account 
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Description</th>
+    </tr>
+  </thread>
+  <tbody>
+    <tr>
+      <td>intense_debate_acct</td>
+      <td>The identifier for your IntenseDebate account</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Use the extension
 
