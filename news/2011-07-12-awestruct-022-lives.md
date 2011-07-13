@@ -4,7 +4,7 @@ author: Bob McWhirter
 title: Awestruct 0.2.2 Lives
 ---
 
-[Flatter]: /extensions/flattr
+[Flattr]: /extensions/flattr
 [blog post]: http://blog.emmanuelbernard.com/2011/07/awestruct-building-dynamic-static-web-sites/
 [v0.2.2]: https://rubygems.org/gems/awestruct/versions/0.2.2
 
