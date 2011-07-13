@@ -88,6 +88,11 @@ form.bp {
     border: 1px solid #999999;
     overflow-x: auto;
     font-size: 90%; } }
+    
+#flattr_button {
+    text-align: center;
+    margin-bottom: 2em;
+}
 
 .gallery {
   @include prepend-top;

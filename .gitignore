@@ -3,3 +3,4 @@ tmp
 _site
 _tmp
 .sass-cache
+.DS_Store
