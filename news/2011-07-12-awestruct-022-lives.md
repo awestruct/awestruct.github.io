@@ -15,6 +15,6 @@ Emmanuel gives us the [Flattr] extension, plus a really nice [blog post].
 
 Torsten gives us RDiscount for Markdown instead of Bluecloth.  Holler if it breaks your stuff.
 
-Anyhow, check out v0.2.2.
+Anyhow, check out [v0.2.2].
 
     gem install awestruct
