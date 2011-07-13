@@ -21,6 +21,6 @@ similarly-named layouts contributed by the actual project.
 
 Pages within a skin project also contribute to resulting rendered site.
 
-A skin may use the [Partial extension](/extensions/partial) to allow
+A skin may use the [Partial helper](/helpers/partial) to allow
 a leaf project to insert partial page fragments into a layout 
 specified by the skin.
