@@ -6,5 +6,6 @@ Awestruct::Extensions::Pipeline.new do
   extension Awestruct::Extensions::Indexifier.new
   extension Awestruct::Extensions::Atomizer.new( :posts, '/news.atom' )
   extension Awestruct::Extensions::IntenseDebate.new
+  extension Awestruct::Extensions::Flattr.new
 end
 
