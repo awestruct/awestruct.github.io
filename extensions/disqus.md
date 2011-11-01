@@ -31,26 +31,14 @@ which is not accessible from the internet, but still want to
 be able to test the Disqus comment system, be sure to set
 the boolean `disqus_developer` property to `true`.
 
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Description</th>
-    </tr>
-  </thread>
-  <tbody>
-    <tr>
-      <td>disqus</td>
-      <td>The short name for your Disqus account</td>
-    </tr>
-    <tr>
-      <td>disqus_developer</td>
-      <td>Setting this property to `true` allows Disqus to load when
-      you are running the site locally (or on a domain which is not
-      accessible from the public internet)</td>
-    </tr>
-  </tbody>
-</table>
+Property | Description
+:--------|:-----------|
+`disqus` | The short name for your Disqus account
+`disqus_generate_id` | Setting this property to `true` tells the extension to automatically generate a [Disqus identifier](http://docs.disqus.com/help/14/) as an MD5 digest of the post's date and slug. If this property is not defined, or `false`, the post will only be identified by its fully-qualified URL.
+`disqus_developer` | Setting this property to `true` allows Disqus to load when you are running the site locally (or on a domain which is not accessible from the public internet)
+
+Enabling `disqus_generate_id` is recommended so that the comments are not tied
+to the post's URL, but rather its signature, thus simplifying migration.
 
 If you are using [multiple profiles](/profiles), you should set
 this properties per profile so that, for instance, you don't
@@ -71,6 +59,7 @@ using multiple profiles:
       development:
         base_url: http://mysite.com
         disqus: mysite
+        disqus_generate_id: true
 
 ## Use the extension
 
