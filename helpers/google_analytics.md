@@ -26,9 +26,16 @@ with your account identifier.
 Property | Description |
 ---------|----------------------------------------------------------|
 google_analytics | The identifier for your Google Analytics site tracking 
+google_analytics_anonymize | if true, enforce anonymization of IPs (in async mode only)
 
 ## Use the helper
 
 Typically in a core HTML layout, simply invoke the helper
 
     = google_analytics
+
+If you want to use [Google Analytics in async mode][async], use
+
+    = google_analytics_async
+
+[async]: http://code.google.com/apis/analytics/docs/tracking/asyncTracking.html
