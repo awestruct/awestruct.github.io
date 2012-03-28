@@ -44,13 +44,13 @@ To produce a file `index.html`, the Haml source file should be
 named `index.html.haml`.  This allows for non-HTML generation,
 such as for XML or other file types.
 
-### Maruku (`.md`)
+### Markdown (`.md`)
 
-Maruku files are interpreted anywhere within the site tree.
+Markdown files are interpreted anywhere within the site tree.
 
 The `.md` extension will be replaced by `.html` by default.
 
-The engine will interpolate the Maruku source as a typical
+The engine will interpolate the Markdown source as a typical
 Ruby `String`, allowing for expressions such as
 
     # This is the \#{page.title}
