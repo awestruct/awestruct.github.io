@@ -14,17 +14,32 @@ To use the `Atomizer` extension, simply configure it into your `_ext/pipeline.rb
 file.
     
     Awestruct::Extensions::Pipeline.new do
-      extension Awestruct::Extensions::Atomizer.new( :posts, '/news.atom' )
+      extension Awestruct::Extensions::Atomizer.new( 
+      	:posts, 
+      	'/news.atom', 
+      	:blog_title=>'Awesome Blog Inc.' 
+      )
     end
 
 ### Parameters
 
-    Atomizer.new( var_name, output_path )
+    Atomizer.new( var_name, output_path, opts={} )
 
 Name | Description |
 -----|-------------|
 `var_name` | Name of property on `site` to act as source of posts, typically an array 
 `output_path` | Path to emit the resulting Atom feed 
+`opts` | Options for pagination and linking (see below)
+
+#### Options
+
+Available options are
+
+Option | Default | Description
+-------|--------:|-------------|
+`num_entries` | 50 | Number of most recent entries rendered in the atom feed 
+`blog_url` | `site.base_url` | Blog URL used to set the `id` element in the atom feed - you might want to use your actual blog URL like `http://example.com/blog`
+`blog_title` | `site.title` or if unset `site.base_url` | Blog title in the feed
 
 ## Feed items
 
