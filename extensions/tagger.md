@@ -29,7 +29,17 @@ Name | Description |
 `collection_name` | Name of property on `site` to act as source of tagged pages, typically an array 
 `input_path` | Path to page to enumerate tagged items
 `output_prefix` | Path prefix to emit the resulting tag pages
-`options` | Additional options hash to be passed to an internal [`Paginator`](/extensions/paginator/)
+`options` | Additional options hash (see below). Also passed to an internal [`Paginator`](/extensions/paginator/)
+
+#### Options
+
+Available options are
+
+Option | Default | Description |
+-------|--------:|-------------|
+`sanitize` | false | whether or not tag urls are lower cased and whitespaces replaced with dash for nicer URLs
+
+## Usage
 
 Given the configuration of:
 
