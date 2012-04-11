@@ -1,28 +1,7 @@
 ---
-layout: default
-title: IntenseDebate Extension
 ---
 
-# IntenseDebate Extension
-
-[IntenseDebate](http://intensedebate.com/) is a Javascript-based commenting system,
-which is perfect for static websites.
-
-## Install
-
-To use the IntenseDebate integration, you simply need add an extension to the
-pipeline in your `_ext/pipeline.rb` file.  
-
-    require 'intense_debate'
-    
-    Awestruct::Extensions::Pipeline.new do
-      extension Awestruct::Extensions::IntenseDebate.new
-    end
-
-Don't forget to add the require import.
-
-## Configure
-
+### Configure `_config/site.yml`
 
 Your `_config/site.yml` needs to include the property `intense_debate_acct`
 with your account identifier.
@@ -42,11 +21,7 @@ with your account identifier.
   </tbody>
 </table>
 
-## Use the extension
-
-The extension adds two methods to every page within the site.
-
-### `page.intense_debate_comments`
+### Use `page.intense_debate_comments`
 
 This will emit the javascript necessary to provide IntenseDebate comment
 integration for the comments for the target page.  Typically this
@@ -57,7 +32,7 @@ should only be used once per page.
     .comments
       = page.intense_debate_comments 
 
-### `page.intense_debate_comments_link`
+### Use `page.intense_debate_comments_link`
 
 This will emit the javascript necessary to provide simple IntenseDebate
 comment links for the target page.  This is okay to invoke several

@@ -1,24 +1,8 @@
 ---
-title: Posts Extension
-layout: default
+params: [ path_prefix, assign_to ]
+path_prefix: The sub-tree to scan for pages acting as news posts.
+assign_to: the property upon `site` to assign the resulting post pages.
 ---
-
-# `Posts` extension
-
-The `Posts` extension scans pages within a particular subtree
-of your site, and if they match the format of `YYYY-MM-DD-post-title`,
-they are registered as blog posts, and slightly manipulated.
-
-## Install
-
-To use the `Posts` extension, simply configure it into your `_ext/pipeline.rb`
-file.
-
-    Awestruct::Extensions::Pipeline.new do
-      extension Awestruct::Extensions::Posts.new( '/news', :posts ) )
-    end
-
-### Parameters
 
 The constructor takes up to 2 parameters.  The first specifies a 
 sub-tree to scan, and defaults to the empty string. The prefix
@@ -28,7 +12,7 @@ The second parameter is the name of the property upon `site` the
 resulting collection of pages should be assigned to.  By default
 the assign-to property is `posts`.
 
-## Details
+### Details
 
 Any page identified as a post will, at render time, have the following
 properties added or manipulated:
@@ -73,8 +57,3 @@ To create a "latest news" type of page, you could have a template such as
           = post.content
 
 
-## See also
-
-* [`Atomizer` Extension](/extensions/atomizer/) to automatically create Atom feeds.
-* [`Paginator` Extension](/extensions/paginator/) to automatically paginate collections of items, such as blog posts.
-* [`TagCloud` Extension](/extensions/tag_cloud/) to automatically generate a tag cloud from items.

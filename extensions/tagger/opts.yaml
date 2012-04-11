@@ -1,0 +1,4 @@
+---
+per_page: Number of items per page.
+window_size:  The number of pages on either side of the first, last or around the current page when drawing links.
+---

@@ -34,30 +34,9 @@ layout: base
       %li 
         %a{:href=>'/extensions/'} Extensions
         %ul 
-          %li 
-            %a{:href=>'/extensions/indexifier/'} Indexifier
-          %li 
-            %a{:href=>'/extensions/sitemap/'} Sitemap
-          %li 
-            %a{:href=>'/extensions/posts/'} Posts
-          %li 
-            %a{:href=>'/extensions/paginator/'} Paginator
-          %li 
-            %a{:href=>'/extensions/atomizer/'} Atomizer
-          %li 
-            %a{:href=>'/extensions/tagger/'} Tagger
-          %li 
-            %a{:href=>'/extensions/tag_cloud/'} TagCloud
-          %li 
-            %a{:href=>'/extensions/data_dir/'} DataDir
-          %li 
-            %a{:href=>'/extensions/intense_debate/'} IntenseDebate
-          %li 
-            %a{:href=>'/extensions/disqus/'} Disqus
-          %li 
-            %a{:href=>'/extensions/flattr/'} Flattr
-          %li 
-            %a{:href=>'/extensions/textile/'} Textile
+          - site.extensions.each do |ext_data|
+            %li 
+              %a{:href=>"/extensions/#{ext_data.first}/"}= ext_data.last
       %li 
         %a{:href=>'/helpers/'} Helpers
         %ul 

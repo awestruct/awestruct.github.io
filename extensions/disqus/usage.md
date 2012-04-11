@@ -1,29 +1,5 @@
----
-layout: default
-title: Disqus Extension
----
 
-# Disqus Extension
-
-[Disqus](http://disqus.com/) is a Javascript-based commenting system,
-which is ideal for static websites. It offers a cleaner user interface
-for both users and admins compared to
-[IntenseDebate](/extensions/intense_debate).
-
-## Install
-
-To use the Disqus integration, you simply need add an extension to the
-pipeline in your `_ext/pipeline.rb` file.
-
-    require 'disqus'
-    
-    Awestruct::Extensions::Pipeline.new do
-      extension Awestruct::Extensions::Disqus.new
-    end
-
-Don't forget to add the require statement!
-
-## Configure
+### Configure `_config/site.yml`
 
 Your `_config/site.yml` needs to include the property `disqus`
 with your account short name. If you are working on a site
@@ -61,11 +37,7 @@ using multiple profiles:
         disqus: mysite
         disqus_generate_id: true
 
-## Use the extension
-
-The extension adds three methods to every page within the site.
-
-### `page.disqus_comments`
+### Use `page.disqus_comments`
 
 This will emit the javascript necessary to provide Disqus comment
 integration for the comments for the target page. Typically this
@@ -77,7 +49,7 @@ times if you set the [Disqus Identifier](http://docs.disqus.com/help/14/)).
     .comments
       = page.disqus_comments 
 
-### `page.disqus_comments_link`
+### Use `page.disqus_comments_link`
 
 This will emit the javascript necessary to provide Disqus comment
 links for the target page. (You can control the text that is emitted
@@ -107,7 +79,7 @@ per post (for instance in the header and the footer).
 If you want the link to include comment and reaction counts, make sure
 to call the `page.disqus_comments_count` method on the page.
 
-### `page.disqus_comments_count`
+### Use `page.disqus_comments_count`
 
 This will emit the javascript necessary to provide comments and
 reactions counts on the comment links. Call this anywhere on the
@@ -116,7 +88,7 @@ as possible.
 
     = page.disqus_comments_count
 
-## Enable conditionally
+### Enable conditionally
 
 Since Disqus loads comments from the internet, you may want to
 disable it altogether in development. You can do that by leaving
@@ -129,4 +101,3 @@ using a conditional statement in the page template.
       - if site.disqus
         = page.disqus_comments 
 
-Now you're ready to Disqus!

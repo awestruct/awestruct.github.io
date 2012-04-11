@@ -1,35 +1,10 @@
 ---
-title: Tagger Extension
-layout: default
+params: [ collection_name, input_path, output_prefix, opts ]
+collection_name: The name of the property on `site` to act as a source of tagged pages, typically an array.
+input_path: Path to page to enumerate tagged items.
+output_prefix: Path prefix to emit the resulting tagged pages
+opts: Additional options hash to be passed to an internal `Paginator`
 ---
-
-# `Tagger` Extension
-
-The `Tagger` extension allows organizing site content based upon
-`tags` meta-data in page prefixes.
-
-## Install
-
-To use the `Tagger` extension, simply configure it into your `_ext/pipeline.rb`
-file.
-    
-    Awestruct::Extensions::Pipeline.new do
-      extension Awestruct::Extensions::Tagger.new( :posts, 
-                                                   '/index', 
-                                                   '/blog/tags', 
-                                                   :per_page=>10 )
-    end
-
-### Parameters
-
-    Tagger.new( collection_name, input_path, output_prefix, options={} )
-
-Name | Description |
------|-------------|
-`collection_name` | Name of property on `site` to act as source of tagged pages, typically an array 
-`input_path` | Path to page to enumerate tagged items
-`output_prefix` | Path prefix to emit the resulting tag pages
-`options` | Additional options hash to be passed to an internal [`Paginator`](/extensions/paginator/)
 
 Given the configuration of:
 
@@ -63,8 +38,3 @@ The indexes will be output under the `output_prefix` directory.
 
 To draw a full tag-cloud, the [TagCloud extension](/extensions/tag_cloud/) should be used. 
 
-
-
-## See also
-* [`TagCloud` extension](/extensions/tag_cloud/) for making a cloud from tagged items
-* [`Posts` extension](/extensions/posts/) for making a site "blog-aware"

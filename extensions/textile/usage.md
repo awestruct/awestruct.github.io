@@ -3,10 +3,6 @@ title: Textile Extension
 layout: default
 ---
 
-# `Textile` Extension
-
-Textile is one of the markup languages supported by Awestruct. This extension doesn't add support for textile, but rather extends the behavior of Textile itself.
-
 The implementation that Awestruct uses is RedCloth. It's possible to customize Textile using RedCloth in two ways:
 
 * Define block tags
@@ -14,7 +10,7 @@ The implementation that Awestruct uses is RedCloth. It's possible to customize T
 
 Let's look at the two cases.
 
-## Define block tags
+### Define block tags
 
 To define block tags, you simply add an Awestruct extension that overrides the RedCloth HTML formatter. Here's an example of how to define a custom tag for vimeo:
 
@@ -35,7 +31,7 @@ To define block tags, you simply add an Awestruct extension that overrides the R
 
 You need to require the file with this code in _ext/pipeline.rb.
 
-## Filter inline markup
+### Filter inline markup
 
 Markup is filtered using rule methods. Custom rule methods are passed to the `to_html` method of the RedCloth object. Awestruct will read in the method names defined by `site.textile_rules`, convert them to symbols (if they aren't already), and pass them to this method.
 

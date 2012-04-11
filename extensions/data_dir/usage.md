@@ -1,9 +1,7 @@
 ---
-title: DataDir Extension
-layout: default
+params: [ data_dir ]
+data_dir:  Directory containing data directories, defaults to `_data/` 
 ---
-
-# `DataDir` Extension
 
 The `DataDir` extension loads each directory of renderable files
 under `_data/` as a map attached to the `site` object.
@@ -20,7 +18,7 @@ would result in a map at `site.team` with the value of
     {  :bob=><page for bob.md>,
        :jim=><page for jim.md> }
 
-The bob.md page may look like
+The `bob.md` page may look like
 
     ---
     name: Bob McWhirter
@@ -36,21 +34,4 @@ data may be access from any other page.
     \#{site.team[:bob].name}
     \#{site.team[:bob].blog_url}
     \#{site.team[:bob].content}
-
-## Install
-
-To use the `DataDir` extension, simply configure it into your `_ext/pipeline.rb`
-file.
-    
-    Awestruct::Extensions::Pipeline.new do
-      extension Awestruct::Extensions::DataDir.new
-    end
-
-### Parameters
-
-    DataDir.new( data_dir='_data' )
-
-Name | Description |
-data_dir | Directory containing data directories, defaults to `_data/` 
-
 
