@@ -57,5 +57,6 @@ layout: default
   %h2 See Also
   %ul
     - page.see_also.each do |e|
-      %li= e
+      %li
+        %a{:href=>e.url}=e.name
 

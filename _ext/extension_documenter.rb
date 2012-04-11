@@ -10,12 +10,13 @@ class ExtensionDocumenter
 
     extensions = []
 
+    extension_pages = {}
+
     Dir[ 'extensions/*' ].each do |dir|
       next unless File.directory?( dir )
       puts "dir #{dir}"
 
       ext_name = File.basename( dir )
-
 
       puts "ext_name #{ext_name}"
 
@@ -55,7 +56,36 @@ class ExtensionDocumenter
         end
       end
 
+      extension_pages[ ext_name ] = ext_page
       site.pages << ext_page
+    end
+
+    extension_pages.each do |key, page|
+      see_also = page.see_also
+      ref_pages = []
+      unless ( see_also.nil? )
+        see_also.each do |key|
+          ref_page = extension_pages[key]
+          ( ref_pages << ref_page ) unless ref_page.nil?
+        end
+      end
+      page.see_also = ref_pages
+    end
+
+    extension_pages.each do |key, page|
+      see_also = page.see_also
+      unless ( see_also.nil? )
+        see_also.each do |other_page|
+          other_see_also = other_page.see_also || []
+          ( other_see_also << page ) unless other_see_also.include?( page )
+          other_page.see_also = other_see_also
+        end
+      end
+    end
+
+    extension_pages.each do |key, page|
+      see_also = page.see_also || []
+      page.see_also = see_also.sort{|l,r|l.name<=>r.name}
     end
 
     site.extensions = extensions.sort{|l,r| l.first <=> r.first}
