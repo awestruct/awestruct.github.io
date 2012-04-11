@@ -2,7 +2,6 @@ require 'yard'
 require 'extension_documenter'
 
 Awestruct::Extensions::Pipeline.new do
-  extension Awestruct::Extensions::DataDir.new
   extension ExtensionDocumenter.new
   extension Yard.new
   extension Awestruct::Extensions::Posts.new( '/news' )
