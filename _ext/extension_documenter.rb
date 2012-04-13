@@ -60,16 +60,18 @@ class ExtensionDocumenter
       site.pages << ext_page
     end
 
-    extension_pages.each do |key, page|
-      see_also = page.see_also
-      ref_pages = []
-      unless ( see_also.nil? )
-        see_also.each do |key|
-          ref_page = extension_pages[key]
-          ( ref_pages << ref_page ) unless ref_page.nil?
+    unless (extension_pages.is_a? String)
+      extension_pages.each do |key, page|
+        see_also = page.see_also
+        ref_pages = []
+        unless ( see_also.nil? || see_also.is_a?(String) )
+          see_also.each do |key|
+            ref_page = extension_pages[key]
+            ( ref_pages << ref_page ) unless ref_page.nil?
+          end
         end
+        page.see_also = ref_pages
       end
-      page.see_also = ref_pages
     end
 
     extension_pages.each do |key, page|

@@ -1,12 +1,92 @@
 %html
   %head
-    %title
-      awestruct: #{page.title}
-    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/screen.css', :media=>'screen, projection' }
-    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/print.css', :media=>'print' }
-    /[if lt IE 8]
-      %link{ :rel=>'stylesheet', :type=>'text/css', :href=>'/stylesheets/ie.css', :media=>'screen, projection' }
+    %meta{ :charset=>'utf-8' }
+    %title awestruct: #{page.title}
     %link{ :rel=>'alternate',  :type=>'application/atom+xml', :href=>'/news.atom' }
-  %body.bp
-    #container
-      ~ content
+    %meta{ :name=>'viewport', :content=>'width=device-width, initial-scale=1.0' }
+    :css
+      body {
+        padding-top: 60px;
+      }
+    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
+    /[if lt IE 9]
+      %script{ :type=>'text/javascript', :src=>'//html5shim.googlecode.com/svn/trunk/html5.js' }
+  %body
+    .navbar.navbar-fixed-top
+      .navbar-inner
+        .container
+          %a.brand{ :href=>"#{site.base_url}" } {:awestruct}
+          %ul.nav
+            %li 
+              %a{:href=>'/'} Home
+            %li 
+              %a{:href=>'/news/'} News
+            %li#getting-started-menu.dropdown
+              %a.dropdown-toggle{"data-toggle"=>"dropdown", :href=>"#getting-started-menu"}
+                Documentation
+                %b.caret
+              %ul.dropdown-menu
+                %li
+                  %a{:href=>'/getting_started/'} Getting Started
+                %li 
+                  %a{:href=>'/layout/'} Project Layout
+                %li 
+                  %a{:href=>'/profiles/'} Site Profiles
+                %li 
+                  %a{:href=>'/file_types/'} File Types
+                %li 
+                  %a{:href=>'/skins/'} Skins
+                %li 
+                  %a{:href=>'/template_context/'} Template Context
+                %li 
+                  %a{:href=>'/deployment/'} Site Deployment
+            %li#extensions-menu.dropdown
+              %a.dropdown-toggle{"data-toggle"=>"dropdown", :href=>'#extensions-menu'} 
+                Extensions
+                %b.caret
+              %ul.dropdown-menu
+                %li
+                  %a{:href=>'/extensions/'} Overview
+                - site.extensions.each do |ext_data|
+                  %li 
+                    %a{:href=>"/extensions/#{ext_data.first}/"}= ext_data.last
+            %li#helpers-menu.dropdown
+              %a.dropdown-toggle{"data-toggle"=>"dropdown", :href=>'#helpers-menu'} 
+                Helpers
+                %b.caret
+              %ul.dropdown-menu
+                %li 
+                  %a{:href=>'/helpers/'} Helpers
+                %li 
+                  %a{:href=>'/helpers/partial/'} Partial
+                %li 
+                  %a{:href=>'/helpers/google_analytics/'} Google Analytics
+    .container
+      .row
+        .span4
+          .hero-unit
+            %h2 {:awestruct}
+            %p 
+              A static site-baking tool. Have you been awestructed yet?
+            %p
+              Latest version is #{site.gem_version}
+            %p
+              %a.btn.btn-primary.btn-large{:href=>"/getting_started/"} Get Started!
+          #sidebar
+            %ul.nav.nav-tabs.nav-stacked
+              %li 
+                %a{:href=>'/gallery/'} Gallery
+              %li 
+                %a{:href=>'/source/'} Source Code
+              %li 
+                %a{:href=>'/yardoc/'} API Documentation
+
+
+        .span8
+          ~ content
+      .row
+        %hr
+        %footer
+          %p &copy; Bob McWhirter #{Date.today.year}
+          %script{ :type=>'text/javascript', :src=>'//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js' }
+          %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascript/bootstrap-dropdown.js" }
