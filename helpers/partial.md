@@ -3,7 +3,9 @@ title: Partial Helper
 layout: default
 ---
 
-# `Partial` Helper
+<div class="page-header">
+<h1>Partial Helper</h1>
+</div>
 
 The `Partial` helper allows you to include a partial page fragment into another
 page.

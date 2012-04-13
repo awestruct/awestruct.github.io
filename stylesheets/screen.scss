@@ -95,8 +95,6 @@ form.bp {
 }
 
 .gallery {
-  @include prepend-top;
-  @include column(13);
   .gallery-entry {
     margin-bottom: 1em;
     padding-bottom: 1em;

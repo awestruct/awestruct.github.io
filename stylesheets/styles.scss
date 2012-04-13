@@ -1,1 +1,40 @@
 @import "bootstrap";
+
+.navbar-inner {
+  background: #012340;
+}
+
+.navbar {
+
+  .nav > li {
+    font-size: 16px;
+  }
+
+  .brand {
+    font-weight: 500;
+    font-size: 24px;
+  }
+}
+
+.hero-unit {
+  h2 {
+    color: #012340;
+    margin-bottom: 20px;
+  }
+  h3 {
+    margin-bottom: 10px;
+  }
+  padding: 35px;
+}
+
+.gallery {
+  .gallery-entry {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #999999;
+    .image {
+      img {
+        width: 200px;
+        border: 2px solid #999999; }
+} } }
+

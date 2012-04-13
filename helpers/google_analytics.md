@@ -3,7 +3,9 @@ title: GoogleAnalytics Helper
 layout: default
 ---
 
-# `GoogleAnalytics` Helper
+<div class="page-header">
+<h1>GoogleAnalytics Helper</h1>
+</div>
 
 The `GoogleAnalytics` helper provides easy insertion of Google Analytics
 tracking code into your site.

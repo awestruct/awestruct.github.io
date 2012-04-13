@@ -3,7 +3,9 @@ title: Helpers
 layout: default
 ---
 
-# Helpers
+<div class="page-header">
+<h1>Helpers</h1>
+</div>
 
 Helpers are Ruby modules that get mixed into the template evaluation
 context.  Typically they add methods you may invoke from within
