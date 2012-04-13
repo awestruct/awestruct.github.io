@@ -3,7 +3,9 @@ title: template context
 layout: default
 ---
 
-# Template Context
+<div class="page-header">
+<h1>Template Context</h1>
+</div>
 
 A few root objects are available within any of the supported template types.
 

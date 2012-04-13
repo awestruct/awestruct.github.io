@@ -2,7 +2,9 @@
 layout: default
 title: home
 ---
-# Are you *awestruct* yet?
+<div class="page-header">
+<h1>Are you { :awestruct } yet?</h1>
+</div>
 
 *Awestruct* is a framework for creating static HTML sites.  It's inspired
 by the awesome [Jekyll](http://github.com/mojombo/jekyll) utility in the

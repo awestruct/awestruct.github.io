@@ -3,12 +3,14 @@ title: Skins
 layout: default
 ---
 
-# Shared Skins Support
+<div class="page-header">
+<h1>Shared Skins</h1>
+</div>
 
 Awestruct supports the concept of shared skins as the basis of multiple
 sites within a similarly-designed family.
 
-## `_config/site.yml` Configuration
+## Configuration
 
 Within `_config/site.yml` a `skin_dir` property may be set.  It should
 point to a relative directory containing a base awestruct project, known

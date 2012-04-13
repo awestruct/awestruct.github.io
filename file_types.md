@@ -3,7 +3,9 @@ title: template types
 layout: default
 ---
 
-# File Types
+<div class="page-header">
+<h1>File Types</h1>
+</div>
 
 ## Pages
 
@@ -63,17 +65,16 @@ Org-mode support is new, and fairly untested.
 
 ## Stylesheets
 
-### Sass (`.sass`)
+### Scss & Sass (`.scss` and `.sass`)
 
-Sass templates are interpreted, within the context of the Compass
+Scss and Sass templates are interpreted, within the context of the Compass
 framework, anywhere within the site tree.
 
-The `.sass` extension will be replaced by `.css` by default.
+The `.scss` and `.sass` extensions will be replaced with `.css` by default.
 
 ### CSS (`.css`)
 
-Any CSS file (being basically unrecognized) will be simply copied verbatim
-into the output tree.
+Any CSS file will be copied verbatim into the output tree.
 
 ## Other
 

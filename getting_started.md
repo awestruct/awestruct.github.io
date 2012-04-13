@@ -3,11 +3,11 @@ layout: default
 title: getting started
 ---
 
-# Getting Started
+<div class="page-header">
+<h1>Getting Started</h1>
+</div>
 
 ## Install awestruct and start a new project
-
-*awestruct* is available through [rubygems](http://rubygems.org/gems/awestruct).
 
     $ gem install awestruct
 
@@ -21,9 +21,9 @@ option.
 
 ## Edit, save, reload, repeat
 
-`awestruct` provides a simple server to make viewing your site during
-development easier.  Your site will auto-rebuild as you change source files.
-
     $ awestruct --dev
 
-Then just browse to [http://localhost:4242/](http://localhost:4242)
+Then just browse to [http://localhost:4242/](http://localhost:4242).
+Awestruct provides a simple server to make viewing your site during
+development easier.  Your site will auto-rebuild as you change source files.
+
