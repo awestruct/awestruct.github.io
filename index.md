@@ -6,7 +6,7 @@ title: home
 <h1>Are you { :awestruct } yet?</h1>
 </div>
 
-*Awestruct* is a framework for creating static HTML sites.  It's inspired
+Awestruct is a framework for creating static HTML sites.  It's inspired
 by the awesome [Jekyll](http://github.com/mojombo/jekyll) utility in the
 same genre.
 

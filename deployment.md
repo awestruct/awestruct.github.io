@@ -32,6 +32,16 @@ default domain that github provides.
         deploy: 
           host: github_pages 
 
+This will publish your site to the default `gh-pages` branch, used by GitHub
+for site publication. To publish to the master branch, add `branch: master` 
+to your deployment yaml.
+
+    profiles: 
+      production: 
+        base_url: http://awestruct.github.com/github_pages 
+        deploy: 
+          host: github_pages 
+          branch: master
 
 ## Rsync and SSH
 
