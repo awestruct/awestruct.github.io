@@ -39,3 +39,16 @@
         border: 2px solid #999999; }
 } } }
 
+.post {
+  h1.title {}
+  .byline {
+    margin-bottom: 1em;
+    font-size: 90%;
+    .author, .date {
+      display: inline; }
+    .author {
+      font-weight: bold; } } 
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #ddd;
+}

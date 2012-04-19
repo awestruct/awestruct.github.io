@@ -9,5 +9,8 @@ Awestruct::Extensions::Pipeline.new do
   extension Awestruct::Extensions::Atomizer.new( :posts, '/news.atom' )
   extension Awestruct::Extensions::IntenseDebate.new
   extension Awestruct::Extensions::Flattr.new
+  extension Awestruct::Extensions::Paginator.new( :posts, 
+                                                  '/news/index', 
+                                                  :per_page=>3 )
 end
 
