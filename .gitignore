@@ -4,3 +4,4 @@ _site
 _tmp
 .sass-cache
 .DS_Store
+Gemfile.lock

@@ -10,6 +10,10 @@ profiles:
     deploy:
       host: awestruct.org
       path: /var/www/domains/awestruct.org/staging/htdocs/ 
+  github:
+    base_url: http://awestruct.github.com/awestruct.org
+    deploy:
+      host: github_pages
   production:
     base_url: http://awestruct.org/
     deploy:
