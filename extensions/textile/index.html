@@ -1,0 +1,235 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>awestruct:</title>
+    <link href='/news.atom' rel='alternate' type='application/atom+xml' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <style type='text/css'>
+      /*<![CDATA[*/
+        body {
+          padding-top: 60px;
+        }
+      /*]]>*/
+    </style>
+    <link href='http://awestruct.github.com/awestruct.org/stylesheets/styles.css' rel='stylesheet' type='text/css' />
+    <!--[if lt IE 9]>
+      <script src='//html5shim.googlecode.com/svn/trunk/html5.js' type='text/javascript'></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class='navbar navbar-fixed-top'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <a class='brand' href='http://awestruct.github.com/awestruct.org'>{:awestruct}</a>
+          <ul class='nav'>
+            <li>
+              <a href='/'>Home</a>
+            </li>
+            <li>
+              <a href='/news/'>News</a>
+            </li>
+            <li class='dropdown' id='getting-started-menu'>
+              <a class='dropdown-toggle' data-toggle='dropdown' href='#getting-started-menu'>
+                Documentation
+                <b class='caret'></b>
+              </a>
+              <ul class='dropdown-menu'>
+                <li>
+                  <a href='/getting_started/'>Getting Started</a>
+                </li>
+                <li>
+                  <a href='/layout/'>Project Layout</a>
+                </li>
+                <li>
+                  <a href='/profiles/'>Site Profiles</a>
+                </li>
+                <li>
+                  <a href='/file_types/'>File Types</a>
+                </li>
+                <li>
+                  <a href='/skins/'>Skins</a>
+                </li>
+                <li>
+                  <a href='/template_context/'>Template Context</a>
+                </li>
+                <li>
+                  <a href='/deployment/'>Site Deployment</a>
+                </li>
+              </ul>
+            </li>
+            <li class='dropdown' id='extensions-menu'>
+              <a class='dropdown-toggle' data-toggle='dropdown' href='#extensions-menu'>
+                Extensions
+                <b class='caret'></b>
+              </a>
+              <ul class='dropdown-menu'>
+                <li>
+                  <a href='/extensions/'>Overview</a>
+                </li>
+                <li>
+                  <a href='/extensions/atomizer/'>Atomizer</a>
+                </li>
+                <li>
+                  <a href='/extensions/data_dir/'>DataDir</a>
+                </li>
+                <li>
+                  <a href='/extensions/disqus/'>Disqus</a>
+                </li>
+                <li>
+                  <a href='/extensions/flattr/'>Flattr</a>
+                </li>
+                <li>
+                  <a href='/extensions/indexifier/'>Indexifier</a>
+                </li>
+                <li>
+                  <a href='/extensions/intense_debate/'>IntenseDebate</a>
+                </li>
+                <li>
+                  <a href='/extensions/paginator/'>Paginator</a>
+                </li>
+                <li>
+                  <a href='/extensions/posts/'>Posts</a>
+                </li>
+                <li>
+                  <a href='/extensions/sitemap/'>Sitemap</a>
+                </li>
+                <li>
+                  <a href='/extensions/tag_cloud/'>TagCloud</a>
+                </li>
+                <li>
+                  <a href='/extensions/tagger/'>Tagger</a>
+                </li>
+                <li>
+                  <a href='/extensions/textile/'>Textile</a>
+                </li>
+              </ul>
+            </li>
+            <li class='dropdown' id='helpers-menu'>
+              <a class='dropdown-toggle' data-toggle='dropdown' href='#helpers-menu'>
+                Helpers
+                <b class='caret'></b>
+              </a>
+              <ul class='dropdown-menu'>
+                <li>
+                  <a href='/helpers/'>Overview</a>
+                </li>
+                <li>
+                  <a href='/helpers/partial/'>Partial</a>
+                </li>
+                <li>
+                  <a href='/helpers/google_analytics/'>Google Analytics</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <div class='span4'>
+          <div class='hero-unit'>
+            <h2>
+              {:awestruct}
+            </h2>
+            <h3>
+              Latest version is 0.2.18
+            </h3>
+            <p>
+              A static site-baking tool.
+              <br />
+              Have you been awestructed?
+            </p>
+            <p>
+              <a class='btn btn-primary btn-large' href='/getting_started/'>Get Started!</a>
+            </p>
+          </div>
+          <div id='sidebar'>
+            <ul class='nav nav-tabs nav-stacked'>
+              <li>
+                <a href='/gallery/'>Gallery</a>
+              </li>
+              <li>
+                <a href='/source/'>Source Code</a>
+              </li>
+              <li>
+                <a href='/yardoc/'>API Documentation</a>
+              </li>
+              <li>
+                <a href='http://twitter.com/awestructed'>Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='span8'>
+          <div class='page-header'>
+            <h1>Textile</h1>
+            <small>
+              <h2>MyCustomExtension</h2>
+            </small>
+          </div>
+          <p>Textile is one of the markup languages supported by Awestruct. This extension doesn't add support for textile, but rather extends the behavior of Textile itself.</p>
+          <h2>Usage</h2>
+          <p>The implementation that Awestruct uses is RedCloth. It's possible to customize Textile using RedCloth in two ways:</p>
+          
+          <ul>
+          <li>Define block tags</li>
+          <li>Filter inline markup</li>
+          </ul>
+          
+          
+          <p>Let's look at the two cases.</p>
+          
+          <h3>Define block tags</h3>
+          
+          <p>To define block tags, you simply add an Awestruct extension that overrides the RedCloth HTML formatter. Here's an example of how to define a custom tag for vimeo:</p>
+          
+          <pre><code>module RedCloth::Formatters::HTML&#x000A;  def vimeo(opts)&#x000A;    clip_id, dim = opts[:text].split(' ').map! {|s| s.strip}&#x000A;    dim_attrs = ''&#x000A;    if dim&#x000A;      # x is transformed by &amp;#215; by textile&#x000A;      w, h = dim.split('&amp;#215;')&#x000A;    else&#x000A;      w, h = ["800", "600"]&#x000A;    end&#x000A;    dim_attrs = " width=\"#{w}\" height=\"#{h}\""&#x000A;    "&lt;iframe#{pba(opts)}#{dim_attrs} src=\"http://player.vimeo.com/video/#{clip_id}?title=0&amp;amp;byline=0&amp;amp;portrait=0\" frameborder=\"0\" webkitallowfullscreen=\"webkitallowfullscreen\" mozallowfullscreen=\"mozallowfullscreen\" allowfullscreen=\"allowfullscreen\"&gt;&lt;/iframe&gt;"&#x000A;  end&#x000A;end&#x000A;</code></pre>
+          
+          <p>You need to require the file with this code in _ext/pipeline.rb.</p>
+          
+          <h3>Filter inline markup</h3>
+          
+          <p>Markup is filtered using rule methods. Custom rule methods are passed to the <code>to_html</code> method of the RedCloth object. Awestruct will read in the method names defined by <code>site.textile_rules</code>, convert them to symbols (if they aren't already), and pass them to this method.</p>
+          
+          <p>The functions must be included into the RedCloth class using an Awestruct Extension. For example:</p>
+          
+          <pre><code>module Awestruct::Extensions&#x000A;  class TextilePlus&#x000A;    def initialize()&#x000A;      RedCloth.send(:include, CustomRules)&#x000A;    end&#x000A;&#x000A;    module CustomRules&#x000A;      def emoticons(text)&#x000A;         # replace emoticons in text&#x000A;      end&#x000A;    end&#x000A;  end&#x000A;end&#x000A;</code></pre>
+          
+          <p>You can either set site.textile_rules inside the extension, or in _config/site.yml. Here's an example of using site.yml (where the methods are defined as strings):</p>
+          
+          <pre><code>textile_rules = [emoticons]&#x000A;</code></pre>
+          
+          <p>Here's an example of registering them in the extension (where the methods are defined as symbols):</p>
+          
+          <pre><code>def execute(site)&#x000A;  site.textile_rules = [:emoticons]&#x000A;end&#x000A;</code></pre>
+          
+          <p>You then initialize the extension in your pipeline:</p>
+          
+          <pre><code>extension Awestruct::Extensions::TextilePlus.new() &#x000A;</code></pre>
+          
+          <p>Now you can use your custom markup and tags.</p>
+          <h2>Parameters</h2>
+          <em>
+            None
+          </em>
+          <h2>Examples</h2>
+          <h3>Generic Installation</h3>
+          <pre>Awestruct::Extensions::Pipeline.new do&#x000A;  extension MyCustomExtension.new()&#x000A;end&#x000A;</pre>
+          
+          <h2>See Also</h2>
+          <ul>
+          </ul>
+        </div>
+      </div>
+      <div class='row'>
+        <hr />
+        <footer>
+          <p>&copy; Bob McWhirter 2012</p>
+          <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
+          <script src='http://awestruct.github.com/awestruct.org/javascript/bootstrap-dropdown.js' type='text/javascript'></script>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

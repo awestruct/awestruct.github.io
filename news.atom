@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<feed xml:lang='en-US' xmlns='http://www.w3.org/2005/Atom'>
+  <id>http://awestruct.github.com/awestruct.org/</id>
+  <title>Awestruct</title>
+  <updated>2011-10-31T00:00:00Z</updated>
+  <link href='http://awestruct.github.com/awestruct.org/news.atom' rel='self' type='application/atom+xml' />
+  <link href='http://awestruct.github.com/awestruct.org/' rel='alternate' type='text/html' />
+  <entry>
+    <id>http://awestruct.github.com/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/</id>
+    <title>Awestruct 0.2.7 On the Prowl</title>
+    <updated>2011-10-31T00:00:00Z</updated>
+    <published>2011-10-31T00:00:00Z</published>
+    <link href='http://awestruct.github.com/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/' rel='alternate' type='text/html' />
+    <author>
+      <name>Dan Allen</name>
+    </author>
+    <summary>
+      Uh, we skipped a few release announcements, but it's because...
+      
+      Development on Awestruct is picking up now that the Arquillian team has
+      started hacking on it for their new project site. They've contributed some
+      improvements to Awestruct and have some other extensions waiting in the wings
+      for a future release. There's also been a lot of chatter about Awestruct
+      recently on twitter.
+      
+      Here's a taste of the treats in store for you.
+      
+      
+      
+      Aslak improved the Posts extension to read page.date as a alternative to
+      the post filename, part of the preparation for a feature that enables
+      automatic generation of blog entries for project releases (like this one!).
+      
+      Aslak also integrated...
+    </summary>
+    <content type='html'>
+      &lt;p&gt;&lt;em&gt;Uh, we skipped a few release announcements, but it's because...&lt;/em&gt;&lt;/p&gt;
+      
+      &lt;p&gt;Development on Awestruct is picking up now that the &lt;a href=&quot;http://arquillian.org&quot;&gt;Arquillian&lt;/a&gt; team has
+      started hacking on it for their new project site. They've contributed some
+      improvements to Awestruct and have some other extensions waiting in the wings
+      for a future release. There's also been a lot of &lt;a href=&quot;http://twitter.com/#!/search/awestruct&quot;&gt;chatter&lt;/a&gt; about Awestruct
+      recently on twitter.&lt;/p&gt;
+      
+      &lt;p&gt;Here's a taste of the treats in store for you.&lt;/p&gt;
+      
+      &lt;p&gt;&lt;img src=&quot;http://awestruct.github.com/awestruct.org/images/news/ontheprowl.jpg&quot; alt=&quot;Cat on the prowl&quot; /&gt;&lt;/p&gt;
+      
+      &lt;p&gt;&lt;a href=&quot;http://github.com/aslakknutsen&quot;&gt;Aslak&lt;/a&gt; improved the &lt;a href=&quot;http://awestruct.github.com/awestruct.org/extensions/posts&quot;&gt;Posts&lt;/a&gt; extension to read page.date as a alternative to
+      the post filename, part of the preparation for a feature that enables
+      automatic generation of blog entries for project releases (like this one!).&lt;/p&gt;
+      
+      &lt;p&gt;Aslak also integrated &lt;a href=&quot;https://github.com/ttilley/fssm&quot;&gt;FSSM&lt;/a&gt; to monitor files more efficiently in development
+      mode. Your CPU will thank you! He also committed a fix for a divide by 0 bug
+      in the tagger extension that would strike when you least expected it.
+      Additionally, he added support for extensions to define their own
+      transformers.&lt;/p&gt;
+      
+      &lt;p&gt;At &lt;a href=&quot;http://github.com/mojavelinux&quot;&gt;Dan&lt;/a&gt;'s request, Awestruct has been upgraded to &lt;a href=&quot;http://compass-style.org&quot;&gt;Compass&lt;/a&gt; 0.11.5 to take
+      advantage of all the latest CSS3 mixins and so the online Compass
+      documentation is actually relevant for developers using Awestruct. If you've
+      been using a lot of the CSS3 mixins already, you may need to do a little
+      migration. Compass spits out deprecation warnings to the console. Holler if
+      the upgrade breaks your stylesheet and you aren't sure how to fix it.&lt;/p&gt;
+      
+      &lt;p&gt;Dan and Aslak figured out how to hack RedCloth to provide custom inline and
+      block markup. The hooks are now in place. We'll be documenting how to make use
+      of them soon. You can see an example
+      &lt;a href=&quot;https://github.com/arquillian/arquillian.github.com/blob/develop/_ext/textile_plus.rb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;Dan documented the &lt;a href=&quot;http://awestruct.github.com/awestruct.org/extensions/disqus&quot;&gt;Disqus&lt;/a&gt; extension, an extension which snuck into a
+      previous release without much ado. He also added an option to have the
+      extension generate the Disqus identifier automatically from the date and slug
+      of the post. Disqus is an alternative JavaScript-based comment system for
+      Awestruct &lt;a href=&quot;http://awestruct.github.com/awestruct.org/extensions/posts&quot;&gt;Posts&lt;/a&gt; which offers a very elegant interface for both users and
+      administrators.&lt;/p&gt;
+      
+      &lt;p&gt;Finally, &lt;a href=&quot;http://github.com/tombentley&quot;&gt;Tom&lt;/a&gt;'s gsub transformer finally got merged in, so you can slice and
+      dice the pages as they exit the pipeline.&lt;/p&gt;
+      
+      &lt;p&gt;Anyhow, check out &lt;a href=&quot;https://rubygems.org/gems/awestruct/versions/0.2.7&quot;&gt;gem&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;gem install awestruct&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+      
+      &lt;p&gt;If I missed something, feel free to mention it in the comments.&lt;/p&gt;
+      
+      &lt;p&gt;&lt;em&gt;Photo Credit: &lt;a href=&quot;http://www.flickr.com/photos/ralphandjenny/5118409269/in/photostream/&quot;&gt;ralph and jenny&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>http://awestruct.github.com/awestruct.org/news/2011/07/12/awestruct-022-lives/</id>
+    <title>Awestruct 0.2.2 Lives</title>
+    <updated>2011-07-12T00:00:00Z</updated>
+    <published>2011-07-12T00:00:00Z</published>
+    <link href='http://awestruct.github.com/awestruct.org/news/2011/07/12/awestruct-022-lives/' rel='alternate' type='text/html' />
+    <author>
+      <name>Bob McWhirter</name>
+    </author>
+    <summary>
+      Thanks to recent interest from Torsten Curdt, Emmanuel Bernard and others in the community,
+      activity around Awestruct has increased as of late.
+      
+      Emmanuel gives us the Flattr extension, plus a really nice blog post.
+      
+      Torsten gives us RDiscount for Markdown instead of Bluecloth.  Holler if it breaks your stuff.
+      
+      Anyhow, check out v0.2.2.
+      
+      gem install awestruct
+      
+      ...
+    </summary>
+    <content type='html'>
+      &lt;p&gt;Thanks to recent interest from Torsten Curdt, Emmanuel Bernard and others in the community,
+      activity around Awestruct has increased as of late.&lt;/p&gt;
+      
+      &lt;p&gt;Emmanuel gives us the &lt;a href=&quot;http://awestruct.github.com/awestruct.org/extensions/flattr&quot;&gt;Flattr&lt;/a&gt; extension, plus a really nice &lt;a href=&quot;http://blog.emmanuelbernard.com/2011/07/awestruct-building-dynamic-static-web-sites/&quot;&gt;blog post&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;Torsten gives us RDiscount for Markdown instead of Bluecloth.  Holler if it breaks your stuff.&lt;/p&gt;
+      
+      &lt;p&gt;Anyhow, check out &lt;a href=&quot;https://rubygems.org/gems/awestruct/versions/0.2.2&quot;&gt;v0.2.2&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;pre&gt;&lt;code&gt;gem install awestruct&amp;#x000A;&lt;/code&gt;&lt;/pre&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>http://awestruct.github.com/awestruct.org/news/2010/09/17/awestruct-011-released/</id>
+    <title>Awestruct 0.1.1 Released</title>
+    <updated>2010-09-17T00:00:00Z</updated>
+    <published>2010-09-17T00:00:00Z</published>
+    <link href='http://awestruct.github.com/awestruct.org/news/2010/09/17/awestruct-011-released/' rel='alternate' type='text/html' />
+    <author>
+      <name>Bob McWhirter</name>
+    </author>
+    <summary>
+      I've just pushed the 0.1.1 version of the Awestruct gem
+      to RubyGems.
+      
+      This release brings about quite a few new extensions
+      (see sidebar), plus the ability to base many sites of
+      the same skin, including pipelines, pages and layouts.
+      ...
+    </summary>
+    <content type='html'>
+      &lt;p&gt;I've just pushed the 0.1.1 version of the Awestruct gem
+      to &lt;a href=&quot;http://rubygems.org/gems/awestruct&quot;&gt;RubyGems&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;This release brings about quite a few new extensions
+      (see sidebar), plus the ability to base many sites of
+      the same skin, including pipelines, pages and layouts.&lt;/p&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>http://awestruct.github.com/awestruct.org/news/2010/06/12/awestruct-006-released/</id>
+    <title>Awestruct 0.0.6 Released</title>
+    <updated>2010-06-12T00:00:00Z</updated>
+    <published>2010-06-12T00:00:00Z</published>
+    <link href='http://awestruct.github.com/awestruct.org/news/2010/06/12/awestruct-006-released/' rel='alternate' type='text/html' />
+    <author>
+      <name>Bob McWhirter</name>
+    </author>
+    <summary>
+      I've just pushed the 0.0.6 version of the Awestruct gem
+      to RubyGems.
+      
+      This includes updates to the baseline Compass, Haml and
+      Sass used by the tool.
+      
+      Additionally, it adds support for Org-Mode.
+      
+      Enjoy!
+      ...
+    </summary>
+    <content type='html'>
+      &lt;p&gt;I've just pushed the 0.0.6 version of the Awestruct gem
+      to &lt;a href=&quot;http://rubygems.org/gems/awestruct&quot;&gt;RubyGems&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;This includes updates to the baseline Compass, Haml and
+      Sass used by the tool.&lt;/p&gt;
+      
+      &lt;p&gt;Additionally, it adds support for &lt;a href=&quot;http://orgmode.org/&quot;&gt;Org-Mode&lt;/a&gt;.&lt;/p&gt;
+      
+      &lt;p&gt;Enjoy!&lt;/p&gt;
+    </content>
+  </entry>
+  <entry>
+    <id>http://awestruct.github.com/awestruct.org/news/2010/02/26/announcing-awestruct/</id>
+    <title>Announcing Awestruct</title>
+    <updated>2010-02-26T00:00:00Z</updated>
+    <published>2010-02-26T00:00:00Z</published>
+    <link href='http://awestruct.github.com/awestruct.org/news/2010/02/26/announcing-awestruct/' rel='alternate' type='text/html' />
+    <author>
+      <name>Bob McWhirter</name>
+    </author>
+    <summary>
+      While attempting to rebuild the site at TorqueBox.org,
+      I became frustrated with Jekyll and its forks.  Plus I had a yak that needed
+      shaving.
+      
+      So, I'm happy to announce Awestruct.
+      ...
+    </summary>
+    <content type='html'>
+      &lt;p&gt;While attempting to rebuild the site at &lt;a href=&quot;http://torquebox.org/&quot;&gt;TorqueBox.org&lt;/a&gt;,
+      I became frustrated with Jekyll and its forks.  Plus I had a yak that needed
+      shaving.&lt;/p&gt;
+      
+      &lt;p&gt;So, I'm happy to announce &lt;em&gt;Awestruct&lt;/em&gt;.&lt;/p&gt;
+    </content>
+  </entry>
+</feed>

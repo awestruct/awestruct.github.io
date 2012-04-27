@@ -1,0 +1,257 @@
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <title>awestruct: extensions</title>
+    <link href='/news.atom' rel='alternate' type='application/atom+xml' />
+    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
+    <style type='text/css'>
+      /*<![CDATA[*/
+        body {
+          padding-top: 60px;
+        }
+      /*]]>*/
+    </style>
+    <link href='http://awestruct.github.com/awestruct.org/stylesheets/styles.css' rel='stylesheet' type='text/css' />
+    <!--[if lt IE 9]>
+      <script src='//html5shim.googlecode.com/svn/trunk/html5.js' type='text/javascript'></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class='navbar navbar-fixed-top'>
+      <div class='navbar-inner'>
+        <div class='container'>
+          <a class='brand' href='http://awestruct.github.com/awestruct.org'>{:awestruct}</a>
+          <ul class='nav'>
+            <li>
+              <a href='/'>Home</a>
+            </li>
+            <li>
+              <a href='/news/'>News</a>
+            </li>
+            <li class='dropdown' id='getting-started-menu'>
+              <a class='dropdown-toggle' data-toggle='dropdown' href='#getting-started-menu'>
+                Documentation
+                <b class='caret'></b>
+              </a>
+              <ul class='dropdown-menu'>
+                <li>
+                  <a href='/getting_started/'>Getting Started</a>
+                </li>
+                <li>
+                  <a href='/layout/'>Project Layout</a>
+                </li>
+                <li>
+                  <a href='/profiles/'>Site Profiles</a>
+                </li>
+                <li>
+                  <a href='/file_types/'>File Types</a>
+                </li>
+                <li>
+                  <a href='/skins/'>Skins</a>
+                </li>
+                <li>
+                  <a href='/template_context/'>Template Context</a>
+                </li>
+                <li>
+                  <a href='/deployment/'>Site Deployment</a>
+                </li>
+              </ul>
+            </li>
+            <li class='dropdown' id='extensions-menu'>
+              <a class='dropdown-toggle' data-toggle='dropdown' href='#extensions-menu'>
+                Extensions
+                <b class='caret'></b>
+              </a>
+              <ul class='dropdown-menu'>
+                <li>
+                  <a href='/extensions/'>Overview</a>
+                </li>
+                <li>
+                  <a href='/extensions/atomizer/'>Atomizer</a>
+                </li>
+                <li>
+                  <a href='/extensions/data_dir/'>DataDir</a>
+                </li>
+                <li>
+                  <a href='/extensions/disqus/'>Disqus</a>
+                </li>
+                <li>
+                  <a href='/extensions/flattr/'>Flattr</a>
+                </li>
+                <li>
+                  <a href='/extensions/indexifier/'>Indexifier</a>
+                </li>
+                <li>
+                  <a href='/extensions/intense_debate/'>IntenseDebate</a>
+                </li>
+                <li>
+                  <a href='/extensions/paginator/'>Paginator</a>
+                </li>
+                <li>
+                  <a href='/extensions/posts/'>Posts</a>
+                </li>
+                <li>
+                  <a href='/extensions/sitemap/'>Sitemap</a>
+                </li>
+                <li>
+                  <a href='/extensions/tag_cloud/'>TagCloud</a>
+                </li>
+                <li>
+                  <a href='/extensions/tagger/'>Tagger</a>
+                </li>
+                <li>
+                  <a href='/extensions/textile/'>Textile</a>
+                </li>
+              </ul>
+            </li>
+            <li class='dropdown' id='helpers-menu'>
+              <a class='dropdown-toggle' data-toggle='dropdown' href='#helpers-menu'>
+                Helpers
+                <b class='caret'></b>
+              </a>
+              <ul class='dropdown-menu'>
+                <li>
+                  <a href='/helpers/'>Overview</a>
+                </li>
+                <li>
+                  <a href='/helpers/partial/'>Partial</a>
+                </li>
+                <li>
+                  <a href='/helpers/google_analytics/'>Google Analytics</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class='container'>
+      <div class='row'>
+        <div class='span4'>
+          <div class='hero-unit'>
+            <h2>
+              {:awestruct}
+            </h2>
+            <h3>
+              Latest version is 0.2.18
+            </h3>
+            <p>
+              A static site-baking tool.
+              <br />
+              Have you been awestructed?
+            </p>
+            <p>
+              <a class='btn btn-primary btn-large' href='/getting_started/'>Get Started!</a>
+            </p>
+          </div>
+          <div id='sidebar'>
+            <ul class='nav nav-tabs nav-stacked'>
+              <li>
+                <a href='/gallery/'>Gallery</a>
+              </li>
+              <li>
+                <a href='/source/'>Source Code</a>
+              </li>
+              <li>
+                <a href='/yardoc/'>API Documentation</a>
+              </li>
+              <li>
+                <a href='http://twitter.com/awestructed'>Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class='span8'>
+          <h1>Extensions</h1>
+          
+          <p>The render pipeline can be modified by including either
+          custom or 3rd-party extensions.</p>
+          
+          <p>The pipeline is configured using the <code>pipeline.rb</code> file in the
+          <code>_ext/</code> directory.</p>
+          
+          <p>The <code>_ext/</code> directory is automatically added to the <code>$LOAD_PATH</code>
+          so that site-supplied extensions may easily be loaded.</p>
+          
+          <h2>An extension class</h2>
+          
+          <p>An extension class only need implement a single method, <code>execute(site)</code>.
+          Each extension in the pipeline will be called, in-order, and passed the
+          <code>site</code> object.</p>
+          
+          <pre><code>class MyExtension&#x000A;  def execute(site)&#x000A;&#x000A;    # body goes here&#x000A;&#x000A;  end&#x000A;end&#x000A;</code></pre>
+          
+          <h2>Configuring the pipeline</h2>
+          
+          <p>New extensions can be added to the existing <code>_ext/pipeline.rb</code> file
+          using the <code>extension</code> method.</p>
+          
+          <pre><code>require 'my_extension'&#x000A;&#x000A;Awestruct::Extensions::Pipeline.new do&#x000A;  extension MyExtension.new&#x000A;  extension Awestruct::Extensions::Posts.new( 'news' ) &#x000A;  extension Awestruct::Extensions::Indexifier.new&#x000A;end&#x000A;</code></pre>
+          
+          <h2>The processing chain</h2>
+          
+          <p>The extension pipeline runs immediately before the final URL assignment
+          to pages and generating the final output pages.</p>
+          
+          <p><img src="/images/process.png" alt="The process" />{.centered}</p>
+          
+          <p>Given the timing of the extension pipeline execution, advanced functionality
+          can be applied.  Pages can be added or removed, output locations can be changed,
+          and links between pages or YAML-based structures may be created.</p>
+          
+          <h2>Possibilities</h2>
+          
+          <p>Since the extension pipeline runs before the final render stage, it has
+          the opportunity to do wild manipulations to the state of the site.</p>
+          
+          <h3>Posts</h3>
+          
+          <p>The <a href="/extensions/posts/"><code>Posts</code> extension</a> makes any <em>Awestruct</em> site
+          "blog-aware".  It scans all pages under a given sub-tree, and if they match
+          a particular naming convention, it does some work.</p>
+          
+          <p>If the current output path matches the pattern of <code>YYYY-MM-DD-post-title</code>,
+          it does the following:</p>
+          
+          <ul>
+          <li>Adjusts <code>page.output_path</code> to use directories instead of dashes.<br/>
+          <code>YYYY-MM-DD-post-title</code> becomes <code>/YYYY/MM/DD/post-title</code>.</li>
+          <li>Adds the page to an array it makes available as <code>site.posts</code>.</li>
+          <li>Adds navigational links between blog post pages
+          
+          <ul>
+          <li><code>page.next</code> points to the next entry</li>
+          <li><code>page.previous</code> points to the previous entry</li>
+          </ul>
+          </li>
+          </ul>
+          
+          
+          <h3>Pretty URLs</h3>
+          
+          <p>The <a href="/extensions/indexifier/"><code>Indexifier</code> extension</a> adjusts the
+          <code>page.url</code> for any page that is not currently output as an <code>index.html</code>.</p>
+          
+          <p>For instance, a page with a <code>url</code> of <code>/stuff.html</code> gets
+          modified so that <code>page.output_path</code> returns <code>/stuff/index.html</code>.</p>
+          
+          <p>By placing the <code>Indexifier</code> last in the chain, it can affect the
+          entire tree, regardless of the source of the page.</p>
+          
+          <h3>Synthetic page generation</h3>
+          
+          <p>An extension may decide to leave all pages alone, but inject
+          additional synthetic pages into a site at generation time.</p>
+        </div>
+      </div>
+      <div class='row'>
+        <hr />
+        <footer>
+          <p>&copy; Bob McWhirter 2012</p>
+          <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
+          <script src='http://awestruct.github.com/awestruct.org/javascript/bootstrap-dropdown.js' type='text/javascript'></script>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

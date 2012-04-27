@@ -1,0 +1,79 @@
+<h2>Configure <code>_config/site.yml</code></h2>
+
+<p>Your <code>_config/site.yml</code> needs to include the property <code>flattr_username</code>
+with your account identifier.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>flattr_username</td>
+      <td>The Flattr username receiving flattrs</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3>Use <code>page.flattr_javascript</code></h3>
+
+<p>This will emit the javascript necessary to provide Flattr button integration.
+This should be used once and only once per page hosting a Flattr button.
+Put it for example in the footer area.</p>
+
+<pre><code>.content
+  = page.content
+.footer
+  = page.flattr_javascript 
+</code></pre>
+
+<h3><code>page.flattr_large_counter</code></h3>
+
+<p>This will emit a large Flattr button like this one.</p>
+
+<div>
+  <a class="FlattrButton" style="display:none;" href="http://awestruct.github.com/awestruct.org/extensions/flattr/usage/" title="" rev="flattr;uid:bobmcwhirter;category:text;"></a>
+</div>
+
+
+<p>This is okay to invoke it several times per page and ie put several Flattr buttons.</p>
+
+<p>By default, the Flattr button will be associated with</p>
+
+<ul>
+<li>the page URL eg <a href="http://awestruct.org/extensions/flattr">http://awestruct.org/extensions/flattr</a></li>
+<li>the page title as Flattr title</li>
+<li>the Flattr text category</li>
+</ul>
+
+
+<p>You can override these however passing respectively the <code>url</code>, <code>title</code> and
+<code>category</code> parameters. You can even associate a set of comma separated tags
+via the <code>tags</code> property.</p>
+
+<pre><code>.sidebar
+  = page.flattr_large_counter
+.content
+  .externalresource
+    .abstract
+      = page.flattr_large_counter((
+          :url=&gt;"http://example.com/", 
+          :title=&gt;"Emmanuel Bernard", 
+          :tags=&gt;"goodstuff,photo,bacon")
+</code></pre>
+
+<h3><code>page.flattr_compact_counter</code></h3>
+
+<p>This will emit a compact Flattr button. Otherwise, everything is like
+<code>page.flattr_large_counter</code>.</p>
+
+<div>
+  <a class="FlattrButton" style="display:none;" href="http://awestruct.github.com/awestruct.org/extensions/flattr/usage/" title="" rev="flattr;button:compact;uid:bobmcwhirter;category:text;"></a>
+</div>
+
+
+
