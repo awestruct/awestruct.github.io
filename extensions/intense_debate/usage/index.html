@@ -1,0 +1,46 @@
+<h3>Configure <code>_config/site.yml</code></h3>
+
+<p>Your <code>_config/site.yml</code> needs to include the property <code>intense_debate_acct</code>
+with your account identifier.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Description</th>
+    </tr>
+  </thread>
+  <tbody>
+    <tr>
+      <td>intense_debate_acct</td>
+      <td>The identifier for your IntenseDebate account</td>
+    </tr>
+  </tbody>
+</table>
+
+
+<h3>Use <code>page.intense_debate_comments</code></h3>
+
+<p>This will emit the javascript necessary to provide IntenseDebate comment
+integration for the comments for the target page.  Typically this
+should only be used once per page.</p>
+
+<pre><code>.content
+  = page.content
+.comments
+  = page.intense_debate_comments 
+</code></pre>
+
+<h3>Use <code>page.intense_debate_comments_link</code></h3>
+
+<p>This will emit the javascript necessary to provide simple IntenseDebate
+comment links for the target page.  This is okay to invoke several
+times on a master aggregator (or index) page.</p>
+
+<pre><code>- for post in site.posts
+  .post
+    .abstract
+      = post.abstract
+    .comments
+      = post.intense_debate_comments_link
+</code></pre>

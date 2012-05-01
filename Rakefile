@@ -9,7 +9,7 @@ task :dev do
   system "awestruct --dev"
 end
 
-desc "Generate the site"
+desc "Build the site with the development profile"
 task :build do
   system "awestruct -P development --force"
 end
@@ -19,3 +19,8 @@ task :github do
   system "awestruct --deploy -P github --force"
 end
  
+
+desc "Build the site and publish to staging"
+task :staging do
+  system "awestruct --deploy -P staging --force"
+end
