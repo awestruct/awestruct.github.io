@@ -3,7 +3,7 @@ params: [ collection_name, input_path, output_prefix, opts ]
 collection_name: The name of the property on `site` to act as a source of tagged pages, typically an array.
 input_path: Path to page to enumerate tagged items.
 output_prefix: Path prefix to emit the resulting tagged pages
-opts: Additional options hash to be passed to an internal `Paginator`
+opts: Additional options hash (see below). Also passed to an internal `Paginator`
 ---
 
 Given the configuration of:
