@@ -1,7 +1,8 @@
 ---
-params: [ var_name, output_path ]
+params: [ var_name, output_path, opts ]
 var_name: Name of property on `site` to act as a source of posts, typically an array
 output_path: Path to emit the resulting Atom feed
+opts: Options for title, content url and generated entries
 ---
 
 ### Feed items

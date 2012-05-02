@@ -1,0 +1,5 @@
+---
+num_entries: Number of most recent entries rendered in the atom feed. Defaults to 50.
+feed_title: Feed title. Defaults to`site.title` or if unset `site.base_url`
+content_url: URL used to set the `id` element in the atom feed - you might want to use your actual blog URL like `http://example.com/blog`. Defaults to `site.base_url`.
+---
