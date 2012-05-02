@@ -44,8 +44,8 @@ GEM
       blankslate
     hike (1.2.1)
     hpricot (0.8.6)
-    json (1.6.6)
-    multi_json (1.3.2)
+    json (1.6.7)
+    multi_json (1.3.4)
     nokogiri (1.5.2)
     notifier (0.1.4)
     org-ruby (0.5.3)
