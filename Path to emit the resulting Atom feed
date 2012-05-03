@@ -1,0 +1,32 @@
+<h3>Feed items</h3>
+
+<p>Items fed to the <code>Atomizer</code> extension must meed some criteria
+in terms of properties returning data:</p>
+
+<table>
+<thead>
+<tr>
+<th>Property </th>
+<th> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code>  </td>
+<td> Title of the entry </td>
+</tr>
+<tr>
+<td><code>date</code>  </td>
+<td> Date of the entry </td>
+</tr>
+<tr>
+<td><code>author</code> </td>
+<td> Either a simple string, or an object providing <code>name</code> and <code>email</code> properties </td>
+</tr>
+<tr>
+<td><code>content</code> </td>
+<td> The full content of the entry (HTML is allowed) </td>
+</tr>
+</tbody>
+</table>
+

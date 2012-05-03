@@ -1,4 +1,5 @@
 ---
 per_page: Number of items per page.
 window_size:  The number of pages on either side of the first, last or around the current page when drawing links.
+sanitize: Whether or not tag urls are lower cased and whitespaces replaced with dash for nicer URLs (default to false).
 ---
