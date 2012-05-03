@@ -2,7 +2,7 @@ require 'rubygems'
 require 'bundler/setup'
 
 
-task :default => :build
+task :default => :github
 
 desc "Run in developer mode"
 task :dev do
