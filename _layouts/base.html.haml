@@ -10,7 +10,7 @@
       }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
     /[if lt IE 9]
-      %script{ :type=>'text/javascript', :src=>'//html5shim.googlecode.com/svn/trunk/html5.js' }
+      %script{ :type=>'text/javascript', :src=>'http://html5shim.googlecode.com/svn/trunk/html5.js' }
   %body
     .navbar.navbar-fixed-top
       .navbar-inner
@@ -18,56 +18,57 @@
           %a.brand{ :href=>"#{site.base_url}" } {:awestruct}
           %ul.nav
             %li 
-              %a{:href=>'/'} Home
+              %a{:href=>"#{site.base_url}"} Home
             %li 
-              %a{:href=>'/news/'} News
+              %a{:href=>"#{site.base_url}/news/"} News
             %li#getting-started-menu.dropdown
               %a.dropdown-toggle{"data-toggle"=>"dropdown", :href=>"#getting-started-menu"}
                 Documentation
                 %b.caret
               %ul.dropdown-menu
                 %li
-                  %a{:href=>'/getting_started/'} Getting Started
+                  %a{:href=>"#{site.base_url}/getting_started/"} Getting Started
                 %li 
-                  %a{:href=>'/layout/'} Project Layout
+                  %a{:href=>"#{site.base_url}/layout/"} Project Layout
                 %li 
-                  %a{:href=>'/profiles/'} Site Profiles
+                  %a{:href=>"#{site.base_url}/profiles/"} Site Profiles
                 %li 
-                  %a{:href=>'/file_types/'} File Types
+                  %a{:href=>"#{site.base_url}/file_types/"} File Types
                 %li 
-                  %a{:href=>'/skins/'} Skins
+                  %a{:href=>"#{site.base_url}/skins/"} Skins
                 %li 
-                  %a{:href=>'/template_context/'} Template Context
+                  %a{:href=>"#{site.base_url}/template_context/"} Template Context
                 %li 
-                  %a{:href=>'/deployment/'} Site Deployment
+                  %a{:href=>"#{site.base_url}/deployment/"} Site Deployment
             %li#extensions-menu.dropdown
               %a.dropdown-toggle{"data-toggle"=>"dropdown", :href=>'#extensions-menu'} 
                 Extensions
                 %b.caret
               %ul.dropdown-menu
                 %li
-                  %a{:href=>'/extensions/'} Overview
+                  %a{:href=>"#{site.base_url}/extensions/"} Overview
                 - site.extensions.each do |ext_data|
                   %li 
-                    %a{:href=>"/extensions/#{ext_data.first}/"}= ext_data.last
+                    %a{:href=>"#{site.base_url}/extensions/#{ext_data.first}/"}= ext_data.last
             %li#helpers-menu.dropdown
               %a.dropdown-toggle{"data-toggle"=>"dropdown", :href=>'#helpers-menu'} 
                 Helpers
                 %b.caret
               %ul.dropdown-menu
                 %li 
-                  %a{:href=>'/helpers/'} Overview
+                  %a{:href=>"#{site.base_url}/helpers/"} Overview
                 %li 
-                  %a{:href=>'/helpers/partial/'} Partial
+                  %a{:href=>"#{site.base_url}/helpers/partial/"} Partial
                 %li 
-                  %a{:href=>'/helpers/google_analytics/'} Google Analytics
+                  %a{:href=>"#{site.base_url}/helpers/google_analytics/"} Google Analytics
     .container
       .row
         .span4
           .hero-unit
             %h2 
               {:awestruct}
-            %img{ :src => 'https://secure.travis-ci.org/awestruct/awestruct.png' }
+            %a{:href=>'http://travis-ci.org/awestruct/awestruct'}
+              %img{ :src => 'https://secure.travis-ci.org/awestruct/awestruct.png' }
             %h3
               Latest version is #{site.gem_version}
             %p 
@@ -75,15 +76,15 @@
               %br
               Have you been awestructed?
             %p
-              %a.btn.btn-primary.btn-large{:href=>"/getting_started/"} Get Started!
+              %a.btn.btn-primary.btn-large{:href=>"#{site.base_url}/getting_started/"} Get Started!
           #sidebar
             %ul.nav.nav-tabs.nav-stacked
               %li 
-                %a{:href=>'/gallery/'} Gallery
+                %a{:href=>"#{site.base_url}/gallery/"} Gallery
               %li 
-                %a{:href=>'/source/'} Source Code
+                %a{:href=>"#{site.base_url}/source/"} Source Code
               %li 
-                %a{:href=>'/yardoc/'} API Documentation
+                %a{:href=>"#{site.base_url}/yardoc/"} API Documentation
               %li 
                 %a{:href=>'mailto:talk-subscribe@awestruct.org?subject=subscribe'} Mailing List
               %li
@@ -98,5 +99,5 @@
         %hr
         %footer
           %p &copy; Bob McWhirter #{Date.today.year}
-          %script{ :type=>'text/javascript', :src=>'//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js' }
+          %script{ :type=>'text/javascript', :src=>'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js' }
           %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascript/bootstrap-dropdown.js" }
