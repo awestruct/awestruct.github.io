@@ -43,7 +43,7 @@ any page-specific data loaded from the front-matter or other
 sources.
 
 
-![Structs](/images/structs.png)
+![Structs](#{site.base_url}/images/structs.png)
 
 Additionally, *Awestruct* allows for recursive layouts, to allow
 building variation into sites in a consistent manner.
