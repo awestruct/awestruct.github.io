@@ -1,5 +1,37 @@
 @import "bootstrap";
 
+code {
+  padding: 2px;
+  background-color: #f6f6f6;
+  border: none;
+}
+
+table {
+  th, td { 
+    padding: 8px 20px 4px 4px; 
+    border-bottom: 1px solid #eee;
+  }
+  th {
+    text-align: left;
+  }
+  td {
+    code {
+      background-color: #FFF;
+      border: none;
+      padding: 2px;
+    }
+  }
+}
+
+h2 {
+  margin: 16px 0 8px;
+  padding-bottom: 2px;
+}
+
+.page-header {
+  padding-bottom: 10px;
+}
+
 .navbar-inner {
   background: #012340;
 }
@@ -52,3 +84,5 @@
   padding-bottom: 10px;
   border-bottom: 1px dashed #ddd;
 }
+
+
