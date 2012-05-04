@@ -7,25 +7,45 @@ code {
 }
 
 table {
+  width: 100%;
+  margin-bottom: 18px;
   th, td { 
     padding: 8px 20px 4px 4px; 
     border-bottom: 1px solid #eee;
-  }
-  th {
-    text-align: left;
-  }
-  td {
     code {
       background-color: #FFF;
       border: none;
       padding: 2px;
     }
   }
+  th {
+    text-align: left;
+  }
+  td {
+    font-size: 12px;
+  }
 }
 
 h2 {
   margin: 16px 0 8px;
   padding-bottom: 2px;
+}
+
+.options {
+  margin: 14px;
+  h3 {
+    font-size: 16px;
+    border-bottom: 1px solid #eee;;
+  }
+  table {
+    td { 
+      font-size: 11px; 
+    }
+    th {
+      font-size: 12px;
+      border-right: 1px solid #eee;
+    }
+  }
 }
 
 .page-header {

@@ -25,23 +25,28 @@ layout: default
     :preserve
       #{page.classname}.new(#{page.params.join(', ')})
 
-  %table
+  
+  %table.parameters
+    %tr
+      %th Parameter
+      %th Description
     - page.params.each do |param|
       %tr
-        %th
-          = param
+        %td
+          %code= param
         %td
           = page.param_descriptions[ param ]
 
 - unless ( page.opts.nil? || page.opts.empty? )
-  %h3 Options
-  %table
-    - page.opts.keys.sort.each do |key|
-      %tr
-        %th
-          = key
-        %td
-          = page.opts[ key ]
+  .options
+    %h3 Options
+    %table
+      - page.opts.keys.sort.each do |key|
+        %tr
+          %th
+            = key
+          %td
+            = page.opts[ key ]
 
 %h2 Examples
 
