@@ -1,7 +1,8 @@
-tmp
-*.swp
+# Removed more generic .gitignore patterns that should
+# be in a user's global .gitignore.
+# See: http://help.github.com/ignore-files/
+
 _site
 _tmp
 .sass-cache
-.DS_Store
-Gemfile.lock
+.awestruct
