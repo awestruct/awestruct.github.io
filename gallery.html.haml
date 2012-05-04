@@ -36,8 +36,11 @@ title: Gallery
     
       .description
         :markdown
-          The Arquillian guys are doing some really cool stuff with awestruct,
-          HTML5 and Javascript.
+          Arquillian has an modern, HTML5-based website baked with Awestruct. The site uses more than a dozen Awestruct extensions, many custom made. It introduces a release extension, which builds on the [`Posts` extension](/extensions/posts/) to dynamically create a post for each software release. It also has an extension that creates module and contributor pages by analyzing the project's source repositories.
+
+          The site leverages REST APIs heavily to pull in data, some of which is collected during site baking and the rest retrieved on page load using JSON-P and jQuery plugins.
+
+          The site's theme is built on [Bootstrap](http://twitter.github.com/bootstrap/). It's arranged on a 12-column fixed grid and has a responsive layout. The CSS classes are semantic, achieved by extending Bootstrap classes and mixing in custom styles using SASS.
 
           [Site source](https://github.com/arquillian/arquillian.github.com)
     .span3
