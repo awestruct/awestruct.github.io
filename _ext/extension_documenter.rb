@@ -14,11 +14,8 @@ class ExtensionDocumenter
 
     Dir[ 'extensions/*' ].each do |dir|
       next unless File.directory?( dir )
-      puts "dir #{dir}"
 
       ext_name = File.basename( dir )
-
-      puts "ext_name #{ext_name}"
 
       ext_page = site.engine.load_site_page( '/extensions/doc_template.html.haml' )
       ext_page.output_path = "/extensions/#{ext_name}.html"

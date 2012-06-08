@@ -37,7 +37,7 @@ Put it for example in the footer area.
 This will emit a large Flattr button like this one.
 
 <div>
-  #{page.flattr_large_counter}
+  \#{page.flattr_large_counter}
 </div>
   
 This is okay to invoke it several times per page and ie put several Flattr buttons.
@@ -68,6 +68,6 @@ This will emit a compact Flattr button. Otherwise, everything is like
 `page.flattr_large_counter`.
 
 <div>
-  #{page.flattr_compact_counter}
+  \#{page.flattr_compact_counter}
 </div>
 
