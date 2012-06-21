@@ -8,13 +8,21 @@
       body {
         padding-top: 60px;
       }
+    %script{ :type=>'text/javascript', :src=>'http://code.jquery.com/jquery-1.7.2.min.js' }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
     /[if lt IE 9]
       %script{ :type=>'text/javascript', :src=>'http://html5shim.googlecode.com/svn/trunk/html5.js' }
+    :javascript
+      $.getJSON("https://rubygems.org/api/v1/versions/awestruct.json?callback=?", function(data) { alert( data.number ); });
   %body
     .navbar.navbar-fixed-top
       .navbar-inner
         .container
+          .github-banner
+            %a{:href=>"https://github.com/awestruct/awestruct"}
+              %img{:style=>"position: absolute; top: 0; right: 0; border: 0;z-index: 900;",
+                :src=>"https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png",
+                :alt=>"Fork me on GitHub"}
           %a.brand{ :href=>"#{site.base_url}" } {:awestruct}
           %ul.nav
             %li 
