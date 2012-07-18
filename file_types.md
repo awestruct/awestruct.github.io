@@ -9,10 +9,10 @@ layout: default
 
 ## Pages
 
-Page-based templates (Haml and Maruku) provide normal templating in either
+Page-based templates (Haml, ERB and Maruku) provide normal templating in either
 a powerful DOM-based method, or a cleaner, simpler markup method.
 
-Both types allow for *front-matter*, to set properties (or meta-data) on
+All types allow for *front-matter*, to set properties (or meta-data) on
 the page.  Properties set through the front-matter are sometimes used by the
 engine, are available within the page itself, and even usable within any
 layout triggered by the page.
