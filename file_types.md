@@ -44,6 +44,17 @@ To produce a file `index.html`, the Haml source file should be
 named `index.html.haml`.  This allows for non-HTML generation,
 such as for XML or other file types.
 
+### ERB (`.erb`)
+
+ERB files are interpreted anywhere within the site tree.
+
+ERB files should have double-extension, as the `.erb` extension
+will simple be removed by default.
+
+To produce a file `index.html`, the ERB source file should be
+named `index.html.erb`.  This allows for non-HTML generation,
+such as for XML or other file types.
+
 ### Markdown (`.md`)
 
 Markdown files are interpreted anywhere within the site tree.
