@@ -75,8 +75,6 @@
           .hero-unit
             %h2 
               {:awestruct}
-            %a{:href=>'http://travis-ci.org/awestruct/awestruct'}
-              %img{ :src => 'https://secure.travis-ci.org/awestruct/awestruct.png' }
             %h3
               Latest version is #{site.gem_version}
             %p 
@@ -85,6 +83,16 @@
               Have you been awestructed?
             %p
               %a.btn.btn-primary.btn-large{:href=>"#{site.base_url}/getting_started/"} Get Started!
+          .well
+            %h3 Build Status
+            %p
+              Travis-CI
+              %a{:href=>'http://travis-ci.org/awestruct/awestruct'} 
+                %img{ :src => 'https://secure.travis-ci.org/awestruct/awestruct.png' }
+            %p
+              CloudBees
+              %a{:href=>'https://buildhive.cloudbees.com/job/awestruct/job/awestruct/'} 
+                %img{ :src => 'https://buildhive.cloudbees.com/job/awestruct/job/awestruct/badge/icon' }
           #sidebar
             %ul.nav.nav-tabs.nav-stacked
               %li 
