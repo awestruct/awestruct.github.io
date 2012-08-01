@@ -1,0 +1,49 @@
+---
+layout: default
+title: home
+---
+.page-header
+  %h1 
+    { :awestruct } 
+    %small A static site-baking tool
+
+%p
+  Awestruct is a framework for creating static HTML sites, inspired by the
+  %a{ :href=>"http://github.com/mojombo/jekyll" } Jekyll 
+  utility in the same genre.
+
+%p
+  Awestruct makes it trivially easy to create non-trivial static websites using
+  tools like 
+  %a{:href=>"http://compass-style.org"} Compass,
+  %a{:href=>"http://daringfireball.net/projects/markdown/syntax"} Markdown,
+  and
+  %a{:href=>"http://haml-lang.com"} Haml,
+  as well as common frameworks like Twitter Bootstrap and Blueprint.
+
+%p
+  The core concept of Awestruct is that of structures, specifically Ruby
+  `OpenStruct` structures. The struct aspect allows arbitrary, schema-less data
+  to be associated with a specific page or the entire site.
+
+%p
+  Site-specific data is automatically loaded from simple YAML files, while data
+  can be provided on pages using a front-matter prolog.
+
+
+.row
+  .span4
+    .well
+      %h2 
+        Install
+        %small Version #{site.gem_version}
+
+      %pre
+        %code.bash
+          $ gem install awestruct
+  .span4
+    .well
+      %h2 Getting Started
+      %pre
+        %code.bash
+          $ awestruct -i -f bootstrap

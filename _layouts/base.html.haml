@@ -10,10 +10,15 @@
       }
     %script{ :type=>'text/javascript', :src=>'http://code.jquery.com/jquery-1.7.2.min.js' }
     %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
+    %link{ :rel=>"stylesheet", :href=>"http://yandex.st/highlightjs/7.0/styles/default.min.css" }
+    %script{ :src=>"http://yandex.st/highlightjs/7.0/highlight.min.js" }
+
     /[if lt IE 9]
       %script{ :type=>'text/javascript', :src=>'http://html5shim.googlecode.com/svn/trunk/html5.js' }
     :javascript
       $.getJSON("https://rubygems.org/api/v1/versions/awestruct.json?callback=?", function(data) { alert( data.number ); });
+      hljs.initHighlightingOnLoad();
+    
   %body
     .navbar.navbar-fixed-top
       .navbar-inner
@@ -71,20 +76,9 @@
                   %a{:href=>"#{site.base_url}/helpers/google_analytics/"} Google Analytics
     .container
       .row
-        .span4
-          .hero-unit
-            %h2 
-              {:awestruct}
-            %h3
-              Latest version is #{site.gem_version}
-            %p 
-              A static site-baking tool. 
-              %br
-              Have you been awestructed?
-            %p
-              %a.btn.btn-primary.btn-large{:href=>"#{site.base_url}/getting_started/"} Get Started!
+        .span3
           .well
-            %h3 Build Status
+            %h2 Build Status
             %p
               Travis-CI
               %a{:href=>'http://travis-ci.org/awestruct/awestruct'} 
@@ -107,7 +101,6 @@
                 %a{:href=>'http://talk-archive.awestruct.org/'} List Archives
               %li
                 %a{:href=>'http://twitter.com/awestructed'} Twitter
-
 
         .span8
           ~ content
