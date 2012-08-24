@@ -76,10 +76,25 @@ where the resulting site should be copied to using `rsync`.
 
 
 
-<span class="label label-info">Info</span>
+<span class="label label-info">Wait, what command are you actually using?</span>
 
 The `rsync` command executed looks like
 
     rsync -rv --delete _site/ \#{host}:\#{path}
+
+<span class="label label-info">Help! Awestruct keeps complaining that I have uncommitted changes when deploying</span>
+
+Awestruct deployments will fail if you have uncommitted changes in your git local history.
+While this is fine for most there are occasions when you may wish to deploy to a stagging site to
+inspect your changes without adding a commit. Simply add <code>uncommitted: true</code> to your deploy config
+
+    profiles:
+      staging:
+        base_url: http://staging.awestruct.org/
+        deploy:
+          host: awestruct.org
+          path: /var/www/domains/awestruct.org/staging/htdocs/
+          uncommitted: true
+
 
 
