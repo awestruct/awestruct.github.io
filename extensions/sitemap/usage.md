@@ -23,6 +23,18 @@ You may set this, and the `change_frequency` value in the front matter
 for each page or template. If set in the template, all pages rendered with
 that template will be affected. The default for `change_frequency` is `never`.
 
+As your site gets more complex you may want to exclude more content from your sitemap. By
+adding some configuration to the sitemap.yml you can exclude all files by extension or individual files by
+their full path in the generated site.
+
+    excluded_extensions: ['.pdf']
+    excluded_files: [ '/success_form.html', '/assets/hidden-file.csv' ]
+
+By default the following are excluded from the sitemap
+
+    excluded_files: [ '/.htaccess', '/favicon.ico' ,'/robots.txt', ]
+    excluded_extensions: ['.atom', '.scss', '.css', '.png', '.jpg', '.gif', '.js' ]
+
 ### Install
 
 To use the `Sitemap` extension, simply configure it into your `_ext/pipeline.rb`
