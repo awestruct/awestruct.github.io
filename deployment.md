@@ -7,9 +7,9 @@ layout: default
 <h1>Deploy</h1>
 </div>
 
-Awestruct makes deploying your site easy. There are two ways to deploy:
-to [GitHub Pages](http://pages.github.com), or to an arbitrary server
-using `rsync` and `ssh`.  You use [site profiles](/profiles/), to configure
+Awestruct makes deploying your site easy. There are three ways to deploy:
+to [GitHub Pages](http://pages.github.com), to an arbitrary server
+using `rsync` and `ssh`, or to [Amazon S3](http://aws.amazon.com/s3/).  You use [site profiles](/profiles/), to configure
 your deployment. Once you're configured, deploying is just a single command.
 
     $ awestruct -P production --deploy
@@ -42,6 +42,33 @@ to your deployment yaml.
         deploy: 
           host: github_pages 
           branch: master
+
+## Amazon S3
+
+If you host your site on Amazon S3, you can also deploy to different buckets for each of your profiles.
+
+<span class="label label-info">Configuration</span>
+
+Open `_config/site.yml` file and add a deployment profile. Set `type` to
+`s3` and set the `bucket` to the S3 bucket URL (that starts with `s3://`).
+
+    profiles:
+      development:
+      staging:
+        deploy:
+          type: s3
+          bucket: s3://staging.awestruct.org/
+      production:
+        deploy:
+          type: s3
+          bucket: s3://awestruct.org/
+
+<span class="label label-info">Info</span>
+
+The deployment to Amazon S3 is using the ruby-s3cmd gem and the executed command looks like
+
+    s3cmd sync _site/ \#{s3_bucket}
+
 
 ## Rsync and SSH
 
