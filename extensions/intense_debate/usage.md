@@ -12,7 +12,7 @@ with your account identifier.
       <th>Property</th>
       <th>Description</th>
     </tr>
-  </thread>
+  </thead>
   <tbody>
     <tr>
       <td>intense_debate_acct</td>

@@ -16,8 +16,8 @@ your deployment. Once you're configured, deploying is just a single command.
 
 ## GitHub Pages 
 
-To deploy your site to GitHub pages, you will need to be using [GitHub]
-(http://github.com) as a source repository for the site you want to pubish.
+To deploy your site to GitHub pages, you will need to be using [GitHub](http://github.com) 
+as a source repository for the site you want to pubish.
 
 <span class="label label-info">Configuration</span>
 

@@ -29,7 +29,7 @@ files in here.  Straight CSS will be copied verbatim to the output tree, while
 
 ## Special Files & Directories
 
-### _layouts/
+### `_layouts/`
 
 The `_layouts/` directory contains Haml templates to be used as layouts (or skins)
 for content pages.
@@ -43,7 +43,7 @@ extension), the file `_layouts/default.html.haml` will be used.
 Another page, named `news.xml.haml` specifying a layout of `default` (without extension)
 would be wrapped in the layout in `_layouts/default.xml.haml`.
 
-### _config/
+### `_config/`
   
 Directory containing site-specific state in the form
 of YAML files.
@@ -68,7 +68,7 @@ templates such as
       .author
         \#{author.name} can be reached via \#{author.email}
 
-### _config/site.yml
+### `_config/site.yml`
 
 Unlike all other YAML files, the contents of `site.yml` are
 added directly to the `site` object.  One property, `base_url` 
@@ -78,23 +78,23 @@ appropriate value.
 Additionally, [specific conditional profiles](/profiles/) may be defined
 to affect property values easily from the commandline.
 
-### _ext/
+### `_ext/`
 
 Directory containing site-specific Ruby extensions.  This
 directory is automatically added to the `$LOAD_PATH`.
 
-### _ext/pipeline.rb
+### `_ext/pipeline.rb`
   
 File defining the pre-render pipeline of extensions.  Extensions
 are executed, in order, and provided the `site` variable.
 
-### _site/
+### `_site/`
 
 The generated files are placed under the `_site/` directory.
 When you use `--server` mode, the server simply serves from
 this directory.
 
-### _tmp/
+### `_tmp/`
 
 A temporary directory is created for extensions to cache
 things, if necessary.  It's available as `site.tmp_dir`.

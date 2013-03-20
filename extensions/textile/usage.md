@@ -29,7 +29,7 @@ To define block tags, you simply add an Awestruct extension that overrides the R
       end
     end
 
-You need to require the file with this code in _ext/pipeline.rb.
+You need to require the file with this code in `_ext/pipeline.rb`.
 
 ### Filter inline markup
 
@@ -51,7 +51,7 @@ The functions must be included into the RedCloth class using an Awestruct Extens
       end
     end
 
-You can either set site.textile_rules inside the extension, or in _config/site.yml. Here's an example of using site.yml (where the methods are defined as strings):
+You can either set `site.textile_rules` inside the extension, or in `_config/site.yml`. Here's an example of using site.yml (where the methods are defined as strings):
 
     textile_rules = [emoticons]
 

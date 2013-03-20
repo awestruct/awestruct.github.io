@@ -27,8 +27,8 @@ with your account identifier.
 
 Property | Description |
 ---------|----------------------------------------------------------|
-google_analytics | The identifier for your Google Analytics site tracking 
-google_analytics_anonymize | if true, enforce anonymization of IPs (in async mode only)
+`google_analytics` | The identifier for your Google Analytics site tracking 
+`google_analytics_anonymize` | if true, enforce anonymization of IPs (in async mode only)
 
 ## Use the helper
 
