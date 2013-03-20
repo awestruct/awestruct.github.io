@@ -9,10 +9,10 @@ layout: default
 
 ## Pages
 
-Page-based templates (Haml and Maruku) provide normal templating in either
+Page-based templates (Haml, ERB and Maruku) provide normal templating in either
 a powerful DOM-based method, or a cleaner, simpler markup method.
 
-Both types allow for *front-matter*, to set properties (or meta-data) on
+All types allow for *front-matter*, to set properties (or meta-data) on
 the page.  Properties set through the front-matter are sometimes used by the
 engine, are available within the page itself, and even usable within any
 layout triggered by the page.
@@ -42,6 +42,17 @@ will simply be removed by default.
 
 To produce a file `index.html`, the Haml source file should be
 named `index.html.haml`.  This allows for non-HTML generation,
+such as for XML or other file types.
+
+### ERB (`.erb`)
+
+ERB files are interpreted anywhere within the site tree.
+
+ERB files should have double-extension, as the `.erb` extension
+will simple be removed by default.
+
+To produce a file `index.html`, the ERB source file should be
+named `index.html.erb`.  This allows for non-HTML generation,
 such as for XML or other file types.
 
 ### Markdown (`.md`)
