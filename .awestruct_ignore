@@ -1,3 +1,4 @@
 Rakefile
 Gemfile
 Gemfile.lock
+vendor
