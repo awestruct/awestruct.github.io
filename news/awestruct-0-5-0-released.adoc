@@ -1,0 +1,146 @@
+= Awestruct 0.5.0 Released
+Dan Allen
+2013-03-25
+:awestruct-layout: news
+:commits-by: https://github.com/awestruct/awestruct/commits?author=
+:migration-guide: https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0
+
+We're thrilled to announce the release of Awestruct 0.5.0!
+
+Awestruct 0.5.0 marks a significant evolution in the history of the project.
+The focus of this release has been on *ease of installation*, *compatibility* and *flexibility*.
+
+The major highlights of this release are:
+
+* Integration of https://github.com/rtomayko/tilt[Tilt] to handle rendering
+* Cut dependencies in half (from 22 down to 11)
+* Improved compatibility with JRuby
+* Tight AsciiDoc integration using http://asciidoctor.org[Asciidoctor]
+* An Amazon S3 deployer
+* Switched to Ruby's Logger class to output messages
+
+This release is an important step towards achieving Awestruct's primary goal: to make static websites trivially easy to create 'and publish'.
+We hope when you try it, you'll agree.
+
+Homepage:: http://awestruct.org
+Download:: http://rubygems.org/gems/awestruct
+
+== Setup and migration
+
+Awestruct is bundled as Ruby gem and published to http://rubygems.org/gems/awestruct[rubygems.org].
+You can install it using:
+
+ $ gem install awestruct
+
+If this is your first time using Awestruct, you can create a new website based on http://twitter.github.com/bootstrap[Bootstrap] by running the following command inside an empty directory:
+
+ $ awestruct -i -f bootstrap
+
+If you're already using Awestruct to bake your website, we *strongly* recommend that you follow the {migration-guide}[migration guide] to upgrade to this new version.
+
+== What's new?
+
+With this release, the version of Awestruct jumped from 0.4.8 to 0.5.0.
+The changes described below should help explain why we decided to skip a version.
+
+=== Tilt integration
+
+The most significant change in 0.5.0 is the integration of https://github.com/rtomayko/tilt[Tilt], a generic interface to numerous template engines in Ruby.
+Tilt is now used to render any file written in https://github.com/rtomayko/tilt#tilt--[any template language it supports].
+
+Here are some of the benefits of using Tilt:
+
+* As soon Tilt adds support for another template language, it's available for use with Awestruct
+* Tilt lets you to select between different engines for a given markup language (such as Markdown)
+* You can configure all the template engines from one place, +_config/site.yml+
+
+=== Less dependencies
+
+Not only did the switch to Tilt simplify the rendering code in Awestruct, it also cut down on the number of Awestruct's hard dependencies. 
+Tilt loads the libraries required to render a template language when they are needed.
+Therefore, if you don't have any Textile files in your project, you don't need RedCloth--the Textile implementation in Ruby--installed.
+
+Some of Awestruct's built-in extensions were requiring additional libraries.
+These extensions are now disabled if the library is not available.
+As a result, you may notice warnings when you start Awestruct, like:
+
+ WARNING: Missing required dependency to activate optional built in extension
+ coffeescripttransform.rb -> cannot load such file -- coffee-script
+
+However, the warning message is a better alternative than requiring you to install libraries you don't need :)
+
+*In all, the number of dependencies has been trimmed from 22 down to 11.*
+
+The tradeoff of trimming Awestruct's dependencies is that you need to explicitly install libraries required to use any template language or built-in Awestruct extension you want to use (and add them to your Gemfile, if you're using Bundler).
+
+See the {migration-guide}[migration guide] for a list of libraries you'll likely need to install.
+
+'...in case you were wondering, you *no longer* have to install therubyracer or v8 to use Awestruct.'
+
+=== Ruby compatibility
+
+Each change to Awestruct is now tested on the latest release of all major versions of Ruby (1.8.7, 1.9.3, 2.0.0 and JRuby 1.7.3).
+Awestruct is also battle tested across multiple platforms (Linux, Mac OSX and Windows).
+
+We're happy to say Awestruct has finally reached stability when running across all platforms.
+If issues still remain, we're eager to hear about them and get them resolved.
+
+=== AsciiDoc integration
+
+With AsciiDoc, we're exploring a deeper integration between Awestruct and the content pages, specifically a bidirectional exchange of data.
+
+Instead of adding the typical Awestruct front matter to the top of the document, you can define the front matter using attributes in the AsciiDoc header.
+Awestruct will also map the AsciiDoc title, author and date to the matching front matter attributes.
+You can also refer to Awestruct page variables using AsciiDoc attribute references.
+
+The source of this blog entry serves as an example of this integration:
+
+----
+= Awestruct 0.5.0 released
+Dan Allen
+2013-03-25
+:awestruct-layout: news
+
+We're thrilled to announce the release of Awestruct 0.5.0!
+----
+
+In other words, an AsciiDoc document can be used in an Awestruct site without any modifications (except for the addition of the +:awestruct-layout:+ attribute).
+
+=== Amazon S3 deployer
+
+In addition to the rsync and GitHub Pages deployers, Awestruct can now deploy a site to Amazon S3.
+For instructions on how to set it up, see the http://awestruct.org/deployment[site deployment] page on the Awestruct website.
+
+=== Bootstrap upgrade
+
+Many of you who use Awestruct have probably taken advantage of the Bootstrap integration via https://github.com/thomas-mcdonald/bootstrap-sass[bootstrap-sass].
+If you have, note that Awestruct has upgraded to Bootstrap 2.3.0, the latest version of Bootstrap that bootstrap-sass supports at the time of this release.
+Since Awestruct has a transitive dependency on this library, it gets upgraded when you upgrade Awestruct.
+
+If you want to keep using an older version of Bootstrap, just declare the version explicitly in your Gemfile.
+
+That about wraps it up.
+For more details about what's in this release, see the {migration-guide}[migration guide] or just http://awestruct.org/getting_started[try it for yourself].
+
+== Thanks!
+
+Many people rallied together to make this release easier to install, more compatible and more flexible.
+Without their help, Awestruct wouldn't be where it is today.
+Give a shout out on Twitter to the following contributors to let them know how much they mean to this growing community:
+
+{commits-by}LightGuard[Jason Porter] -
+{commits-by}aslakknutsen[Aslak Knutsen] -
+{commits-by}mojavelinux[Dan Allen] -
+{commits-by}codylerum[Cody Lerum] -
+{commits-by}lance[Lance Ball] -
+{commits-by}ge0ffrey[Geoffrey De Smet] -
+{commits-by}xcoulon[Xavier Coulon] -
+{commits-by}jmesnil[Jeff Mesnil] -
+{commits-by}bleathem[Brian Leathem] -
+{commits-by}tcurdt[Torsten Curdt] -
+https://github.com/graphitefriction/graphitefriction.github.com[Sarah White]
+
+Also, thanks to https://github.com/awestruct/awestruct/contributors[everyone who has contributed to Awestruct] and those of you who use it, help others to use it and/or evangelize the technology.
+We're honored to have you as part of the community!
+
+Now go create awesome sites!
