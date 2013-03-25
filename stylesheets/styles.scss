@@ -1,4 +1,13 @@
+$navbarBrandColor: #ddd;
+$navbarLinkColor: #999;
+$navbarLinkColorHover: #fff;
+$navbarLinkColorActive: #fff;
+$navbarBackgroundHighlight: rgba(0, 0, 0, .25);
 @import "bootstrap";
+
+h1 small, h2 small, h3 small, h4 small, h5 small {
+  white-space: nowrap;
+}
 
 code {
   padding: 2px;
@@ -105,4 +114,4 @@ h2 {
   border-bottom: 1px dashed #ddd;
 }
 
-
+@import "bootstrap-responsive";
