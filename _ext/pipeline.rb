@@ -12,5 +12,5 @@ Awestruct::Extensions::Pipeline.new do
   extension Awestruct::Extensions::Paginator.new( :posts, 
                                                   '/news/index', 
                                                   :per_page=>3 )
+  transformer Awestruct::Extensions::Minify.new
 end
-

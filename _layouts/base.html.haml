@@ -9,9 +9,9 @@
       body {
         padding-top: 60px;
       }
-    %script{ :src=>'http://yandex.st/jquery/1.7.2/jquery.min.js' }
+    %script{ :src=>'http://yandex.st/jquery/1.9.1/jquery.min.js' }
     %link{ :rel=>'stylesheet', :href=>"#{site.base_url}/stylesheets/styles.css" }
-    %link{ :rel=>"stylesheet", :href=>'http://yandex.st/highlightjs/7.3/styles/default.min.css' }
+    %link{ :rel=>'stylesheet', :href=>'http://yandex.st/highlightjs/7.3/styles/default.min.css' }
 
     /[if lt IE 9]
       %script{ :type=>'text/javascript', :src=>'http://html5shim.googlecode.com/svn/trunk/html5.js' }
@@ -23,10 +23,10 @@
       .navbar-inner
         .container
           .github-banner
-            %a{:href=>"https://github.com/awestruct/awestruct"}
-              %img{:style=>"position: absolute; top: 0; right: 0; border: 0;z-index: 900;",
-                :src=>"https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png",
-                :alt=>"Fork me on GitHub"}
+            %a{:href=>'https://github.com/awestruct/awestruct'}
+              %img{:style=>'position: absolute; top: 0; right: 0; border: 0;z-index: 900;',
+                :src=>'https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png',
+                :alt=>'Fork me on GitHub'}
           %a.brand{ :href=>"#{site.base_url}" } {:awestruct}
           %ul.nav
             %li 
@@ -103,10 +103,10 @@
         %hr
         %footer
           %p &copy; Bob McWhirter #{Date.today.year}
-    %script{ :src=>"#{site.base_url}/javascript/bootstrap-dropdown.js" }
+    %script{ :src=>"#{site.base_url}/javascript/bootstrap-2.3.1.js" }
     -#%script{ :src=>"http://yandex.st/highlightjs/7.3/highlight.min.js" }
-    -# custom build from highlight.js source using: python3 tools/build.py -t browser haml markdown scss
-    %script{ :src=>"#{site.base_url}/javascript/highlight.js.min" }
+    -# custom build from highlight.js source using: python3 tools/build.py -t browser -n haml markdown scss
+    -# needed to escape to instances of #{ in source so interpolator doesn't choke
+    %script{ :src=>"#{site.base_url}/javascript/highlight-20130326.js" }
     %script
-      -#$.each(['css', 'cpp', 'cs', 'php', 'sql', 'javascript'], function(idx, val) { delete hljs.LANGUAGES[val] });
       hljs.initHighlightingOnLoad();
