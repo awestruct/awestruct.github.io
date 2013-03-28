@@ -123,20 +123,20 @@ _It's not required to use Awestruct_, though it does save you time (hopefully).
 
 Now, instead of typing:
 
- awestruct -d
+ $ awestruct -d
 
 you just type:
 
- rake
+ $ rake
 
 While that may only save a few characters, know that it also auto-detects a Bundler environment and does the right thing.
 That means if you're using Bundler, instead of typing:
 
- bundle exec awestruct -d
+ $ bundle exec awestruct -d
 
 you just type:
 
- rake
+ $ rake
 
 See, isn't that nicer?
 
