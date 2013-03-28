@@ -53,10 +53,11 @@ layout: default
 %h3 Generic Installation
 
 %pre
-  :preserve
-    Awestruct::Extensions::Pipeline.new do
-      extension #{page.classname}.new(#{(page.params||[]).join( ', ' ) })
-    end
+  %code.ruby
+    :preserve
+      Awestruct::Extensions::Pipeline.new do
+        extension #{page.classname}.new(#{(page.params||[]).join( ', ' ) })
+      end
 
 = page.example
   

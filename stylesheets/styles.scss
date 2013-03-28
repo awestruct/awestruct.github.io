@@ -1,3 +1,6 @@
+$baseFontSize: 16px;
+$baseLineHeight: 24px;
+$monoFontFamily: Consolas, "Liberation Mono", Courier, monospace;
 $navbarBrandColor: #ddd;
 $navbarLinkColor: #999;
 $navbarLinkColorHover: #fff;
@@ -9,10 +12,21 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
   white-space: nowrap;
 }
 
-code {
-  padding: 2px;
-  background-color: #f6f6f6;
+*:not(pre) > code {
+  color: #7F0A0C;
+  font-weight: bold;
+  font-size: $baseFontSize;
+  padding: 0;
+  background: none;
   border: none;
+}
+
+pre {
+  padding: 1px;
+  background-color: #fefefe;
+  & > code[class] {
+    background-color: #f8f8f8;
+  }
 }
 
 table {
@@ -21,17 +35,12 @@ table {
   th, td { 
     padding: 8px 20px 4px 4px; 
     border-bottom: 1px solid #eee;
-    code {
-      background-color: #FFF;
-      border: none;
-      padding: 2px;
-    }
   }
   th {
     text-align: left;
   }
   td {
-    font-size: 12px;
+    font-size: $baseFontSize - 2;
   }
 }
 
@@ -44,14 +53,14 @@ h2 {
   margin: 14px;
   h3 {
     font-size: 16px;
-    border-bottom: 1px solid #eee;;
+    border-bottom: 1px solid #eee;
   }
   table {
     td { 
-      font-size: 11px; 
+      font-size: $baseFontSize - 2;
     }
     th {
-      font-size: 12px;
+      font-size: $baseFontSize - 2;
       border-right: 1px solid #eee;
     }
   }
@@ -74,6 +83,10 @@ h2 {
   .brand {
     font-weight: 500;
     font-size: 24px;
+  }
+
+  .nav .dropdown-toggle .caret {
+    vertical-align: text-top;
   }
 }
 

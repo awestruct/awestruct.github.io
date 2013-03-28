@@ -9,16 +9,14 @@
       body {
         padding-top: 60px;
       }
-    %script{ :type=>'text/javascript', :src=>'http://code.jquery.com/jquery-1.7.2.min.js' }
-    %link{ :rel=>'stylesheet', :type=>'text/css', :href=>"#{site.base_url}/stylesheets/styles.css" }
-    %link{ :rel=>"stylesheet", :href=>"http://yandex.st/highlightjs/7.0/styles/default.min.css" }
-    %script{ :src=>"http://yandex.st/highlightjs/7.0/highlight.min.js" }
+    %script{ :src=>'http://yandex.st/jquery/1.7.2/jquery.min.js' }
+    %link{ :rel=>'stylesheet', :href=>"#{site.base_url}/stylesheets/styles.css" }
+    %link{ :rel=>"stylesheet", :href=>'http://yandex.st/highlightjs/7.3/styles/default.min.css' }
 
     /[if lt IE 9]
       %script{ :type=>'text/javascript', :src=>'http://html5shim.googlecode.com/svn/trunk/html5.js' }
-    :javascript
-      $.getJSON("https://rubygems.org/api/v1/versions/awestruct.json?callback=?", function(data) { alert( data.number ); });
-      hljs.initHighlightingOnLoad();
+    -#:javascript
+    -#  $.getJSON("https://rubygems.org/api/v1/versions/awestruct.json?callback=?", function(data) { alert( data.number ); });
     
   %body
     .navbar.navbar-fixed-top
@@ -105,5 +103,10 @@
         %hr
         %footer
           %p &copy; Bob McWhirter #{Date.today.year}
-          %script{ :type=>'text/javascript', :src=>'http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js' }
-          %script{ :type=>'text/javascript', :src=>"#{site.base_url}/javascript/bootstrap-dropdown.js" }
+    %script{ :src=>"#{site.base_url}/javascript/bootstrap-dropdown.js" }
+    -#%script{ :src=>"http://yandex.st/highlightjs/7.3/highlight.min.js" }
+    -# custom build from highlight.js source using: python3 tools/build.py -t browser haml markdown scss
+    %script{ :src=>"#{site.base_url}/javascript/highlight.js.min" }
+    %script
+      -#$.each(['css', 'cpp', 'cs', 'php', 'sql', 'javascript'], function(idx, val) { delete hljs.LANGUAGES[val] });
+      hljs.initHighlightingOnLoad();
