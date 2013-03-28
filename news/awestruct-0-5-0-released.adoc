@@ -36,6 +36,10 @@ If this is your first time using Awestruct, you can create a new website based o
 
  $ awestruct -i -f bootstrap
 
+The setup command now adds a rake build file, +Rakefile+, to the project.
+It's optional, but it does make running Awestruct a little bit easier and gets your contributors setup quicker.
+More on that in a bit.
+
 If you're already using Awestruct to bake your website, we *strongly* recommend that you follow the {migration-guide}[migration guide] to upgrade to this new version.
 
 == What's new?
@@ -75,7 +79,7 @@ The tradeoff of trimming Awestruct's dependencies is that you need to explicitly
 
 See the {migration-guide}[migration guide] for a list of libraries you'll likely need to install.
 
-'...in case you were wondering, you *no longer* have to install therubyracer or v8 to use Awestruct.'
+'...in case you were wondering, you *no longer* have to install less, therubyracer or v8 to use Awestruct ;)'
 
 === Ruby compatibility
 
@@ -110,6 +114,37 @@ In other words, an AsciiDoc document can be used in an Awestruct site without an
 
 In addition to the rsync and GitHub Pages deployers, Awestruct can now deploy a site to Amazon S3.
 For instructions on how to set it up, see the http://awestruct.org/deployment[site deployment] page on the Awestruct website.
+
+=== Rakefile
+
+Awestruct now adds a http://rake.rubyforge.org[Rake] build file, +Rakefile+, to new sites by default.
+The purpose of this build file is to simplify setting up and using Awestruct across the numerous Ruby platforms.
+_It's not required to use Awestruct_, though it does save you time (hopefully).
+
+Now, instead of typing:
+
+ awestruct -d
+
+you just type:
+
+ rake
+
+While that may only save a few characters, know that it also auto-detects a Bundler environment and does the right thing.
+That means if you're using Bundler, instead of typing:
+
+ bundle exec awestruct -d
+
+you just type:
+
+ rake
+
+See, isn't that nicer?
+
+It also tells you what commands to type to setup an Awestruct environment (as contributors might need to do).
+
+For more details, read the comments at the top of the https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile[Rakefile].
+
+If you don't want to use rake, just ignore or delete the file.
 
 === Bootstrap upgrade
 
