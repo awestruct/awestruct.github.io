@@ -75,7 +75,7 @@ However, the warning message is a better alternative than requiring you to insta
 
 *In all, the number of dependencies has been trimmed from 22 down to 11.*
 
-The tradeoff of trimming Awestruct's dependencies is that you need to explicitly install libraries required to use any template language or built-in Awestruct extension you want to use (and add them to your Gemfile, if you're using Bundler).
+The trade-off of trimming Awestruct's dependencies is that you need to explicitly install libraries required to use any template language or built-in Awestruct extension you want to use (and add them to your Gemfile, if you're using Bundler).
 
 See the {migration-guide}[migration guide] for a list of libraries you'll likely need to install.
 
