@@ -15,3 +15,6 @@ gem 'rake', '~> 10.0.0'
 # required if you want to use the minify extension
 gem 'htmlcompressor', '~> 0.0.5'
 gem 'uglifier', '~> 1.3.0'
+gem 'therubyracer', '~> 0.11.4', :platforms => [:ruby]
+gem 'therubyrhino', '~> 2.0.2', :platforms => [:jruby]
+# set EXECJS_RUNTIME=SpiderMonkey as alternative to theruby(racer|rhino)
