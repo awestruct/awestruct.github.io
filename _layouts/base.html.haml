@@ -52,6 +52,8 @@
                   %a{:href=>"#{site.base_url}/template_context/"} Template Context
                 %li 
                   %a{:href=>"#{site.base_url}/deployment/"} Site Deployment
+                %li 
+                  %a{:href=>"#{site.base_url}/auto-deploy-to-github-pages/"} Auto Deploy to GitHub Pages
             %li#extensions-menu.dropdown
               %a.dropdown-toggle{"data-toggle"=>"dropdown", :href=>'#extensions-menu'} 
                 Extensions
@@ -98,6 +100,9 @@
                 %a{:href=>'http://twitter.com/awestructed'} Twitter
 
         .span8
+          - if page.show_header
+            .page-header
+              %h1= page.title
           ~ content
       .row
         %hr
@@ -110,3 +115,4 @@
     %script{ :src=>"#{site.base_url}/javascript/highlight-20130326.js" }
     %script
       hljs.initHighlightingOnLoad();
+      $('.admonitionblock .title').each(function(idx) { $(this).addClass($(this).text().toLowerCase()) });

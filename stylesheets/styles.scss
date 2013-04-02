@@ -12,6 +12,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
   white-space: nowrap;
 }
 
+tt,
 *:not(pre) > code {
   color: #7F0A0C;
   font-weight: bold;
@@ -21,7 +22,8 @@ h1 small, h2 small, h3 small, h4 small, h5 small {
   border: none;
 }
 
-pre {
+pre,
+.listingblock pre.highlight {
   padding: 1px;
   background-color: #fefefe;
   & > code[class] {
@@ -29,7 +31,63 @@ pre {
   }
 }
 
+.literalblock pre,
+.listingblock pre {
+  padding: .5em;
+  background-color: #f8f8f8;
+}
+
+.listingblock .title {
+  @extend .label;
+  @extend .label-info;
+}
+
+.admonitionblock {
+  table td {
+    border: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  table td.icon {
+    width: 1%;
+    border-right: 1px solid #ddd;
+  }
+
+  table td.content {
+    width: 99%;
+    padding-left: 20px;
+  }
+
+  .title {
+    text-transform: uppercase;
+    @extend .label;
+    padding: 4px 6px;
+  }
+
+  .title.caution {
+    @extend .label-caution;
+  }
+
+  .title.note {
+    @extend .label-info;
+  }
+
+  .title.important {
+    @extend .label-important;
+  }
+
+  .title.tip {
+    @extend .label-success;
+  }
+}
+
 table {
+  & > caption {
+    text-align: left;
+    font-weight: bold;
+    color: #aaa;
+  }
   width: 100%;
   margin-bottom: 18px;
   th, td { 
