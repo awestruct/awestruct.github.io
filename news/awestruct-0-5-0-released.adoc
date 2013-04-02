@@ -13,9 +13,9 @@ The focus of this release has been on *ease of installation*, *compatibility* an
 The major highlights of this release are:
 
 * Integration of https://github.com/rtomayko/tilt[Tilt] to handle rendering
-* Cut dependencies in half (from 22 down to 11)
+* Dependencies cut in half (from 22 down to 11)
 * Improved compatibility with JRuby
-* Tight AsciiDoc integration using http://asciidoctor.org[Asciidoctor]
+* Tight AsciiDoc integration powered by http://asciidoctor.org[Asciidoctor]
 * An Amazon S3 deployer
 * Switched to Ruby's Logger class to output messages
 
@@ -27,18 +27,22 @@ Download:: http://rubygems.org/gems/awestruct
 
 == Setup and migration
 
-Awestruct is bundled as Ruby gem and published to http://rubygems.org/gems/awestruct[rubygems.org].
+Awestruct is bundled as a Ruby gem and published to http://rubygems.org/gems/awestruct[rubygems.org].
 You can install it using:
 
  $ gem install awestruct
 
-If this is your first time using Awestruct, you can create a new website based on http://twitter.github.com/bootstrap[Bootstrap] by running the following command inside an empty directory:
+If this is your first time using Awestruct, you can create a new website based on http://twitter.github.com/bootstrap[Bootstrap] by running the following command inside a _new_ directory:
 
  $ awestruct -i -f bootstrap
 
-The setup command now adds a rake build file, +Rakefile+, to the project.
-It's optional, but it does make running Awestruct a little bit easier and gets your contributors setup quicker.
-More on that in a bit.
+New in 0.5.0, the setup command adds a rake build file, +Rakefile+, to the project.
+
+WARNING: The Rakefile didn’t get bundled in the 0.5.0 gem.
+Therefore, this feature won't be available until 0.5.1 is released.
+Until then, you can retrieve the https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile[Rakefile] from the git repository.
+
+Using rake is optional, but it does make running Awestruct a little bit easier and helps gets your contributors setup quicker.
 
 If you're already using Awestruct to bake your website, we *strongly* recommend that you follow the {migration-guide}[migration guide] to upgrade to this new version.
 
@@ -50,7 +54,7 @@ The changes described below should help explain why we decided to skip a version
 === Tilt integration
 
 The most significant change in 0.5.0 is the integration of https://github.com/rtomayko/tilt[Tilt], a generic interface to numerous template engines in Ruby.
-Tilt is now used to render any file written in https://github.com/rtomayko/tilt#tilt--[any template language it supports].
+Tilt is used to render any file written in https://github.com/rtomayko/tilt#tilt--[a template language supported by Tilt].
 
 Here are some of the benefits of using Tilt:
 
@@ -60,24 +64,24 @@ Here are some of the benefits of using Tilt:
 
 === Less dependencies
 
-Not only did the switch to Tilt simplify the rendering code in Awestruct, it also cut down on the number of Awestruct's hard dependencies. 
-Tilt loads the libraries required to render a template language when they are needed.
-Therefore, if you don't have any Textile files in your project, you don't need RedCloth--the Textile implementation in Ruby--installed.
+Not only did the switch to Tilt simplify the rendering code in Awestruct, it also cut down the number of Awestruct's required dependencies. 
+Tilt loads the libraries necessary to render a template language when they are needed.
+For instance, if you don't have any Textile files in your project, you don't need RedCloth--the Textile implementation in Ruby--installed.
 
-Some of Awestruct's built-in extensions were requiring additional libraries.
+Some of Awestruct's built-in extensions were requiring users to install extra libraries.
 These extensions are now disabled if the library is not available.
-As a result, you may notice warnings when you start Awestruct, like:
+As a result of this change, you may notice warnings when you start Awestruct such as:
 
  WARNING: Missing required dependency to activate optional built in extension
  coffeescripttransform.rb -> cannot load such file -- coffee-script
 
-However, the warning message is a better alternative than requiring you to install libraries you don't need :)
+However, the warning message is a better alternative than making you install libraries you don't need :)
 
 *In all, the number of dependencies has been trimmed from 22 down to 11.*
 
-The trade-off of trimming Awestruct's dependencies is that you need to explicitly install libraries required to use any template language or built-in Awestruct extension you want to use (and add them to your Gemfile, if you're using Bundler).
+The trade-off of trimming Awestruct's dependencies is that you need to explicitly install libraries for each of the template languages or built-in Awestruct extensions you want to use (and add them to your Gemfile, if you're using Bundler).
 
-See the {migration-guide}[migration guide] for a list of libraries you'll likely need to install.
+See the {migration-guide}[migration guide] for a list of libraries you'll need to install.
 
 '...in case you were wondering, you *no longer* have to install less, therubyracer or v8 to use Awestruct ;)'
 
@@ -118,6 +122,11 @@ For instructions on how to set it up, see the http://awestruct.org/deployment[si
 === Rakefile
 
 Awestruct now adds a http://rake.rubyforge.org[Rake] build file, +Rakefile+, to new sites by default.
+
+WARNING: The Rakefile didn’t get bundled in the 0.5.0 gem.
+Therefore, this feature won’t be available until 0.5.1 is released.
+Until then, you can retrieve the https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile[Rakefile] from the git repository.
+
 The purpose of this build file is to simplify setting up and using Awestruct across the numerous Ruby platforms.
 _It's not required to use Awestruct_, though it does save you time (hopefully).
 
@@ -148,9 +157,9 @@ If you don't want to use rake, just ignore or delete the file.
 
 === Bootstrap upgrade
 
-Many of you who use Awestruct have probably taken advantage of the Bootstrap integration via https://github.com/thomas-mcdonald/bootstrap-sass[bootstrap-sass].
-If you have, note that Awestruct has upgraded to Bootstrap 2.3.0, the latest version of Bootstrap that bootstrap-sass supports at the time of this release.
-Since Awestruct has a transitive dependency on this library, it gets upgraded when you upgrade Awestruct.
+Many of you who use Awestruct are probably taking advantage of the Bootstrap integration provided by https://github.com/thomas-mcdonald/bootstrap-sass[bootstrap-sass].
+If you have, note that Awestruct has upgraded to Bootstrap 2.3.1, the latest version of Bootstrap that bootstrap-sass supports at the time of this release.
+Since Awestruct has a transitive dependency on this library, it will be upgraded when you upgrade Awestruct.
 
 If you want to keep using an older version of Bootstrap, just declare the version explicitly in your Gemfile.
 
