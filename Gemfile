@@ -17,4 +17,8 @@ gem 'htmlcompressor', '~> 0.0.5'
 gem 'uglifier', '~> 1.3.0'
 gem 'therubyracer', '~> 0.11.4', :platforms => [:ruby]
 gem 'therubyrhino', '~> 2.0.2', :platforms => [:jruby]
+
+# Required by cloudbees
+gem 'rdoc', '~> 4.0.1'
+
 # set EXECJS_RUNTIME=SpiderMonkey as alternative to theruby(racer|rhino)
