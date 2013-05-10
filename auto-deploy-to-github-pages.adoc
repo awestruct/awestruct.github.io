@@ -101,7 +101,7 @@ Now let's create the branch for the published files.
 GitHub Pages monitors the publish branch of your website repository and synchronizes the files in that branch to a web server whenever new commits appear.
 
 In most cases, the name of this branch is *gh-pages*.
-For legacy reasons, if the name of the repository follows the pattern <username>.github.com, then the name of the publish branch is *master*.
+For legacy reasons, if the name of the repository follows the pattern <username>.github.io, then the name of the publish branch is *master*.
 Thus, the pattern is:
 
 .Name of publish branch
