@@ -65,8 +65,9 @@ pre,
     padding: 4px 6px;
   }
 
+  .title.warning,
   .title.caution {
-    @extend .label-caution;
+    @extend .label-warning;
   }
 
   .title.note {
