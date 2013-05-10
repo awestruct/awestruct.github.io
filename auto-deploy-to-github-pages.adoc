@@ -470,8 +470,7 @@ That means you can create and publish blog entries directly from the GitHub webs
 
 == Gotchas
 
-* only adds files to deployment, does not compute removed files
-* GitHub pages puts a 24hr cache header on files, so you may have to force refresh to see recent changes (or close and reopen browser)
+* The GitHub Pages deployer in Awestruct only adds files to deployment, does not compute removed files
 
 == Summary
 
