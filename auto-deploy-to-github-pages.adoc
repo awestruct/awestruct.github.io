@@ -1,4 +1,4 @@
-= Automatic deployment to GitHub Pages
+= Automated deployment to GitHub Pages
 Dan Allen
 :awestruct-layout: default
 :awestruct-show_header: true
@@ -352,8 +352,8 @@ require 'rubygems'
 desc 'Generate site from Travis CI and publish site to GitHub Pages'
 task :travis do
   # if this is a pull request, do a simple build of the site and stop
-  case ENV['TRAVIS_PULL_REQUEST']
-  when '1', 'true'
+  if ENV['TRAVIS_PULL_REQUEST'].to_s.to_i > 0
+    puts 'Pull request detected. Executing build only.'
     system 'bundle exec awestruct -P production -g'
     next
   end
