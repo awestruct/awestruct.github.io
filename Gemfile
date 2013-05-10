@@ -7,7 +7,8 @@ gem 'rdiscount', '~> 2.0.7', :platforms => [:ruby]
 gem 'kramdown', '~> 1.0.1', :platforms => [:jruby]
 # add maruku gem for JRuby if using Haml < 4.0.0
 #gem 'maruku', '~> 0.6.1', :platforms => [:jruby]
-gem 'asciidoctor', '~> 0.1.1'
+gem 'asciidoctor', '~> 0.1.2'
+gem 'erubis', '~> 2.7.0'
 gem 'rb-inotify', '~> 0.9.0', :platforms => [:ruby, :jruby]
 gem 'yard', '~> 0.7.5'
 gem 'rake', '~> 10.0.0'
