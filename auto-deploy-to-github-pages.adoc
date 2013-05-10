@@ -108,7 +108,7 @@ Thus, the pattern is:
 [options="header"]
 |===
 |Repository name        |Branch name
-|<username>.github.com  |master
+|<username>.github.io   |master
 |any other name         |gh-pages
 |===
 
@@ -189,7 +189,7 @@ Also push the *gh-pages* branch:
 
 By pushing the *gh-pages* branch, you also activated GitHub Pages to publish your website. Check it out!
 
- http://<username>.github.com/demosite
+ http://<username>.github.io/demosite
 
 You should see the contents of the index page that you created when you setup the *gh-pages* branch.
 
@@ -214,12 +214,12 @@ Next, add the following content to the bottom of the +_config/site.yml+ file:
 ----
 profiles:
   production:
-    base_url: http://<username>.github.com/demosite
+    base_url: http://<username>.github.io/demosite
     deploy:
       host: github_pages
-      # use gh-branch for repositories other than <username>.github.com
+      # use gh-branch for repositories other than <username>.github.io
       branch: gh-pages
-      # use master branch for <username>.github.com repository
+      # use master branch for <username>.github.io repository
       #branch: master
 ----
 
@@ -237,7 +237,7 @@ Now you can tell Awestruct to build 'and publish' your site:
 
 Once that command completes successfully, check out your site again.
 
- http://<username>.github.com/demosite
+ http://<username>.github.io/demosite
 
 Your Awestruct-based website is now live, and available worldwide!
 
