@@ -1,4 +1,4 @@
-= Awestruct 0.5.0 Released
+= Awestruct 0.5.1 Released
 Jason Porter
 2013-05-13
 :awestruct-layout: news
