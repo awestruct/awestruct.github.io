@@ -1,0 +1,39 @@
+= Awestruct 0.5.0 Released
+Jason Porter
+2013-05-13
+:awestruct-layout: news
+
+Hot off the press is another version of Awestruct: 0.5.1! 
+
+This was mainly a bug fix. You can see the full log at https://github.com/awestruct/awestruct/issues?milestone=7&page=1&state=closed.
+For those interested in the actual commit history, it can be found at https://github.com/awestruct/awestruct/compare/0.5.0...0.5.1.
+The main fixes (and one enhancement) are detailed below:
+
+* Deploy task in the Rakefile is fixed
+* Layout in the Posts extension is now `post`
+* Support for Zurb Foundation (http://foundation.zurb.com)
+
+Homepage:: http://awestruct.org
+Download:: http://rubygems.org/gems/awestruct
+
+== Foundation Support
+
+Foundation is another CSS framework similar to 960, blueprint, or Twitter Bootstrap.
+It be use at the start of project creation:
+
+ $ awestruct -i -f foundation
+
+== Automated Build and Deploy
+
+I'd like to highlight a new documentation section that was added between the 0.5.0 and this release: http://awestruct.org/auto-deploy-to-github-pages/[Automated deployment to GitHub Pages] by Dan Allen.
+This documents how to easily get a site up and running and published on GitHub pages, but it doesn't stop there!
+Dan demonstrates how to use https://travis-ci.org/[Travis] to do automatic site deployment on git commit! 
+It's never been easier to publish an Awestruct site.
+
+== Thanks!
+
+Thanks to https://github.com/awestruct/awestruct/contributors[everyone who has contributed to Awestruct] and those of you who use it, help others to use it and/or evangelize the technology.
+We're honored to have you as part of the community!
+
+Now go create awesome sites!
+
