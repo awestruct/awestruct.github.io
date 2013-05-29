@@ -54,6 +54,6 @@ To create a "latest news" type of page, you could have a template such as
         %h2 
           = post.date.strftime( '%d %B %Y' )
         .content
-          = post.content
+          ~ post.content
 
 
