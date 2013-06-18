@@ -6,6 +6,7 @@ asciidoctor:
   :attributes:
     idprefix: ''
     idseparator: '-'
+    imagesdir: ../images
 
 profiles:
   development:
