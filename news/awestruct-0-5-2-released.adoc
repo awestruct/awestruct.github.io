@@ -1,0 +1,36 @@
+= Awestruct 0.5.2 Released
+Jason Porter
+2013-06-19
+:awestruct-layout: news
+:milestone-url: https://github.com/awestruct/awestruct/issues?milestone=8&page=1&state=closed
+:commit-history-url: https://github.com/awestruct/awestruct/compare/0.5.1...0.5.2
+
+We're on a roll with Awestruct: 0.5.2! 
+
+This was mainly a bug fix release again, however, we did slip in a few small improvements. 
+You can see the full log at {milestone-url}[Milestone 0.5.2].
+For those interested in the actual commit history, it can be found at {commit-history-url}[GitHub].
+Here are the list of bug fixes:
+
+* Fixing the missing bootstrap-affix.js file, done by upgrading the bootstrap-sass version
+* git is no longer required for deployment unless it's checking for uncommitted changes
+* Version range of dependencies is better. We many have swung too far on this, let us know.
+* asciidoctor tests have been fixed
+* Returning 404 pages if the requested index page cannot be found
+
+The smaller list of improvements:
+
+* Adding a default Gemfile on init
+* You can exclude paths from the `Indexifier` extension based on a regexp
+* minification is less chatty
+
+Homepage:: http://awestruct.org
+Download:: http://rubygems.org/gems/awestruct
+
+== Thanks!
+
+Thanks to https://github.com/awestruct/awestruct/contributors[everyone who has contributed to Awestruct] and those of you who use it, help others to use it and/or evangelize the technology.
+We're honored to have you as part of the community!
+
+Now go create awesome sites!
+
