@@ -71,6 +71,18 @@ gem 'rake', '>= 0.9.2'                                    # Needed for the Rakef
 
 You can uncomment the dependencies you need for your site, or add others as needed.
 
+[IMPORTANT]
+--
+You *MUST* add ++require __gem name__++ at the top of your _ext/pipeline.rb for any CSS or JS gems you use.
+It is strongly recommended you add markup gems as well, but it is not required.
+For example, if you're using Foundation the beginning of your _ext/pipeline.rb should look like:
+
+._ext/pipeline.rb
+----
+require 'zurb-foundation'
+----
+--
+
 == Using rake
 
 The final step in using *Awestruct* is to familiarize yourself with the http://rake.rubyforge.org/[Rake] tasks.
