@@ -22,6 +22,10 @@ GEM
     bootstrap-sass (2.3.1.0)
       sass (~> 3.2)
     chunky_png (1.2.7)
+    coffee-script (2.2.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.6.2)
     compass (0.12.2)
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
@@ -74,6 +78,7 @@ PLATFORMS
 DEPENDENCIES
   asciidoctor (~> 0.1.2)
   awestruct (= 0.5.0)
+  coffee-script (~> 2.2)
   erubis (~> 2.7.0)
   haml (~> 4.0.0)
   htmlcompressor (~> 0.0.5)
