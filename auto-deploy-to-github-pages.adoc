@@ -13,7 +13,7 @@ In this guide, you'll learn:
 * How to activate Travis CI on your repository
 * How to configure Travis CI to publish your website automatically
 
-After reading this guide, you'll be able to make a change to your website source, commit it and push it to your GitHub repository.
+After reading this guide, you'll be able to make a change to your website source, commit it and push it to your GitHub repository. :) :) :) 
 Then, just a few minutes later, the change will automatically appear on your website!
 
 You'll soon discover that publishing a website has never been so easy!
