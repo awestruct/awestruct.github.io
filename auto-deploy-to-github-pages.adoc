@@ -1,4 +1,4 @@
-= Automated deployment to GitHub Pages
+= Automated deployment to GitHub Pagessssss
 Dan Allen
 :awestruct-layout: default
 :awestruct-show_header: true
@@ -13,7 +13,7 @@ In this guide, you'll learn:
 * How to activate Travis CI on your repository
 * How to configure Travis CI to publish your website automatically
 
-After reading this guide, you'll be able to make a change to your website source, commit it and push it to your GitHub repository.
+After reading this guide, you'll be able to make a change to your website source, commit it and push it to your GitHub repository. :) :) :) 
 Then, just a few minutes later, the change will automatically appear on your website!
 
 You'll soon discover that publishing a website has never been so easy!
@@ -37,7 +37,7 @@ Next, initialize a git repository by typing the following git command:
 
  $ git init
 
-Your project is now a git repository.
+Your project is now a git repository!!
 It doesn't have any files or history, though, so we'll need to add some.
 Before we do that, let's first tell git and Awestruct what files to ignore.
 
