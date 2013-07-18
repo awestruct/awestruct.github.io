@@ -27,6 +27,8 @@ http://rubyinstaller.org/downloads/[Download] the latest version of Ruby 1.9.3 a
 
 Now you have a pristine Ruby environment you're ready to install Awestruct and Bundler:
 
+I added this to the test branch :) 
+
  $ gem install awestruct bundler
 
 This will retrieve the latest version of both Awestruct and http://gembundler.com/[Bundler] to use on your system.
