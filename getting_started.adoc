@@ -9,7 +9,7 @@ The first thing that makes this difficult is the Ruby environment you'll be deve
 We strongly recommend you install and use http://rvm.io[rvm], and install the latest Ruby 1.9.3 environment.
 We have found Ruby 1.9.3 to be the best environment at the moment to use with *Awestruct*.
 
-=== Installing rvm on Linux and Mac OSX
+=== Installing rvm on Linux and Mac OSXx
 
 To correctly install rvm open a terminal and execute:
 
