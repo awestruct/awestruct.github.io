@@ -43,7 +43,7 @@ NOTE: `--framework` also accepts `blueprint`, `bootstrap`, `compass`, `960` depe
 This will create a number of folders and files which will be the starting of your Awestruct baked site.
 More information about this files and directories can be found in the link:{site.base_url}/layout[Project layout] section.
 
-== Setting up your dependencies
+== Setting up your dependencies :) :) 
 
 Starting with version 0.5.0 the number of dependencies for *Awestruct* was drastically reduced by removing hard dependencies on the different markup formats.
 The trade-off in doing this is that you need to pull in the diffent dependencies you are using in your site.
