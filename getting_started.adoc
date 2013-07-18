@@ -2,7 +2,7 @@
 :awestruct-layout: default
 :imagesdir: images
 
-== Creating a hassle free Ruby environment
+== Creating a hassle free Ruby environmentttt
 
 We've noticed, and had quite a lot of feedback about it being difficult to get up and running easily with *Awestruct*.
 The first thing that makes this difficult is the Ruby environment you'll be developing your site.
