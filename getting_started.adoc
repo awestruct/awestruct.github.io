@@ -17,7 +17,7 @@ To correctly install rvm open a terminal and execute:
 
 This will download and install the latest stable version of Ruby version 1.9.3 in a directory in your HOME directory, eliminating the need to have root access to update or install new gems.
 
-=== Installing Ruby on Windows
+=== Installing Ruby on Windowsss
 
 Creating a great working environment on Windows can be difficult.
 We recommend using the http://rubyinstaller.org/[RubyInstaller for Windows].
