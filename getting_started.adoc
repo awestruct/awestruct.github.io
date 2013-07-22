@@ -2,16 +2,16 @@
 :awestruct-layout: default
 :imagesdir: images
 
-== Creating a hassle free Ruby environment
+== Creating a hassle free Ruby environments
 
 We've noticed, and had quite a lot of feedback about it being difficult to get up and running easily with *Awestruct*.
 The first thing that makes this difficult is the Ruby environment you'll be developing your site.
 We strongly recommend you install and use http://rvm.io[rvm], and install the latest Ruby 1.9.3 environment.
 We have found Ruby 1.9.3 to be the best environment at the moment to use with *Awestruct*.
 
-=== Installing rvm on Linux and Mac OSX
+=== You want to learn how to Installing rvm on Linux and Mac OSXdddd
 
-To correctly install rvm open a terminal and execute:
+To correctly install rvm open a terminal and execute:eee
 
  $ curl -L https://get.rvm.io | bash -s stable --ruby=1.9.3 
 
