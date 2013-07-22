@@ -11,7 +11,7 @@ We have found Ruby 1.9.3 to be the best environment at the moment to use with *A
 
 === You want to learn how to Installing rvm on Linux and Mac OSXdddd
 
-To correctly install rvm open a terminal and execute:eee
+To correctly install rvm open a terminal and execute:eeeeeee
 
  $ curl -L https://get.rvm.io | bash -s stable --ruby=1.9.3 
 
