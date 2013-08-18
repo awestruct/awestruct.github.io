@@ -14,6 +14,42 @@ your deployment. Once you're configured, deploying is just a single command.
 
     $ awestruct -P production --deploy
 
+## Configuration
+In your `_config/site.yml`, you should define a `profiles` block, and a profile for each deployment environment.
+The names are arbitrary.
+
+    profiles:
+      development:
+      staging:
+      production:
+
+Awestruct can gzip the contents of your html, css and javascript files, before deploying.
+This can be usefull to avoid extra CPU usage on your server.
+
+    profiles:
+      development:
+      staging:
+      production:
+        deploy:
+          gzip: true
+
+By default, Awestruct will use the highest compression level.
+You can change the compression level by adding the `gzip_level`.
+The value must be between 1 (low compression) and 9 (high compression).
+
+<span class="label label-warning">Help! Awestruct keeps complaining that I have uncommitted changes when deploying</span>
+
+Awestruct deployments will fail if you have uncommitted changes in your git local history.
+While this is fine for most, there are occasions when you may wish to deploy to a stagging site to
+inspect your changes without adding a commit. Simply add `uncommitted: true` to your deploy config.
+
+    profiles:
+      development:
+      staging:
+        deploy:
+          uncommitted: true
+      production:
+
 ## GitHub Pages 
 
 To deploy your site to GitHub pages, you will need to be using [GitHub](http://github.com) 
@@ -21,8 +57,7 @@ as a source repository for the site you want to pubish.
 
 <span class="label label-info">Configuration</span>
 
-Open `_config/site.yml` file and add a deployment profile. Set `host` to
-`github_pages` and set the `base_url` to the github pages URL. This can be your
+Set `host` to `github_pages` and set the `base_url` to the github pages URL. This can be your
 own domain if you set it up correctly in github. In this example, it's just the
 default domain that github provides.
 
@@ -49,8 +84,7 @@ If you host your site on Amazon S3, you can also deploy to different buckets for
 
 <span class="label label-info">Configuration</span>
 
-Open `_config/site.yml` file and add a deployment profile. Set `type` to
-`s3` and set the `bucket` to the S3 bucket URL (that starts with `s3://`).
+Set `type` to `s3` and set the `bucket` to the S3 bucket URL (that starts with `s3://`).
 
     profiles:
       development:
@@ -79,10 +113,6 @@ your server and local system before deploying.
 
 <span class="label label-info">Configuration</span>
 
-In your `_config/site.yml`, you should define a `profiles` block,
-and a profile for each deployment environment.  The names are
-arbitrary.
-
 Make sure `base_url` is set correctly for each profile.
 
 To these profiles, add a `deploy` hash with `host` and `path` properties to specify
@@ -109,17 +139,4 @@ The `rsync` command executed looks like
 
     rsync -rv --delete _site/ \#{host}:\#{path}
 
-<span class="label label-info">Help! Awestruct keeps complaining that I have uncommitted changes when deploying</span>
-
-Awestruct deployments will fail if you have uncommitted changes in your git local history.
-While this is fine for most there are occasions when you may wish to deploy to a stagging site to
-inspect your changes without adding a commit. Simply add <code>uncommitted: true</code> to your deploy config
-
-    profiles:
-      staging:
-        base_url: http://staging.awestruct.org/
-        deploy:
-          host: awestruct.org
-          path: /var/www/domains/awestruct.org/staging/htdocs/
-          uncommitted: true
 
