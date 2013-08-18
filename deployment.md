@@ -91,11 +91,11 @@ Set `type` to `s3` and set the `bucket` to the S3 bucket URL (that starts with `
       staging:
         deploy:
           type: s3
-          bucket: s3://staging.awestruct.org/
+          bucket: s3://staging.awestruct.org
       production:
         deploy:
           type: s3
-          bucket: s3://awestruct.org/
+          bucket: s3://awestruct.org
 
 <span class="label label-info">Info</span>
 
@@ -121,12 +121,12 @@ where the resulting site should be copied to using `rsync`.
     profiles:
       development:
       staging:
-        base_url: http://staging.awestruct.org/
+        base_url: http://staging.awestruct.org
         deploy:
           host: awestruct.org
           path: /var/www/domains/awestruct.org/staging/htdocs/ 
       production:
-        base_url: http://awestruct.org/
+        base_url: http://awestruct.org
         deploy:
           host: awestruct.org
           path: /var/www/domains/awestruct.org/www/htdocs/ 
