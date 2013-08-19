@@ -69,6 +69,13 @@ The deployment to Amazon S3 is using the ruby-s3cmd gem and the executed command
 
     s3cmd sync _site/ \#{s3_bucket}
 
+Before doing your first deployment, you will need to install and configure <code>s3cmd</code>
+
+    yum install s3cmd || apt-get install s3cmd
+    s3cmd --configure
+
+The <code>--configure</code> command will ask for your AWS access and secret key.
+More information on [AWS Security Credentials](http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html).
 
 ## Rsync and SSH
 
