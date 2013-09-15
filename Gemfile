@@ -12,6 +12,8 @@ gem 'erubis', '~> 2.7.0'
 gem 'rb-inotify', '~> 0.9.0', :platforms => [:ruby, :jruby]
 gem 'yard', '~> 0.8.7.1'
 gem 'rake', '~> 10.0.0'
+# git required for deployment
+gem 'git', '~> 1.2.6'
 
 # required if you want to use the minify extension
 gem 'htmlcompressor', '~> 0.0.5'
