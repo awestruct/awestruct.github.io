@@ -1,5 +1,9 @@
 = Getting Started
+Jason Porter; Lance Ball
 :awestruct-layout: default
+:awestruct-show_header: true
+:language: ruby
+// override imagesdir for GitHub preview
 :imagesdir: images
 
 == Creating a hassle free Ruby environment
@@ -73,7 +77,7 @@ You can uncomment the dependencies you need for your site, or add others as need
 
 [IMPORTANT]
 --
-You *MUST* add ++require __gem name__++ at the top of your _ext/pipeline.rb for any CSS or JS gems you use.
+You *MUST* add `require 'gem name'` at the top of your _ext/pipeline.rb for any CSS or JS gems you use.
 It is strongly recommended you add markup gems as well, but it is not required.
 For example, if you're using Foundation the beginning of your _ext/pipeline.rb should look like:
 
