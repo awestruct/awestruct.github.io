@@ -52,7 +52,7 @@ Let's add the names of those files and directories to git's ignore file, +.gitig
  /.sass-cache/
  /_site/
  /_tmp/
- Gemfile.lock
+ /Gemfile.lock
  LINES
 
 There are also some files in the project (or will be) used to launch Awestruct that we don't want Awestruct to put into the website it generates.
@@ -211,6 +211,7 @@ Switch to the *develop* branch:
 
 Next, add the following content to the bottom of the +_config/site.yml+ file:
 
+[source,yaml]
 ----
 profiles:
   production:
@@ -306,6 +307,7 @@ We're only going to tap into a small part of it.
 Create the file +.travis.yml+ and populate it with the following configuration:
 
 .travis.yml
+[source,yaml]
 ----
 language: ruby
 rvm:
