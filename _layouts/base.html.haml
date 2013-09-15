@@ -2,9 +2,10 @@
 %html
   %head
     %meta{ :charset=>'utf-8' }
-    %title awestruct: #{page.title}
-    %link{ :rel=>'alternate',  :type=>'application/atom+xml', :href=>'/news.atom' }
+    %title #{site.title}: #{page.title}
     %meta{ :name=>'viewport', :content=>'width=device-width, initial-scale=1.0' }
+    %meta{ :name=>'description', :content=>site.description }
+    %link{ :rel=>'alternate',  :type=>'application/atom+xml', :href=>'/news.atom' }
     :css
       body {
         padding-top: 60px;
@@ -115,4 +116,3 @@
     %script{ :src=>"#{site.base_url}/javascript/highlight-20130326.js" }
     %script
       hljs.initHighlightingOnLoad();
-      $('.admonitionblock .title').each(function(idx) { $(this).addClass($(this).text().toLowerCase()) });
