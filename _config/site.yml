@@ -1,4 +1,5 @@
-title: Awestruct
+title: '{ :awestruct }'
+description: Awestruct is a static site baking and publishing tool
 gem_version: 0.5.4.rc
 
 asciidoctor:
@@ -6,10 +7,12 @@ asciidoctor:
   :attributes:
     idprefix: ''
     idseparator: '-'
-    imagesdir: ../images
+    sectanchors: ''
+    'prewrap!': ''
 
 profiles:
   development:
+    deploy: nil
   staging:
     base_url: http://staging.awestruct.org/
     deploy:
