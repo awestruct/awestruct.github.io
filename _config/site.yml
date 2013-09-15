@@ -1,5 +1,5 @@
 title: Awestruct
-gem_version: 0.5.2
+gem_version: 0.5.4.rc
 
 asciidoctor:
   :eruby: erubis

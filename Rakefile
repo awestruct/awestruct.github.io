@@ -2,10 +2,17 @@ require 'rubygems'
 
 task :default => :build
 
-desc "Run in developer mode"
-task :dev => :check do
+desc "Build and preview the site locally in development mode"
+task :preview => :check do
   system "bundle exec awestruct --dev"
+  #system "bundle exec awestruct -P development -g -s"
 end
+
+# provide a serve task for those used to Jekyll commands
+task :serve => :preview
+
+# provide a dev task for those used to legacy Awestruct commands
+task :dev => :preview
 
 desc "Build the site with the development profile"
 task :build => :check do

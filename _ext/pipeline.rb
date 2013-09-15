@@ -1,5 +1,6 @@
 require File.join(File.dirname(__FILE__), 'yard')
 require 'extension_documenter'
+require 'bootstrap-sass'
 
 Awestruct::Extensions::Pipeline.new do
   extension ExtensionDocumenter.new
