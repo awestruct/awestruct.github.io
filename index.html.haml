@@ -13,26 +13,34 @@ title: Static site baking and publishing
   utility in the same genre.
 
 %p
-  Awestruct makes it trivially easy to create non-trivial static websites using
-  tools like 
+  Awestruct makes it trivially easy to create non-trivial static websites using lightweight markup languages such as
   = succeed ', ' do
-    %a{:href=>"http://compass-style.org"} Compass
+    %a{:href=>'http://asciidoctor.org/docs/asciidoc-syntax-quick-reference'} AsciiDoc
+  = succeed ', and ' do
+    %a{:href=>'http://daringfireball.net/projects/markdown/syntax'} Markdown
   = succeed ', ' do
-    %a{:href=>"http://daringfireball.net/projects/markdown/syntax"} Markdown
-  and
+    %a{:href=>'http://redcloth.org/textile'} Textile
+  templating languages such as
   = succeed ', ' do
+    %a{:href=>'http://slim-lang.com'} Slim
+  = succeed ', and ' do
     %a{:href=>"http://haml-lang.com"} Haml
-  as well as common frameworks like Twitter Bootstrap and Blueprint.
+  = succeed ', ' do
+    %a{:href=>"http://compass-style.org"} Compass (Sass)
+  as well as UI frameworks like
+  %a{:href=>'http://getbootstrap.com'} Bootstrap
+  and
+  = succeed '.' do
+    %a{:href=>'http://foundation.zurb.com'} Zurb Foundation
 
 %p
   The core concept of Awestruct is that of structures, specifically Ruby
-  `OpenStruct` structures. The struct aspect allows arbitrary, schema-less data
+  "OpenStruct" structures. The struct aspect allows arbitrary, schema-less data
   to be associated with a specific page or the entire site.
 
 %p
   Site-specific data is automatically loaded from simple YAML files, while data
   can be provided on pages using a front-matter prolog.
-
 
 .row
   .span4
