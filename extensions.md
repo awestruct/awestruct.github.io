@@ -1,6 +1,6 @@
 ---
 layout: default
-title: extensions
+title: Extensions
 ---
 
 # Extensions

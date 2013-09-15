@@ -1,5 +1,5 @@
 ---
-title: deploy
+title: Deploy
 layout: default
 ---
 

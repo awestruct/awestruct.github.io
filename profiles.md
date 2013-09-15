@@ -1,5 +1,5 @@
 ---
-title: site.yml profiles
+title: Profiles (site.yml)
 layout: default
 ---
 

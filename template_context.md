@@ -1,5 +1,5 @@
 ---
-title: template context
+title: Template context
 layout: default
 ---
 

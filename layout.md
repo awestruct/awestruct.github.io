@@ -1,6 +1,6 @@
 ---
 layout: default
-title: layout
+title: Layout
 ---
 <div class="page-header">
 <h1>Project layout</h1>

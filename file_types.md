@@ -1,5 +1,5 @@
 ---
-title: template types
+title: Template types
 layout: default
 ---
 
