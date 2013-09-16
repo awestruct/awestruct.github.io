@@ -1,5 +1,5 @@
 title: '{ :awestruct }'
-description: Awestruct is a static site baking and publishing tool
+description: Awestruct is a static site baking and deployment tool
 gem_version: 0.5.4.rc
 
 asciidoctor:
