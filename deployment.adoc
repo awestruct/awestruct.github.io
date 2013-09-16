@@ -1,9 +1,8 @@
-= Deploy
+= Site deployment
 :page-layout: default
-:page-title: deploy
 :page-show_header: true
 
-Awestruct provides several automated options to deploy your site, which make publishing easy!
+Awestruct provides several automated options to deploy your site, which makes publishing online easy!
 
 Using Awestruct, you can deploy your site to any of these destinations:
 
@@ -45,6 +44,17 @@ profiles:
 By default, Awestruct will use the highest compression level.
 You can change the compression level by adding the +gzip_level+.
 The value must be between 1 (low compression) and 9 (high compression).
+
+[source,yaml]
+--
+profiles:
+  development:
+  staging:
+  production:
+    deploy:
+      gzip: true
+      gzip_level: 5
+--
 
 WARNING: Help! Awestruct keeps complaining that I have uncommitted changes when deploying
 
@@ -120,7 +130,7 @@ NOTE: Wait, what command are you actually using?
 
 The deployment to Amazon S3 is using the ruby-s3cmd gem and the executed command looks like
 
- $ s3cmd sync _site/ \#{s3_bucket}
+ $ s3cmd sync _site/ $S3_BUCKET
 
 == Rsync and SSH
 
@@ -151,5 +161,5 @@ NOTE: Wait, what command are you actually using?
 
 The +rsync+ command executed looks like
 
- $ rsync -rv --delete _site/ \#{host}:\#{path}
+ $ rsync -rv --delete _site/ $HOST:$PATH
 
