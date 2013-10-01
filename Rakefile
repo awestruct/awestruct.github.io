@@ -15,8 +15,8 @@ task :serve => :preview
 task :dev => :preview
 
 desc "Build the site with the development profile"
-task :build => :check do
-  system "bundle exec awestruct -P development --force"
+task :build, [:profile] => :check do |t, args|
+  system "bundle exec awestruct -P #{args[:profile] || 'development'} --force"
 end
 
 desc "Build the site and publish to github"
