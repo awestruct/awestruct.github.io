@@ -23,4 +23,7 @@ gem 'therubyrhino', '~> 2.0.2', :platforms => [:jruby]
 # Required by cloudbees
 gem 'rdoc', '~> 4.0.1'
 
+# Required to push to github
+gem 'git', '~> 1.2.6'
+
 # set EXECJS_RUNTIME=SpiderMonkey as alternative to theruby(racer|rhino)
