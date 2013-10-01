@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'awestruct', '0.5.4.rc'
-#gem 'awestruct', :github => 'awestruct'
+#gem 'awestruct', '0.5.4.rc'
+gem 'awestruct', :github => 'awestruct'
 gem 'haml', '~> 4.0.0'
 gem 'rdiscount', '~> 2.0.7', :platforms => [:ruby]
 gem 'kramdown', '~> 1.0.1', :platforms => [:jruby]
