@@ -7,14 +7,14 @@ module Awestruct
         gem_file = File.join( site.tmp_dir, "awestruct-#{site.gem_version}.gem" )
         if ( ! File.exist?( gem_file ) )
           Dir.chdir( site.tmp_dir ) do 
-            puts `ruby -S gem fetch awestruct -v #{site.gem_version}`
+            puts `ruby -S gem fetch awestruct -v #{site.gem_version} --pre`
           end
         end
 
         Dir.chdir( site.tmp_dir ) do
           gem_dir = File.join( 'gems', 'gems', "awestruct-#{site.gem_version}" )
           if ( ! File.exist?( gem_dir ) )
-            puts `ruby -S gem install awestruct-#{site.gem_version}.gem -i gems --ignore-dependencies`
+            puts `ruby -S gem install awestruct-#{site.gem_version}.gem -i gems --ignore-dependencies --pre`
           end
 
           doc_dir = File.join( gem_dir, 'doc' ) 
