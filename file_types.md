@@ -66,6 +66,12 @@ Ruby `String`, allowing for expressions such as
 
     # This is the \#{page.title}
 
+### AsciiDoc (`.adoc`)
+
+AsciiDoc files are interpreted anywhere within the site tree.
+
+The `.adoc` extension will be replaced by `.html` by default.
+
 ### Org-mode (`.org`)
 
 [Org-Mode](http://orgmode.org/) files should *not* include the `.html` secondary
