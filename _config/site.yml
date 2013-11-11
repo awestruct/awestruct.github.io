@@ -1,6 +1,6 @@
 title: '{ :awestruct }'
 description: Awestruct is a static site baking and deployment tool
-gem_version: 0.5.4.rc
+gem_version: 0.5.4.rc2
 
 asciidoctor:
   :eruby: erubis
