@@ -21,12 +21,12 @@ end
 
 desc "Build the site and publish to github"
 task :github => :check do
-  system "bundle exec awestruct --deploy -P github --force"
+  system "bundle exec awestruct --deploy -P -g github --force"
 end
 
 desc "Build the site and publish to staging"
 task :staging => :check do
-  system "bundle exec awestruct --deploy -P staging --force"
+  system "bundle exec awestruct --deploy -g -P staging --force"
 end
 
 desc "Setup or update the environment to run Awestruct"
