@@ -97,6 +97,16 @@ To get started using Rake, which will make things much easier, execute:
 
 This will install all the gems defined in your Gemfile and you'll be ready to start building sites!
 
+[NOTE]
+--
+If you get the error "_libxml2 is missing_", then try jruby instead:
+
+----
+rvm install jruby
+rvm use jruby
+----
+--
+
 === Edit, save, reload, repeat
 
  $ rake
