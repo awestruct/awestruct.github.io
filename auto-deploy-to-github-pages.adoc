@@ -136,15 +136,25 @@ You can confirm they are still there using git's +ls-tree+ command:
 
  $ git ls-tree --name-only develop
 
+Let's commit these changes:
+
+ $ git add --all .
+ $ git commit -m "clean publish branch"
+
 To wrap-up the creation of the publish branch, let's give it a stub history:
 
  $ echo "GitHub Pages placeholder" > index.html
  $ git add index.html
  $ git commit -m "Seed publish branch for GitHub Pages"
 
-By running git's +ls-tree+ command, you can see that there is one file in the repository:
+By running git's +ls-tree+ command, you can see that there are two files in the repository:
 
  $ git ls-tree --name-only gh-pages
+
+Your output should look like this:
+
+ .nojekyll
+ .index.html
 
 The source (*develop*) and publish (*gh-pages*) branches are all setup.
 You're now ready to publish the repository to GitHub and put GitHub Pages into action.
@@ -188,6 +198,7 @@ Also push the *gh-pages* branch:
  $ git push -u origin gh-pages
 
 By pushing the *gh-pages* branch, you also activated GitHub Pages to publish your website. Check it out!
+(It could take up to ten minutes for changes to be updated)
 
  http://<username>.github.io/demosite
 
@@ -256,7 +267,9 @@ Say you want to change the title on the site.
 
 . Open up the +_layouts/base.html.haml+ file in your editor.
 
-. Find the words "Project Name" and replace them with "Demo Site"
+This is no longer true. Project name is set in the site.yml
+. Find the words "Built on Foundation. Baked by Awestruct." and
+replace them with "Built by <username>"
 
 . Save the file
 
@@ -266,9 +279,9 @@ Say you want to change the title on the site.
 
 . Commit the change, leaving a description of what you changed
 
- $ git commit -m "Change the site title"
+ $ git commit -m "Change built by to username"
 
-. Push the change to the remote repository 
+. Push the change to the remote repository
 
  $ git push origin develop
 
@@ -276,7 +289,9 @@ Say you want to change the title on the site.
 
  $ awestruct -P production -g --deploy
 
-Wait for the command to finish (a moment or two longer), then view your website again to see the change.
+Wait for the command to finish (a moment or two longer), then view
+your website again to see the change (It can take up to ten minutes
+to display).
 
 That's the basic workflow for changing the site.
 But there's certain room for automation.
@@ -300,7 +315,7 @@ Let's give it the details.
 
 === Travis build configuration
 
-You control Travis from a configuration file in your project named +.travis.yml+.
+You control Travis from a configuration file in the root of your project named +.travis.yml+.
 This file puts a http://about.travis-ci.org/docs[wealth of automation] at your fingertips.
 We're only going to tap into a small part of it.
 
@@ -407,6 +422,9 @@ Enter your GitHub password at the prompt.
 In the output, you'll see a token property.
 Save that value.
 
+(If you have two factor authentication enabled on GitHub, it is easier
+to go to your settings page and generate a new OAuth token there.)
+
 Next, install the +travis+ gem:
 
  $ gem install travis
@@ -416,7 +434,7 @@ Use the +travis+ command to encrypt the three environment variables listed above
 Replace +<token>+ with your GitHub authentication token:
 
  $ travis encrypt -r <username>/demosite \
-   'GIT_NAME="Your Name" GIT_EMAIL=you@example.com GH_TOKEN=<token>'   
+   'GIT_NAME="Your Name" GIT_EMAIL=you@example.com GH_TOKEN=<token>'
 
 TIP: If you run the +travis encrypt+ command from the root of your project, the +-r+ argument (the repository) is not required.
 
@@ -427,7 +445,12 @@ The encrypt command will output a long string that looks like:
 The secure string contains the three environment variables encrypted using Travis' public key.
 It can only be unencrypted by Travis' private key (secured in some vault, somehwhere).
 
-Append the following configuration to the +.travis.yml+ file, replacing +<encrypted_string>+ with the value in quotes outputted by the +travis encrypt+ command:
+
+Next, rerun the encryption command with --add at the end. This will
+append the following configuration to the +.travis.yml+ file,
+replacing +<encrypted_string>+ with the value in quotes outputted by
+the +travis encrypt+ command:
+
 
 ----
 env:
