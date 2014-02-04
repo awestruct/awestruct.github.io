@@ -49,6 +49,7 @@ Let's add the names of those files and directories to git's ignore file, +.gitig
 
  $ cat > .gitignore << LINES
  /.awestruct/
+ /.bundle/
  /.sass-cache/
  /_site/
  /_tmp/
