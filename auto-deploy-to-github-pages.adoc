@@ -62,6 +62,7 @@ Let's add the names of those files to Awestruct's ignore file, +.awestruct_ignor
  Gemfile
  Gemfile.lock
  Rakefile
+ vendor
  LINES
 
 Since you're deploying to GitHub Pages, you should be aware that Jekyll normally run on the files on the publish branch.
