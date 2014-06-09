@@ -45,7 +45,7 @@ Create a new empty directory, and run `awestruct` with the `--init` parameter. O
 NOTE: `--framework` also accepts `blueprint`, `bootstrap`, `compass`, `960` depending on your favorite CSS framework.
 
 This will create a number of folders and files which will be the starting of your Awestruct baked site.
-More information about this files and directories can be found in the link:{site.base_url}/layout[Project layout] section.
+More information about this files and directories can be found in the link:#{site.base_url}/layout[Project layout] section.
 
 == Setting up your dependencies
 
