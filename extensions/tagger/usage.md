@@ -36,5 +36,7 @@ of posts with a given tag.
 
 The indexes will be output under the `output_prefix` directory.
 
+The pages listing all posts of 1 specific tag (so filtering out other posts), have a `page.selected_tag` variable with the name of the tag, which is usefull to adjust the page title accordingly.
+
 To draw a full tag-cloud, the [TagCloud extension](/extensions/tag_cloud/) should be used. 
 
