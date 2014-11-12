@@ -398,7 +398,7 @@ end
 ----
 
 Don't let that script scare you.
-Most of the code involves configuring git so that Awestruct can commit and push the changes to the publish branch, using the HTTPS protocol along with a token-based authentification.
+Most of the code involves configuring git so that Awestruct can commit and push the changes to the publish branch, using the HTTPS protocol along with a token-based authentication.
 In the future, this may get rolled into the Awestruct deployer.
 
 === GitHub commits from Travis
@@ -456,9 +456,9 @@ env:
 ----
 
 Each +secure+ string contains one of the environment variable encrypted using Travis' public key.
-It can only be unencrypted by Travis' private key (secured in some vault, somehwhere).
+It can only be unencrypted by Travis' private key (secured in some vault, somewhere).
 
-That defines the secure environment variables, which Travis will unecrypt at the start of the build, so that they can be used by the build task (in our case, +rake travis+).
+That defines the secure environment variables, which Travis will decrypt at the start of the build, so that they can be used by the build task (in our case, +rake travis+).
 
 All that's left is to commit your changes, push them to GitHub and let Travis work it's magic.
 
@@ -498,7 +498,7 @@ That means you can create and publish blog entries directly from the GitHub webs
 
 == Summary
 
-In this tutorial, you learned how to get Travis CI to do the work of deploying your site as soon as you push to the the develop branch.
+In this tutorial, you learned how to get Travis CI to do the work of deploying your site as soon as you push to the develop branch.
 In fact, you can create and edit files directly in the browser!
 
 To begin, you took one of your Awestruct sites and turned it into a git repository.
