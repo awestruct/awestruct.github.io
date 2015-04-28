@@ -34,6 +34,10 @@ By default the following are excluded from the sitemap
 
     excluded_files: [ '/.htaccess', '/favicon.ico' ,'/robots.txt', ]
     excluded_extensions: ['.atom', '.scss', '.css', '.png', '.jpg', '.gif', '.js' ]
+    
+To include an optional stylesheet for your sitemap.xml file
+
+    stylesheet_url: relative/path/to/your/stylesheet
 
 ### Install
 
