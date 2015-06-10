@@ -37,9 +37,9 @@ Run the following command to install the main group of development tools Ruby re
 
  $ sudo yum groupinstall -y development-tools
 
-Additionally, run the following command to install all dependencies required by Nokogiri.
+Additionally, run the following command to install all dependencies required by Awestruct.
 
- $ sudo yum install rubyjems-nokogiri gcc gcc-c++ ruby-devel zlib-devel
+ $ sudo sudo yum install -y rake ruby-devel libxslt-devel gcc-c++
 
 After you have installed all dependencies, you are ready to proceed with installing Awestruct.
 
