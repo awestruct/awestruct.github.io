@@ -39,7 +39,7 @@ Run the following command to install the main group of development tools Ruby re
 
 Additionally, run the following command to install all dependencies required by Awestruct.
 
- $ sudo sudo yum install -y rake ruby-devel libxslt-devel gcc-c++
+ $ sudo yum install -y rake ruby-devel libxslt-devel gcc-c++
 
 After you have installed all dependencies, you are ready to proceed with installing Awestruct.
 
