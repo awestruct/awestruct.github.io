@@ -29,7 +29,23 @@ http://rubyinstaller.org/downloads/[Download] the latest version of Ruby 1.9.3 a
 
 == Install Awestruct and start a new project
 
-Now you have a pristine Ruby environment you're ready to install Awestruct and Bundler:
+=== Install Package Dependencies on RPM Distributions
+
+When you install Awestruct using +gem+, Ruby builds the components that comprise the Awestruct framework at install time. To achieve this, the +gem+ framework expects certain development libraries to be present so it can leverage them at build time. 
+
+Run the following command to install the main group of development tools Ruby requires to compile most Rubygems.
+
+ $ sudo yum groupinstall -y development-tools
+
+Additionally, run the following command to install all dependencies required by Awestruct.
+
+ $ sudo yum install -y rake ruby-devel libxslt-devel gcc-c++
+
+After you have installed all dependencies, you are ready to proceed with installing Awestruct.
+
+=== Install Awestruct
+
+Now you have a pristine Ruby environment and have installed all required dependencies, you're ready to install Awestruct and Bundler:
 
  $ gem install awestruct bundler
 
