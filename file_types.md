@@ -117,6 +117,11 @@ rewrite rules.
 For this reason, *Awestruct* will include `.htaccess` access files
 when generating the output tree.
 
+### Exclusions
+
+*Awestruct* will ignore any file or folder listed in the optional `.awestruct_ignore` file located at the root of the project.
+
+
 ### Everything else (`*.*`)
 
 Any unrecognized file will simply be copied over to the output tree.

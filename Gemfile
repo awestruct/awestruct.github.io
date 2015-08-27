@@ -13,6 +13,9 @@ gem 'rb-inotify', '~> 0.9', :platforms => [:ruby, :jruby]
 gem 'yard', '~> 0.8'
 gem 'rake', '~> 10'
 
+# force to quse bootstrap 2.3.x and not a newer version because of incompatibility issues
+gem 'bootstrap-sass', '~> 2.3.2'
+
 # required if you want to use the minify extension
 gem 'htmlcompressor', '~> 0.0.5'
 gem 'coffee-script', '~> 2.2'

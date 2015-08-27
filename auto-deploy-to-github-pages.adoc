@@ -49,6 +49,7 @@ Let's add the names of those files and directories to git's ignore file, +.gitig
 
  $ cat > .gitignore << LINES
  /.awestruct/
+ /.bundle/
  /.sass-cache/
  /_site/
  /_tmp/
@@ -62,6 +63,7 @@ Let's add the names of those files to Awestruct's ignore file, +.awestruct_ignor
  Gemfile
  Gemfile.lock
  Rakefile
+ vendor
  LINES
 
 Since you're deploying to GitHub Pages, you should be aware that Jekyll normally run on the files on the publish branch.
@@ -136,15 +138,25 @@ You can confirm they are still there using git's +ls-tree+ command:
 
  $ git ls-tree --name-only develop
 
+Let's commit these changes:
+
+ $ git add --all .
+ $ git commit -m "clean publish branch"
+
 To wrap-up the creation of the publish branch, let's give it a stub history:
 
  $ echo "GitHub Pages placeholder" > index.html
  $ git add index.html
  $ git commit -m "Seed publish branch for GitHub Pages"
 
-By running git's +ls-tree+ command, you can see that there is one file in the repository:
+By running git's +ls-tree+ command, you can see that there are two files in the repository:
 
  $ git ls-tree --name-only gh-pages
+
+Your output should look like this:
+
+ .nojekyll
+ .index.html
 
 The source (*develop*) and publish (*gh-pages*) branches are all setup.
 You're now ready to publish the repository to GitHub and put GitHub Pages into action.
@@ -188,6 +200,7 @@ Also push the *gh-pages* branch:
  $ git push -u origin gh-pages
 
 By pushing the *gh-pages* branch, you also activated GitHub Pages to publish your website. Check it out!
+(It could take up to ten minutes for changes to be updated)
 
  http://<username>.github.io/demosite
 
@@ -256,7 +269,9 @@ Say you want to change the title on the site.
 
 . Open up the +_layouts/base.html.haml+ file in your editor.
 
-. Find the words "Project Name" and replace them with "Demo Site"
+This is no longer true. Project name is set in the site.yml
+. Find the words "Built on Foundation. Baked by Awestruct." and
+replace them with "Built by <username>"
 
 . Save the file
 
@@ -266,9 +281,9 @@ Say you want to change the title on the site.
 
 . Commit the change, leaving a description of what you changed
 
- $ git commit -m "Change the site title"
+ $ git commit -m "Change built by to username"
 
-. Push the change to the remote repository 
+. Push the change to the remote repository
 
  $ git push origin develop
 
@@ -276,7 +291,9 @@ Say you want to change the title on the site.
 
  $ awestruct -P production -g --deploy
 
-Wait for the command to finish (a moment or two longer), then view your website again to see the change.
+Wait for the command to finish (a moment or two longer), then view
+your website again to see the change (It can take up to ten minutes
+to display).
 
 That's the basic workflow for changing the site.
 But there's certain room for automation.
@@ -300,7 +317,7 @@ Let's give it the details.
 
 === Travis build configuration
 
-You control Travis from a configuration file in your project named +.travis.yml+.
+You control Travis from a configuration file in the root of your project named +.travis.yml+.
 This file puts a http://about.travis-ci.org/docs[wealth of automation] at your fingertips.
 We're only going to tap into a small part of it.
 
@@ -372,7 +389,7 @@ task :travis do
   system "git config user.email '#{ENV['GIT_EMAIL']}'"
   system 'git config credential.helper "store --file=.git/credentials"'
   File.open('.git/credentials', 'w') do |f|
-    f.write("https://#{ENV['GH_TOKEN']}:@github.com")
+    f.write("https://#{ENV['GH_TOKEN']}:x-oauth-basic@github.com")
   end
   system "git branch #{deploy_branch} origin/#{deploy_branch}"
   system 'bundle exec awestruct -P production -g --deploy'
@@ -381,7 +398,7 @@ end
 ----
 
 Don't let that script scare you.
-Most of the code involves configuring git so that Awestruct can commit the changes to the publish branch.
+Most of the code involves configuring git so that Awestruct can commit and push the changes to the publish branch, using the HTTPS protocol along with a token-based authentication.
 In the future, this may get rolled into the Awestruct deployer.
 
 === GitHub commits from Travis
@@ -394,10 +411,12 @@ You'll notice references to three environment variables in the +travis+ task:
 
 This is crucial information for this process to work, but also sensitive.
 That's why Travis provides a way to encrypt this data so that it can be safely stored in your git repository.
-Once you encrypt the information, it won't be visible anywhere.
+Once you encrypt the information, it won't be visible anywhere except on Travis during the build.
 
-Before we encrypt, we need to get an authentication token from GitHub.
-An authentication token allows a script to have the permission to push changes to your repository.
+Before we encrypt, we need to get a new authentication token from GitHub.
+An authentication token allows a script to have the permission to push changes to your repository using the HTTPS protocol, instead of using the ssh protocol which would require you to deploy your private key on Travis. 
+
+The following +curl+ command will send an OAuth token creation request on github:
 
  $ curl -u <username> \
    -d '{"scopes":["public_repo"],"note":"CI: demosite"}' \
@@ -407,6 +426,9 @@ Enter your GitHub password at the prompt.
 In the output, you'll see a token property.
 Save that value.
 
+(If you have two factor authentication enabled on GitHub, it is easier
+to go to your settings page and generate a new OAuth token there.)
+
 Next, install the +travis+ gem:
 
  $ gem install travis
@@ -415,28 +437,28 @@ The Travis gem provides the +travis+ command.
 Use the +travis+ command to encrypt the three environment variables listed above.
 Replace +<token>+ with your GitHub authentication token:
 
- $ travis encrypt -r <username>/demosite \
-   'GIT_NAME="Your Name" GIT_EMAIL=you@example.com GH_TOKEN=<token>'   
+ $ travis encrypt GIT_NAME=<Your_Name> --add
+ $ travis encrypt GIT_EMAIL=<Your_Email> --add
+ $ travis encrypt GH_TOKEN=<token> --add
 
-TIP: If you run the +travis encrypt+ command from the root of your project, the +-r+ argument (the repository) is not required.
+Each call to the encrypt command will output a long string that looks like:
 
-The encrypt command will output a long string that looks like:
+ secure: ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123...
 
- secure: "ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123..."
-
-The secure string contains the three environment variables encrypted using Travis' public key.
-It can only be unencrypted by Travis' private key (secured in some vault, somehwhere).
-
-Append the following configuration to the +.travis.yml+ file, replacing +<encrypted_string>+ with the value in quotes outputted by the +travis encrypt+ command:
+directly into the `.travis.yml` file under the `env` / `global` node. 
 
 ----
 env:
   global:
-  - secure: "<encrypted string>"
+  - secure: "<encrypted string for the github user name>"
+  - secure: "<encrypted string for the github user email>"
+  - secure: "<encrypted string for the github user token>"
 ----
 
-That defines a secure environment variable, which Travis will unecrypt at the start of the build.
-That will effectively expand the three environment variables so that they can be used by the build task (in our case, +rake travis+).
+Each +secure+ string contains one of the environment variable encrypted using Travis' public key.
+It can only be unencrypted by Travis' private key (secured in some vault, somewhere).
+
+That defines the secure environment variables, which Travis will decrypt at the start of the build, so that they can be used by the build task (in our case, +rake travis+).
 
 All that's left is to commit your changes, push them to GitHub and let Travis work it's magic.
 
@@ -476,7 +498,7 @@ That means you can create and publish blog entries directly from the GitHub webs
 
 == Summary
 
-In this tutorial, you learned how to get Travis CI to do the work of deploying your site as soon as you push to the the develop branch.
+In this tutorial, you learned how to get Travis CI to do the work of deploying your site as soon as you push to the develop branch.
 In fact, you can create and edit files directly in the browser!
 
 To begin, you took one of your Awestruct sites and turned it into a git repository.
