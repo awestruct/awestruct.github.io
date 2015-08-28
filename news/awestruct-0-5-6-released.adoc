@@ -1,0 +1,28 @@
+= Awestruct 0.5.2 Released
+Jason Porter
+2015-08-28
+:awestruct-layout: news
+:milestone-url: https://github.com/awestruct/awestruct/issues?q=milestone%3A0.5.6
+:commit-history-url: https://github.com/awestruct/awestruct/compare/0.5.2...0.5.6
+
+It's been a while since we've done a release announcement, I'm sorry.
+
+We've just released Awestruct 0.5.6!
+Thank you everyone who has helped not only this release, but also the previous ones as well, we really do appreciate the community and the help!
+
+You can see the full log at {milestone-url}[Milestone 0.5.6].
+For those interested in the actual commit history, it can be found at {commit-history-url}[GitHub].
+
+There were 28 bugs squashed in this release, 7 in 0.5.5, 58 in 0.5.4, and 1 in 0.5.3 for a grand total of 94 bugs squashed in the past two years!
+You can see all the issues fixed by looking at the different https://github.com/awestruct/awestruct/milestones?state=closed[milestones].
+
+Homepage:: http://awestruct.org
+Download:: http://rubygems.org/gems/awestruct
+
+== Thanks!
+
+Thanks to https://github.com/awestruct/awestruct/contributors[everyone who has contributed to Awestruct] and those of you who use it, help others to use it and/or evangelize the technology.
+We're honored to have you as part of the community!
+
+Now go create awesome sites!
+
