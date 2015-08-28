@@ -7,6 +7,15 @@ layout: default
 <h1>File Types</h1>
 </div>
 
+## Interpolation
+
+In previous versions of awestruct interpolation was turned on, starting with version 0.5.5 it has been turned off by default to improve generation performance.
+If you wish to turn it back on, you can do so at the site level by adding
+
+    interpolate: false
+
+to the _config/site.yml file. Or you can turn it on for an individual page by including the above line in the front matter of that file.
+
 ## Pages
 
 Page-based templates (Haml, ERB and Maruku) provide normal templating in either
@@ -60,11 +69,6 @@ such as for XML or other file types.
 Markdown files are interpreted anywhere within the site tree.
 
 The `.md` extension will be replaced by `.html` by default.
-
-The engine will interpolate the Markdown source as a typical
-Ruby `String`, allowing for expressions such as
-
-    # This is the \#{page.title}
 
 ### AsciiDoc (`.adoc`)
 
