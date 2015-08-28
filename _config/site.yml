@@ -19,16 +19,19 @@ profiles:
     deploy:
       host: awestruct.org
       path: /var/www/domains/awestruct.org/staging/htdocs/ 
+      uncommitted: true
   github:
     base_url: http://awestruct.github.com/awestruct.org/
     deploy:
       host: github_pages
+      uncommitted: true
   production:
     base_url: http://awestruct.org/
     minify: true
     deploy:
       host: awestruct.org
       path: /var/www/domains/awestruct.org/www/htdocs/ 
+      uncommitted: true
 
 intense_debate_acct: fa224495874e8d96bbf6f2dbcc26dac5
 flattr_username: bobmcwhirter
