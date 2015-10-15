@@ -2,6 +2,7 @@
 Dan Allen
 :awestruct-layout: default
 :awestruct-show_header: true
+:compat-mode:
 
 This guide walks you through the steps of publishing a website that is built using http://awestruct.org[Awestruct] to http://pages.github.com[GitHub Pages] from http://travis-ci.org[Travis CI], 'automatically!'
 
