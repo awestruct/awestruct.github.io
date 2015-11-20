@@ -19,8 +19,43 @@ file.
       helper Awestruct::Extensions::GoogleAnalytics
     end
 
+## Embedding the google analytic universal script
 
-## Configure
+Typically in a core HTML layout, simply invoke the helper
+
+    = google_analytics_universal({ :account => 'UA-REDACTED' }) 
+
+The function takes a hash with options.
+
+* account: UA-something
+* anonymizeIp: true
+* bounceTime: 15
+* demographics: true
+* linkAttribution: true
+
+The account option with the Tracking-ID is required.
+
+
+## Configure google analytic classic
+
+Typically in a core HTML layout, simply invoke the helper
+
+    = google_analytics({ :account => 'UA-REDACTED' }) 
+
+The function takes a hash with options.
+
+* account: UA-something
+* anonymizeIp: true
+* bounceTime: 15
+* demographics: true
+* linkAttribution: true
+
+The account option with the Tracking-ID is required.
+
+
+## Previous configuration of google analytic
+
+This way of doing the configuration still works but you will get a warning that there was a syntax change. 
 
 Your `_config/site.yml` needs to include the property `google_analytics`
 with your account identifier.
