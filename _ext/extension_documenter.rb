@@ -17,7 +17,7 @@ class ExtensionDocumenter
 
       ext_name = File.basename( dir )
 
-      ext_page = site.engine.load_site_page( '/extensions/doc_template.html.haml' )
+      ext_page = site.engine.load_site_page( 'extensions/doc_template.html.haml' )
       ext_page.output_path = "/extensions/#{ext_name}.html"
 
       desc_page = site.engine.find_and_load_site_page( "#{dir}/description" )

@@ -14,6 +14,8 @@ gem 'yard', '~> 0.8'
 gem 'rake', '~> 10'
 
 # force to quse bootstrap 2.3.x and not a newer version because of incompatibility issues
+gem 'compass'
+gem 'compass-blueprint'
 gem 'bootstrap-sass', '~> 2.3.2'
 
 # required if you want to use the minify extension

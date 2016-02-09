@@ -1,6 +1,8 @@
 require File.join(File.dirname(__FILE__), 'yard')
+require 'compass'
 require 'extension_documenter'
 require 'bootstrap-sass'
+require 'compass-blueprint'
 
 Awestruct::Extensions::Pipeline.new do
   extension ExtensionDocumenter.new
