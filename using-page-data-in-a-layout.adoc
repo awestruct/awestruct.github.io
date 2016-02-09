@@ -1,0 +1,31 @@
+= Using Page Data in a Layout
+Jason Porter
+:awestruct-layout: default
+:awestruct-show_header: true
+:compat-mode:
+
+Often times you may need to use information from a page inside of a layout.
+A common usecase are javascript files particular to a page.
+You can use the `page` variable within any layout to access any data particular to a page.
+
+Using the JavaScript example if you wanted to add scripts to a layout, the easiest thing to do would be to add the script URLs to the front_matter of the page:
+
+.page.md
+----
+---
+title: My Page
+scripts: [http://.../blah.js, http://.../bar.js]
+---
+
+Page content
+----
+
+._layouts/base.slim
+----
+...
+  - page.front_matter.scripts.each do |url|
+    script href=url
+----
+
+You may have other sections or variables on a page that you need, but this is the basics.
+If you need something in a page or layout, the easiest way to do this is to add it to the front-matter of the page.
