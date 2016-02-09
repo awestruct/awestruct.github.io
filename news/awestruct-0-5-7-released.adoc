@@ -1,0 +1,51 @@
+= Awestruct 0.5.6 Released
+Jason Porter
+2016-02-09
+:awestruct-layout: news
+:milestone-url: https://github.com/awestruct/awestruct/issues?q=milestone%3A0.5.7
+:commit-history-url: https://github.com/awestruct/awestruct/compare/0.5.6...0.5.7
+
+I've recently released Awestruct 0.5.7!
+It's been a few months since 0.5.6, and I know that one had some bugs, I'm sorry for that.
+Version 0.5.7 should be less buggy and also easier to upgrade to if you're on 0.5.5, in fact my testing shows it's a drop in replacement!
+
+Thank you everyone who has helped not only this release, but also the previous ones as well, I really do appreciate the community and the help!
+I would like to call special attention to R. Tyler Croy for finding some new edge cases I was able to fix!
+
+You can see the full log at {milestone-url}[Milestone 0.5.7].
+For those interested in the actual commit history, it can be found at {commit-history-url}[GitHub].
+
+There have been 20 issues fixed in version 0.5.7!
+As I said lots of those were bugs.
+
+Awestruct has been decoupled from `compass` and `sass` in this version.
+You no longer need to have `sass` or `compass` to get things working.
+Generation with `zurb-foundation` and `bootstrap` are still supported, however, `blueprint` and `960` are no longer supported.
+You can use the `sassc` gem if you would like and receive some quick speed improvements to your stylesheets!
+Note that sassc is not compatible with any version of `compass`.
+If you are currently relying on compass, you will need to find something else to take it's place, you may want to check out http://bourbon.io/[Bourbon], however, configuring that is beyond the scope for this blog post.
+Should someone like to contribute a guide for doing that, it would be a great addition.
+
+There were a couple of small improvements for logging, but they really shouldn't affect many people.
+There is now a new performance log which outputs time spent in various parts of the execution.
+You can enable this with the `--perf` option set.
+The log will be available at `.awestruct/perf.log`.
+
+There's also some new verbose logging you can see with the `-w` option if you would like to see what's happening during longer pauses of your site being built.
+Adding the verbose flag will also work with `--perf` and `-D|--debug` to provide even more information, should the need arise.
+
+The debug flag outputs more information now, however, I STRONG RECOMMEND AGAINST using it for large sites, it will output A LOT for information you probably will never want to see.
+
+Lastly, for those using ruby 1.9, I suggest you upgrade.
+Awestruct is no longer being tested against version 1.9 and I will not be supporting it in later versions.
+
+Homepage:: http://awestruct.org
+Download:: http://rubygems.org/gems/awestruct
+
+== Thanks!
+
+Thanks to https://github.com/awestruct/awestruct/contributors[everyone who has contributed to Awestruct] and those of you who use it, help others to use it and/or evangelize the technology.
+We're honored to have you as part of the community!
+
+Now go create awesome sites!
+
