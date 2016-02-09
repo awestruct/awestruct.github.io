@@ -1,0 +1,50 @@
+= Adding a Tilt Template
+Jason Porter
+2016-02-09
+:awestruct-layout: default
+
+Thanks to https://github.com/derkork[Jan Thomä] for adding this one.
+
+If you need to add a new tilt handler to awestruct, it's quite simple.
+Here are the list of instructions:
+
+. Add any gems to your Gemfile
++
+.Gemfile
+[source, ruby]
+----
+gem 'typescript-node'
+----
+
+. Create the tilt handler
++
+[source, ruby]
+._ext/typescript_template.rb
+----
+require 'tilt/template'
+require 'typescript-node'
+
+module Tilt
+  class TypeScriptTemplate < Template
+    self.default_mime_type = 'application/javascript'
+
+    def prepare
+      options[:filename] ||= file
+    end
+
+    def evaluate(scope, locals, &block)
+      @output ||= TypeScript::Node.compile(data, '--target', 'ES5')
+    end
+  end
+end
+---- 
+
+. Add the template via pipeline.rb
++
+[source, ruby]
+----
+require 'typescript'
+
+::Tilt::register ::Tilt::TypeScriptTemplate, 'ts'
+----
+
