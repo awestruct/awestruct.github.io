@@ -17,15 +17,15 @@ We have found Ruby 1.9.3 to be the best environment at the moment to use with *A
 
 To correctly install rvm open a terminal and execute:
 
- $ curl -L https://get.rvm.io | bash -s stable --ruby=1.9.3 
+ $ curl -L https://get.rvm.io | bash -s stable --ruby=2.3.0
 
-This will download and install the latest stable version of Ruby version 1.9.3 in a directory in your HOME directory, eliminating the need to have root access to update or install new gems.
+This will download and install the latest stable version of Ruby version 2.3.0 in a directory in your HOME directory, eliminating the need to have root access to update or install new gems.
 
 === Installing Ruby on Windows
 
 Creating a great working environment on Windows can be difficult.
 We recommend using the http://rubyinstaller.org/[RubyInstaller for Windows].
-http://rubyinstaller.org/downloads/[Download] the latest version of Ruby 1.9.3 and follow any instructions it gives you.  
+http://rubyinstaller.org/downloads/[Download] the latest version of Ruby 2.3.0 and follow any instructions it gives you.
 
 == Install Awestruct and start a new project
 
@@ -58,7 +58,7 @@ Create a new empty directory, and run `awestruct` with the `--init` parameter. O
  $ cd myproj
  $ awestruct --init --framework foundation
 
-NOTE: `--framework` also accepts `blueprint`, `bootstrap`, `compass`, `960` depending on your favorite CSS framework.
+NOTE: `--framework` also accepts `bootstrap`, and `foundation` depending on your favorite CSS framework.
 
 This will create a number of folders and files which will be the starting of your Awestruct baked site.
 More information about this files and directories can be found in the link:#{site.base_url}/layout[Project layout] section.
@@ -74,7 +74,7 @@ If you do not already have a file called Gemfile in your project's directory, go
 ----
 source 'https://rubygems.org'                             # This tells Bundler where to look for gems
 
-gem 'awestruct', '~> 0.5.1'                               # Goes without saying
+gem 'awestruct', '~> 0.5.7'                               # Goes without saying
 gem 'rake', '>= 0.9.2'                                    # Needed for the Rakefile to work
 # gem 'coffee-script', '~> 2.2.0'                         # If using coffee-script or to remove the warning
 # gem 'therubyracer', '0.10.0', :platforms => :ruby       # Javascript runtime on mri (needed for LESS and coffee-script)
