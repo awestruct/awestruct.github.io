@@ -29,6 +29,11 @@ task :staging => :check do
   system "bundle exec awestruct --deploy -g -P staging --force"
 end
 
+desc "Build the site and publish to production"
+task :production => :check do
+  system "bundle exec awestruct --deploy -g -P production --force"
+end
+
 desc "Setup or update the environment to run Awestruct"
 task :setup do
   system "bundle update"
