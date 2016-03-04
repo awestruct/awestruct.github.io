@@ -17,7 +17,6 @@
       body {
         padding-top: 60px;
       }
-    %script{ :src=>'http://yandex.st/jquery/1.9.1/jquery.min.js' }
     %link{ :rel=>'stylesheet', :href=>"#{site.base_url}/stylesheets/styles.css" }
     %link{ :rel=>'stylesheet', :href=>'http://yandex.st/highlightjs/7.3/styles/default.min.css' }
 
@@ -120,8 +119,8 @@
         %hr
         %footer
           %p &copy; Bob McWhirter #{Date.today.year}
+    %script{ :src=>'https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js' }
     %script{ :src=>"#{site.base_url}/javascript/bootstrap-2.3.1.js" }
-    -#%script{ :src=>"http://yandex.st/highlightjs/7.3/highlight.min.js" }
     -# custom build from highlight.js source using: python3 tools/build.py -t browser -n haml markdown scss
     -# needed to escape to instances of #{ in source so interpolator doesn't choke
     %script{ :src=>"#{site.base_url}/javascript/highlight-20130326.js" }
