@@ -10,8 +10,8 @@ Jason Porter; Lance Ball
 
 We've noticed, and had quite a lot of feedback about it being difficult to get up and running easily with *Awestruct*.
 The first thing that makes this difficult is the Ruby environment you'll be developing your site.
-We strongly recommend you install and use http://rvm.io[rvm], and install the latest Ruby 1.9.3 environment.
-We have found Ruby 1.9.3 to be the best environment at the moment to use with *Awestruct*.
+We strongly recommend you install and use http://rvm.io[rvm], and install the latest Ruby 2.3.0 environment.
+We have found Ruby 2.3.0 to be the best environment at the moment to use with *Awestruct*.
 
 === Installing rvm on Linux and Mac OSX
 
