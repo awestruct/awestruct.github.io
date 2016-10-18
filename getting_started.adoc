@@ -106,6 +106,10 @@ require 'zurb-foundation'
 == Using rake
 
 The final step in using *Awestruct* is to familiarize yourself with the http://rake.rubyforge.org/[Rake] tasks.
+First download the Rakefile:
+
+ curl -L https://raw.github.com/awestruct/awestruct.org/master/Rakefile > Rakefile.rb
+
 There are a number of Rake tasks in the Rakefile that correspond to common awestruct tasks.
 To get started using Rake, which will make things much easier, execute:
 
