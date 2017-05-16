@@ -6,22 +6,22 @@ Jason Porter; Lance Ball
 // override imagesdir for GitHub preview
 :imagesdir: images
 
-== Creating a hassle free Ruby environment
+== Creating a hassle free Ruby environments
 
 We've noticed, and had quite a lot of feedback about it being difficult to get up and running easily with *Awestruct*.
 The first thing that makes this difficult is the Ruby environment you'll be developing your site.
 We strongly recommend you install and use http://rvm.io[rvm], and install the latest Ruby 2.3.0 environment.
 We have found Ruby 2.3.0 to be the best environment at the moment to use with *Awestruct*.
 
-=== Installing rvm on Linux and Mac OSX
+=== You want to learn how to Installing rvm on Linux and Mac OSXdddd
 
-To correctly install rvm open a terminal and execute:
+To correctly install rvm open a terminal and execute:eee
 
  $ curl -L https://get.rvm.io | bash -s stable --ruby=2.3.0
 
 This will download and install the latest stable version of Ruby version 2.3.0 in a directory in your HOME directory, eliminating the need to have root access to update or install new gems.
 
-=== Installing Ruby on Windows
+=== Installing Ruby on Windowssssss
 
 Creating a great working environment on Windows can be difficult.
 We recommend using the http://rubyinstaller.org/[RubyInstaller for Windows].
@@ -63,7 +63,7 @@ NOTE: `--framework` also accepts `bootstrap`, and `foundation` depending on your
 This will create a number of folders and files which will be the starting of your Awestruct baked site.
 More information about this files and directories can be found in the link:#{site.base_url}/layout[Project layout] section.
 
-== Setting up your dependencies
+== Setting up your dependencies :) :) 
 
 Starting with version 0.5.0 the number of dependencies for *Awestruct* was drastically reduced by removing hard dependencies on the different markup formats.
 The trade-off in doing this is that you need to pull in the diffent dependencies you are using in your site.
