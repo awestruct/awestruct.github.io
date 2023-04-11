@@ -1,309 +1,315 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title> { :awestruct }</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Awestruct is a static site baking and deployment tool" name="description">
-    <meta content="summary" name="twitter:card">
-    <meta content="@awestructed" name="twitter:site">
-    <meta content="{ :awestruct }" name="twitter:title">
-    <meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
-    <link href="/news.atom" rel="alternate" type="application/atom+xml">
-    <style>
-      body {
-        padding-top: 60px;
-      }
-    </style>
-    <link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
-    <link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="github-banner">
-            <a href="https://github.com/awestruct/awestruct">
-              <img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
-            </a>
-          </div>
-          <a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
-          <ul class="nav">
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org">Home</a>
-            </li>
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org/news/">News</a>
-            </li>
-            <li class="dropdown" id="getting-started-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
-                Documentation
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="extensions-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
-                Extensions
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="helpers-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
-                Helpers
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="span3">
-          <div class="well">
-            <h2>Build Status</h2>
-            <p>
-              GitHub Actions
-              <a href="https://github.com/awestruct/awestruct/actions">
-                <img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
-              </a>
-            </p>
-          </div>
-          <div id="sidebar">
-            <ul class="nav nav-tabs nav-stacked">
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
-              </li>
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
-              </li>
-              <li>
-                <a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
-              </li>
-              <li>
-                <a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
-              </li>
-              <li>
-                <a href="https://twitter.com/awestructed">Twitter</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="span8">
-          <div class="page-header">
-            <h1>Atomizer</h1>
-            <small>
-              <h2>Awestruct::Extensions::Atomizer</h2>
-            </small>
-          </div>
-          <p>The <code>Atomizer</code> extension takes an array of blog posts, and
-          generates an Atom feed at the specified location.</p>
-          <h2>Usage</h2>
-          <h3>Feed items</h3>
-          
-          <p>Items fed to the <code>Atomizer</code> extension must meed some criteria
-          in terms of properties returning data:</p>
-          
-          <table>
-          <thead>
-          <tr>
-          <th>Property </th>
-          <th> Description </th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-          <td><code>title</code>  </td>
-          <td> Title of the entry </td>
-          </tr>
-          <tr>
-          <td><code>date</code>  </td>
-          <td> Date of the entry </td>
-          </tr>
-          <tr>
-          <td><code>author</code> </td>
-          <td> Either a simple string, or an object providing <code>name</code> and <code>email</code> properties </td>
-          </tr>
-          <tr>
-          <td><code>content</code> </td>
-          <td> The full content of the entry (HTML is allowed) </td>
-          </tr>
-          </tbody>
-          </table>
-          <h2>Parameters</h2>
-          <pre>Awestruct::Extensions::Atomizer.new(var_name, output_path, opts)&#x000A;&#x000A;</pre>
-          <table class="parameters">
-            <tr>
-              <th>Parameter</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>
-                <code>var_name</code>
-              </td>
-              <td>
-                Name of property on `site` to act as a source of posts, typically an array
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>output_path</code>
-              </td>
-              <td>
-                /extensions/atomizer/usage.html
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>opts</code>
-              </td>
-              <td>
-                Options for title, content url and generated entries
-              </td>
-            </tr>
-          </table>
-          <div class="options">
-            <h3>Options</h3>
-            <table>
-              <tr>
-                <th>
-                  content_url
-                </th>
-                <td>
-                  URL used to set the `id` element in the atom feed - you might want to use your actual blog URL like `http://example.com/blog`. Defaults to `site.base_url`.
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  feed_title
-                </th>
-                <td>
-                  Feed title. Defaults to`site.title` or if unset `site.base_url`
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  num_entries
-                </th>
-                <td>
-                  Number of most recent entries rendered in the atom feed. Defaults to 50.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <h2>Examples</h2>
-          <h3>Generic Installation</h3>
-          <pre><code class="ruby">Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Atomizer.new(var_name, output_path, opts)&#x000A;end&#x000A;</code></pre>
-          <h3>Typical Usage</h3>
-          
-          <pre><code>Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Atomizer.new( &#x000A;    :posts, &#x000A;    '/news.atom',&#x000A;    :feed_title=&gt;'Awesome Blog Inc.' &#x000A;  )&#x000A;end&#x000A;</code></pre>
-          <h2>See Also</h2>
-          <ul>
-            <li>
-              <a href="/extensions/posts/">Posts</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <hr>
-        <footer>
-          <p>&copy; Bob McWhirter 2023</p>
-        </footer>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-  </body>
+<head>
+<meta charset="utf-8">
+<title> { :awestruct }</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Awestruct is a static site baking and deployment tool" name="description">
+<meta content="summary" name="twitter:card">
+<meta content="@awestructed" name="twitter:site">
+<meta content="{ :awestruct }" name="twitter:title">
+<meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
+<link href="/news.atom" rel="alternate" type="application/atom+xml">
+<style>
+  body {
+    padding-top: 60px;
+  }
+</style>
+<link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
+<link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<div class="github-banner">
+<a href="https://github.com/awestruct/awestruct">
+<img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
+</a>
+</div>
+<a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
+<ul class="nav">
+<li>
+<a href="https://awestruct.github.io/awestruct.org">Home</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/news/">News</a>
+</li>
+<li class="dropdown" id="getting-started-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
+Documentation
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="extensions-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
+Extensions
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="helpers-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
+Helpers
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="well">
+<h2>Build Status</h2>
+<p>
+GitHub Actions
+<a href="https://github.com/awestruct/awestruct/actions">
+<img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
+</a>
+</p>
+</div>
+<div id="sidebar">
+<ul class="nav nav-tabs nav-stacked">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
+</li>
+<li>
+<a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
+</li>
+<li>
+<a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
+</li>
+<li>
+<a href="https://twitter.com/awestructed">Twitter</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="span8">
+<div class="page-header">
+<h1>Atomizer</h1>
+<small>
+<h2>Awestruct::Extensions::Atomizer</h2>
+</small>
+</div>
+<p>The <code>Atomizer</code> extension takes an array of blog posts, and
+generates an Atom feed at the specified location.</p>
+
+<h2>Usage</h2>
+<h3>Feed items</h3>
+
+<p>Items fed to the <code>Atomizer</code> extension must meed some criteria
+in terms of properties returning data:</p>
+
+<table>
+<thead>
+<tr>
+<th>Property </th>
+<th> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>title</code>  </td>
+<td> Title of the entry </td>
+</tr>
+<tr>
+<td><code>date</code>  </td>
+<td> Date of the entry </td>
+</tr>
+<tr>
+<td><code>author</code> </td>
+<td> Either a simple string, or an object providing <code>name</code> and <code>email</code> properties </td>
+</tr>
+<tr>
+<td><code>content</code> </td>
+<td> The full content of the entry (HTML is allowed) </td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>Parameters</h2>
+<pre>Awestruct::Extensions::Atomizer.new(var_name, output_path, opts)&#x000A;&#x000A;</pre>
+<table class="parameters">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+<code>var_name</code>
+</td>
+<td>
+Name of property on `site` to act as a source of posts, typically an array
+</td>
+</tr>
+<tr>
+<td>
+<code>output_path</code>
+</td>
+<td>
+/extensions/atomizer/usage.html
+</td>
+</tr>
+<tr>
+<td>
+<code>opts</code>
+</td>
+<td>
+Options for title, content url and generated entries
+</td>
+</tr>
+</table>
+<div class="options">
+<h3>Options</h3>
+<table>
+<tr>
+<th>
+content_url
+</th>
+<td>
+URL used to set the `id` element in the atom feed - you might want to use your actual blog URL like `http://example.com/blog`. Defaults to `site.base_url`.
+</td>
+</tr>
+<tr>
+<th>
+feed_title
+</th>
+<td>
+Feed title. Defaults to`site.title` or if unset `site.base_url`
+</td>
+</tr>
+<tr>
+<th>
+num_entries
+</th>
+<td>
+Number of most recent entries rendered in the atom feed. Defaults to 50.
+</td>
+</tr>
+</table>
+</div>
+<h2>Examples</h2>
+<h3>Generic Installation</h3>
+<pre><code class="ruby">Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Atomizer.new(var_name, output_path, opts)&#x000A;end&#x000A;</code></pre>
+<h3>Typical Usage</h3>
+
+<pre><code>Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Atomizer.new( &#x000A;    :posts, &#x000A;    '/news.atom',&#x000A;    :feed_title=&gt;'Awesome Blog Inc.' &#x000A;  )&#x000A;end&#x000A;</code></pre>
+
+<h2>See Also</h2>
+<ul>
+<li>
+<a href="/extensions/posts/">Posts</a>
+</li>
+</ul>
+
+
+</div>
+</div>
+<div class="row">
+<hr>
+<footer>
+<p>&copy; Bob McWhirter 2023</p>
+</footer>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+</body>
 </html>

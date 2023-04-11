@@ -1,310 +1,314 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title> { :awestruct }</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Awestruct is a static site baking and deployment tool" name="description">
-    <meta content="summary" name="twitter:card">
-    <meta content="@awestructed" name="twitter:site">
-    <meta content="{ :awestruct }" name="twitter:title">
-    <meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
-    <link href="/news.atom" rel="alternate" type="application/atom+xml">
-    <style>
-      body {
-        padding-top: 60px;
-      }
-    </style>
-    <link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
-    <link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="github-banner">
-            <a href="https://github.com/awestruct/awestruct">
-              <img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
-            </a>
-          </div>
-          <a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
-          <ul class="nav">
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org">Home</a>
-            </li>
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org/news/">News</a>
-            </li>
-            <li class="dropdown" id="getting-started-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
-                Documentation
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="extensions-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
-                Extensions
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="helpers-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
-                Helpers
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="span3">
-          <div class="well">
-            <h2>Build Status</h2>
-            <p>
-              GitHub Actions
-              <a href="https://github.com/awestruct/awestruct/actions">
-                <img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
-              </a>
-            </p>
-          </div>
-          <div id="sidebar">
-            <ul class="nav nav-tabs nav-stacked">
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
-              </li>
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
-              </li>
-              <li>
-                <a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
-              </li>
-              <li>
-                <a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
-              </li>
-              <li>
-                <a href="https://twitter.com/awestructed">Twitter</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="span8">
-          <div class="page-header">
-            <h1>Disqus</h1>
-            <small>
-              <h2>Awestruct::Extensions::Disqus</h2>
-            </small>
-          </div>
-          <p><a href="http://disqus.com/">Disqus</a> is a Javascript-based commenting system,
-          which is ideal for static websites. It offers a cleaner user interface
-          for both users and admins compared to
-          <a href="/extensions/intense_debate">IntenseDebate</a>.</p>
-          <h2>Usage</h2>
-          <h3>Configure <code>_config/site.yml</code></h3>
-          
-          <p>Your <code>_config/site.yml</code> needs to include the property <code>disqus</code>
-          with your account short name. If you are working on a site
-          which is not accessible from the internet, but still want to
-          be able to test the Disqus comment system, be sure to set
-          the boolean <code>disqus_developer</code> property to <code>true</code>.</p>
-          
-          <table>
-          <thead>
-          <tr>
-          <th align="left">Property </th>
-          <th align="left"> Description</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-          <td align="left"><code>disqus</code> </td>
-          <td align="left"> The short name for your Disqus account</td>
-          </tr>
-          <tr>
-          <td align="left"><code>disqus_generate_id</code> </td>
-          <td align="left"> Setting this property to <code>true</code> tells the extension to automatically generate a <a href="http://docs.disqus.com/help/14/">Disqus identifier</a> as an MD5 digest of the post's date and slug. If this property is not defined, or <code>false</code>, the post will only be identified by its fully-qualified URL.</td>
-          </tr>
-          <tr>
-          <td align="left"><code>disqus_developer</code> </td>
-          <td align="left"> Setting this property to <code>true</code> allows Disqus to load when you are running the site locally (or on a domain which is not accessible from the public internet)</td>
-          </tr>
-          </tbody>
-          </table>
-          
-          
-          <p>Enabling <code>disqus_generate_id</code> is recommended so that the comments are not tied
-          to the post's URL, but rather its signature, thus simplifying migration.</p>
-          
-          <p>If you are using <a href="/profiles">multiple profiles</a>, you should set
-          this properties per profile so that, for instance, you don't
-          comments on your staging site with comments on your production
-          site.</p>
-          
-          <p>Here's an example of how you might configure these properties when
-          using multiple profiles:</p>
-          
-          <pre><code>profiles:&#x000A;  development:&#x000A;    base_url: http://localhost:4242&#x000A;    disqus: mysite-development&#x000A;    disqus_developer: true&#x000A;  staging:&#x000A;    base_url: http://staging.mysite.com&#x000A;    disqus: mysite-staging&#x000A;  development:&#x000A;    base_url: http://mysite.com&#x000A;    disqus: mysite&#x000A;    disqus_generate_id: true&#x000A;</code></pre>
-          
-          <h3>Use <code>page.disqus_comments</code></h3>
-          
-          <p>This will emit the javascript necessary to provide Disqus comment
-          integration for the comments for the target page. Typically this
-          should only be used once per page (though it can be used multiple
-          times if you set the <a href="http://docs.disqus.com/help/14/">Disqus Identifier</a>).</p>
-          
-          <pre><code>.content&#x000A;  = page.content&#x000A;.comments&#x000A;  = page.disqus_comments &#x000A;</code></pre>
-          
-          <h3>Use <code>page.disqus_comments_link</code></h3>
-          
-          <p>This will emit the javascript necessary to provide Disqus comment
-          links for the target page. (You can control the text that is emitted
-          from the Disqus admin console for the site).</p>
-          
-          <pre><code>.byline&#x000A;  = page.disqus_comments_link&#x000A;.content&#x000A;  = page.content&#x000A;.comments&#x000A;  = page.disqus_comments &#x000A;</code></pre>
-          
-          <p>You can also invoke this method for each post on a master aggregator
-          (or index) page. In this case you refer to the method from the
-          iteration variable (e.g., <code>post</code>). You can even call it multiple times
-          per post (for instance in the header and the footer).</p>
-          
-          <pre><code>- for post in site.posts&#x000A;  .post&#x000A;    .byline&#x000A;      = post.disqus_comments_link&#x000A;    .abstract&#x000A;      = post.abstract&#x000A;    .footer&#x000A;      = post.disqus_comments_link&#x000A;</code></pre>
-          
-          <p>If you want the link to include comment and reaction counts, make sure
-          to call the <code>page.disqus_comments_count</code> method on the page.</p>
-          
-          <h3>Use <code>page.disqus_comments_count</code></h3>
-          
-          <p>This will emit the javascript necessary to provide comments and
-          reactions counts on the comment links. Call this anywhere on the
-          page below all posts, preferrably as close to the end body tag
-          as possible.</p>
-          
-          <pre><code>= page.disqus_comments_count&#x000A;</code></pre>
-          
-          <h3>Enable conditionally</h3>
-          
-          <p>Since Disqus loads comments from the internet, you may want to
-          disable it altogether in development. You can do that by leaving
-          the <code>disqus</code> property unset in your development profile and
-          using a conditional statement in the page template.</p>
-          
-          <pre><code>.content&#x000A;  = page.content&#x000A;.comments&#x000A;  - if site.disqus&#x000A;    = page.disqus_comments &#x000A;</code></pre>
-          <h2>Parameters</h2>
-          <em>
-            None
-          </em>
-          <h2>Examples</h2>
-          <h3>Generic Installation</h3>
-          <pre><code class="ruby">Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Disqus.new()&#x000A;end&#x000A;</code></pre>
-          
-          <h2>See Also</h2>
-          <ul>
-            <li>
-              <a href="/extensions/intense_debate/">IntenseDebate</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <hr>
-        <footer>
-          <p>&copy; Bob McWhirter 2023</p>
-        </footer>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-  </body>
+<head>
+<meta charset="utf-8">
+<title> { :awestruct }</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Awestruct is a static site baking and deployment tool" name="description">
+<meta content="summary" name="twitter:card">
+<meta content="@awestructed" name="twitter:site">
+<meta content="{ :awestruct }" name="twitter:title">
+<meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
+<link href="/news.atom" rel="alternate" type="application/atom+xml">
+<style>
+  body {
+    padding-top: 60px;
+  }
+</style>
+<link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
+<link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<div class="github-banner">
+<a href="https://github.com/awestruct/awestruct">
+<img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
+</a>
+</div>
+<a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
+<ul class="nav">
+<li>
+<a href="https://awestruct.github.io/awestruct.org">Home</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/news/">News</a>
+</li>
+<li class="dropdown" id="getting-started-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
+Documentation
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="extensions-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
+Extensions
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="helpers-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
+Helpers
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="well">
+<h2>Build Status</h2>
+<p>
+GitHub Actions
+<a href="https://github.com/awestruct/awestruct/actions">
+<img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
+</a>
+</p>
+</div>
+<div id="sidebar">
+<ul class="nav nav-tabs nav-stacked">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
+</li>
+<li>
+<a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
+</li>
+<li>
+<a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
+</li>
+<li>
+<a href="https://twitter.com/awestructed">Twitter</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="span8">
+<div class="page-header">
+<h1>Disqus</h1>
+<small>
+<h2>Awestruct::Extensions::Disqus</h2>
+</small>
+</div>
+<p><a href="http://disqus.com/">Disqus</a> is a Javascript-based commenting system,
+which is ideal for static websites. It offers a cleaner user interface
+for both users and admins compared to
+<a href="/extensions/intense_debate">IntenseDebate</a>.</p>
+
+<h2>Usage</h2>
+<h3>Configure <code>_config/site.yml</code></h3>
+
+<p>Your <code>_config/site.yml</code> needs to include the property <code>disqus</code>
+with your account short name. If you are working on a site
+which is not accessible from the internet, but still want to
+be able to test the Disqus comment system, be sure to set
+the boolean <code>disqus_developer</code> property to <code>true</code>.</p>
+
+<table>
+<thead>
+<tr>
+<th align="left">Property </th>
+<th align="left"> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>disqus</code> </td>
+<td align="left"> The short name for your Disqus account</td>
+</tr>
+<tr>
+<td align="left"><code>disqus_generate_id</code> </td>
+<td align="left"> Setting this property to <code>true</code> tells the extension to automatically generate a <a href="http://docs.disqus.com/help/14/">Disqus identifier</a> as an MD5 digest of the post's date and slug. If this property is not defined, or <code>false</code>, the post will only be identified by its fully-qualified URL.</td>
+</tr>
+<tr>
+<td align="left"><code>disqus_developer</code> </td>
+<td align="left"> Setting this property to <code>true</code> allows Disqus to load when you are running the site locally (or on a domain which is not accessible from the public internet)</td>
+</tr>
+</tbody>
+</table>
+
+
+<p>Enabling <code>disqus_generate_id</code> is recommended so that the comments are not tied
+to the post's URL, but rather its signature, thus simplifying migration.</p>
+
+<p>If you are using <a href="/profiles">multiple profiles</a>, you should set
+this properties per profile so that, for instance, you don't
+comments on your staging site with comments on your production
+site.</p>
+
+<p>Here's an example of how you might configure these properties when
+using multiple profiles:</p>
+
+<pre><code>profiles:&#x000A;  development:&#x000A;    base_url: http://localhost:4242&#x000A;    disqus: mysite-development&#x000A;    disqus_developer: true&#x000A;  staging:&#x000A;    base_url: http://staging.mysite.com&#x000A;    disqus: mysite-staging&#x000A;  development:&#x000A;    base_url: http://mysite.com&#x000A;    disqus: mysite&#x000A;    disqus_generate_id: true&#x000A;</code></pre>
+
+<h3>Use <code>page.disqus_comments</code></h3>
+
+<p>This will emit the javascript necessary to provide Disqus comment
+integration for the comments for the target page. Typically this
+should only be used once per page (though it can be used multiple
+times if you set the <a href="http://docs.disqus.com/help/14/">Disqus Identifier</a>).</p>
+
+<pre><code>.content&#x000A;  = page.content&#x000A;.comments&#x000A;  = page.disqus_comments &#x000A;</code></pre>
+
+<h3>Use <code>page.disqus_comments_link</code></h3>
+
+<p>This will emit the javascript necessary to provide Disqus comment
+links for the target page. (You can control the text that is emitted
+from the Disqus admin console for the site).</p>
+
+<pre><code>.byline&#x000A;  = page.disqus_comments_link&#x000A;.content&#x000A;  = page.content&#x000A;.comments&#x000A;  = page.disqus_comments &#x000A;</code></pre>
+
+<p>You can also invoke this method for each post on a master aggregator
+(or index) page. In this case you refer to the method from the
+iteration variable (e.g., <code>post</code>). You can even call it multiple times
+per post (for instance in the header and the footer).</p>
+
+<pre><code>- for post in site.posts&#x000A;  .post&#x000A;    .byline&#x000A;      = post.disqus_comments_link&#x000A;    .abstract&#x000A;      = post.abstract&#x000A;    .footer&#x000A;      = post.disqus_comments_link&#x000A;</code></pre>
+
+<p>If you want the link to include comment and reaction counts, make sure
+to call the <code>page.disqus_comments_count</code> method on the page.</p>
+
+<h3>Use <code>page.disqus_comments_count</code></h3>
+
+<p>This will emit the javascript necessary to provide comments and
+reactions counts on the comment links. Call this anywhere on the
+page below all posts, preferrably as close to the end body tag
+as possible.</p>
+
+<pre><code>= page.disqus_comments_count&#x000A;</code></pre>
+
+<h3>Enable conditionally</h3>
+
+<p>Since Disqus loads comments from the internet, you may want to
+disable it altogether in development. You can do that by leaving
+the <code>disqus</code> property unset in your development profile and
+using a conditional statement in the page template.</p>
+
+<pre><code>.content&#x000A;  = page.content&#x000A;.comments&#x000A;  - if site.disqus&#x000A;    = page.disqus_comments &#x000A;</code></pre>
+
+<h2>Parameters</h2>
+<em>
+None
+</em>
+<h2>Examples</h2>
+<h3>Generic Installation</h3>
+<pre><code class="ruby">Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Disqus.new()&#x000A;end&#x000A;</code></pre>
+
+<h2>See Also</h2>
+<ul>
+<li>
+<a href="/extensions/intense_debate/">IntenseDebate</a>
+</li>
+</ul>
+
+
+</div>
+</div>
+<div class="row">
+<hr>
+<footer>
+<p>&copy; Bob McWhirter 2023</p>
+</footer>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+</body>
 </html>

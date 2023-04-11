@@ -1,269 +1,273 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Awestruct 0.2.7 On the Prowl { :awestruct }</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Awestruct is a static site baking and deployment tool" name="description">
-    <meta content="summary" name="twitter:card">
-    <meta content="@awestructed" name="twitter:site">
-    <meta content="Awestruct 0.2.7 On the Prowl" name="twitter:title">
-    <meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
-    <link href="/news.atom" rel="alternate" type="application/atom+xml">
-    <style>
-      body {
-        padding-top: 60px;
-      }
-    </style>
-    <link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
-    <link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="github-banner">
-            <a href="https://github.com/awestruct/awestruct">
-              <img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
-            </a>
-          </div>
-          <a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
-          <ul class="nav">
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org">Home</a>
-            </li>
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org/news/">News</a>
-            </li>
-            <li class="dropdown" id="getting-started-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
-                Documentation
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="extensions-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
-                Extensions
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="helpers-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
-                Helpers
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="span3">
-          <div class="well">
-            <h2>Build Status</h2>
-            <p>
-              GitHub Actions
-              <a href="https://github.com/awestruct/awestruct/actions">
-                <img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
-              </a>
-            </p>
-          </div>
-          <div id="sidebar">
-            <ul class="nav nav-tabs nav-stacked">
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
-              </li>
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
-              </li>
-              <li>
-                <a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
-              </li>
-              <li>
-                <a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
-              </li>
-              <li>
-                <a href="https://twitter.com/awestructed">Twitter</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="span8">
-          <div class="post">
-            <h1 class="title">
-              <a href="/news/2011/10/31/awestruct-027-on-the-prowl/">Awestruct 0.2.7 On the Prowl</a>
-            </h1>
-            <div class="byline">
-              <div class="author">
-                Dan Allen
-              </div>
-              <div class="date">
-                31 October 2011
-              </div>
-            </div>
-            <p><em>Uh, we skipped a few release announcements, but it's because...</em></p>
-            
-            <p>Development on Awestruct is picking up now that the <a href="http://arquillian.org">Arquillian</a> team has
-            started hacking on it for their new project site. They've contributed some
-            improvements to Awestruct and have some other extensions waiting in the wings
-            for a future release. There's also been a lot of <a href="http://twitter.com/#!/search/awestruct">chatter</a> about Awestruct
-            recently on twitter.</p>
-            
-            <p>Here's a taste of the treats in store for you.</p>
-            
-            <p><img src="/images/news/ontheprowl.jpg" alt="Cat on the prowl"/></p>
-            
-            <p><a href="http://github.com/aslakknutsen">Aslak</a> improved the <a href="/extensions/posts">Posts</a> extension to read page.date as a alternative to
-            the post filename, part of the preparation for a feature that enables
-            automatic generation of blog entries for project releases (like this one!).</p>
-            
-            <p>Aslak also integrated <a href="https://github.com/ttilley/fssm">FSSM</a> to monitor files more efficiently in development
-            mode. Your CPU will thank you! He also committed a fix for a divide by 0 bug
-            in the tagger extension that would strike when you least expected it.
-            Additionally, he added support for extensions to define their own
-            transformers.</p>
-            
-            <p>At <a href="http://github.com/mojavelinux">Dan</a>'s request, Awestruct has been upgraded to <a href="http://compass-style.org">Compass</a> 0.11.5 to take
-            advantage of all the latest CSS3 mixins and so the online Compass
-            documentation is actually relevant for developers using Awestruct. If you've
-            been using a lot of the CSS3 mixins already, you may need to do a little
-            migration. Compass spits out deprecation warnings to the console. Holler if
-            the upgrade breaks your stylesheet and you aren't sure how to fix it.</p>
-            
-            <p>Dan and Aslak figured out how to hack RedCloth to provide custom inline and
-            block markup. The hooks are now in place. We'll be documenting how to make use
-            of them soon. You can see an example
-            <a href="https://github.com/arquillian/arquillian.github.com/blob/develop/_ext/textile_plus.rb">here</a>.</p>
-            
-            <p>Dan documented the <a href="/extensions/disqus">Disqus</a> extension, an extension which snuck into a
-            previous release without much ado. He also added an option to have the
-            extension generate the Disqus identifier automatically from the date and slug
-            of the post. Disqus is an alternative JavaScript-based comment system for
-            Awestruct <a href="/extensions/posts">Posts</a> which offers a very elegant interface for both users and
-            administrators.</p>
-            
-            <p>Finally, <a href="http://github.com/tombentley">Tom</a>'s gsub transformer finally got merged in, so you can slice and
-            dice the pages as they exit the pipeline.</p>
-            
-            <p>Anyhow, check out <a href="https://rubygems.org/gems/awestruct/versions/0.2.7">gem</a>.</p>
-            
-            <pre><code>gem install awestruct&#x000A;</code></pre>
-            
-            <p>If I missed something, feel free to mention it in the comments.</p>
-            
-            <p><em>Photo Credit: <a href="http://www.flickr.com/photos/ralphandjenny/5118409269/in/photostream/">ralph and jenny</a></em></p>
-            <div class="comments">
-              <script>
-                var idcomments_acct='fa224495874e8d96bbf6f2dbcc26dac5';
-                var idcomments_post_id='a906e5fbd635ae727d7080cc7307b629369fbb49';
-                 var idcomments_post_url='https://awestruct.github.io/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/';
-              </script>
-              <span id="IDCommentsPostTitle" style="display:none"></span>
-              <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <hr>
-        <footer>
-          <p>&copy; Bob McWhirter 2023</p>
-        </footer>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-  </body>
+<head>
+<meta charset="utf-8">
+<title>Awestruct 0.2.7 On the Prowl { :awestruct }</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Awestruct is a static site baking and deployment tool" name="description">
+<meta content="summary" name="twitter:card">
+<meta content="@awestructed" name="twitter:site">
+<meta content="Awestruct 0.2.7 On the Prowl" name="twitter:title">
+<meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
+<link href="/news.atom" rel="alternate" type="application/atom+xml">
+<style>
+  body {
+    padding-top: 60px;
+  }
+</style>
+<link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
+<link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<div class="github-banner">
+<a href="https://github.com/awestruct/awestruct">
+<img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
+</a>
+</div>
+<a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
+<ul class="nav">
+<li>
+<a href="https://awestruct.github.io/awestruct.org">Home</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/news/">News</a>
+</li>
+<li class="dropdown" id="getting-started-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
+Documentation
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="extensions-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
+Extensions
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="helpers-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
+Helpers
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="well">
+<h2>Build Status</h2>
+<p>
+GitHub Actions
+<a href="https://github.com/awestruct/awestruct/actions">
+<img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
+</a>
+</p>
+</div>
+<div id="sidebar">
+<ul class="nav nav-tabs nav-stacked">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
+</li>
+<li>
+<a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
+</li>
+<li>
+<a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
+</li>
+<li>
+<a href="https://twitter.com/awestructed">Twitter</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="span8">
+<div class="post">
+<h1 class="title">
+<a href="/news/2011/10/31/awestruct-027-on-the-prowl/">Awestruct 0.2.7 On the Prowl</a>
+</h1>
+<div class="byline">
+<div class="author">
+Dan Allen
+</div>
+<div class="date">
+31 October 2011
+</div>
+</div>
+<p><em>Uh, we skipped a few release announcements, but it's because...</em></p>
+
+<p>Development on Awestruct is picking up now that the <a href="http://arquillian.org">Arquillian</a> team has
+started hacking on it for their new project site. They've contributed some
+improvements to Awestruct and have some other extensions waiting in the wings
+for a future release. There's also been a lot of <a href="http://twitter.com/#!/search/awestruct">chatter</a> about Awestruct
+recently on twitter.</p>
+
+<p>Here's a taste of the treats in store for you.</p>
+
+<p><img src="/images/news/ontheprowl.jpg" alt="Cat on the prowl"/></p>
+
+<p><a href="http://github.com/aslakknutsen">Aslak</a> improved the <a href="/extensions/posts">Posts</a> extension to read page.date as a alternative to
+the post filename, part of the preparation for a feature that enables
+automatic generation of blog entries for project releases (like this one!).</p>
+
+<p>Aslak also integrated <a href="https://github.com/ttilley/fssm">FSSM</a> to monitor files more efficiently in development
+mode. Your CPU will thank you! He also committed a fix for a divide by 0 bug
+in the tagger extension that would strike when you least expected it.
+Additionally, he added support for extensions to define their own
+transformers.</p>
+
+<p>At <a href="http://github.com/mojavelinux">Dan</a>'s request, Awestruct has been upgraded to <a href="http://compass-style.org">Compass</a> 0.11.5 to take
+advantage of all the latest CSS3 mixins and so the online Compass
+documentation is actually relevant for developers using Awestruct. If you've
+been using a lot of the CSS3 mixins already, you may need to do a little
+migration. Compass spits out deprecation warnings to the console. Holler if
+the upgrade breaks your stylesheet and you aren't sure how to fix it.</p>
+
+<p>Dan and Aslak figured out how to hack RedCloth to provide custom inline and
+block markup. The hooks are now in place. We'll be documenting how to make use
+of them soon. You can see an example
+<a href="https://github.com/arquillian/arquillian.github.com/blob/develop/_ext/textile_plus.rb">here</a>.</p>
+
+<p>Dan documented the <a href="/extensions/disqus">Disqus</a> extension, an extension which snuck into a
+previous release without much ado. He also added an option to have the
+extension generate the Disqus identifier automatically from the date and slug
+of the post. Disqus is an alternative JavaScript-based comment system for
+Awestruct <a href="/extensions/posts">Posts</a> which offers a very elegant interface for both users and
+administrators.</p>
+
+<p>Finally, <a href="http://github.com/tombentley">Tom</a>'s gsub transformer finally got merged in, so you can slice and
+dice the pages as they exit the pipeline.</p>
+
+<p>Anyhow, check out <a href="https://rubygems.org/gems/awestruct/versions/0.2.7">gem</a>.</p>
+
+<pre><code>gem install awestruct&#x000A;</code></pre>
+
+<p>If I missed something, feel free to mention it in the comments.</p>
+
+<p><em>Photo Credit: <a href="http://www.flickr.com/photos/ralphandjenny/5118409269/in/photostream/">ralph and jenny</a></em></p>
+
+<div class="comments">
+<script>
+  var idcomments_acct='fa224495874e8d96bbf6f2dbcc26dac5';
+  var idcomments_post_id='a906e5fbd635ae727d7080cc7307b629369fbb49';
+   var idcomments_post_url='https://awestruct.github.io/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/';
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+
+</div>
+</div>
+
+
+</div>
+</div>
+<div class="row">
+<hr>
+<footer>
+<p>&copy; Bob McWhirter 2023</p>
+</footer>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+</body>
 </html>

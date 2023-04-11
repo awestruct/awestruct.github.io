@@ -1,233 +1,234 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Adding a Tilt Template { :awestruct }</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Awestruct is a static site baking and deployment tool" name="description">
-    <meta content="summary" name="twitter:card">
-    <meta content="@awestructed" name="twitter:site">
-    <meta content="Adding a Tilt Template" name="twitter:title">
-    <meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
-    <link href="/news.atom" rel="alternate" type="application/atom+xml">
-    <style>
-      body {
-        padding-top: 60px;
-      }
-    </style>
-    <link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
-    <link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="github-banner">
-            <a href="https://github.com/awestruct/awestruct">
-              <img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
-            </a>
-          </div>
-          <a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
-          <ul class="nav">
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org">Home</a>
-            </li>
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org/news/">News</a>
-            </li>
-            <li class="dropdown" id="getting-started-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
-                Documentation
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="extensions-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
-                Extensions
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="helpers-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
-                Helpers
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="span3">
-          <div class="well">
-            <h2>Build Status</h2>
-            <p>
-              GitHub Actions
-              <a href="https://github.com/awestruct/awestruct/actions">
-                <img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
-              </a>
-            </p>
-          </div>
-          <div id="sidebar">
-            <ul class="nav nav-tabs nav-stacked">
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
-              </li>
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
-              </li>
-              <li>
-                <a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
-              </li>
-              <li>
-                <a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
-              </li>
-              <li>
-                <a href="https://twitter.com/awestructed">Twitter</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="span8">
-          <div class="paragraph">
-          <p>Thanks to <a href="https://github.com/derkork">Jan Thomä</a> for adding this one.</p>
-          </div>
-          <div class="paragraph">
-          <p>If you need to add a new tilt handler to awestruct, it&#8217;s quite simple.
-          Here are the list of instructions:</p>
-          </div>
-          <div class="olist arabic">
-          <ol class="arabic">
-          <li>
-          <p>Add any gems to your Gemfile</p>
-          <div class="listingblock">
-          <div class="title">Gemfile</div>
-          <div class="content">
-          <pre class="highlight nowrap"><code class="language-ruby" data-lang="ruby">gem 'typescript-node'</code></pre>
-          </div>
-          </div>
-          </li>
-          <li>
-          <p>Create the tilt handler</p>
-          <div class="listingblock">
-          <div class="title">_ext/typescript_template.rb</div>
-          <div class="content">
-          <pre class="highlight nowrap"><code class="language-ruby" data-lang="ruby">require 'tilt/template'&#x000A;require 'typescript-node'&#x000A;&#x000A;module Tilt&#x000A;  class TypeScriptTemplate &lt; Template&#x000A;    self.default_mime_type = 'application/javascript'&#x000A;&#x000A;    def prepare&#x000A;      options[:filename] ||= file&#x000A;    end&#x000A;&#x000A;    def evaluate(scope, locals, &amp;block)&#x000A;      @output ||= TypeScript::Node.compile(data, '--target', 'ES5')&#x000A;    end&#x000A;  end&#x000A;end</code></pre>
-          </div>
-          </div>
-          </li>
-          <li>
-          <p>Add the template via pipeline.rb</p>
-          <div class="listingblock">
-          <div class="content">
-          <pre class="highlight nowrap"><code class="language-ruby" data-lang="ruby">require 'typescript'&#x000A;&#x000A;::Tilt::register ::Tilt::TypeScriptTemplate, 'ts'</code></pre>
-          </div>
-          </div>
-          </li>
-          </ol>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <hr>
-        <footer>
-          <p>&copy; Bob McWhirter 2023</p>
-        </footer>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-  </body>
+<head>
+<meta charset="utf-8">
+<title>Adding a Tilt Template { :awestruct }</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Awestruct is a static site baking and deployment tool" name="description">
+<meta content="summary" name="twitter:card">
+<meta content="@awestructed" name="twitter:site">
+<meta content="Adding a Tilt Template" name="twitter:title">
+<meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
+<link href="/news.atom" rel="alternate" type="application/atom+xml">
+<style>
+  body {
+    padding-top: 60px;
+  }
+</style>
+<link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
+<link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<div class="github-banner">
+<a href="https://github.com/awestruct/awestruct">
+<img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
+</a>
+</div>
+<a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
+<ul class="nav">
+<li>
+<a href="https://awestruct.github.io/awestruct.org">Home</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/news/">News</a>
+</li>
+<li class="dropdown" id="getting-started-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
+Documentation
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="extensions-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
+Extensions
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="helpers-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
+Helpers
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="well">
+<h2>Build Status</h2>
+<p>
+GitHub Actions
+<a href="https://github.com/awestruct/awestruct/actions">
+<img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
+</a>
+</p>
+</div>
+<div id="sidebar">
+<ul class="nav nav-tabs nav-stacked">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
+</li>
+<li>
+<a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
+</li>
+<li>
+<a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
+</li>
+<li>
+<a href="https://twitter.com/awestructed">Twitter</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="span8">
+<div class="paragraph">
+<p>Thanks to <a href="https://github.com/derkork">Jan Thomä</a> for adding this one.</p>
+</div>
+<div class="paragraph">
+<p>If you need to add a new tilt handler to awestruct, it&#8217;s quite simple.
+Here are the list of instructions:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Add any gems to your Gemfile</p>
+<div class="listingblock">
+<div class="title">Gemfile</div>
+<div class="content">
+<pre class="highlight nowrap"><code class="language-ruby" data-lang="ruby">gem 'typescript-node'</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Create the tilt handler</p>
+<div class="listingblock">
+<div class="title">_ext/typescript_template.rb</div>
+<div class="content">
+<pre class="highlight nowrap"><code class="language-ruby" data-lang="ruby">require 'tilt/template'&#x000A;require 'typescript-node'&#x000A;&#x000A;module Tilt&#x000A;  class TypeScriptTemplate &lt; Template&#x000A;    self.default_mime_type = 'application/javascript'&#x000A;&#x000A;    def prepare&#x000A;      options[:filename] ||= file&#x000A;    end&#x000A;&#x000A;    def evaluate(scope, locals, &amp;block)&#x000A;      @output ||= TypeScript::Node.compile(data, '--target', 'ES5')&#x000A;    end&#x000A;  end&#x000A;end</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Add the template via pipeline.rb</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight nowrap"><code class="language-ruby" data-lang="ruby">require 'typescript'&#x000A;&#x000A;::Tilt::register ::Tilt::TypeScriptTemplate, 'ts'</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+
+</div>
+</div>
+<div class="row">
+<hr>
+<footer>
+<p>&copy; Bob McWhirter 2023</p>
+</footer>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+</body>
 </html>

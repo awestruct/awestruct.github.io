@@ -1,384 +1,390 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title> { :awestruct }</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Awestruct is a static site baking and deployment tool" name="description">
-    <meta content="summary" name="twitter:card">
-    <meta content="@awestructed" name="twitter:site">
-    <meta content="{ :awestruct }" name="twitter:title">
-    <meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
-    <link href="/news.atom" rel="alternate" type="application/atom+xml">
-    <style>
-      body {
-        padding-top: 60px;
-      }
-    </style>
-    <link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
-    <link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="github-banner">
-            <a href="https://github.com/awestruct/awestruct">
-              <img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
-            </a>
-          </div>
-          <a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
-          <ul class="nav">
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org">Home</a>
-            </li>
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org/news/">News</a>
-            </li>
-            <li class="dropdown" id="getting-started-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
-                Documentation
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="extensions-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
-                Extensions
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="helpers-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
-                Helpers
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="span3">
-          <div class="well">
-            <h2>Build Status</h2>
-            <p>
-              GitHub Actions
-              <a href="https://github.com/awestruct/awestruct/actions">
-                <img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
-              </a>
-            </p>
-          </div>
-          <div id="sidebar">
-            <ul class="nav nav-tabs nav-stacked">
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
-              </li>
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
-              </li>
-              <li>
-                <a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
-              </li>
-              <li>
-                <a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
-              </li>
-              <li>
-                <a href="https://twitter.com/awestructed">Twitter</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="span8">
-          <div class="page-header">
-            <h1>Paginator</h1>
-            <small>
-              <h2>Awestruct::Extensions::Paginator</h2>
-            </small>
-          </div>
-          <p>The <code>Paginator</code> extension allows rendering of a page template against
-          portions of a collection.  For instance, you might render your blog
-          posts on a page, 10 at a time.  The <code>Paginator</code> extension makes this possible.</p>
-          <h2>Usage</h2>
-          <h3>Data Slicing</h3>
-          
-          <p>The data to paginate is retrieved from the <code>site</code> object, using the <code>var_name</code>
-          provided in the configuration.</p>
-          
-          <p>The first parameter to the extension is the name of a property from the
-          <code>site</code> object.  If you've used the <a href="/extensions/posts">Posts extension</a>
-          to place the posts into <code>site.posts</code>, then you would specify <code>:posts</code>
-          as the name to paginate.</p>
-          
-          <p>The extension slices the data from the <code>site</code> object based upon <code>opts[:per_page]</code>,
-          and assigns the resulting slices to <code>page</code> object under the same name.</p>
-          
-          <p><img src="/images/paginator.png" alt="Slicing" /></p>
-          
-          <h3>Page association</h3>
-          
-          <p>The second parameter, specifying the simple name of the template to use,
-          is then injected into the site, once for each slice produced by the
-          behavior described above.</p>
-          
-          <p>The first page injected into the site will match the name of the input
-          template, with the appropriate output extension.  Subsequent pages,
-          if necessary, will be named <code>page1.html</code>, <code>page2.html</code> etc.</p>
-          
-          <p><img src="/images/pagination_template.png" alt="Slicing" />{:.centered}</p>
-          
-          <h3>Pagination Templates</h3>
-          
-          <p>Since the <code>Paginator</code> extension adds additional properties to the <code>page</code>
-          object, templates may take advantage of this fact to render more robust
-          pages.</p>
-          
-          <p>While the slice of objects assigned to the <code>page</code> is primary an array,
-          it has additional properties to aid in rendering of the page.</p>
-          
-          <table>
-          <thead>
-          <tr>
-          <th>Property </th>
-          <th align="right"> Type </th>
-          <th> Description </th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-          <td><code>next_page</code> </td>
-          <td align="right"> <em>Page</em> </td>
-          <td> Reference to the next page in the pagination sequence, or <code>nil</code> </td>
-          </tr>
-          <tr>
-          <td><code>previous_page</code> </td>
-          <td align="right"> <em>Page</em> </td>
-          <td> Reference to the previous page in the pagination sequence, or <code>nil</code> </td>
-          </tr>
-          <tr>
-          <td><code>current_page</code> </td>
-          <td align="right"> <em>Page</em> </td>
-          <td> Reference to the current page (should be equal to <code>page</code>) </td>
-          </tr>
-          <tr>
-          <td><code>current_page_index</code> </td>
-          <td align="right"> integer </td>
-          <td> 0-based index of the current page in the pagination sequence </td>
-          </tr>
-          <tr>
-          <td><code>pages</code> </td>
-          <td align="right"> Array of <em>Page</em> </td>
-          <td> The full sequence of pagination pages </td>
-          </tr>
-          </tbody>
-          </table>
-          
-          
-          <p>It also provides a single extra method to draw pagination links for navigating
-          through the sequence of pages.</p>
-          
-          <table>
-          <thead>
-          <tr>
-          <th>Method </th>
-          <th> Result </th>
-          <th> Description </th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-          <td><code>links</code> </td>
-          <td> String of HTML </td>
-          <td> An HTML string including page navigation links </td>
-          </tr>
-          </tbody>
-          </table>
-          <h2>Parameters</h2>
-          <pre>Awestruct::Extensions::Paginator.new(var_name, input_template, opts)&#x000A;&#x000A;</pre>
-          <table class="parameters">
-            <tr>
-              <th>Parameter</th>
-              <th>Description</th>
-            </tr>
-            <tr>
-              <td>
-                <code>var_name</code>
-              </td>
-              <td>
-                The name of the variable to pagination from `site` into each `page`.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>input_template</code>
-              </td>
-              <td>
-                Simple path (without extension) to the template to use for each page.
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <code>opts</code>
-              </td>
-              <td>
-                Opts for pagination and linking
-              </td>
-            </tr>
-          </table>
-          <div class="options">
-            <h3>Options</h3>
-            <table>
-              <tr>
-                <th>
-                  per_page
-                </th>
-                <td>
-                  Number of items per page.
-                </td>
-              </tr>
-              <tr>
-                <th>
-                  window_size
-                </th>
-                <td>
-                  The number of pages on either side of the first, last or around the current page when drawing links.
-                </td>
-              </tr>
-            </table>
-          </div>
-          <h2>Examples</h2>
-          <h3>Generic Installation</h3>
-          <pre><code class="ruby">Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Paginator.new(var_name, input_template, opts)&#x000A;end&#x000A;</code></pre>
-          <h3>Simple Installation</h3>
-          
-          <pre><code>Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Paginator.new( :posts, &#x000A;                                                  '/news/index', &#x000A;                                                  :per_page=&gt;5 )&#x000A;end&#x000A;</code></pre>
-          
-          <h3>Typical Usage</h3>
-          
-          <p>Assuming you've configured the pipeline as:</p>
-          
-          <pre><code>Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Posts.new( '/news', :posts )&#x000A;  extension Awestruct::Extensions::Paginator.new( :posts, '/news/index', :per_page=&gt;5 )&#x000A;end&#x000A;</code></pre>
-          
-          <p>Pages under <code>/news/**</code> matching the date-based file-naming scheme will be considered
-          to be blog posts, and made available as <code>site.posts</code></p>
-          
-          <p>In turn, the paginator will examine <code>site.posts</code> and slice it into chunks of 5,
-          assigning each slice to a new page.  The new pages are fed from the site template
-          that matches <code>/news/index.html.haml</code> or other appropriate extension.</p>
-          
-          <p>The first generate page will be <code>/news/index.html</code>.  The second, if required will
-           be <code>/news/page2.html</code> and so on.</p>
-          
-          <p>The <code>/news/index.html.haml</code> template may look akin to</p>
-          
-          <pre><code>- for post in page.posts&#x000A;  .post&#x000A;    %h1&#x000A;      %a{:href=&gt;post.url}= post.title&#x000A;    .content&#x000A;      = post.content&#x000A;&#x000A;= page.posts.links&#x000A;</code></pre>
-          <h2>See Also</h2>
-          <ul>
-            <li>
-              <a href="/extensions/posts/">Posts</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <hr>
-        <footer>
-          <p>&copy; Bob McWhirter 2023</p>
-        </footer>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-  </body>
+<head>
+<meta charset="utf-8">
+<title> { :awestruct }</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Awestruct is a static site baking and deployment tool" name="description">
+<meta content="summary" name="twitter:card">
+<meta content="@awestructed" name="twitter:site">
+<meta content="{ :awestruct }" name="twitter:title">
+<meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
+<link href="/news.atom" rel="alternate" type="application/atom+xml">
+<style>
+  body {
+    padding-top: 60px;
+  }
+</style>
+<link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
+<link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<div class="github-banner">
+<a href="https://github.com/awestruct/awestruct">
+<img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
+</a>
+</div>
+<a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
+<ul class="nav">
+<li>
+<a href="https://awestruct.github.io/awestruct.org">Home</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/news/">News</a>
+</li>
+<li class="dropdown" id="getting-started-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
+Documentation
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="extensions-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
+Extensions
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="helpers-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
+Helpers
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="well">
+<h2>Build Status</h2>
+<p>
+GitHub Actions
+<a href="https://github.com/awestruct/awestruct/actions">
+<img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
+</a>
+</p>
+</div>
+<div id="sidebar">
+<ul class="nav nav-tabs nav-stacked">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
+</li>
+<li>
+<a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
+</li>
+<li>
+<a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
+</li>
+<li>
+<a href="https://twitter.com/awestructed">Twitter</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="span8">
+<div class="page-header">
+<h1>Paginator</h1>
+<small>
+<h2>Awestruct::Extensions::Paginator</h2>
+</small>
+</div>
+<p>The <code>Paginator</code> extension allows rendering of a page template against
+portions of a collection.  For instance, you might render your blog
+posts on a page, 10 at a time.  The <code>Paginator</code> extension makes this possible.</p>
+
+<h2>Usage</h2>
+<h3>Data Slicing</h3>
+
+<p>The data to paginate is retrieved from the <code>site</code> object, using the <code>var_name</code>
+provided in the configuration.</p>
+
+<p>The first parameter to the extension is the name of a property from the
+<code>site</code> object.  If you've used the <a href="/extensions/posts">Posts extension</a>
+to place the posts into <code>site.posts</code>, then you would specify <code>:posts</code>
+as the name to paginate.</p>
+
+<p>The extension slices the data from the <code>site</code> object based upon <code>opts[:per_page]</code>,
+and assigns the resulting slices to <code>page</code> object under the same name.</p>
+
+<p><img src="/images/paginator.png" alt="Slicing" /></p>
+
+<h3>Page association</h3>
+
+<p>The second parameter, specifying the simple name of the template to use,
+is then injected into the site, once for each slice produced by the
+behavior described above.</p>
+
+<p>The first page injected into the site will match the name of the input
+template, with the appropriate output extension.  Subsequent pages,
+if necessary, will be named <code>page1.html</code>, <code>page2.html</code> etc.</p>
+
+<p><img src="/images/pagination_template.png" alt="Slicing" />{:.centered}</p>
+
+<h3>Pagination Templates</h3>
+
+<p>Since the <code>Paginator</code> extension adds additional properties to the <code>page</code>
+object, templates may take advantage of this fact to render more robust
+pages.</p>
+
+<p>While the slice of objects assigned to the <code>page</code> is primary an array,
+it has additional properties to aid in rendering of the page.</p>
+
+<table>
+<thead>
+<tr>
+<th>Property </th>
+<th align="right"> Type </th>
+<th> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>next_page</code> </td>
+<td align="right"> <em>Page</em> </td>
+<td> Reference to the next page in the pagination sequence, or <code>nil</code> </td>
+</tr>
+<tr>
+<td><code>previous_page</code> </td>
+<td align="right"> <em>Page</em> </td>
+<td> Reference to the previous page in the pagination sequence, or <code>nil</code> </td>
+</tr>
+<tr>
+<td><code>current_page</code> </td>
+<td align="right"> <em>Page</em> </td>
+<td> Reference to the current page (should be equal to <code>page</code>) </td>
+</tr>
+<tr>
+<td><code>current_page_index</code> </td>
+<td align="right"> integer </td>
+<td> 0-based index of the current page in the pagination sequence </td>
+</tr>
+<tr>
+<td><code>pages</code> </td>
+<td align="right"> Array of <em>Page</em> </td>
+<td> The full sequence of pagination pages </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>It also provides a single extra method to draw pagination links for navigating
+through the sequence of pages.</p>
+
+<table>
+<thead>
+<tr>
+<th>Method </th>
+<th> Result </th>
+<th> Description </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>links</code> </td>
+<td> String of HTML </td>
+<td> An HTML string including page navigation links </td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>Parameters</h2>
+<pre>Awestruct::Extensions::Paginator.new(var_name, input_template, opts)&#x000A;&#x000A;</pre>
+<table class="parameters">
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>
+<code>var_name</code>
+</td>
+<td>
+The name of the variable to pagination from `site` into each `page`.
+</td>
+</tr>
+<tr>
+<td>
+<code>input_template</code>
+</td>
+<td>
+Simple path (without extension) to the template to use for each page.
+</td>
+</tr>
+<tr>
+<td>
+<code>opts</code>
+</td>
+<td>
+Opts for pagination and linking
+</td>
+</tr>
+</table>
+<div class="options">
+<h3>Options</h3>
+<table>
+<tr>
+<th>
+per_page
+</th>
+<td>
+Number of items per page.
+</td>
+</tr>
+<tr>
+<th>
+window_size
+</th>
+<td>
+The number of pages on either side of the first, last or around the current page when drawing links.
+</td>
+</tr>
+</table>
+</div>
+<h2>Examples</h2>
+<h3>Generic Installation</h3>
+<pre><code class="ruby">Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Paginator.new(var_name, input_template, opts)&#x000A;end&#x000A;</code></pre>
+<h3>Simple Installation</h3>
+
+<pre><code>Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Paginator.new( :posts, &#x000A;                                                  '/news/index', &#x000A;                                                  :per_page=&gt;5 )&#x000A;end&#x000A;</code></pre>
+
+<h3>Typical Usage</h3>
+
+<p>Assuming you've configured the pipeline as:</p>
+
+<pre><code>Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Posts.new( '/news', :posts )&#x000A;  extension Awestruct::Extensions::Paginator.new( :posts, '/news/index', :per_page=&gt;5 )&#x000A;end&#x000A;</code></pre>
+
+<p>Pages under <code>/news/**</code> matching the date-based file-naming scheme will be considered
+to be blog posts, and made available as <code>site.posts</code></p>
+
+<p>In turn, the paginator will examine <code>site.posts</code> and slice it into chunks of 5,
+assigning each slice to a new page.  The new pages are fed from the site template
+that matches <code>/news/index.html.haml</code> or other appropriate extension.</p>
+
+<p>The first generate page will be <code>/news/index.html</code>.  The second, if required will
+ be <code>/news/page2.html</code> and so on.</p>
+
+<p>The <code>/news/index.html.haml</code> template may look akin to</p>
+
+<pre><code>- for post in page.posts&#x000A;  .post&#x000A;    %h1&#x000A;      %a{:href=&gt;post.url}= post.title&#x000A;    .content&#x000A;      = post.content&#x000A;&#x000A;= page.posts.links&#x000A;</code></pre>
+
+<h2>See Also</h2>
+<ul>
+<li>
+<a href="/extensions/posts/">Posts</a>
+</li>
+</ul>
+
+
+</div>
+</div>
+<div class="row">
+<hr>
+<footer>
+<p>&copy; Bob McWhirter 2023</p>
+</footer>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+</body>
 </html>

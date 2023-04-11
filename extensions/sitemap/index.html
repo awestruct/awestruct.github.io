@@ -1,257 +1,261 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title> { :awestruct }</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Awestruct is a static site baking and deployment tool" name="description">
-    <meta content="summary" name="twitter:card">
-    <meta content="@awestructed" name="twitter:site">
-    <meta content="{ :awestruct }" name="twitter:title">
-    <meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
-    <link href="/news.atom" rel="alternate" type="application/atom+xml">
-    <style>
-      body {
-        padding-top: 60px;
-      }
-    </style>
-    <link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
-    <link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="github-banner">
-            <a href="https://github.com/awestruct/awestruct">
-              <img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
-            </a>
-          </div>
-          <a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
-          <ul class="nav">
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org">Home</a>
-            </li>
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org/news/">News</a>
-            </li>
-            <li class="dropdown" id="getting-started-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
-                Documentation
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="extensions-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
-                Extensions
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="helpers-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
-                Helpers
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="span3">
-          <div class="well">
-            <h2>Build Status</h2>
-            <p>
-              GitHub Actions
-              <a href="https://github.com/awestruct/awestruct/actions">
-                <img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
-              </a>
-            </p>
-          </div>
-          <div id="sidebar">
-            <ul class="nav nav-tabs nav-stacked">
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
-              </li>
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
-              </li>
-              <li>
-                <a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
-              </li>
-              <li>
-                <a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
-              </li>
-              <li>
-                <a href="https://twitter.com/awestructed">Twitter</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="span8">
-          <div class="page-header">
-            <h1>Sitemap</h1>
-            <small>
-              <h2>Awestruct::Extensions::Sitemap</h2>
-            </small>
-          </div>
-          <p>The <code>Sitemap</code> extension is normally one of the last in a pipeline, if used.
-          It will generate a <code>/sitemap.xml</code> file which may be fed to search engines
-          for better SEO.</p>
-          
-          <p>It simply scans all the pages in your site and generates your sitemap for you.</p>
-          <h2>Usage</h2>
-          <p><code>Sitemap</code> will ignore images, css, javascript, <code>robots.txt</code>, and <code>.htaccess</code> files.
-          If there are URLs on your site that are not handled by awestruct, for example
-          URLs that are managed with <code>.htaccess RewriteRule</code>s, you can add those in
-          <code>_config/sitemap.yml</code> as shown.</p>
-          
-          <pre><code>pages:&#x000A;  - &#x000A;    url: /2x/builds/html-docs/&#x000A;    change_frequency: daily&#x000A;    priority: 1&#x000A;  -&#x000A;    url: /1.1.x/builds/html-docs&#x000A;    change_frequency: monthly&#x000A;    priority: 0.5&#x000A;</code></pre>
-          
-          <p>Values for <code>change_frequency</code> and <code>priority</code> should correspond to those
-          allowed in the <a href="http://www.sitemaps.org/protocol.html">sitemap protocol</a>.</p>
-          
-          <p>As with the sitemap protocol, <code>priority</code> for your pages defaults to 0.5.
-          You may set this, and the <code>change_frequency</code> value in the front matter
-          for each page or template. If set in the template, all pages rendered with
-          that template will be affected. The default for <code>change_frequency</code> is <code>never</code>.</p>
-          
-          <p>As your site gets more complex you may want to exclude more content from your sitemap. By
-          adding some configuration to the sitemap.yml you can exclude all files by extension or individual files by
-          their full path in the generated site.</p>
-          
-          <pre><code>excluded_extensions: ['.pdf']&#x000A;excluded_files: [ '/success_form.html', '/assets/hidden-file.csv' ]&#x000A;</code></pre>
-          
-          <p>By default the following are excluded from the sitemap</p>
-          
-          <pre><code>excluded_files: [ '/.htaccess', '/favicon.ico' ,'/robots.txt', ]&#x000A;excluded_extensions: ['.atom', '.scss', '.css', '.png', '.jpg', '.gif', '.js' ]&#x000A;</code></pre>
-          
-          <p>To include an optional stylesheet for your sitemap.xml file</p>
-          
-          <pre><code>stylesheet_url: relative/path/to/your/stylesheet&#x000A;</code></pre>
-          
-          <h3>Install</h3>
-          
-          <p>To use the <code>Sitemap</code> extension, simply configure it into your <code>_ext/pipeline.rb</code>
-          file.</p>
-          
-          <pre><code>Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Sitemap.new&#x000A;end&#x000A;</code></pre>
-          
-          <p>NOTE: If you use the <code>indexifier</code> extension, you should ensure that the
-          <code>sitemap</code> extension appears after <code>indexifier</code> in your <code>_ext/pipeline.rb</code></p>
-          <h2>Parameters</h2>
-          <em>
-            None
-          </em>
-          <h2>Examples</h2>
-          <h3>Generic Installation</h3>
-          <pre><code class="ruby">Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Sitemap.new()&#x000A;end&#x000A;</code></pre>
-          
-          <h2>See Also</h2>
-          <ul>
-          </ul>
-        </div>
-      </div>
-      <div class="row">
-        <hr>
-        <footer>
-          <p>&copy; Bob McWhirter 2023</p>
-        </footer>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-  </body>
+<head>
+<meta charset="utf-8">
+<title> { :awestruct }</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Awestruct is a static site baking and deployment tool" name="description">
+<meta content="summary" name="twitter:card">
+<meta content="@awestructed" name="twitter:site">
+<meta content="{ :awestruct }" name="twitter:title">
+<meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
+<link href="/news.atom" rel="alternate" type="application/atom+xml">
+<style>
+  body {
+    padding-top: 60px;
+  }
+</style>
+<link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
+<link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<div class="github-banner">
+<a href="https://github.com/awestruct/awestruct">
+<img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
+</a>
+</div>
+<a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
+<ul class="nav">
+<li>
+<a href="https://awestruct.github.io/awestruct.org">Home</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/news/">News</a>
+</li>
+<li class="dropdown" id="getting-started-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
+Documentation
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="extensions-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
+Extensions
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="helpers-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
+Helpers
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="well">
+<h2>Build Status</h2>
+<p>
+GitHub Actions
+<a href="https://github.com/awestruct/awestruct/actions">
+<img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
+</a>
+</p>
+</div>
+<div id="sidebar">
+<ul class="nav nav-tabs nav-stacked">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
+</li>
+<li>
+<a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
+</li>
+<li>
+<a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
+</li>
+<li>
+<a href="https://twitter.com/awestructed">Twitter</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="span8">
+<div class="page-header">
+<h1>Sitemap</h1>
+<small>
+<h2>Awestruct::Extensions::Sitemap</h2>
+</small>
+</div>
+<p>The <code>Sitemap</code> extension is normally one of the last in a pipeline, if used.
+It will generate a <code>/sitemap.xml</code> file which may be fed to search engines
+for better SEO.</p>
+
+<p>It simply scans all the pages in your site and generates your sitemap for you.</p>
+
+<h2>Usage</h2>
+<p><code>Sitemap</code> will ignore images, css, javascript, <code>robots.txt</code>, and <code>.htaccess</code> files.
+If there are URLs on your site that are not handled by awestruct, for example
+URLs that are managed with <code>.htaccess RewriteRule</code>s, you can add those in
+<code>_config/sitemap.yml</code> as shown.</p>
+
+<pre><code>pages:&#x000A;  - &#x000A;    url: /2x/builds/html-docs/&#x000A;    change_frequency: daily&#x000A;    priority: 1&#x000A;  -&#x000A;    url: /1.1.x/builds/html-docs&#x000A;    change_frequency: monthly&#x000A;    priority: 0.5&#x000A;</code></pre>
+
+<p>Values for <code>change_frequency</code> and <code>priority</code> should correspond to those
+allowed in the <a href="http://www.sitemaps.org/protocol.html">sitemap protocol</a>.</p>
+
+<p>As with the sitemap protocol, <code>priority</code> for your pages defaults to 0.5.
+You may set this, and the <code>change_frequency</code> value in the front matter
+for each page or template. If set in the template, all pages rendered with
+that template will be affected. The default for <code>change_frequency</code> is <code>never</code>.</p>
+
+<p>As your site gets more complex you may want to exclude more content from your sitemap. By
+adding some configuration to the sitemap.yml you can exclude all files by extension or individual files by
+their full path in the generated site.</p>
+
+<pre><code>excluded_extensions: ['.pdf']&#x000A;excluded_files: [ '/success_form.html', '/assets/hidden-file.csv' ]&#x000A;</code></pre>
+
+<p>By default the following are excluded from the sitemap</p>
+
+<pre><code>excluded_files: [ '/.htaccess', '/favicon.ico' ,'/robots.txt', ]&#x000A;excluded_extensions: ['.atom', '.scss', '.css', '.png', '.jpg', '.gif', '.js' ]&#x000A;</code></pre>
+
+<p>To include an optional stylesheet for your sitemap.xml file</p>
+
+<pre><code>stylesheet_url: relative/path/to/your/stylesheet&#x000A;</code></pre>
+
+<h3>Install</h3>
+
+<p>To use the <code>Sitemap</code> extension, simply configure it into your <code>_ext/pipeline.rb</code>
+file.</p>
+
+<pre><code>Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Sitemap.new&#x000A;end&#x000A;</code></pre>
+
+<p>NOTE: If you use the <code>indexifier</code> extension, you should ensure that the
+<code>sitemap</code> extension appears after <code>indexifier</code> in your <code>_ext/pipeline.rb</code></p>
+
+<h2>Parameters</h2>
+<em>
+None
+</em>
+<h2>Examples</h2>
+<h3>Generic Installation</h3>
+<pre><code class="ruby">Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::Sitemap.new()&#x000A;end&#x000A;</code></pre>
+
+<h2>See Also</h2>
+<ul>
+</ul>
+
+
+</div>
+</div>
+<div class="row">
+<hr>
+<footer>
+<p>&copy; Bob McWhirter 2023</p>
+</footer>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+</body>
 </html>

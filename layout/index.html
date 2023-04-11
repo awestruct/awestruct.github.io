@@ -1,287 +1,289 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Layout { :awestruct }</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Awestruct is a static site baking and deployment tool" name="description">
-    <meta content="summary" name="twitter:card">
-    <meta content="@awestructed" name="twitter:site">
-    <meta content="Layout" name="twitter:title">
-    <meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
-    <link href="/news.atom" rel="alternate" type="application/atom+xml">
-    <style>
-      body {
-        padding-top: 60px;
-      }
-    </style>
-    <link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
-    <link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="github-banner">
-            <a href="https://github.com/awestruct/awestruct">
-              <img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
-            </a>
-          </div>
-          <a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
-          <ul class="nav">
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org">Home</a>
-            </li>
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org/news/">News</a>
-            </li>
-            <li class="dropdown" id="getting-started-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
-                Documentation
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="extensions-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
-                Extensions
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="helpers-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
-                Helpers
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="span3">
-          <div class="well">
-            <h2>Build Status</h2>
-            <p>
-              GitHub Actions
-              <a href="https://github.com/awestruct/awestruct/actions">
-                <img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
-              </a>
-            </p>
-          </div>
-          <div id="sidebar">
-            <ul class="nav nav-tabs nav-stacked">
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
-              </li>
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
-              </li>
-              <li>
-                <a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
-              </li>
-              <li>
-                <a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
-              </li>
-              <li>
-                <a href="https://twitter.com/awestructed">Twitter</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="span8">
-          <div class="page-header">
-          <h1>Project layout</h1>
-          </div>
-          
-          
-          <h2>Project Files &amp; Directories</h2>
-          
-          <p>Any typical file, starting at the top of your site tree, may be interpreted
-          as a <a href="/file_types/">template</a>. Any unrecognized file type will be copied
-          verbatim to the output tree. Directories will be copied and the files within
-          them will be interpreted as templates, or copied verbatim if the file type
-          is not recognized for filtering.</p>
-          
-          <p>Any file or directory whose first character is an underscore <code>_</code> will be ignored.
-          All files starting with a dot, for example, <code>.gitignore</code> will likewise be
-          ignored, except for any file named <code>.htaccess</code>, which will be copied verbatim
-          into the output tree.</p>
-          
-          <h3>Stylesheets</h3>
-          
-          <p>The <code>stylesheets/</code> directory will contain a starter template based on the framework
-          specified, if any, when the project was created. Place your .css, .scss or .sass
-          files in here.  Straight CSS will be copied verbatim to the output tree, while
-          .scss and .sass files will be interpolated through the Compass-enabled Sass engine.</p>
-          
-          <h2>Special Files &amp; Directories</h2>
-          
-          <h3><code>_layouts/</code></h3>
-          
-          <p>The <code>_layouts/</code> directory contains Haml templates to be used as layouts (or skins)
-          for content pages.</p>
-          
-          <p>Layouts should be named using double extensions, indicating the output type of the layout.
-          The base extension will be used in locating layouts referenced from pages.</p>
-          
-          <p>For instance, a page named <code>index.html.haml</code> specifying a layout of <code>default</code> (without
-          extension), the file <code>_layouts/default.html.haml</code> will be used.</p>
-          
-          <p>Another page, named <code>news.xml.haml</code> specifying a layout of <code>default</code> (without extension)
-          would be wrapped in the layout in <code>_layouts/default.xml.haml</code>.</p>
-          
-          <h3><code>_config/</code></h3>
-          
-          <p>Directory containing site-specific state in the form
-          of YAML files.</p>
-          
-          <p>Each YAML file is loaded, converted into an <code>OpenStruct</code>-based
-          tree as much as possible, and assigned to a similarly-named
-          property on the <code>site</code> variable.</p>
-          
-          <p>For instance, if you had a a file <code>_config/authors.yml</code> with the
-          following contents</p>
-          
-          <pre><code>- name: Bob McWhirter&#x000A;  email: bob@mcw...&#x000A;- name: Lance Ball&#x000A;  email: lance@lan...&#x000A;</code></pre>
-          
-          <p>Then from within templates, <code>site.authors</code> would provide access
-          to an <code>OpenStruct</code>-converted tree of information.  This allows
-          templates such as</p>
-          
-          <pre><code>- for author in site.authors&#x000A;  .author&#x000A;    \#{author.name} can be reached via \#{author.email}&#x000A;</code></pre>
-          
-          <h3><code>_config/site.yml</code></h3>
-          
-          <p>Unlike all other YAML files, the contents of <code>site.yml</code> are
-          added directly to the <code>site</code> object.  One property, <code>base_url</code>
-          is always available, and defaults to <code>localhost</code> or other
-          appropriate value.</p>
-          
-          <p>Additionally, <a href="/profiles/">specific conditional profiles</a> may be defined
-          to affect property values easily from the commandline.</p>
-          
-          <h3><code>_ext/</code></h3>
-          
-          <p>Directory containing site-specific Ruby extensions.  This
-          directory is automatically added to the <code>$LOAD_PATH</code>.</p>
-          
-          <h3><code>_ext/pipeline.rb</code></h3>
-          
-          <p>File defining the pre-render pipeline of extensions.  Extensions
-          are executed, in order, and provided the <code>site</code> variable.</p>
-          
-          <h3><code>_site/</code></h3>
-          
-          <p>The generated files are placed under the <code>_site/</code> directory.
-          When you use <code>--server</code> mode, the server simply serves from
-          this directory.</p>
-          
-          <h3><code>_tmp/</code></h3>
-          
-          <p>A temporary directory is created for extensions to cache
-          things, if necessary.  It's available as <code>site.tmp_dir</code>.</p>
-        </div>
-      </div>
-      <div class="row">
-        <hr>
-        <footer>
-          <p>&copy; Bob McWhirter 2023</p>
-        </footer>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-  </body>
+<head>
+<meta charset="utf-8">
+<title>Layout { :awestruct }</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Awestruct is a static site baking and deployment tool" name="description">
+<meta content="summary" name="twitter:card">
+<meta content="@awestructed" name="twitter:site">
+<meta content="Layout" name="twitter:title">
+<meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
+<link href="/news.atom" rel="alternate" type="application/atom+xml">
+<style>
+  body {
+    padding-top: 60px;
+  }
+</style>
+<link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
+<link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<div class="github-banner">
+<a href="https://github.com/awestruct/awestruct">
+<img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
+</a>
+</div>
+<a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
+<ul class="nav">
+<li>
+<a href="https://awestruct.github.io/awestruct.org">Home</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/news/">News</a>
+</li>
+<li class="dropdown" id="getting-started-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
+Documentation
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="extensions-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
+Extensions
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="helpers-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
+Helpers
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="well">
+<h2>Build Status</h2>
+<p>
+GitHub Actions
+<a href="https://github.com/awestruct/awestruct/actions">
+<img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
+</a>
+</p>
+</div>
+<div id="sidebar">
+<ul class="nav nav-tabs nav-stacked">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
+</li>
+<li>
+<a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
+</li>
+<li>
+<a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
+</li>
+<li>
+<a href="https://twitter.com/awestructed">Twitter</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="span8">
+<div class="page-header">
+<h1>Project layout</h1>
+</div>
+
+
+<h2>Project Files &amp; Directories</h2>
+
+<p>Any typical file, starting at the top of your site tree, may be interpreted
+as a <a href="/file_types/">template</a>. Any unrecognized file type will be copied
+verbatim to the output tree. Directories will be copied and the files within
+them will be interpreted as templates, or copied verbatim if the file type
+is not recognized for filtering.</p>
+
+<p>Any file or directory whose first character is an underscore <code>_</code> will be ignored.
+All files starting with a dot, for example, <code>.gitignore</code> will likewise be
+ignored, except for any file named <code>.htaccess</code>, which will be copied verbatim
+into the output tree.</p>
+
+<h3>Stylesheets</h3>
+
+<p>The <code>stylesheets/</code> directory will contain a starter template based on the framework
+specified, if any, when the project was created. Place your .css, .scss or .sass
+files in here.  Straight CSS will be copied verbatim to the output tree, while
+.scss and .sass files will be interpolated through the Compass-enabled Sass engine.</p>
+
+<h2>Special Files &amp; Directories</h2>
+
+<h3><code>_layouts/</code></h3>
+
+<p>The <code>_layouts/</code> directory contains Haml templates to be used as layouts (or skins)
+for content pages.</p>
+
+<p>Layouts should be named using double extensions, indicating the output type of the layout.
+The base extension will be used in locating layouts referenced from pages.</p>
+
+<p>For instance, a page named <code>index.html.haml</code> specifying a layout of <code>default</code> (without
+extension), the file <code>_layouts/default.html.haml</code> will be used.</p>
+
+<p>Another page, named <code>news.xml.haml</code> specifying a layout of <code>default</code> (without extension)
+would be wrapped in the layout in <code>_layouts/default.xml.haml</code>.</p>
+
+<h3><code>_config/</code></h3>
+
+<p>Directory containing site-specific state in the form
+of YAML files.</p>
+
+<p>Each YAML file is loaded, converted into an <code>OpenStruct</code>-based
+tree as much as possible, and assigned to a similarly-named
+property on the <code>site</code> variable.</p>
+
+<p>For instance, if you had a a file <code>_config/authors.yml</code> with the
+following contents</p>
+
+<pre><code>- name: Bob McWhirter&#x000A;  email: bob@mcw...&#x000A;- name: Lance Ball&#x000A;  email: lance@lan...&#x000A;</code></pre>
+
+<p>Then from within templates, <code>site.authors</code> would provide access
+to an <code>OpenStruct</code>-converted tree of information.  This allows
+templates such as</p>
+
+<pre><code>- for author in site.authors&#x000A;  .author&#x000A;    \#{author.name} can be reached via \#{author.email}&#x000A;</code></pre>
+
+<h3><code>_config/site.yml</code></h3>
+
+<p>Unlike all other YAML files, the contents of <code>site.yml</code> are
+added directly to the <code>site</code> object.  One property, <code>base_url</code>
+is always available, and defaults to <code>localhost</code> or other
+appropriate value.</p>
+
+<p>Additionally, <a href="/profiles/">specific conditional profiles</a> may be defined
+to affect property values easily from the commandline.</p>
+
+<h3><code>_ext/</code></h3>
+
+<p>Directory containing site-specific Ruby extensions.  This
+directory is automatically added to the <code>$LOAD_PATH</code>.</p>
+
+<h3><code>_ext/pipeline.rb</code></h3>
+
+<p>File defining the pre-render pipeline of extensions.  Extensions
+are executed, in order, and provided the <code>site</code> variable.</p>
+
+<h3><code>_site/</code></h3>
+
+<p>The generated files are placed under the <code>_site/</code> directory.
+When you use <code>--server</code> mode, the server simply serves from
+this directory.</p>
+
+<h3><code>_tmp/</code></h3>
+
+<p>A temporary directory is created for extensions to cache
+things, if necessary.  It's available as <code>site.tmp_dir</code>.</p>
+
+
+</div>
+</div>
+<div class="row">
+<hr>
+<footer>
+<p>&copy; Bob McWhirter 2023</p>
+</footer>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+</body>
 </html>

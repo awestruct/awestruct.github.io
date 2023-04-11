@@ -1,1014 +1,1019 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
-  <id>https://awestruct.github.io/awestruct.org/</id>
-  <title>{ :awestruct }</title>
-  <updated>2023-04-11T22:49:48+02:00</updated>
-  <link href="https://awestruct.github.io/awestruct.org/news.atom" rel="self" type="application/atom+xml" />
-  <link href="https://awestruct.github.io/awestruct.org/" rel="alternate" type="text/html" />
-  <entry>
-    <id>https://awestruct.github.io/awestruct.org/news/2016/02/09/awestruct-0-5-7-released/</id>
-    <title>Awestruct 0.5.7 Released</title>
-    <updated>2023-04-11T22:49:48+02:00</updated>
-    <published>2016-02-09T00:00:00+00:00</published>
-    <link href="https://awestruct.github.io/awestruct.org/news/2016/02/09/awestruct-0-5-7-released/" rel="alternate" type="text/html" />
-    <author>
-      <name>Jason Porter</name>
-    </author>
-    <summary>
-      I&#8217;ve recently released Awestruct 0.5.7!
-      It&#8217;s been a few months since 0.5.6, and I know that one had some bugs, I&#8217;m sorry for that.
-      Version 0.5.7 should be less buggy and also easier to upgrade to if you&#8217;re on 0.5.5, in fact my testing shows it&#8217;s a drop in replacement!
-      
-      
-      Thank you everyone who has helped not only this release, but also the previous ones as well, I really do appreciate the community and the help!
-      I would like to call special attention to R. Tyler Croy for finding some new edge cases I was able to fix!
-      
-      
-      You can see the full log at...
-    </summary>
-    <content type="html">
-      &lt;div id=&quot;preamble&quot;&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;I’ve recently released Awestruct 0.5.7!
-      It’s been a few months since 0.5.6, and I know that one had some bugs, I’m sorry for that.
-      Version 0.5.7 should be less buggy and also easier to upgrade to if you’re on 0.5.5, in fact my testing shows it’s a drop in replacement!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Thank you everyone who has helped not only this release, but also the previous ones as well, I really do appreciate the community and the help!
-      I would like to call special attention to R. Tyler Croy for finding some new edge cases I was able to fix!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;You can see the full log at &lt;a href=&quot;https://github.com/awestruct/awestruct/issues?q=milestone%3A0.5.7&quot;&gt;Milestone 0.5.7&lt;/a&gt;.
-      For those interested in the actual commit history, it can be found at &lt;a href=&quot;https://github.com/awestruct/awestruct/compare/0.5.6…​0.5.7&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;There have been 20 issues fixed in version 0.5.7!
-      As I said lots of those were bugs.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Awestruct has been decoupled from &lt;code&gt;compass&lt;/code&gt; and &lt;code&gt;sass&lt;/code&gt; in this version.
-      You no longer need to have &lt;code&gt;sass&lt;/code&gt; or &lt;code&gt;compass&lt;/code&gt; to get things working.
-      Generation with &lt;code&gt;zurb-foundation&lt;/code&gt; and &lt;code&gt;bootstrap&lt;/code&gt; are still supported, however, &lt;code&gt;blueprint&lt;/code&gt; and &lt;code&gt;960&lt;/code&gt; are no longer supported.
-      You can use the &lt;code&gt;sassc&lt;/code&gt; gem if you would like and receive some quick speed improvements to your stylesheets!
-      Note that sassc is not compatible with any version of &lt;code&gt;compass&lt;/code&gt;.
-      If you are currently relying on compass, you will need to find something else to take it’s place, you may want to check out &lt;a href=&quot;http://bourbon.io/&quot;&gt;Bourbon&lt;/a&gt;, however, configuring that is beyond the scope for this blog post.
-      Should someone like to contribute a guide for doing that, it would be a great addition.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;There were a couple of small improvements for logging, but they really shouldn’t affect many people.
-      There is now a new performance log which outputs time spent in various parts of the execution.
-      You can enable this with the &lt;code&gt;--perf&lt;/code&gt; option set.
-      The log will be available at &lt;code&gt;.awestruct/perf.log&lt;/code&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;There’s also some new verbose logging you can see with the &lt;code&gt;-w&lt;/code&gt; option if you would like to see what’s happening during longer pauses of your site being built.
-      Adding the verbose flag will also work with &lt;code&gt;--perf&lt;/code&gt; and &lt;code&gt;-D|--debug&lt;/code&gt; to provide even more information, should the need arise.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The debug flag outputs more information now, however, I STRONG RECOMMEND AGAINST using it for large sites, it will output A LOT for information you probably will never want to see.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Lastly, for those using ruby 1.9, I suggest you upgrade.
-      Awestruct is no longer being tested against version 1.9 and I will not be supporting it in later versions.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;dlist&quot;&gt;
-      &lt;dl&gt;
-      &lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
-      &lt;dd&gt;
-      &lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
-      &lt;/dd&gt;
-      &lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
-      &lt;dd&gt;
-      &lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
-      &lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;thanks&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#thanks&quot; /&gt;Thanks!&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/awestruct/awestruct/contributors&quot;&gt;everyone who has contributed to Awestruct&lt;/a&gt; and those of you who use it, help others to use it and/or evangelize the technology.
-      We’re honored to have you as part of the community!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Now go create awesome sites!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-    </content>
-  </entry>
-  <entry>
-    <id>https://awestruct.github.io/awestruct.org/news/2015/08/28/awestruct-0-5-6-released/</id>
-    <title>Awestruct 0.5.6 Released</title>
-    <updated>2023-04-11T22:49:48+02:00</updated>
-    <published>2015-08-28T00:00:00+00:00</published>
-    <link href="https://awestruct.github.io/awestruct.org/news/2015/08/28/awestruct-0-5-6-released/" rel="alternate" type="text/html" />
-    <author>
-      <name>Jason Porter</name>
-    </author>
-    <summary>
-      It&#8217;s been a while since we&#8217;ve done a release announcement, I&#8217;m sorry.
-      
-      
-      We&#8217;ve just released Awestruct 0.5.6!
-      Thank you everyone who has helped not only this release, but also the previous ones as well, we really do appreciate the community and the help!
-      
-      
-      You can see the full log at Milestone 0.5.6.
-      For those interested in the actual commit history, it can be found at GitHub.
-      
-      
-      There were 28 bugs squashed in this release, 7 in 0.5.5, 58 in 0.5.4, and 1 in 0.5.3 for a grand total of 94 bugs squashed in the past two years!
-      You can see all the issues fixed by looking...
-    </summary>
-    <content type="html">
-      &lt;div id=&quot;preamble&quot;&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;It’s been a while since we’ve done a release announcement, I’m sorry.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;We’ve just released Awestruct 0.5.6!
-      Thank you everyone who has helped not only this release, but also the previous ones as well, we really do appreciate the community and the help!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;You can see the full log at &lt;a href=&quot;https://github.com/awestruct/awestruct/issues?q=milestone%3A0.5.6&quot;&gt;Milestone 0.5.6&lt;/a&gt;.
-      For those interested in the actual commit history, it can be found at &lt;a href=&quot;https://github.com/awestruct/awestruct/compare/0.5.2…​0.5.6&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;There were 28 bugs squashed in this release, 7 in 0.5.5, 58 in 0.5.4, and 1 in 0.5.3 for a grand total of 94 bugs squashed in the past two years!
-      You can see all the issues fixed by looking at the different &lt;a href=&quot;https://github.com/awestruct/awestruct/milestones?state=closed&quot;&gt;milestones&lt;/a&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;dlist&quot;&gt;
-      &lt;dl&gt;
-      &lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
-      &lt;dd&gt;
-      &lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
-      &lt;/dd&gt;
-      &lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
-      &lt;dd&gt;
-      &lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
-      &lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;thanks&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#thanks&quot; /&gt;Thanks!&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/awestruct/awestruct/contributors&quot;&gt;everyone who has contributed to Awestruct&lt;/a&gt; and those of you who use it, help others to use it and/or evangelize the technology.
-      We’re honored to have you as part of the community!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Now go create awesome sites!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-    </content>
-  </entry>
-  <entry>
-    <id>https://awestruct.github.io/awestruct.org/news/2013/06/19/awestruct-0-5-2-released/</id>
-    <title>Awestruct 0.5.2 Released</title>
-    <updated>2023-04-11T22:49:48+02:00</updated>
-    <published>2013-06-19T00:00:00+00:00</published>
-    <link href="https://awestruct.github.io/awestruct.org/news/2013/06/19/awestruct-0-5-2-released/" rel="alternate" type="text/html" />
-    <author>
-      <name>Jason Porter</name>
-    </author>
-    <summary>
-      We&#8217;re on a roll with Awestruct: 0.5.2!
-      
-      
-      This was mainly a bug fix release again, however, we did slip in a few small improvements.
-      You can see the full log at Milestone 0.5.2.
-      For those interested in the actual commit history, it can be found at GitHub.
-      Here are the list of bug fixes:
-      
-      
-      
-      
-      Fixing the missing bootstrap-affix.js file, done by upgrading the bootstrap-sass version
-      
-      
-      git is no longer required for deployment unless it&#8217;s checking for uncommitted changes
-      
-      
-      Version range of dependencies is better. We many have swung too far on this, let us know.
-      
-      
-      asciidoctor tests have been fixed
-      
-      
-      Returning 404 pages if the requested index page cannot...
-    </summary>
-    <content type="html">
-      &lt;div id=&quot;preamble&quot;&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;We’re on a roll with Awestruct: 0.5.2!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;This was mainly a bug fix release again, however, we did slip in a few small improvements.
-      You can see the full log at &lt;a href=&quot;https://github.com/awestruct/awestruct/issues?milestone=8&amp;amp;page=1&amp;amp;state=closed&quot;&gt;Milestone 0.5.2&lt;/a&gt;.
-      For those interested in the actual commit history, it can be found at &lt;a href=&quot;https://github.com/awestruct/awestruct/compare/0.5.1…​0.5.2&quot;&gt;GitHub&lt;/a&gt;.
-      Here are the list of bug fixes:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;ulist&quot;&gt;
-      &lt;ul&gt;
-      &lt;li&gt;
-      &lt;p&gt;Fixing the missing bootstrap-affix.js file, done by upgrading the bootstrap-sass version&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;git is no longer required for deployment unless it’s checking for uncommitted changes&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;Version range of dependencies is better. We many have swung too far on this, let us know.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;asciidoctor tests have been fixed&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;Returning 404 pages if the requested index page cannot be found&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The smaller list of improvements:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;ulist&quot;&gt;
-      &lt;ul&gt;
-      &lt;li&gt;
-      &lt;p&gt;Adding a default Gemfile on init&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;You can exclude paths from the &lt;code&gt;Indexifier&lt;/code&gt; extension based on a regexp&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;minification is less chatty&lt;/p&gt;
-      &lt;div class=&quot;dlist&quot;&gt;
-      &lt;dl&gt;
-      &lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
-      &lt;dd&gt;
-      &lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
-      &lt;/dd&gt;
-      &lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
-      &lt;dd&gt;
-      &lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
-      &lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;thanks&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#thanks&quot; /&gt;Thanks!&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/awestruct/awestruct/contributors&quot;&gt;everyone who has contributed to Awestruct&lt;/a&gt; and those of you who use it, help others to use it and/or evangelize the technology.
-      We’re honored to have you as part of the community!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Now go create awesome sites!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-    </content>
-  </entry>
-  <entry>
-    <id>https://awestruct.github.io/awestruct.org/news/2013/05/13/awestruct-0-5-1-released/</id>
-    <title>Awestruct 0.5.1 Released</title>
-    <updated>2023-04-11T22:49:48+02:00</updated>
-    <published>2013-05-13T00:00:00+00:00</published>
-    <link href="https://awestruct.github.io/awestruct.org/news/2013/05/13/awestruct-0-5-1-released/" rel="alternate" type="text/html" />
-    <author>
-      <name>Jason Porter</name>
-    </author>
-    <summary>
-      Hot off the press is another version of Awestruct: 0.5.1!
-      
-      
-      This was mainly a bug fix. You can see the full log at https://github.com/awestruct/awestruct/issues?milestone=7&amp;page=1&amp;state=closed.
-      For those interested in the actual commit history, it can be found at https://github.com/awestruct/awestruct/compare/0.5.0&#8230;&#8203;0.5.1.
-      The main fixes (and one enhancement) are detailed below:
-      
-      
-      
-      
-      Deploy task in the Rakefile is fixed
-      
-      
-      Layout in the Posts extension is now post
-      
-      
-      Support for Zurb Foundation (http://foundation.zurb.com)
-      
-      
-      Homepage
-      
-      http://awestruct.org
-      
-      Download
-      
-      http://rubygems.org/gems/awestruct
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      Foundation Support
-      
-      
-      Foundation is another CSS framework similar to 960, blueprint, or Twitter Bootstrap.
-      It be use at the start of project creation:
-      
-      
-      
-      $ awestruct -i -f foundation
-      
-      
-      
-      
-      
-      Automated Build and Deploy
-      
-      
-      I&#8217;d like to highlight a new documentation section that was added between the...
-    </summary>
-    <content type="html">
-      &lt;div id=&quot;preamble&quot;&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Hot off the press is another version of Awestruct: 0.5.1!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;This was mainly a bug fix. You can see the full log at &lt;a href=&quot;https://github.com/awestruct/awestruct/issues?milestone=7&amp;amp;page=1&amp;amp;state=closed&quot; class=&quot;bare&quot;&gt;https://github.com/awestruct/awestruct/issues?milestone=7&amp;amp;page=1&amp;amp;state=closed&lt;/a&gt;.
-      For those interested in the actual commit history, it can be found at &lt;a href=&quot;https://github.com/awestruct/awestruct/compare/0.5.0…​0.5.1&quot; class=&quot;bare&quot;&gt;https://github.com/awestruct/awestruct/compare/0.5.0…​0.5.1&lt;/a&gt;.
-      The main fixes (and one enhancement) are detailed below:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;ulist&quot;&gt;
-      &lt;ul&gt;
-      &lt;li&gt;
-      &lt;p&gt;Deploy task in the Rakefile is fixed&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;Layout in the Posts extension is now &lt;code&gt;post&lt;/code&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;Support for Zurb Foundation (&lt;a href=&quot;http://foundation.zurb.com&quot; class=&quot;bare&quot;&gt;http://foundation.zurb.com&lt;/a&gt;)&lt;/p&gt;
-      &lt;div class=&quot;dlist&quot;&gt;
-      &lt;dl&gt;
-      &lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
-      &lt;dd&gt;
-      &lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
-      &lt;/dd&gt;
-      &lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
-      &lt;dd&gt;
-      &lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
-      &lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;/div&gt;
-      &lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;foundation-support&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#foundation-support&quot; /&gt;Foundation Support&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Foundation is another CSS framework similar to 960, blueprint, or Twitter Bootstrap.
-      It be use at the start of project creation:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;literalblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre class=&quot;nowrap&quot;&gt;$ awestruct -i -f foundation&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;automated-build-and-deploy&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#automated-build-and-deploy&quot; /&gt;Automated Build and Deploy&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;I’d like to highlight a new documentation section that was added between the 0.5.0 and this release: &lt;a href=&quot;http://awestruct.org/auto-deploy-to-github-pages/&quot;&gt;Automated deployment to GitHub Pages&lt;/a&gt; by Dan Allen.
-      This documents how to easily get a site up and running and published on GitHub pages, but it doesn’t stop there!
-      Dan demonstrates how to use &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis&lt;/a&gt; to do automatic site deployment on git commit!
-      It’s never been easier to publish an Awestruct site.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;thanks&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#thanks&quot; /&gt;Thanks!&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/awestruct/awestruct/contributors&quot;&gt;everyone who has contributed to Awestruct&lt;/a&gt; and those of you who use it, help others to use it and/or evangelize the technology.
-      We’re honored to have you as part of the community!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Now go create awesome sites!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-    </content>
-  </entry>
-  <entry>
-    <id>https://awestruct.github.io/awestruct.org/news/2013/03/25/awestruct-0-5-0-released/</id>
-    <title>Awestruct 0.5.0 Released</title>
-    <updated>2023-04-11T22:49:48+02:00</updated>
-    <published>2013-03-25T00:00:00+00:00</published>
-    <link href="https://awestruct.github.io/awestruct.org/news/2013/03/25/awestruct-0-5-0-released/" rel="alternate" type="text/html" />
-    <author>
-      <name>Dan Allen</name>
-    </author>
-    <summary>
-      We&#8217;re thrilled to announce the release of Awestruct 0.5.0!
-      
-      
-      Awestruct 0.5.0 marks a significant evolution in the history of the project.
-      The focus of this release has been on ease of installation, compatibility and flexibility.
-      
-      
-      The major highlights of this release are:
-      
-      
-      
-      
-      Integration of Tilt to handle rendering
-      
-      
-      Dependencies cut in half (from 22 down to 11)
-      
-      
-      Improved compatibility with JRuby
-      
-      
-      Tight AsciiDoc integration powered by Asciidoctor
-      
-      
-      An Amazon S3 deployer
-      
-      
-      Switched to Ruby&#8217;s Logger class to output messages
-      
-      
-      
-      
-      This release is an important step towards achieving Awestruct&#8217;s primary goal: to make static websites trivially easy to create 'and publish'.
-      We hope when you try it, you&#8217;ll agree.
-      
-      
-      
-      Homepage
-      
-      http://awestruct.org
-      
-      Download
-      
-      http://rubygems.org/gems/awestruct
-      
-      
-      
-      
-      
-      
-      Setup and migration
-      
-      
-      Awestruct is...
-    </summary>
-    <content type="html">
-      &lt;div id=&quot;preamble&quot;&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;We’re thrilled to announce the release of Awestruct 0.5.0!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Awestruct 0.5.0 marks a significant evolution in the history of the project.
-      The focus of this release has been on &lt;strong&gt;ease of installation&lt;/strong&gt;, &lt;strong&gt;compatibility&lt;/strong&gt; and &lt;strong&gt;flexibility&lt;/strong&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The major highlights of this release are:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;ulist&quot;&gt;
-      &lt;ul&gt;
-      &lt;li&gt;
-      &lt;p&gt;Integration of &lt;a href=&quot;https://github.com/rtomayko/tilt&quot;&gt;Tilt&lt;/a&gt; to handle rendering&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;Dependencies cut in half (from 22 down to 11)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;Improved compatibility with JRuby&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;Tight AsciiDoc integration powered by &lt;a href=&quot;http://asciidoctor.org&quot;&gt;Asciidoctor&lt;/a&gt;&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;An Amazon S3 deployer&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;Switched to Ruby’s Logger class to output messages&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;This release is an important step towards achieving Awestruct’s primary goal: to make static websites trivially easy to create 'and publish'.
-      We hope when you try it, you’ll agree.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;dlist&quot;&gt;
-      &lt;dl&gt;
-      &lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
-      &lt;dd&gt;
-      &lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
-      &lt;/dd&gt;
-      &lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
-      &lt;dd&gt;
-      &lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
-      &lt;/dd&gt;
-      &lt;/dl&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;setup-and-migration&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#setup-and-migration&quot; /&gt;Setup and migration&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Awestruct is bundled as a Ruby gem and published to &lt;a href=&quot;http://rubygems.org/gems/awestruct&quot;&gt;rubygems.org&lt;/a&gt;.
-      You can install it using:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;literalblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre class=&quot;nowrap&quot;&gt;$ gem install awestruct&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;If this is your first time using Awestruct, you can create a new website based on &lt;a href=&quot;http://twitter.github.com/bootstrap&quot;&gt;Bootstrap&lt;/a&gt; by running the following command inside a &lt;em&gt;new&lt;/em&gt; directory:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;literalblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre class=&quot;nowrap&quot;&gt;$ awestruct -i -f bootstrap&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;New in 0.5.0, the setup command adds a rake build file, Rakefile, to the project.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;admonitionblock warning&quot;&gt;
-      &lt;table&gt;
-      &lt;tr&gt;
-      &lt;td class=&quot;icon&quot;&gt;
-      &lt;div class=&quot;title&quot;&gt;Warning&lt;/div&gt;
-      &lt;/td&gt;
-      &lt;td class=&quot;content&quot;&gt;
-      The Rakefile didn’t get bundled in the 0.5.0 gem.
-      Therefore, this feature won’t be available until 0.5.1 is released.
-      Until then, you can retrieve the &lt;a href=&quot;https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile&quot;&gt;Rakefile&lt;/a&gt; from the git repository.
-      &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;/table&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Using rake is optional, but it does make running Awestruct a little bit easier and helps gets your contributors setup quicker.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;If you’re already using Awestruct to bake your website, we &lt;strong&gt;strongly&lt;/strong&gt; recommend that you follow the &lt;a href=&quot;https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0&quot;&gt;migration guide&lt;/a&gt; to upgrade to this new version.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;whats-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#whats-new&quot; /&gt;What’s new?&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;With this release, the version of Awestruct jumped from 0.4.8 to 0.5.0.
-      The changes described below should help explain why we decided to skip a version.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;tilt-integration&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#tilt-integration&quot; /&gt;Tilt integration&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The most significant change in 0.5.0 is the integration of &lt;a href=&quot;https://github.com/rtomayko/tilt&quot;&gt;Tilt&lt;/a&gt;, a generic interface to numerous template engines in Ruby.
-      Tilt is used to render any file written in &lt;a href=&quot;https://github.com/rtomayko/tilt#tilt--&quot;&gt;a template language supported by Tilt&lt;/a&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Here are some of the benefits of using Tilt:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;ulist&quot;&gt;
-      &lt;ul&gt;
-      &lt;li&gt;
-      &lt;p&gt;As soon Tilt adds support for another template language, it’s available for use with Awestruct&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;Tilt lets you to select between different engines for a given markup language (such as Markdown)&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-      &lt;p&gt;You can configure all the template engines from one place, _config/site.yml&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;/ul&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;less-dependencies&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#less-dependencies&quot; /&gt;Less dependencies&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Not only did the switch to Tilt simplify the rendering code in Awestruct, it also cut down the number of Awestruct’s required dependencies.
-      Tilt loads the libraries necessary to render a template language when they are needed.
-      For instance, if you don’t have any Textile files in your project, you don’t need RedCloth—​the Textile implementation in Ruby—​installed.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Some of Awestruct’s built-in extensions were requiring users to install extra libraries.
-      These extensions are now disabled if the library is not available.
-      As a result of this change, you may notice warnings when you start Awestruct such as:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;literalblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre class=&quot;nowrap&quot;&gt;WARNING: Missing required dependency to activate optional built in extension
-      coffeescripttransform.rb -&amp;gt; cannot load such file -- coffee-script&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;However, the warning message is a better alternative than making you install libraries you don’t need :)&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;&lt;strong&gt;In all, the number of dependencies has been trimmed from 22 down to 11.&lt;/strong&gt;&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The trade-off of trimming Awestruct’s dependencies is that you need to explicitly install libraries for each of the template languages or built-in Awestruct extensions you want to use (and add them to your Gemfile, if you’re using Bundler).&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;See the &lt;a href=&quot;https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0&quot;&gt;migration guide&lt;/a&gt; for a list of libraries you’ll need to install.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;'…​in case you were wondering, you &lt;strong&gt;no longer&lt;/strong&gt; have to install less, therubyracer or v8 to use Awestruct ;)'&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;ruby-compatibility&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#ruby-compatibility&quot; /&gt;Ruby compatibility&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Each change to Awestruct is now tested on the latest release of all major versions of Ruby (1.8.7, 1.9.3, 2.0.0 and JRuby 1.7.3).
-      Awestruct is also battle tested across multiple platforms (Linux, Mac OSX and Windows).&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;We’re happy to say Awestruct has finally reached stability when running across all platforms.
-      If issues still remain, we’re eager to hear about them and get them resolved.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;asciidoc-integration&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#asciidoc-integration&quot; /&gt;AsciiDoc integration&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;With AsciiDoc, we’re exploring a deeper integration between Awestruct and the content pages, specifically a bidirectional exchange of data.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Instead of adding the typical Awestruct front matter to the top of the document, you can define the front matter using attributes in the AsciiDoc header.
-      Awestruct will also map the AsciiDoc title, author and date to the matching front matter attributes.
-      You can also refer to Awestruct page variables using AsciiDoc attribute references.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The source of this blog entry serves as an example of this integration:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;listingblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre class=&quot;nowrap&quot;&gt;= Awestruct 0.5.0 released
-      Dan Allen
-      2013-03-25
-      :awestruct-layout: news
-      
-      We're thrilled to announce the release of Awestruct 0.5.0!&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;In other words, an AsciiDoc document can be used in an Awestruct site without any modifications (except for the addition of the :awestruct-layout: attribute).&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;amazon-s3-deployer&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#amazon-s3-deployer&quot; /&gt;Amazon S3 deployer&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;In addition to the rsync and GitHub Pages deployers, Awestruct can now deploy a site to Amazon S3.
-      For instructions on how to set it up, see the &lt;a href=&quot;http://awestruct.org/deployment&quot;&gt;site deployment&lt;/a&gt; page on the Awestruct website.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;rakefile&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rakefile&quot; /&gt;Rakefile&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Awestruct now adds a &lt;a href=&quot;http://rake.rubyforge.org&quot;&gt;Rake&lt;/a&gt; build file, Rakefile, to new sites by default.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;admonitionblock warning&quot;&gt;
-      &lt;table&gt;
-      &lt;tr&gt;
-      &lt;td class=&quot;icon&quot;&gt;
-      &lt;div class=&quot;title&quot;&gt;Warning&lt;/div&gt;
-      &lt;/td&gt;
-      &lt;td class=&quot;content&quot;&gt;
-      The Rakefile didn’t get bundled in the 0.5.0 gem.
-      Therefore, this feature won’t be available until 0.5.1 is released.
-      Until then, you can retrieve the &lt;a href=&quot;https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile&quot;&gt;Rakefile&lt;/a&gt; from the git repository.
-      &lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;/table&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;The purpose of this build file is to simplify setting up and using Awestruct across the numerous Ruby platforms.
-      &lt;em&gt;It’s not required to use Awestruct&lt;/em&gt;, though it does save you time (hopefully).&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Now, instead of typing:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;literalblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre class=&quot;nowrap&quot;&gt;$ awestruct -d&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;you just type:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;literalblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre class=&quot;nowrap&quot;&gt;$ rake&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;While that may only save a few characters, know that it also auto-detects a Bundler environment and does the right thing.
-      That means if you’re using Bundler, instead of typing:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;literalblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre class=&quot;nowrap&quot;&gt;$ bundle exec awestruct -d&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;you just type:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;literalblock&quot;&gt;
-      &lt;div class=&quot;content&quot;&gt;
-      &lt;pre class=&quot;nowrap&quot;&gt;$ rake&lt;/pre&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;See, isn’t that nicer?&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;It also tells you what commands to type to setup an Awestruct environment (as contributors might need to do).&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;For more details, read the comments at the top of the &lt;a href=&quot;https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile&quot;&gt;Rakefile&lt;/a&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;If you don’t want to use rake, just ignore or delete the file.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect2&quot;&gt;
-      &lt;h3 id=&quot;bootstrap-upgrade&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#bootstrap-upgrade&quot; /&gt;Bootstrap upgrade&lt;/h3&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Many of you who use Awestruct are probably taking advantage of the Bootstrap integration provided by &lt;a href=&quot;https://github.com/thomas-mcdonald/bootstrap-sass&quot;&gt;bootstrap-sass&lt;/a&gt;.
-      If you have, note that Awestruct has upgraded to Bootstrap 2.3.1, the latest version of Bootstrap that bootstrap-sass supports at the time of this release.
-      Since Awestruct has a transitive dependency on this library, it will be upgraded when you upgrade Awestruct.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;If you want to keep using an older version of Bootstrap, just declare the version explicitly in your Gemfile.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;That about wraps it up.
-      For more details about what’s in this release, see the &lt;a href=&quot;https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0&quot;&gt;migration guide&lt;/a&gt; or just &lt;a href=&quot;http://awestruct.org/getting_started&quot;&gt;try it for yourself&lt;/a&gt;.&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;sect1&quot;&gt;
-      &lt;h2 id=&quot;thanks&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#thanks&quot; /&gt;Thanks!&lt;/h2&gt;
-      &lt;div class=&quot;sectionbody&quot;&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Many people rallied together to make this release easier to install, more compatible and more flexible.
-      Without their help, Awestruct wouldn’t be where it is today.
-      Give a shout out on Twitter to the following contributors to let them know how much they mean to this growing community:&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;&lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=LightGuard&quot;&gt;Jason Porter&lt;/a&gt; -
-      &lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=aslakknutsen&quot;&gt;Aslak Knutsen&lt;/a&gt; -
-      &lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=mojavelinux&quot;&gt;Dan Allen&lt;/a&gt; -
-      &lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=codylerum&quot;&gt;Cody Lerum&lt;/a&gt; -
-      &lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=lance&quot;&gt;Lance Ball&lt;/a&gt; -
-      &lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=ge0ffrey&quot;&gt;Geoffrey De Smet&lt;/a&gt; -
-      &lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=xcoulon&quot;&gt;Xavier Coulon&lt;/a&gt; -
-      &lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=jmesnil&quot;&gt;Jeff Mesnil&lt;/a&gt; -
-      &lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=bleathem&quot;&gt;Brian Leathem&lt;/a&gt; -
-      &lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=tcurdt&quot;&gt;Torsten Curdt&lt;/a&gt; -
-      &lt;a href=&quot;https://github.com/graphitefriction/graphitefriction.github.com&quot;&gt;Sarah White&lt;/a&gt;&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Also, thanks to &lt;a href=&quot;https://github.com/awestruct/awestruct/contributors&quot;&gt;everyone who has contributed to Awestruct&lt;/a&gt; and those of you who use it, help others to use it and/or evangelize the technology.
-      We’re honored to have you as part of the community!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;div class=&quot;paragraph&quot;&gt;
-      &lt;p&gt;Now go create awesome sites!&lt;/p&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-      &lt;/div&gt;
-    </content>
-  </entry>
-  <entry>
-    <id>https://awestruct.github.io/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/</id>
-    <title>Awestruct 0.2.7 On the Prowl</title>
-    <updated>2023-04-11T22:49:48+02:00</updated>
-    <published>2011-10-31T00:00:00+00:00</published>
-    <link href="https://awestruct.github.io/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/" rel="alternate" type="text/html" />
-    <author>
-      <name>Dan Allen</name>
-    </author>
-    <summary>
-      Uh, we skipped a few release announcements, but it's because...
-      
-      Development on Awestruct is picking up now that the Arquillian team has
-      started hacking on it for their new project site. They've contributed some
-      improvements to Awestruct and have some other extensions waiting in the wings
-      for a future release. There's also been a lot of chatter about Awestruct
-      recently on twitter.
-      
-      Here's a taste of the treats in store for you.
-      
-      
-      
-      Aslak improved the Posts extension to read page.date as a alternative to
-      the post filename, part of the preparation for a feature that enables
-      automatic generation of blog entries for project releases (like this one!).
-      
-      Aslak also integrated...
-    </summary>
-    <content type="html">
-      &lt;p&gt;&lt;em&gt;Uh, we skipped a few release announcements, but it's because...&lt;/em&gt;&lt;/p&gt;
-      
-      &lt;p&gt;Development on Awestruct is picking up now that the &lt;a href=&quot;http://arquillian.org&quot;&gt;Arquillian&lt;/a&gt; team has
-      started hacking on it for their new project site. They've contributed some
-      improvements to Awestruct and have some other extensions waiting in the wings
-      for a future release. There's also been a lot of &lt;a href=&quot;http://twitter.com/#!/search/awestruct&quot;&gt;chatter&lt;/a&gt; about Awestruct
-      recently on twitter.&lt;/p&gt;
-      
-      &lt;p&gt;Here's a taste of the treats in store for you.&lt;/p&gt;
-      
-      &lt;p&gt;&lt;img src=&quot;https://awestruct.github.io/awestruct.org/images/news/ontheprowl.jpg&quot; alt=&quot;Cat on the prowl&quot; /&gt;&lt;/p&gt;
-      
-      &lt;p&gt;&lt;a href=&quot;http://github.com/aslakknutsen&quot;&gt;Aslak&lt;/a&gt; improved the &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/posts&quot;&gt;Posts&lt;/a&gt; extension to read page.date as a alternative to
-      the post filename, part of the preparation for a feature that enables
-      automatic generation of blog entries for project releases (like this one!).&lt;/p&gt;
-      
-      &lt;p&gt;Aslak also integrated &lt;a href=&quot;https://github.com/ttilley/fssm&quot;&gt;FSSM&lt;/a&gt; to monitor files more efficiently in development
-      mode. Your CPU will thank you! He also committed a fix for a divide by 0 bug
-      in the tagger extension that would strike when you least expected it.
-      Additionally, he added support for extensions to define their own
-      transformers.&lt;/p&gt;
-      
-      &lt;p&gt;At &lt;a href=&quot;http://github.com/mojavelinux&quot;&gt;Dan&lt;/a&gt;'s request, Awestruct has been upgraded to &lt;a href=&quot;http://compass-style.org&quot;&gt;Compass&lt;/a&gt; 0.11.5 to take
-      advantage of all the latest CSS3 mixins and so the online Compass
-      documentation is actually relevant for developers using Awestruct. If you've
-      been using a lot of the CSS3 mixins already, you may need to do a little
-      migration. Compass spits out deprecation warnings to the console. Holler if
-      the upgrade breaks your stylesheet and you aren't sure how to fix it.&lt;/p&gt;
-      
-      &lt;p&gt;Dan and Aslak figured out how to hack RedCloth to provide custom inline and
-      block markup. The hooks are now in place. We'll be documenting how to make use
-      of them soon. You can see an example
-      &lt;a href=&quot;https://github.com/arquillian/arquillian.github.com/blob/develop/_ext/textile_plus.rb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
-      
-      &lt;p&gt;Dan documented the &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/disqus&quot;&gt;Disqus&lt;/a&gt; extension, an extension which snuck into a
-      previous release without much ado. He also added an option to have the
-      extension generate the Disqus identifier automatically from the date and slug
-      of the post. Disqus is an alternative JavaScript-based comment system for
-      Awestruct &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/posts&quot;&gt;Posts&lt;/a&gt; which offers a very elegant interface for both users and
-      administrators.&lt;/p&gt;
-      
-      &lt;p&gt;Finally, &lt;a href=&quot;http://github.com/tombentley&quot;&gt;Tom&lt;/a&gt;'s gsub transformer finally got merged in, so you can slice and
-      dice the pages as they exit the pipeline.&lt;/p&gt;
-      
-      &lt;p&gt;Anyhow, check out &lt;a href=&quot;https://rubygems.org/gems/awestruct/versions/0.2.7&quot;&gt;gem&lt;/a&gt;.&lt;/p&gt;
-      
-      &lt;pre&gt;&lt;code&gt;gem install awestruct
-      &lt;/code&gt;&lt;/pre&gt;
-      
-      &lt;p&gt;If I missed something, feel free to mention it in the comments.&lt;/p&gt;
-      
-      &lt;p&gt;&lt;em&gt;Photo Credit: &lt;a href=&quot;http://www.flickr.com/photos/ralphandjenny/5118409269/in/photostream/&quot;&gt;ralph and jenny&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
-    </content>
-  </entry>
-  <entry>
-    <id>https://awestruct.github.io/awestruct.org/news/2011/07/12/awestruct-022-lives/</id>
-    <title>Awestruct 0.2.2 Lives</title>
-    <updated>2023-04-11T22:49:48+02:00</updated>
-    <published>2011-07-12T00:00:00+00:00</published>
-    <link href="https://awestruct.github.io/awestruct.org/news/2011/07/12/awestruct-022-lives/" rel="alternate" type="text/html" />
-    <author>
-      <name>Bob McWhirter</name>
-    </author>
-    <summary>
-      Thanks to recent interest from Torsten Curdt, Emmanuel Bernard and others in the community,
-      activity around Awestruct has increased as of late.
-      
-      Emmanuel gives us the Flattr extension, plus a really nice blog post.
-      
-      Torsten gives us RDiscount for Markdown instead of Bluecloth.  Holler if it breaks your stuff.
-      
-      Anyhow, check out v0.2.2.
-      
-      gem install awestruct...
-    </summary>
-    <content type="html">
-      &lt;p&gt;Thanks to recent interest from Torsten Curdt, Emmanuel Bernard and others in the community,
-      activity around Awestruct has increased as of late.&lt;/p&gt;
-      
-      &lt;p&gt;Emmanuel gives us the &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/flattr&quot;&gt;Flattr&lt;/a&gt; extension, plus a really nice &lt;a href=&quot;http://blog.emmanuelbernard.com/2011/07/awestruct-building-dynamic-static-web-sites/&quot;&gt;blog post&lt;/a&gt;.&lt;/p&gt;
-      
-      &lt;p&gt;Torsten gives us RDiscount for Markdown instead of Bluecloth.  Holler if it breaks your stuff.&lt;/p&gt;
-      
-      &lt;p&gt;Anyhow, check out &lt;a href=&quot;https://rubygems.org/gems/awestruct/versions/0.2.2&quot;&gt;v0.2.2&lt;/a&gt;.&lt;/p&gt;
-      
-      &lt;pre&gt;&lt;code&gt;gem install awestruct
-      &lt;/code&gt;&lt;/pre&gt;
-    </content>
-  </entry>
-  <entry>
-    <id>https://awestruct.github.io/awestruct.org/news/2010/09/17/awestruct-011-released/</id>
-    <title>Awestruct 0.1.1 Released</title>
-    <updated>2023-04-11T22:49:48+02:00</updated>
-    <published>2010-09-17T00:00:00+00:00</published>
-    <link href="https://awestruct.github.io/awestruct.org/news/2010/09/17/awestruct-011-released/" rel="alternate" type="text/html" />
-    <author>
-      <name>Bob McWhirter</name>
-    </author>
-    <summary>
-      I've just pushed the 0.1.1 version of the Awestruct gem
-      to RubyGems.
-      
-      This release brings about quite a few new extensions
-      (see sidebar), plus the ability to base many sites of
-      the same skin, including pipelines, pages and layouts....
-    </summary>
-    <content type="html">
-      &lt;p&gt;I've just pushed the 0.1.1 version of the Awestruct gem
-      to &lt;a href=&quot;http://rubygems.org/gems/awestruct&quot;&gt;RubyGems&lt;/a&gt;.&lt;/p&gt;
-      
-      &lt;p&gt;This release brings about quite a few new extensions
-      (see sidebar), plus the ability to base many sites of
-      the same skin, including pipelines, pages and layouts.&lt;/p&gt;
-    </content>
-  </entry>
-  <entry>
-    <id>https://awestruct.github.io/awestruct.org/news/2010/06/12/awestruct-006-released/</id>
-    <title>Awestruct 0.0.6 Released</title>
-    <updated>2023-04-11T22:49:48+02:00</updated>
-    <published>2010-06-12T00:00:00+00:00</published>
-    <link href="https://awestruct.github.io/awestruct.org/news/2010/06/12/awestruct-006-released/" rel="alternate" type="text/html" />
-    <author>
-      <name>Bob McWhirter</name>
-    </author>
-    <summary>
-      I've just pushed the 0.0.6 version of the Awestruct gem
-      to RubyGems.
-      
-      This includes updates to the baseline Compass, Haml and
-      Sass used by the tool.
-      
-      Additionally, it adds support for Org-Mode.
-      
-      Enjoy!...
-    </summary>
-    <content type="html">
-      &lt;p&gt;I've just pushed the 0.0.6 version of the Awestruct gem
-      to &lt;a href=&quot;http://rubygems.org/gems/awestruct&quot;&gt;RubyGems&lt;/a&gt;.&lt;/p&gt;
-      
-      &lt;p&gt;This includes updates to the baseline Compass, Haml and
-      Sass used by the tool.&lt;/p&gt;
-      
-      &lt;p&gt;Additionally, it adds support for &lt;a href=&quot;http://orgmode.org/&quot;&gt;Org-Mode&lt;/a&gt;.&lt;/p&gt;
-      
-      &lt;p&gt;Enjoy!&lt;/p&gt;
-    </content>
-  </entry>
-  <entry>
-    <id>https://awestruct.github.io/awestruct.org/news/2010/02/26/announcing-awestruct/</id>
-    <title>Announcing Awestruct</title>
-    <updated>2023-04-11T22:49:48+02:00</updated>
-    <published>2010-02-26T00:00:00+00:00</published>
-    <link href="https://awestruct.github.io/awestruct.org/news/2010/02/26/announcing-awestruct/" rel="alternate" type="text/html" />
-    <author>
-      <name>Bob McWhirter</name>
-    </author>
-    <summary>
-      While attempting to rebuild the site at TorqueBox.org,
-      I became frustrated with Jekyll and its forks.  Plus I had a yak that needed
-      shaving.
-      
-      So, I'm happy to announce Awestruct....
-    </summary>
-    <content type="html">
-      &lt;p&gt;While attempting to rebuild the site at &lt;a href=&quot;http://torquebox.org/&quot;&gt;TorqueBox.org&lt;/a&gt;,
-      I became frustrated with Jekyll and its forks.  Plus I had a yak that needed
-      shaving.&lt;/p&gt;
-      
-      &lt;p&gt;So, I'm happy to announce &lt;em&gt;Awestruct&lt;/em&gt;.&lt;/p&gt;
-    </content>
-  </entry>
+<id>https://awestruct.github.io/awestruct.org/</id>
+<title>{ :awestruct }</title>
+<updated>2023-04-11T22:51:25+02:00</updated>
+<link href="https://awestruct.github.io/awestruct.org/news.atom" rel="self" type="application/atom+xml" />
+<link href="https://awestruct.github.io/awestruct.org/" rel="alternate" type="text/html" />
+<entry>
+<id>https://awestruct.github.io/awestruct.org/news/2016/02/09/awestruct-0-5-7-released/</id>
+<title>Awestruct 0.5.7 Released</title>
+<updated>2023-04-11T22:51:25+02:00</updated>
+<published>2016-02-09T00:00:00+00:00</published>
+<link href="https://awestruct.github.io/awestruct.org/news/2016/02/09/awestruct-0-5-7-released/" rel="alternate" type="text/html" />
+<author>
+<name>Jason Porter</name>
+</author>
+<summary>
+I&#8217;ve recently released Awestruct 0.5.7!
+It&#8217;s been a few months since 0.5.6, and I know that one had some bugs, I&#8217;m sorry for that.
+Version 0.5.7 should be less buggy and also easier to upgrade to if you&#8217;re on 0.5.5, in fact my testing shows it&#8217;s a drop in replacement!
+
+
+Thank you everyone who has helped not only this release, but also the previous ones as well, I really do appreciate the community and the help!
+I would like to call special attention to R. Tyler Croy for finding some new edge cases I was able to fix!
+
+
+You can see the full log at...
+</summary>
+<content type="html">
+&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I’ve recently released Awestruct 0.5.7!
+It’s been a few months since 0.5.6, and I know that one had some bugs, I’m sorry for that.
+Version 0.5.7 should be less buggy and also easier to upgrade to if you’re on 0.5.5, in fact my testing shows it’s a drop in replacement!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thank you everyone who has helped not only this release, but also the previous ones as well, I really do appreciate the community and the help!
+I would like to call special attention to R. Tyler Croy for finding some new edge cases I was able to fix!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can see the full log at &lt;a href=&quot;https://github.com/awestruct/awestruct/issues?q=milestone%3A0.5.7&quot;&gt;Milestone 0.5.7&lt;/a&gt;.
+For those interested in the actual commit history, it can be found at &lt;a href=&quot;https://github.com/awestruct/awestruct/compare/0.5.6…​0.5.7&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There have been 20 issues fixed in version 0.5.7!
+As I said lots of those were bugs.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Awestruct has been decoupled from &lt;code&gt;compass&lt;/code&gt; and &lt;code&gt;sass&lt;/code&gt; in this version.
+You no longer need to have &lt;code&gt;sass&lt;/code&gt; or &lt;code&gt;compass&lt;/code&gt; to get things working.
+Generation with &lt;code&gt;zurb-foundation&lt;/code&gt; and &lt;code&gt;bootstrap&lt;/code&gt; are still supported, however, &lt;code&gt;blueprint&lt;/code&gt; and &lt;code&gt;960&lt;/code&gt; are no longer supported.
+You can use the &lt;code&gt;sassc&lt;/code&gt; gem if you would like and receive some quick speed improvements to your stylesheets!
+Note that sassc is not compatible with any version of &lt;code&gt;compass&lt;/code&gt;.
+If you are currently relying on compass, you will need to find something else to take it’s place, you may want to check out &lt;a href=&quot;http://bourbon.io/&quot;&gt;Bourbon&lt;/a&gt;, however, configuring that is beyond the scope for this blog post.
+Should someone like to contribute a guide for doing that, it would be a great addition.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There were a couple of small improvements for logging, but they really shouldn’t affect many people.
+There is now a new performance log which outputs time spent in various parts of the execution.
+You can enable this with the &lt;code&gt;--perf&lt;/code&gt; option set.
+The log will be available at &lt;code&gt;.awestruct/perf.log&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There’s also some new verbose logging you can see with the &lt;code&gt;-w&lt;/code&gt; option if you would like to see what’s happening during longer pauses of your site being built.
+Adding the verbose flag will also work with &lt;code&gt;--perf&lt;/code&gt; and &lt;code&gt;-D|--debug&lt;/code&gt; to provide even more information, should the need arise.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The debug flag outputs more information now, however, I STRONG RECOMMEND AGAINST using it for large sites, it will output A LOT for information you probably will never want to see.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Lastly, for those using ruby 1.9, I suggest you upgrade.
+Awestruct is no longer being tested against version 1.9 and I will not be supporting it in later versions.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dlist&quot;&gt;
+&lt;dl&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;thanks&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#thanks&quot; /&gt;Thanks!&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/awestruct/awestruct/contributors&quot;&gt;everyone who has contributed to Awestruct&lt;/a&gt; and those of you who use it, help others to use it and/or evangelize the technology.
+We’re honored to have you as part of the community!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now go create awesome sites!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+</entry>
+<entry>
+<id>https://awestruct.github.io/awestruct.org/news/2015/08/28/awestruct-0-5-6-released/</id>
+<title>Awestruct 0.5.6 Released</title>
+<updated>2023-04-11T22:51:25+02:00</updated>
+<published>2015-08-28T00:00:00+00:00</published>
+<link href="https://awestruct.github.io/awestruct.org/news/2015/08/28/awestruct-0-5-6-released/" rel="alternate" type="text/html" />
+<author>
+<name>Jason Porter</name>
+</author>
+<summary>
+It&#8217;s been a while since we&#8217;ve done a release announcement, I&#8217;m sorry.
+
+
+We&#8217;ve just released Awestruct 0.5.6!
+Thank you everyone who has helped not only this release, but also the previous ones as well, we really do appreciate the community and the help!
+
+
+You can see the full log at Milestone 0.5.6.
+For those interested in the actual commit history, it can be found at GitHub.
+
+
+There were 28 bugs squashed in this release, 7 in 0.5.5, 58 in 0.5.4, and 1 in 0.5.3 for a grand total of 94 bugs squashed in the past two years!
+You can see all the issues fixed by looking...
+</summary>
+<content type="html">
+&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It’s been a while since we’ve done a release announcement, I’m sorry.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We’ve just released Awestruct 0.5.6!
+Thank you everyone who has helped not only this release, but also the previous ones as well, we really do appreciate the community and the help!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;You can see the full log at &lt;a href=&quot;https://github.com/awestruct/awestruct/issues?q=milestone%3A0.5.6&quot;&gt;Milestone 0.5.6&lt;/a&gt;.
+For those interested in the actual commit history, it can be found at &lt;a href=&quot;https://github.com/awestruct/awestruct/compare/0.5.2…​0.5.6&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;There were 28 bugs squashed in this release, 7 in 0.5.5, 58 in 0.5.4, and 1 in 0.5.3 for a grand total of 94 bugs squashed in the past two years!
+You can see all the issues fixed by looking at the different &lt;a href=&quot;https://github.com/awestruct/awestruct/milestones?state=closed&quot;&gt;milestones&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dlist&quot;&gt;
+&lt;dl&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;thanks&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#thanks&quot; /&gt;Thanks!&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/awestruct/awestruct/contributors&quot;&gt;everyone who has contributed to Awestruct&lt;/a&gt; and those of you who use it, help others to use it and/or evangelize the technology.
+We’re honored to have you as part of the community!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now go create awesome sites!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+</entry>
+<entry>
+<id>https://awestruct.github.io/awestruct.org/news/2013/06/19/awestruct-0-5-2-released/</id>
+<title>Awestruct 0.5.2 Released</title>
+<updated>2023-04-11T22:51:25+02:00</updated>
+<published>2013-06-19T00:00:00+00:00</published>
+<link href="https://awestruct.github.io/awestruct.org/news/2013/06/19/awestruct-0-5-2-released/" rel="alternate" type="text/html" />
+<author>
+<name>Jason Porter</name>
+</author>
+<summary>
+We&#8217;re on a roll with Awestruct: 0.5.2!
+
+
+This was mainly a bug fix release again, however, we did slip in a few small improvements.
+You can see the full log at Milestone 0.5.2.
+For those interested in the actual commit history, it can be found at GitHub.
+Here are the list of bug fixes:
+
+
+
+
+Fixing the missing bootstrap-affix.js file, done by upgrading the bootstrap-sass version
+
+
+git is no longer required for deployment unless it&#8217;s checking for uncommitted changes
+
+
+Version range of dependencies is better. We many have swung too far on this, let us know.
+
+
+asciidoctor tests have been fixed
+
+
+Returning 404 pages if the requested index page cannot...
+</summary>
+<content type="html">
+&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We’re on a roll with Awestruct: 0.5.2!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This was mainly a bug fix release again, however, we did slip in a few small improvements.
+You can see the full log at &lt;a href=&quot;https://github.com/awestruct/awestruct/issues?milestone=8&amp;amp;page=1&amp;amp;state=closed&quot;&gt;Milestone 0.5.2&lt;/a&gt;.
+For those interested in the actual commit history, it can be found at &lt;a href=&quot;https://github.com/awestruct/awestruct/compare/0.5.1…​0.5.2&quot;&gt;GitHub&lt;/a&gt;.
+Here are the list of bug fixes:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Fixing the missing bootstrap-affix.js file, done by upgrading the bootstrap-sass version&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;git is no longer required for deployment unless it’s checking for uncommitted changes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Version range of dependencies is better. We many have swung too far on this, let us know.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;asciidoctor tests have been fixed&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Returning 404 pages if the requested index page cannot be found&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The smaller list of improvements:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Adding a default Gemfile on init&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can exclude paths from the &lt;code&gt;Indexifier&lt;/code&gt; extension based on a regexp&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;minification is less chatty&lt;/p&gt;
+&lt;div class=&quot;dlist&quot;&gt;
+&lt;dl&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;thanks&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#thanks&quot; /&gt;Thanks!&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/awestruct/awestruct/contributors&quot;&gt;everyone who has contributed to Awestruct&lt;/a&gt; and those of you who use it, help others to use it and/or evangelize the technology.
+We’re honored to have you as part of the community!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now go create awesome sites!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+</entry>
+<entry>
+<id>https://awestruct.github.io/awestruct.org/news/2013/05/13/awestruct-0-5-1-released/</id>
+<title>Awestruct 0.5.1 Released</title>
+<updated>2023-04-11T22:51:25+02:00</updated>
+<published>2013-05-13T00:00:00+00:00</published>
+<link href="https://awestruct.github.io/awestruct.org/news/2013/05/13/awestruct-0-5-1-released/" rel="alternate" type="text/html" />
+<author>
+<name>Jason Porter</name>
+</author>
+<summary>
+Hot off the press is another version of Awestruct: 0.5.1!
+
+
+This was mainly a bug fix. You can see the full log at https://github.com/awestruct/awestruct/issues?milestone=7&amp;page=1&amp;state=closed.
+For those interested in the actual commit history, it can be found at https://github.com/awestruct/awestruct/compare/0.5.0&#8230;&#8203;0.5.1.
+The main fixes (and one enhancement) are detailed below:
+
+
+
+
+Deploy task in the Rakefile is fixed
+
+
+Layout in the Posts extension is now post
+
+
+Support for Zurb Foundation (http://foundation.zurb.com)
+
+
+Homepage
+
+http://awestruct.org
+
+Download
+
+http://rubygems.org/gems/awestruct
+
+
+
+
+
+
+
+
+
+Foundation Support
+
+
+Foundation is another CSS framework similar to 960, blueprint, or Twitter Bootstrap.
+It be use at the start of project creation:
+
+
+
+$ awestruct -i -f foundation
+
+
+
+
+
+Automated Build and Deploy
+
+
+I&#8217;d like to highlight a new documentation section that was added between the...
+</summary>
+<content type="html">
+&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Hot off the press is another version of Awestruct: 0.5.1!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This was mainly a bug fix. You can see the full log at &lt;a href=&quot;https://github.com/awestruct/awestruct/issues?milestone=7&amp;amp;page=1&amp;amp;state=closed&quot; class=&quot;bare&quot;&gt;https://github.com/awestruct/awestruct/issues?milestone=7&amp;amp;page=1&amp;amp;state=closed&lt;/a&gt;.
+For those interested in the actual commit history, it can be found at &lt;a href=&quot;https://github.com/awestruct/awestruct/compare/0.5.0…​0.5.1&quot; class=&quot;bare&quot;&gt;https://github.com/awestruct/awestruct/compare/0.5.0…​0.5.1&lt;/a&gt;.
+The main fixes (and one enhancement) are detailed below:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Deploy task in the Rakefile is fixed&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Layout in the Posts extension is now &lt;code&gt;post&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Support for Zurb Foundation (&lt;a href=&quot;http://foundation.zurb.com&quot; class=&quot;bare&quot;&gt;http://foundation.zurb.com&lt;/a&gt;)&lt;/p&gt;
+&lt;div class=&quot;dlist&quot;&gt;
+&lt;dl&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;foundation-support&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#foundation-support&quot; /&gt;Foundation Support&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Foundation is another CSS framework similar to 960, blueprint, or Twitter Bootstrap.
+It be use at the start of project creation:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;nowrap&quot;&gt;$ awestruct -i -f foundation&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;automated-build-and-deploy&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#automated-build-and-deploy&quot; /&gt;Automated Build and Deploy&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;I’d like to highlight a new documentation section that was added between the 0.5.0 and this release: &lt;a href=&quot;http://awestruct.org/auto-deploy-to-github-pages/&quot;&gt;Automated deployment to GitHub Pages&lt;/a&gt; by Dan Allen.
+This documents how to easily get a site up and running and published on GitHub pages, but it doesn’t stop there!
+Dan demonstrates how to use &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis&lt;/a&gt; to do automatic site deployment on git commit!
+It’s never been easier to publish an Awestruct site.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;thanks&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#thanks&quot; /&gt;Thanks!&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Thanks to &lt;a href=&quot;https://github.com/awestruct/awestruct/contributors&quot;&gt;everyone who has contributed to Awestruct&lt;/a&gt; and those of you who use it, help others to use it and/or evangelize the technology.
+We’re honored to have you as part of the community!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now go create awesome sites!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+</entry>
+<entry>
+<id>https://awestruct.github.io/awestruct.org/news/2013/03/25/awestruct-0-5-0-released/</id>
+<title>Awestruct 0.5.0 Released</title>
+<updated>2023-04-11T22:51:25+02:00</updated>
+<published>2013-03-25T00:00:00+00:00</published>
+<link href="https://awestruct.github.io/awestruct.org/news/2013/03/25/awestruct-0-5-0-released/" rel="alternate" type="text/html" />
+<author>
+<name>Dan Allen</name>
+</author>
+<summary>
+We&#8217;re thrilled to announce the release of Awestruct 0.5.0!
+
+
+Awestruct 0.5.0 marks a significant evolution in the history of the project.
+The focus of this release has been on ease of installation, compatibility and flexibility.
+
+
+The major highlights of this release are:
+
+
+
+
+Integration of Tilt to handle rendering
+
+
+Dependencies cut in half (from 22 down to 11)
+
+
+Improved compatibility with JRuby
+
+
+Tight AsciiDoc integration powered by Asciidoctor
+
+
+An Amazon S3 deployer
+
+
+Switched to Ruby&#8217;s Logger class to output messages
+
+
+
+
+This release is an important step towards achieving Awestruct&#8217;s primary goal: to make static websites trivially easy to create 'and publish'.
+We hope when you try it, you&#8217;ll agree.
+
+
+
+Homepage
+
+http://awestruct.org
+
+Download
+
+http://rubygems.org/gems/awestruct
+
+
+
+
+
+
+Setup and migration
+
+
+Awestruct is...
+</summary>
+<content type="html">
+&lt;div id=&quot;preamble&quot;&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We’re thrilled to announce the release of Awestruct 0.5.0!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Awestruct 0.5.0 marks a significant evolution in the history of the project.
+The focus of this release has been on &lt;strong&gt;ease of installation&lt;/strong&gt;, &lt;strong&gt;compatibility&lt;/strong&gt; and &lt;strong&gt;flexibility&lt;/strong&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The major highlights of this release are:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Integration of &lt;a href=&quot;https://github.com/rtomayko/tilt&quot;&gt;Tilt&lt;/a&gt; to handle rendering&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Dependencies cut in half (from 22 down to 11)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Improved compatibility with JRuby&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tight AsciiDoc integration powered by &lt;a href=&quot;http://asciidoctor.org&quot;&gt;Asciidoctor&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;An Amazon S3 deployer&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Switched to Ruby’s Logger class to output messages&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;This release is an important step towards achieving Awestruct’s primary goal: to make static websites trivially easy to create &#39;and publish&#39;.
+We hope when you try it, you’ll agree.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dlist&quot;&gt;
+&lt;dl&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
+&lt;dd&gt;
+&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
+&lt;/dd&gt;
+&lt;/dl&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;setup-and-migration&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#setup-and-migration&quot; /&gt;Setup and migration&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Awestruct is bundled as a Ruby gem and published to &lt;a href=&quot;http://rubygems.org/gems/awestruct&quot;&gt;rubygems.org&lt;/a&gt;.
+You can install it using:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;nowrap&quot;&gt;$ gem install awestruct&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If this is your first time using Awestruct, you can create a new website based on &lt;a href=&quot;http://twitter.github.com/bootstrap&quot;&gt;Bootstrap&lt;/a&gt; by running the following command inside a &lt;em&gt;new&lt;/em&gt; directory:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;nowrap&quot;&gt;$ awestruct -i -f bootstrap&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;New in 0.5.0, the setup command adds a rake build file, Rakefile, to the project.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonitionblock warning&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&quot;icon&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Warning&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;
+The Rakefile didn’t get bundled in the 0.5.0 gem.
+Therefore, this feature won’t be available until 0.5.1 is released.
+Until then, you can retrieve the &lt;a href=&quot;https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile&quot;&gt;Rakefile&lt;/a&gt; from the git repository.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Using rake is optional, but it does make running Awestruct a little bit easier and helps gets your contributors setup quicker.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you’re already using Awestruct to bake your website, we &lt;strong&gt;strongly&lt;/strong&gt; recommend that you follow the &lt;a href=&quot;https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0&quot;&gt;migration guide&lt;/a&gt; to upgrade to this new version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;whats-new&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#whats-new&quot; /&gt;What’s new?&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With this release, the version of Awestruct jumped from 0.4.8 to 0.5.0.
+The changes described below should help explain why we decided to skip a version.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;tilt-integration&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#tilt-integration&quot; /&gt;Tilt integration&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The most significant change in 0.5.0 is the integration of &lt;a href=&quot;https://github.com/rtomayko/tilt&quot;&gt;Tilt&lt;/a&gt;, a generic interface to numerous template engines in Ruby.
+Tilt is used to render any file written in &lt;a href=&quot;https://github.com/rtomayko/tilt#tilt--&quot;&gt;a template language supported by Tilt&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Here are some of the benefits of using Tilt:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ulist&quot;&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;As soon Tilt adds support for another template language, it’s available for use with Awestruct&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Tilt lets you to select between different engines for a given markup language (such as Markdown)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;You can configure all the template engines from one place, _config/site.yml&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;less-dependencies&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#less-dependencies&quot; /&gt;Less dependencies&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Not only did the switch to Tilt simplify the rendering code in Awestruct, it also cut down the number of Awestruct’s required dependencies.
+Tilt loads the libraries necessary to render a template language when they are needed.
+For instance, if you don’t have any Textile files in your project, you don’t need RedCloth—​the Textile implementation in Ruby—​installed.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Some of Awestruct’s built-in extensions were requiring users to install extra libraries.
+These extensions are now disabled if the library is not available.
+As a result of this change, you may notice warnings when you start Awestruct such as:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;nowrap&quot;&gt;WARNING: Missing required dependency to activate optional built in extension
+coffeescripttransform.rb -&amp;gt; cannot load such file -- coffee-script&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;However, the warning message is a better alternative than making you install libraries you don’t need :)&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;strong&gt;In all, the number of dependencies has been trimmed from 22 down to 11.&lt;/strong&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The trade-off of trimming Awestruct’s dependencies is that you need to explicitly install libraries for each of the template languages or built-in Awestruct extensions you want to use (and add them to your Gemfile, if you’re using Bundler).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;See the &lt;a href=&quot;https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0&quot;&gt;migration guide&lt;/a&gt; for a list of libraries you’ll need to install.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&#39;…​in case you were wondering, you &lt;strong&gt;no longer&lt;/strong&gt; have to install less, therubyracer or v8 to use Awestruct ;)&#39;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;ruby-compatibility&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#ruby-compatibility&quot; /&gt;Ruby compatibility&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Each change to Awestruct is now tested on the latest release of all major versions of Ruby (1.8.7, 1.9.3, 2.0.0 and JRuby 1.7.3).
+Awestruct is also battle tested across multiple platforms (Linux, Mac OSX and Windows).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;We’re happy to say Awestruct has finally reached stability when running across all platforms.
+If issues still remain, we’re eager to hear about them and get them resolved.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;asciidoc-integration&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#asciidoc-integration&quot; /&gt;AsciiDoc integration&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;With AsciiDoc, we’re exploring a deeper integration between Awestruct and the content pages, specifically a bidirectional exchange of data.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Instead of adding the typical Awestruct front matter to the top of the document, you can define the front matter using attributes in the AsciiDoc header.
+Awestruct will also map the AsciiDoc title, author and date to the matching front matter attributes.
+You can also refer to Awestruct page variables using AsciiDoc attribute references.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The source of this blog entry serves as an example of this integration:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;listingblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;nowrap&quot;&gt;= Awestruct 0.5.0 released
+Dan Allen
+2013-03-25
+:awestruct-layout: news
+
+We&#39;re thrilled to announce the release of Awestruct 0.5.0!&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In other words, an AsciiDoc document can be used in an Awestruct site without any modifications (except for the addition of the :awestruct-layout: attribute).&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;amazon-s3-deployer&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#amazon-s3-deployer&quot; /&gt;Amazon S3 deployer&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;In addition to the rsync and GitHub Pages deployers, Awestruct can now deploy a site to Amazon S3.
+For instructions on how to set it up, see the &lt;a href=&quot;http://awestruct.org/deployment&quot;&gt;site deployment&lt;/a&gt; page on the Awestruct website.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;rakefile&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#rakefile&quot; /&gt;Rakefile&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Awestruct now adds a &lt;a href=&quot;http://rake.rubyforge.org&quot;&gt;Rake&lt;/a&gt; build file, Rakefile, to new sites by default.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;admonitionblock warning&quot;&gt;
+&lt;table&gt;
+&lt;tr&gt;
+&lt;td class=&quot;icon&quot;&gt;
+&lt;div class=&quot;title&quot;&gt;Warning&lt;/div&gt;
+&lt;/td&gt;
+&lt;td class=&quot;content&quot;&gt;
+The Rakefile didn’t get bundled in the 0.5.0 gem.
+Therefore, this feature won’t be available until 0.5.1 is released.
+Until then, you can retrieve the &lt;a href=&quot;https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile&quot;&gt;Rakefile&lt;/a&gt; from the git repository.
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;The purpose of this build file is to simplify setting up and using Awestruct across the numerous Ruby platforms.
+&lt;em&gt;It’s not required to use Awestruct&lt;/em&gt;, though it does save you time (hopefully).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now, instead of typing:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;nowrap&quot;&gt;$ awestruct -d&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;you just type:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;nowrap&quot;&gt;$ rake&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;While that may only save a few characters, know that it also auto-detects a Bundler environment and does the right thing.
+That means if you’re using Bundler, instead of typing:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;nowrap&quot;&gt;$ bundle exec awestruct -d&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;you just type:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;literalblock&quot;&gt;
+&lt;div class=&quot;content&quot;&gt;
+&lt;pre class=&quot;nowrap&quot;&gt;$ rake&lt;/pre&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;See, isn’t that nicer?&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;It also tells you what commands to type to setup an Awestruct environment (as contributors might need to do).&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;For more details, read the comments at the top of the &lt;a href=&quot;https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile&quot;&gt;Rakefile&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you don’t want to use rake, just ignore or delete the file.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect2&quot;&gt;
+&lt;h3 id=&quot;bootstrap-upgrade&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#bootstrap-upgrade&quot; /&gt;Bootstrap upgrade&lt;/h3&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Many of you who use Awestruct are probably taking advantage of the Bootstrap integration provided by &lt;a href=&quot;https://github.com/thomas-mcdonald/bootstrap-sass&quot;&gt;bootstrap-sass&lt;/a&gt;.
+If you have, note that Awestruct has upgraded to Bootstrap 2.3.1, the latest version of Bootstrap that bootstrap-sass supports at the time of this release.
+Since Awestruct has a transitive dependency on this library, it will be upgraded when you upgrade Awestruct.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;If you want to keep using an older version of Bootstrap, just declare the version explicitly in your Gemfile.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;That about wraps it up.
+For more details about what’s in this release, see the &lt;a href=&quot;https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0&quot;&gt;migration guide&lt;/a&gt; or just &lt;a href=&quot;http://awestruct.org/getting_started&quot;&gt;try it for yourself&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;sect1&quot;&gt;
+&lt;h2 id=&quot;thanks&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#thanks&quot; /&gt;Thanks!&lt;/h2&gt;
+&lt;div class=&quot;sectionbody&quot;&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Many people rallied together to make this release easier to install, more compatible and more flexible.
+Without their help, Awestruct wouldn’t be where it is today.
+Give a shout out on Twitter to the following contributors to let them know how much they mean to this growing community:&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=LightGuard&quot;&gt;Jason Porter&lt;/a&gt; -
+&lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=aslakknutsen&quot;&gt;Aslak Knutsen&lt;/a&gt; -
+&lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=mojavelinux&quot;&gt;Dan Allen&lt;/a&gt; -
+&lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=codylerum&quot;&gt;Cody Lerum&lt;/a&gt; -
+&lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=lance&quot;&gt;Lance Ball&lt;/a&gt; -
+&lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=ge0ffrey&quot;&gt;Geoffrey De Smet&lt;/a&gt; -
+&lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=xcoulon&quot;&gt;Xavier Coulon&lt;/a&gt; -
+&lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=jmesnil&quot;&gt;Jeff Mesnil&lt;/a&gt; -
+&lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=bleathem&quot;&gt;Brian Leathem&lt;/a&gt; -
+&lt;a href=&quot;https://github.com/awestruct/awestruct/commits?author=tcurdt&quot;&gt;Torsten Curdt&lt;/a&gt; -
+&lt;a href=&quot;https://github.com/graphitefriction/graphitefriction.github.com&quot;&gt;Sarah White&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Also, thanks to &lt;a href=&quot;https://github.com/awestruct/awestruct/contributors&quot;&gt;everyone who has contributed to Awestruct&lt;/a&gt; and those of you who use it, help others to use it and/or evangelize the technology.
+We’re honored to have you as part of the community!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;paragraph&quot;&gt;
+&lt;p&gt;Now go create awesome sites!&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</content>
+</entry>
+<entry>
+<id>https://awestruct.github.io/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/</id>
+<title>Awestruct 0.2.7 On the Prowl</title>
+<updated>2023-04-11T22:51:25+02:00</updated>
+<published>2011-10-31T00:00:00+00:00</published>
+<link href="https://awestruct.github.io/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/" rel="alternate" type="text/html" />
+<author>
+<name>Dan Allen</name>
+</author>
+<summary>
+Uh, we skipped a few release announcements, but it's because...
+
+Development on Awestruct is picking up now that the Arquillian team has
+started hacking on it for their new project site. They've contributed some
+improvements to Awestruct and have some other extensions waiting in the wings
+for a future release. There's also been a lot of chatter about Awestruct
+recently on twitter.
+
+Here's a taste of the treats in store for you.
+
+
+
+Aslak improved the Posts extension to read page.date as a alternative to
+the post filename, part of the preparation for a feature that enables
+automatic generation of blog entries for project releases (like this one!).
+
+Aslak also integrated...
+</summary>
+<content type="html">
+&lt;p&gt;&lt;em&gt;Uh, we skipped a few release announcements, but it&#39;s because...&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Development on Awestruct is picking up now that the &lt;a href=&quot;http://arquillian.org&quot;&gt;Arquillian&lt;/a&gt; team has
+started hacking on it for their new project site. They&#39;ve contributed some
+improvements to Awestruct and have some other extensions waiting in the wings
+for a future release. There&#39;s also been a lot of &lt;a href=&quot;http://twitter.com/#!/search/awestruct&quot;&gt;chatter&lt;/a&gt; about Awestruct
+recently on twitter.&lt;/p&gt;
+
+&lt;p&gt;Here&#39;s a taste of the treats in store for you.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://awestruct.github.io/awestruct.org/images/news/ontheprowl.jpg&quot; alt=&quot;Cat on the prowl&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://github.com/aslakknutsen&quot;&gt;Aslak&lt;/a&gt; improved the &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/posts&quot;&gt;Posts&lt;/a&gt; extension to read page.date as a alternative to
+the post filename, part of the preparation for a feature that enables
+automatic generation of blog entries for project releases (like this one!).&lt;/p&gt;
+
+&lt;p&gt;Aslak also integrated &lt;a href=&quot;https://github.com/ttilley/fssm&quot;&gt;FSSM&lt;/a&gt; to monitor files more efficiently in development
+mode. Your CPU will thank you! He also committed a fix for a divide by 0 bug
+in the tagger extension that would strike when you least expected it.
+Additionally, he added support for extensions to define their own
+transformers.&lt;/p&gt;
+
+&lt;p&gt;At &lt;a href=&quot;http://github.com/mojavelinux&quot;&gt;Dan&lt;/a&gt;&#39;s request, Awestruct has been upgraded to &lt;a href=&quot;http://compass-style.org&quot;&gt;Compass&lt;/a&gt; 0.11.5 to take
+advantage of all the latest CSS3 mixins and so the online Compass
+documentation is actually relevant for developers using Awestruct. If you&#39;ve
+been using a lot of the CSS3 mixins already, you may need to do a little
+migration. Compass spits out deprecation warnings to the console. Holler if
+the upgrade breaks your stylesheet and you aren&#39;t sure how to fix it.&lt;/p&gt;
+
+&lt;p&gt;Dan and Aslak figured out how to hack RedCloth to provide custom inline and
+block markup. The hooks are now in place. We&#39;ll be documenting how to make use
+of them soon. You can see an example
+&lt;a href=&quot;https://github.com/arquillian/arquillian.github.com/blob/develop/_ext/textile_plus.rb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Dan documented the &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/disqus&quot;&gt;Disqus&lt;/a&gt; extension, an extension which snuck into a
+previous release without much ado. He also added an option to have the
+extension generate the Disqus identifier automatically from the date and slug
+of the post. Disqus is an alternative JavaScript-based comment system for
+Awestruct &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/posts&quot;&gt;Posts&lt;/a&gt; which offers a very elegant interface for both users and
+administrators.&lt;/p&gt;
+
+&lt;p&gt;Finally, &lt;a href=&quot;http://github.com/tombentley&quot;&gt;Tom&lt;/a&gt;&#39;s gsub transformer finally got merged in, so you can slice and
+dice the pages as they exit the pipeline.&lt;/p&gt;
+
+&lt;p&gt;Anyhow, check out &lt;a href=&quot;https://rubygems.org/gems/awestruct/versions/0.2.7&quot;&gt;gem&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gem install awestruct
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If I missed something, feel free to mention it in the comments.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Photo Credit: &lt;a href=&quot;http://www.flickr.com/photos/ralphandjenny/5118409269/in/photostream/&quot;&gt;ralph and jenny&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+</content>
+</entry>
+<entry>
+<id>https://awestruct.github.io/awestruct.org/news/2011/07/12/awestruct-022-lives/</id>
+<title>Awestruct 0.2.2 Lives</title>
+<updated>2023-04-11T22:51:25+02:00</updated>
+<published>2011-07-12T00:00:00+00:00</published>
+<link href="https://awestruct.github.io/awestruct.org/news/2011/07/12/awestruct-022-lives/" rel="alternate" type="text/html" />
+<author>
+<name>Bob McWhirter</name>
+</author>
+<summary>
+Thanks to recent interest from Torsten Curdt, Emmanuel Bernard and others in the community,
+activity around Awestruct has increased as of late.
+
+Emmanuel gives us the Flattr extension, plus a really nice blog post.
+
+Torsten gives us RDiscount for Markdown instead of Bluecloth.  Holler if it breaks your stuff.
+
+Anyhow, check out v0.2.2.
+
+gem install awestruct...
+</summary>
+<content type="html">
+&lt;p&gt;Thanks to recent interest from Torsten Curdt, Emmanuel Bernard and others in the community,
+activity around Awestruct has increased as of late.&lt;/p&gt;
+
+&lt;p&gt;Emmanuel gives us the &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/flattr&quot;&gt;Flattr&lt;/a&gt; extension, plus a really nice &lt;a href=&quot;http://blog.emmanuelbernard.com/2011/07/awestruct-building-dynamic-static-web-sites/&quot;&gt;blog post&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Torsten gives us RDiscount for Markdown instead of Bluecloth.  Holler if it breaks your stuff.&lt;/p&gt;
+
+&lt;p&gt;Anyhow, check out &lt;a href=&quot;https://rubygems.org/gems/awestruct/versions/0.2.2&quot;&gt;v0.2.2&lt;/a&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;gem install awestruct
+&lt;/code&gt;&lt;/pre&gt;
+
+</content>
+</entry>
+<entry>
+<id>https://awestruct.github.io/awestruct.org/news/2010/09/17/awestruct-011-released/</id>
+<title>Awestruct 0.1.1 Released</title>
+<updated>2023-04-11T22:51:25+02:00</updated>
+<published>2010-09-17T00:00:00+00:00</published>
+<link href="https://awestruct.github.io/awestruct.org/news/2010/09/17/awestruct-011-released/" rel="alternate" type="text/html" />
+<author>
+<name>Bob McWhirter</name>
+</author>
+<summary>
+I've just pushed the 0.1.1 version of the Awestruct gem
+to RubyGems.
+
+This release brings about quite a few new extensions
+(see sidebar), plus the ability to base many sites of
+the same skin, including pipelines, pages and layouts....
+</summary>
+<content type="html">
+&lt;p&gt;I&#39;ve just pushed the 0.1.1 version of the Awestruct gem
+to &lt;a href=&quot;http://rubygems.org/gems/awestruct&quot;&gt;RubyGems&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This release brings about quite a few new extensions
+(see sidebar), plus the ability to base many sites of
+the same skin, including pipelines, pages and layouts.&lt;/p&gt;
+
+</content>
+</entry>
+<entry>
+<id>https://awestruct.github.io/awestruct.org/news/2010/06/12/awestruct-006-released/</id>
+<title>Awestruct 0.0.6 Released</title>
+<updated>2023-04-11T22:51:25+02:00</updated>
+<published>2010-06-12T00:00:00+00:00</published>
+<link href="https://awestruct.github.io/awestruct.org/news/2010/06/12/awestruct-006-released/" rel="alternate" type="text/html" />
+<author>
+<name>Bob McWhirter</name>
+</author>
+<summary>
+I've just pushed the 0.0.6 version of the Awestruct gem
+to RubyGems.
+
+This includes updates to the baseline Compass, Haml and
+Sass used by the tool.
+
+Additionally, it adds support for Org-Mode.
+
+Enjoy!...
+</summary>
+<content type="html">
+&lt;p&gt;I&#39;ve just pushed the 0.0.6 version of the Awestruct gem
+to &lt;a href=&quot;http://rubygems.org/gems/awestruct&quot;&gt;RubyGems&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This includes updates to the baseline Compass, Haml and
+Sass used by the tool.&lt;/p&gt;
+
+&lt;p&gt;Additionally, it adds support for &lt;a href=&quot;http://orgmode.org/&quot;&gt;Org-Mode&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+
+</content>
+</entry>
+<entry>
+<id>https://awestruct.github.io/awestruct.org/news/2010/02/26/announcing-awestruct/</id>
+<title>Announcing Awestruct</title>
+<updated>2023-04-11T22:51:25+02:00</updated>
+<published>2010-02-26T00:00:00+00:00</published>
+<link href="https://awestruct.github.io/awestruct.org/news/2010/02/26/announcing-awestruct/" rel="alternate" type="text/html" />
+<author>
+<name>Bob McWhirter</name>
+</author>
+<summary>
+While attempting to rebuild the site at TorqueBox.org,
+I became frustrated with Jekyll and its forks.  Plus I had a yak that needed
+shaving.
+
+So, I'm happy to announce Awestruct....
+</summary>
+<content type="html">
+&lt;p&gt;While attempting to rebuild the site at &lt;a href=&quot;http://torquebox.org/&quot;&gt;TorqueBox.org&lt;/a&gt;,
+I became frustrated with Jekyll and its forks.  Plus I had a yak that needed
+shaving.&lt;/p&gt;
+
+&lt;p&gt;So, I&#39;m happy to announce &lt;em&gt;Awestruct&lt;/em&gt;.&lt;/p&gt;
+
+</content>
+</entry>
 </feed>

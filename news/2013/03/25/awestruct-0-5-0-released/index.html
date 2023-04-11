@@ -1,534 +1,537 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Awestruct 0.5.0 Released { :awestruct }</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Awestruct is a static site baking and deployment tool" name="description">
-    <meta content="summary" name="twitter:card">
-    <meta content="@awestructed" name="twitter:site">
-    <meta content="Awestruct 0.5.0 Released" name="twitter:title">
-    <meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
-    <link href="/news.atom" rel="alternate" type="application/atom+xml">
-    <style>
-      body {
-        padding-top: 60px;
-      }
-    </style>
-    <link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
-    <link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <div class="navbar navbar-fixed-top">
-      <div class="navbar-inner">
-        <div class="container">
-          <div class="github-banner">
-            <a href="https://github.com/awestruct/awestruct">
-              <img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
-            </a>
-          </div>
-          <a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
-          <ul class="nav">
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org">Home</a>
-            </li>
-            <li>
-              <a href="https://awestruct.github.io/awestruct.org/news/">News</a>
-            </li>
-            <li class="dropdown" id="getting-started-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
-                Documentation
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="extensions-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
-                Extensions
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
-                </li>
-              </ul>
-            </li>
-            <li class="dropdown" id="helpers-menu">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
-                Helpers
-                <b class="caret"></b>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
-                </li>
-                <li>
-                  <a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="span3">
-          <div class="well">
-            <h2>Build Status</h2>
-            <p>
-              GitHub Actions
-              <a href="https://github.com/awestruct/awestruct/actions">
-                <img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
-              </a>
-            </p>
-          </div>
-          <div id="sidebar">
-            <ul class="nav nav-tabs nav-stacked">
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
-              </li>
-              <li>
-                <a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
-              </li>
-              <li>
-                <a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
-              </li>
-              <li>
-                <a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
-              </li>
-              <li>
-                <a href="https://twitter.com/awestructed">Twitter</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="span8">
-          <div class="post">
-            <h1 class="title">
-              <a href="/news/2013/03/25/awestruct-0-5-0-released/">Awestruct 0.5.0 Released</a>
-            </h1>
-            <div class="byline">
-              <div class="author">
-                Dan Allen
-              </div>
-              <div class="date">
-                25 March 2013
-              </div>
-            </div>
-            <div id="preamble">
-            <div class="sectionbody">
-            <div class="paragraph">
-            <p>We&#8217;re thrilled to announce the release of Awestruct 0.5.0!</p>
-            </div>
-            <div class="paragraph">
-            <p>Awestruct 0.5.0 marks a significant evolution in the history of the project.
-            The focus of this release has been on <strong>ease of installation</strong>, <strong>compatibility</strong> and <strong>flexibility</strong>.</p>
-            </div>
-            <div class="paragraph">
-            <p>The major highlights of this release are:</p>
-            </div>
-            <div class="ulist">
-            <ul>
-            <li>
-            <p>Integration of <a href="https://github.com/rtomayko/tilt">Tilt</a> to handle rendering</p>
-            </li>
-            <li>
-            <p>Dependencies cut in half (from 22 down to 11)</p>
-            </li>
-            <li>
-            <p>Improved compatibility with JRuby</p>
-            </li>
-            <li>
-            <p>Tight AsciiDoc integration powered by <a href="http://asciidoctor.org">Asciidoctor</a></p>
-            </li>
-            <li>
-            <p>An Amazon S3 deployer</p>
-            </li>
-            <li>
-            <p>Switched to Ruby&#8217;s Logger class to output messages</p>
-            </li>
-            </ul>
-            </div>
-            <div class="paragraph">
-            <p>This release is an important step towards achieving Awestruct&#8217;s primary goal: to make static websites trivially easy to create 'and publish'.
-            We hope when you try it, you&#8217;ll agree.</p>
-            </div>
-            <div class="dlist">
-            <dl>
-            <dt class="hdlist1">Homepage</dt>
-            <dd>
-            <p><a href="http://awestruct.org" class="bare">http://awestruct.org</a></p>
-            </dd>
-            <dt class="hdlist1">Download</dt>
-            <dd>
-            <p><a href="http://rubygems.org/gems/awestruct" class="bare">http://rubygems.org/gems/awestruct</a></p>
-            </dd>
-            </dl>
-            </div>
-            </div>
-            </div>
-            <div class="sect1">
-            <h2 id="setup-and-migration"><a class="anchor" href="#setup-and-migration"></a>Setup and migration</h2>
-            <div class="sectionbody">
-            <div class="paragraph">
-            <p>Awestruct is bundled as a Ruby gem and published to <a href="http://rubygems.org/gems/awestruct">rubygems.org</a>.
-            You can install it using:</p>
-            </div>
-            <div class="literalblock">
-            <div class="content">
-            <pre class="nowrap">$ gem install awestruct</pre>
-            </div>
-            </div>
-            <div class="paragraph">
-            <p>If this is your first time using Awestruct, you can create a new website based on <a href="http://twitter.github.com/bootstrap">Bootstrap</a> by running the following command inside a <em>new</em> directory:</p>
-            </div>
-            <div class="literalblock">
-            <div class="content">
-            <pre class="nowrap">$ awestruct -i -f bootstrap</pre>
-            </div>
-            </div>
-            <div class="paragraph">
-            <p>New in 0.5.0, the setup command adds a rake build file, Rakefile, to the project.</p>
-            </div>
-            <div class="admonitionblock warning">
-            <table>
-            <tr>
-            <td class="icon">
-            <div class="title">Warning</div>
-            </td>
-            <td class="content">
-            The Rakefile didn’t get bundled in the 0.5.0 gem.
-            Therefore, this feature won&#8217;t be available until 0.5.1 is released.
-            Until then, you can retrieve the <a href="https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile">Rakefile</a> from the git repository.
-            </td>
-            </tr>
-            </table>
-            </div>
-            <div class="paragraph">
-            <p>Using rake is optional, but it does make running Awestruct a little bit easier and helps gets your contributors setup quicker.</p>
-            </div>
-            <div class="paragraph">
-            <p>If you&#8217;re already using Awestruct to bake your website, we <strong>strongly</strong> recommend that you follow the <a href="https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0">migration guide</a> to upgrade to this new version.</p>
-            </div>
-            </div>
-            </div>
-            <div class="sect1">
-            <h2 id="whats-new"><a class="anchor" href="#whats-new"></a>What&#8217;s new?</h2>
-            <div class="sectionbody">
-            <div class="paragraph">
-            <p>With this release, the version of Awestruct jumped from 0.4.8 to 0.5.0.
-            The changes described below should help explain why we decided to skip a version.</p>
-            </div>
-            <div class="sect2">
-            <h3 id="tilt-integration"><a class="anchor" href="#tilt-integration"></a>Tilt integration</h3>
-            <div class="paragraph">
-            <p>The most significant change in 0.5.0 is the integration of <a href="https://github.com/rtomayko/tilt">Tilt</a>, a generic interface to numerous template engines in Ruby.
-            Tilt is used to render any file written in <a href="https://github.com/rtomayko/tilt#tilt--">a template language supported by Tilt</a>.</p>
-            </div>
-            <div class="paragraph">
-            <p>Here are some of the benefits of using Tilt:</p>
-            </div>
-            <div class="ulist">
-            <ul>
-            <li>
-            <p>As soon Tilt adds support for another template language, it&#8217;s available for use with Awestruct</p>
-            </li>
-            <li>
-            <p>Tilt lets you to select between different engines for a given markup language (such as Markdown)</p>
-            </li>
-            <li>
-            <p>You can configure all the template engines from one place, _config/site.yml</p>
-            </li>
-            </ul>
-            </div>
-            </div>
-            <div class="sect2">
-            <h3 id="less-dependencies"><a class="anchor" href="#less-dependencies"></a>Less dependencies</h3>
-            <div class="paragraph">
-            <p>Not only did the switch to Tilt simplify the rendering code in Awestruct, it also cut down the number of Awestruct&#8217;s required dependencies.
-            Tilt loads the libraries necessary to render a template language when they are needed.
-            For instance, if you don&#8217;t have any Textile files in your project, you don&#8217;t need RedCloth&#8212;&#8203;the Textile implementation in Ruby&#8212;&#8203;installed.</p>
-            </div>
-            <div class="paragraph">
-            <p>Some of Awestruct&#8217;s built-in extensions were requiring users to install extra libraries.
-            These extensions are now disabled if the library is not available.
-            As a result of this change, you may notice warnings when you start Awestruct such as:</p>
-            </div>
-            <div class="literalblock">
-            <div class="content">
-            <pre class="nowrap">WARNING: Missing required dependency to activate optional built in extension&#x000A;coffeescripttransform.rb -&gt; cannot load such file -- coffee-script</pre>
-            </div>
-            </div>
-            <div class="paragraph">
-            <p>However, the warning message is a better alternative than making you install libraries you don&#8217;t need :)</p>
-            </div>
-            <div class="paragraph">
-            <p><strong>In all, the number of dependencies has been trimmed from 22 down to 11.</strong></p>
-            </div>
-            <div class="paragraph">
-            <p>The trade-off of trimming Awestruct&#8217;s dependencies is that you need to explicitly install libraries for each of the template languages or built-in Awestruct extensions you want to use (and add them to your Gemfile, if you&#8217;re using Bundler).</p>
-            </div>
-            <div class="paragraph">
-            <p>See the <a href="https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0">migration guide</a> for a list of libraries you&#8217;ll need to install.</p>
-            </div>
-            <div class="paragraph">
-            <p>'&#8230;&#8203;in case you were wondering, you <strong>no longer</strong> have to install less, therubyracer or v8 to use Awestruct ;)'</p>
-            </div>
-            </div>
-            <div class="sect2">
-            <h3 id="ruby-compatibility"><a class="anchor" href="#ruby-compatibility"></a>Ruby compatibility</h3>
-            <div class="paragraph">
-            <p>Each change to Awestruct is now tested on the latest release of all major versions of Ruby (1.8.7, 1.9.3, 2.0.0 and JRuby 1.7.3).
-            Awestruct is also battle tested across multiple platforms (Linux, Mac OSX and Windows).</p>
-            </div>
-            <div class="paragraph">
-            <p>We&#8217;re happy to say Awestruct has finally reached stability when running across all platforms.
-            If issues still remain, we&#8217;re eager to hear about them and get them resolved.</p>
-            </div>
-            </div>
-            <div class="sect2">
-            <h3 id="asciidoc-integration"><a class="anchor" href="#asciidoc-integration"></a>AsciiDoc integration</h3>
-            <div class="paragraph">
-            <p>With AsciiDoc, we&#8217;re exploring a deeper integration between Awestruct and the content pages, specifically a bidirectional exchange of data.</p>
-            </div>
-            <div class="paragraph">
-            <p>Instead of adding the typical Awestruct front matter to the top of the document, you can define the front matter using attributes in the AsciiDoc header.
-            Awestruct will also map the AsciiDoc title, author and date to the matching front matter attributes.
-            You can also refer to Awestruct page variables using AsciiDoc attribute references.</p>
-            </div>
-            <div class="paragraph">
-            <p>The source of this blog entry serves as an example of this integration:</p>
-            </div>
-            <div class="listingblock">
-            <div class="content">
-            <pre class="nowrap">= Awestruct 0.5.0 released&#x000A;Dan Allen&#x000A;2013-03-25&#x000A;:awestruct-layout: news&#x000A;&#x000A;We're thrilled to announce the release of Awestruct 0.5.0!</pre>
-            </div>
-            </div>
-            <div class="paragraph">
-            <p>In other words, an AsciiDoc document can be used in an Awestruct site without any modifications (except for the addition of the :awestruct-layout: attribute).</p>
-            </div>
-            </div>
-            <div class="sect2">
-            <h3 id="amazon-s3-deployer"><a class="anchor" href="#amazon-s3-deployer"></a>Amazon S3 deployer</h3>
-            <div class="paragraph">
-            <p>In addition to the rsync and GitHub Pages deployers, Awestruct can now deploy a site to Amazon S3.
-            For instructions on how to set it up, see the <a href="http://awestruct.org/deployment">site deployment</a> page on the Awestruct website.</p>
-            </div>
-            </div>
-            <div class="sect2">
-            <h3 id="rakefile"><a class="anchor" href="#rakefile"></a>Rakefile</h3>
-            <div class="paragraph">
-            <p>Awestruct now adds a <a href="http://rake.rubyforge.org">Rake</a> build file, Rakefile, to new sites by default.</p>
-            </div>
-            <div class="admonitionblock warning">
-            <table>
-            <tr>
-            <td class="icon">
-            <div class="title">Warning</div>
-            </td>
-            <td class="content">
-            The Rakefile didn’t get bundled in the 0.5.0 gem.
-            Therefore, this feature won’t be available until 0.5.1 is released.
-            Until then, you can retrieve the <a href="https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile">Rakefile</a> from the git repository.
-            </td>
-            </tr>
-            </table>
-            </div>
-            <div class="paragraph">
-            <p>The purpose of this build file is to simplify setting up and using Awestruct across the numerous Ruby platforms.
-            <em>It&#8217;s not required to use Awestruct</em>, though it does save you time (hopefully).</p>
-            </div>
-            <div class="paragraph">
-            <p>Now, instead of typing:</p>
-            </div>
-            <div class="literalblock">
-            <div class="content">
-            <pre class="nowrap">$ awestruct -d</pre>
-            </div>
-            </div>
-            <div class="paragraph">
-            <p>you just type:</p>
-            </div>
-            <div class="literalblock">
-            <div class="content">
-            <pre class="nowrap">$ rake</pre>
-            </div>
-            </div>
-            <div class="paragraph">
-            <p>While that may only save a few characters, know that it also auto-detects a Bundler environment and does the right thing.
-            That means if you&#8217;re using Bundler, instead of typing:</p>
-            </div>
-            <div class="literalblock">
-            <div class="content">
-            <pre class="nowrap">$ bundle exec awestruct -d</pre>
-            </div>
-            </div>
-            <div class="paragraph">
-            <p>you just type:</p>
-            </div>
-            <div class="literalblock">
-            <div class="content">
-            <pre class="nowrap">$ rake</pre>
-            </div>
-            </div>
-            <div class="paragraph">
-            <p>See, isn&#8217;t that nicer?</p>
-            </div>
-            <div class="paragraph">
-            <p>It also tells you what commands to type to setup an Awestruct environment (as contributors might need to do).</p>
-            </div>
-            <div class="paragraph">
-            <p>For more details, read the comments at the top of the <a href="https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile">Rakefile</a>.</p>
-            </div>
-            <div class="paragraph">
-            <p>If you don&#8217;t want to use rake, just ignore or delete the file.</p>
-            </div>
-            </div>
-            <div class="sect2">
-            <h3 id="bootstrap-upgrade"><a class="anchor" href="#bootstrap-upgrade"></a>Bootstrap upgrade</h3>
-            <div class="paragraph">
-            <p>Many of you who use Awestruct are probably taking advantage of the Bootstrap integration provided by <a href="https://github.com/thomas-mcdonald/bootstrap-sass">bootstrap-sass</a>.
-            If you have, note that Awestruct has upgraded to Bootstrap 2.3.1, the latest version of Bootstrap that bootstrap-sass supports at the time of this release.
-            Since Awestruct has a transitive dependency on this library, it will be upgraded when you upgrade Awestruct.</p>
-            </div>
-            <div class="paragraph">
-            <p>If you want to keep using an older version of Bootstrap, just declare the version explicitly in your Gemfile.</p>
-            </div>
-            <div class="paragraph">
-            <p>That about wraps it up.
-            For more details about what&#8217;s in this release, see the <a href="https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0">migration guide</a> or just <a href="http://awestruct.org/getting_started">try it for yourself</a>.</p>
-            </div>
-            </div>
-            </div>
-            </div>
-            <div class="sect1">
-            <h2 id="thanks"><a class="anchor" href="#thanks"></a>Thanks!</h2>
-            <div class="sectionbody">
-            <div class="paragraph">
-            <p>Many people rallied together to make this release easier to install, more compatible and more flexible.
-            Without their help, Awestruct wouldn&#8217;t be where it is today.
-            Give a shout out on Twitter to the following contributors to let them know how much they mean to this growing community:</p>
-            </div>
-            <div class="paragraph">
-            <p><a href="https://github.com/awestruct/awestruct/commits?author=LightGuard">Jason Porter</a> -
-            <a href="https://github.com/awestruct/awestruct/commits?author=aslakknutsen">Aslak Knutsen</a> -
-            <a href="https://github.com/awestruct/awestruct/commits?author=mojavelinux">Dan Allen</a> -
-            <a href="https://github.com/awestruct/awestruct/commits?author=codylerum">Cody Lerum</a> -
-            <a href="https://github.com/awestruct/awestruct/commits?author=lance">Lance Ball</a> -
-            <a href="https://github.com/awestruct/awestruct/commits?author=ge0ffrey">Geoffrey De Smet</a> -
-            <a href="https://github.com/awestruct/awestruct/commits?author=xcoulon">Xavier Coulon</a> -
-            <a href="https://github.com/awestruct/awestruct/commits?author=jmesnil">Jeff Mesnil</a> -
-            <a href="https://github.com/awestruct/awestruct/commits?author=bleathem">Brian Leathem</a> -
-            <a href="https://github.com/awestruct/awestruct/commits?author=tcurdt">Torsten Curdt</a> -
-            <a href="https://github.com/graphitefriction/graphitefriction.github.com">Sarah White</a></p>
-            </div>
-            <div class="paragraph">
-            <p>Also, thanks to <a href="https://github.com/awestruct/awestruct/contributors">everyone who has contributed to Awestruct</a> and those of you who use it, help others to use it and/or evangelize the technology.
-            We&#8217;re honored to have you as part of the community!</p>
-            </div>
-            <div class="paragraph">
-            <p>Now go create awesome sites!</p>
-            </div>
-            </div>
-            </div>
-            <div class="comments">
-              <script>
-                var idcomments_acct='fa224495874e8d96bbf6f2dbcc26dac5';
-                var idcomments_post_id='fe09e12671a887bd2c89a34154fc5dc6b6ca500c';
-                 var idcomments_post_url='https://awestruct.github.io/awestruct.org/news/2013/03/25/awestruct-0-5-0-released/';
-              </script>
-              <span id="IDCommentsPostTitle" style="display:none"></span>
-              <script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <hr>
-        <footer>
-          <p>&copy; Bob McWhirter 2023</p>
-        </footer>
-      </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
-    <script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-  </body>
+<head>
+<meta charset="utf-8">
+<title>Awestruct 0.5.0 Released { :awestruct }</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="Awestruct is a static site baking and deployment tool" name="description">
+<meta content="summary" name="twitter:card">
+<meta content="@awestructed" name="twitter:site">
+<meta content="Awestruct 0.5.0 Released" name="twitter:title">
+<meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
+<link href="/news.atom" rel="alternate" type="application/atom+xml">
+<style>
+  body {
+    padding-top: 60px;
+  }
+</style>
+<link href="https://awestruct.github.io/awestruct.org/stylesheets/styles.css" rel="stylesheet">
+<link href="https://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="navbar navbar-fixed-top">
+<div class="navbar-inner">
+<div class="container">
+<div class="github-banner">
+<a href="https://github.com/awestruct/awestruct">
+<img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
+</a>
+</div>
+<a class="brand" href="https://awestruct.github.io/awestruct.org">{:awestruct}</a>
+<ul class="nav">
+<li>
+<a href="https://awestruct.github.io/awestruct.org">Home</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/news/">News</a>
+</li>
+<li class="dropdown" id="getting-started-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
+Documentation
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/getting_started/">Getting Started</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/layout/">Project Layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/profiles/">Site Profiles</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/file_types/">File Types</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/skins/">Skins</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/template_context/">Template Context</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/deployment/">Site Deployment</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="extensions-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
+Extensions
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/atomizer/">Atomizer</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/data_dir/">DataDir</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/disqus/">Disqus</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/flattr/">Flattr</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/indexifier/">Indexifier</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/paginator/">Paginator</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/posts/">Posts</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/relative/">Relative</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/sitemap/">Sitemap</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tag_cloud/">TagCloud</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/tagger/">Tagger</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/extensions/textile/">Textile</a>
+</li>
+</ul>
+</li>
+<li class="dropdown" id="helpers-menu">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
+Helpers
+<b class="caret"></b>
+</a>
+<ul class="dropdown-menu">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/">Overview</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/partial/">Partial</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/helpers/google_analytics/">Google Analytics</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row">
+<div class="span3">
+<div class="well">
+<h2>Build Status</h2>
+<p>
+GitHub Actions
+<a href="https://github.com/awestruct/awestruct/actions">
+<img src="https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml">
+</a>
+</p>
+</div>
+<div id="sidebar">
+<ul class="nav nav-tabs nav-stacked">
+<li>
+<a href="https://awestruct.github.io/awestruct.org/gallery/">Gallery</a>
+</li>
+<li>
+<a href="https://awestruct.github.io/awestruct.org/source/">Source Code</a>
+</li>
+<li>
+<a href="https://www.rubydoc.info/gems/awestruct/">API Documentation</a>
+</li>
+<li>
+<a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
+</li>
+<li>
+<a href="https://twitter.com/awestructed">Twitter</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="span8">
+<div class="post">
+<h1 class="title">
+<a href="/news/2013/03/25/awestruct-0-5-0-released/">Awestruct 0.5.0 Released</a>
+</h1>
+<div class="byline">
+<div class="author">
+Dan Allen
+</div>
+<div class="date">
+25 March 2013
+</div>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>We&#8217;re thrilled to announce the release of Awestruct 0.5.0!</p>
+</div>
+<div class="paragraph">
+<p>Awestruct 0.5.0 marks a significant evolution in the history of the project.
+The focus of this release has been on <strong>ease of installation</strong>, <strong>compatibility</strong> and <strong>flexibility</strong>.</p>
+</div>
+<div class="paragraph">
+<p>The major highlights of this release are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Integration of <a href="https://github.com/rtomayko/tilt">Tilt</a> to handle rendering</p>
+</li>
+<li>
+<p>Dependencies cut in half (from 22 down to 11)</p>
+</li>
+<li>
+<p>Improved compatibility with JRuby</p>
+</li>
+<li>
+<p>Tight AsciiDoc integration powered by <a href="http://asciidoctor.org">Asciidoctor</a></p>
+</li>
+<li>
+<p>An Amazon S3 deployer</p>
+</li>
+<li>
+<p>Switched to Ruby&#8217;s Logger class to output messages</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>This release is an important step towards achieving Awestruct&#8217;s primary goal: to make static websites trivially easy to create 'and publish'.
+We hope when you try it, you&#8217;ll agree.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1">Homepage</dt>
+<dd>
+<p><a href="http://awestruct.org" class="bare">http://awestruct.org</a></p>
+</dd>
+<dt class="hdlist1">Download</dt>
+<dd>
+<p><a href="http://rubygems.org/gems/awestruct" class="bare">http://rubygems.org/gems/awestruct</a></p>
+</dd>
+</dl>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="setup-and-migration"><a class="anchor" href="#setup-and-migration"></a>Setup and migration</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Awestruct is bundled as a Ruby gem and published to <a href="http://rubygems.org/gems/awestruct">rubygems.org</a>.
+You can install it using:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre class="nowrap">$ gem install awestruct</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If this is your first time using Awestruct, you can create a new website based on <a href="http://twitter.github.com/bootstrap">Bootstrap</a> by running the following command inside a <em>new</em> directory:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre class="nowrap">$ awestruct -i -f bootstrap</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>New in 0.5.0, the setup command adds a rake build file, Rakefile, to the project.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+The Rakefile didn’t get bundled in the 0.5.0 gem.
+Therefore, this feature won&#8217;t be available until 0.5.1 is released.
+Until then, you can retrieve the <a href="https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile">Rakefile</a> from the git repository.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Using rake is optional, but it does make running Awestruct a little bit easier and helps gets your contributors setup quicker.</p>
+</div>
+<div class="paragraph">
+<p>If you&#8217;re already using Awestruct to bake your website, we <strong>strongly</strong> recommend that you follow the <a href="https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0">migration guide</a> to upgrade to this new version.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="whats-new"><a class="anchor" href="#whats-new"></a>What&#8217;s new?</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>With this release, the version of Awestruct jumped from 0.4.8 to 0.5.0.
+The changes described below should help explain why we decided to skip a version.</p>
+</div>
+<div class="sect2">
+<h3 id="tilt-integration"><a class="anchor" href="#tilt-integration"></a>Tilt integration</h3>
+<div class="paragraph">
+<p>The most significant change in 0.5.0 is the integration of <a href="https://github.com/rtomayko/tilt">Tilt</a>, a generic interface to numerous template engines in Ruby.
+Tilt is used to render any file written in <a href="https://github.com/rtomayko/tilt#tilt--">a template language supported by Tilt</a>.</p>
+</div>
+<div class="paragraph">
+<p>Here are some of the benefits of using Tilt:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>As soon Tilt adds support for another template language, it&#8217;s available for use with Awestruct</p>
+</li>
+<li>
+<p>Tilt lets you to select between different engines for a given markup language (such as Markdown)</p>
+</li>
+<li>
+<p>You can configure all the template engines from one place, _config/site.yml</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="less-dependencies"><a class="anchor" href="#less-dependencies"></a>Less dependencies</h3>
+<div class="paragraph">
+<p>Not only did the switch to Tilt simplify the rendering code in Awestruct, it also cut down the number of Awestruct&#8217;s required dependencies.
+Tilt loads the libraries necessary to render a template language when they are needed.
+For instance, if you don&#8217;t have any Textile files in your project, you don&#8217;t need RedCloth&#8212;&#8203;the Textile implementation in Ruby&#8212;&#8203;installed.</p>
+</div>
+<div class="paragraph">
+<p>Some of Awestruct&#8217;s built-in extensions were requiring users to install extra libraries.
+These extensions are now disabled if the library is not available.
+As a result of this change, you may notice warnings when you start Awestruct such as:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre class="nowrap">WARNING: Missing required dependency to activate optional built in extension&#x000A;coffeescripttransform.rb -&gt; cannot load such file -- coffee-script</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>However, the warning message is a better alternative than making you install libraries you don&#8217;t need :)</p>
+</div>
+<div class="paragraph">
+<p><strong>In all, the number of dependencies has been trimmed from 22 down to 11.</strong></p>
+</div>
+<div class="paragraph">
+<p>The trade-off of trimming Awestruct&#8217;s dependencies is that you need to explicitly install libraries for each of the template languages or built-in Awestruct extensions you want to use (and add them to your Gemfile, if you&#8217;re using Bundler).</p>
+</div>
+<div class="paragraph">
+<p>See the <a href="https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0">migration guide</a> for a list of libraries you&#8217;ll need to install.</p>
+</div>
+<div class="paragraph">
+<p>'&#8230;&#8203;in case you were wondering, you <strong>no longer</strong> have to install less, therubyracer or v8 to use Awestruct ;)'</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ruby-compatibility"><a class="anchor" href="#ruby-compatibility"></a>Ruby compatibility</h3>
+<div class="paragraph">
+<p>Each change to Awestruct is now tested on the latest release of all major versions of Ruby (1.8.7, 1.9.3, 2.0.0 and JRuby 1.7.3).
+Awestruct is also battle tested across multiple platforms (Linux, Mac OSX and Windows).</p>
+</div>
+<div class="paragraph">
+<p>We&#8217;re happy to say Awestruct has finally reached stability when running across all platforms.
+If issues still remain, we&#8217;re eager to hear about them and get them resolved.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="asciidoc-integration"><a class="anchor" href="#asciidoc-integration"></a>AsciiDoc integration</h3>
+<div class="paragraph">
+<p>With AsciiDoc, we&#8217;re exploring a deeper integration between Awestruct and the content pages, specifically a bidirectional exchange of data.</p>
+</div>
+<div class="paragraph">
+<p>Instead of adding the typical Awestruct front matter to the top of the document, you can define the front matter using attributes in the AsciiDoc header.
+Awestruct will also map the AsciiDoc title, author and date to the matching front matter attributes.
+You can also refer to Awestruct page variables using AsciiDoc attribute references.</p>
+</div>
+<div class="paragraph">
+<p>The source of this blog entry serves as an example of this integration:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="nowrap">= Awestruct 0.5.0 released&#x000A;Dan Allen&#x000A;2013-03-25&#x000A;:awestruct-layout: news&#x000A;&#x000A;We're thrilled to announce the release of Awestruct 0.5.0!</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In other words, an AsciiDoc document can be used in an Awestruct site without any modifications (except for the addition of the :awestruct-layout: attribute).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="amazon-s3-deployer"><a class="anchor" href="#amazon-s3-deployer"></a>Amazon S3 deployer</h3>
+<div class="paragraph">
+<p>In addition to the rsync and GitHub Pages deployers, Awestruct can now deploy a site to Amazon S3.
+For instructions on how to set it up, see the <a href="http://awestruct.org/deployment">site deployment</a> page on the Awestruct website.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="rakefile"><a class="anchor" href="#rakefile"></a>Rakefile</h3>
+<div class="paragraph">
+<p>Awestruct now adds a <a href="http://rake.rubyforge.org">Rake</a> build file, Rakefile, to new sites by default.</p>
+</div>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Warning</div>
+</td>
+<td class="content">
+The Rakefile didn’t get bundled in the 0.5.0 gem.
+Therefore, this feature won’t be available until 0.5.1 is released.
+Until then, you can retrieve the <a href="https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile">Rakefile</a> from the git repository.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>The purpose of this build file is to simplify setting up and using Awestruct across the numerous Ruby platforms.
+<em>It&#8217;s not required to use Awestruct</em>, though it does save you time (hopefully).</p>
+</div>
+<div class="paragraph">
+<p>Now, instead of typing:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre class="nowrap">$ awestruct -d</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>you just type:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre class="nowrap">$ rake</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>While that may only save a few characters, know that it also auto-detects a Bundler environment and does the right thing.
+That means if you&#8217;re using Bundler, instead of typing:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre class="nowrap">$ bundle exec awestruct -d</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>you just type:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre class="nowrap">$ rake</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>See, isn&#8217;t that nicer?</p>
+</div>
+<div class="paragraph">
+<p>It also tells you what commands to type to setup an Awestruct environment (as contributors might need to do).</p>
+</div>
+<div class="paragraph">
+<p>For more details, read the comments at the top of the <a href="https://github.com/awestruct/awestruct/blob/master/lib/awestruct/frameworks/base_Rakefile">Rakefile</a>.</p>
+</div>
+<div class="paragraph">
+<p>If you don&#8217;t want to use rake, just ignore or delete the file.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="bootstrap-upgrade"><a class="anchor" href="#bootstrap-upgrade"></a>Bootstrap upgrade</h3>
+<div class="paragraph">
+<p>Many of you who use Awestruct are probably taking advantage of the Bootstrap integration provided by <a href="https://github.com/thomas-mcdonald/bootstrap-sass">bootstrap-sass</a>.
+If you have, note that Awestruct has upgraded to Bootstrap 2.3.1, the latest version of Bootstrap that bootstrap-sass supports at the time of this release.
+Since Awestruct has a transitive dependency on this library, it will be upgraded when you upgrade Awestruct.</p>
+</div>
+<div class="paragraph">
+<p>If you want to keep using an older version of Bootstrap, just declare the version explicitly in your Gemfile.</p>
+</div>
+<div class="paragraph">
+<p>That about wraps it up.
+For more details about what&#8217;s in this release, see the <a href="https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0">migration guide</a> or just <a href="http://awestruct.org/getting_started">try it for yourself</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="thanks"><a class="anchor" href="#thanks"></a>Thanks!</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Many people rallied together to make this release easier to install, more compatible and more flexible.
+Without their help, Awestruct wouldn&#8217;t be where it is today.
+Give a shout out on Twitter to the following contributors to let them know how much they mean to this growing community:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/awestruct/awestruct/commits?author=LightGuard">Jason Porter</a> -
+<a href="https://github.com/awestruct/awestruct/commits?author=aslakknutsen">Aslak Knutsen</a> -
+<a href="https://github.com/awestruct/awestruct/commits?author=mojavelinux">Dan Allen</a> -
+<a href="https://github.com/awestruct/awestruct/commits?author=codylerum">Cody Lerum</a> -
+<a href="https://github.com/awestruct/awestruct/commits?author=lance">Lance Ball</a> -
+<a href="https://github.com/awestruct/awestruct/commits?author=ge0ffrey">Geoffrey De Smet</a> -
+<a href="https://github.com/awestruct/awestruct/commits?author=xcoulon">Xavier Coulon</a> -
+<a href="https://github.com/awestruct/awestruct/commits?author=jmesnil">Jeff Mesnil</a> -
+<a href="https://github.com/awestruct/awestruct/commits?author=bleathem">Brian Leathem</a> -
+<a href="https://github.com/awestruct/awestruct/commits?author=tcurdt">Torsten Curdt</a> -
+<a href="https://github.com/graphitefriction/graphitefriction.github.com">Sarah White</a></p>
+</div>
+<div class="paragraph">
+<p>Also, thanks to <a href="https://github.com/awestruct/awestruct/contributors">everyone who has contributed to Awestruct</a> and those of you who use it, help others to use it and/or evangelize the technology.
+We&#8217;re honored to have you as part of the community!</p>
+</div>
+<div class="paragraph">
+<p>Now go create awesome sites!</p>
+</div>
+</div>
+</div>
+<div class="comments">
+<script>
+  var idcomments_acct='fa224495874e8d96bbf6f2dbcc26dac5';
+  var idcomments_post_id='fe09e12671a887bd2c89a34154fc5dc6b6ca500c';
+   var idcomments_post_url='https://awestruct.github.io/awestruct.org/news/2013/03/25/awestruct-0-5-0-released/';
+</script>
+<span id="IDCommentsPostTitle" style="display:none"></span>
+<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+
+</div>
+</div>
+
+
+</div>
+</div>
+<div class="row">
+<hr>
+<footer>
+<p>&copy; Bob McWhirter 2023</p>
+</footer>
+</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
+<script src="https://awestruct.github.io/awestruct.org/javascript/highlight-20130326.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+</script>
+</body>
 </html>
