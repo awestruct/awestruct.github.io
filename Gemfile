@@ -11,7 +11,7 @@ gem 'asciidoctor', '~> 1.5'
 gem 'erubis', '~> 2.7'
 gem 'rb-inotify', '~> 0.9', :platforms => [:ruby, :jruby]
 gem 'yard', '~> 0.8'
-gem 'rake', '~> 10'
+gem 'rake', '~> 13'
 
 # force to quse bootstrap 2.3.x and not a newer version because of incompatibility issues
 gem 'compass'
@@ -22,8 +22,6 @@ gem 'bootstrap-sass', '~> 2.3.2'
 gem 'htmlcompressor', '~> 0.0.5'
 gem 'coffee-script', '~> 2.2'
 gem 'uglifier', '~> 1.3'
-gem 'therubyracer', '~> 0.11', :platforms => [:ruby]
-gem 'therubyrhino', '~> 2.0', :platforms => [:jruby]
 
 # Required by cloudbees
 gem 'rdoc', '~> 4.2'

@@ -21,7 +21,7 @@ end
 
 desc "Build the site and publish to github"
 task :github => :check do
-  system "bundle exec awestruct --deploy -P -g github --force"
+  system "bundle exec awestruct --deploy -g -P github --force"
 end
 
 desc "Build the site and publish to staging"
