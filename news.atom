@@ -2,13 +2,13 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
   <id>https://awestruct.github.com/awestruct.org/</id>
   <title>{ :awestruct }</title>
-  <updated>2023-04-11T22:07:11+02:00</updated>
+  <updated>2023-04-11T22:37:54+02:00</updated>
   <link href="https://awestruct.github.com/awestruct.org/news.atom" rel="self" type="application/atom+xml" />
   <link href="https://awestruct.github.com/awestruct.org/" rel="alternate" type="text/html" />
   <entry>
     <id>https://awestruct.github.com/awestruct.org/news/2016/02/09/awestruct-0-5-7-released/</id>
     <title>Awestruct 0.5.7 Released</title>
-    <updated>2023-04-11T22:07:11+02:00</updated>
+    <updated>2023-04-11T22:37:54+02:00</updated>
     <published>2016-02-09T00:00:00+00:00</published>
     <link href="https://awestruct.github.com/awestruct.org/news/2016/02/09/awestruct-0-5-7-released/" rel="alternate" type="text/html" />
     <author>
@@ -103,7 +103,7 @@
   <entry>
     <id>https://awestruct.github.com/awestruct.org/news/2015/08/28/awestruct-0-5-6-released/</id>
     <title>Awestruct 0.5.6 Released</title>
-    <updated>2023-04-11T22:07:11+02:00</updated>
+    <updated>2023-04-11T22:37:54+02:00</updated>
     <published>2015-08-28T00:00:00+00:00</published>
     <link href="https://awestruct.github.com/awestruct.org/news/2015/08/28/awestruct-0-5-6-released/" rel="alternate" type="text/html" />
     <author>
@@ -173,7 +173,7 @@
   <entry>
     <id>https://awestruct.github.com/awestruct.org/news/2013/06/19/awestruct-0-5-2-released/</id>
     <title>Awestruct 0.5.2 Released</title>
-    <updated>2023-04-11T22:07:11+02:00</updated>
+    <updated>2023-04-11T22:37:54+02:00</updated>
     <published>2013-06-19T00:00:00+00:00</published>
     <link href="https://awestruct.github.com/awestruct.org/news/2013/06/19/awestruct-0-5-2-released/" rel="alternate" type="text/html" />
     <author>
@@ -283,7 +283,7 @@
   <entry>
     <id>https://awestruct.github.com/awestruct.org/news/2013/05/13/awestruct-0-5-1-released/</id>
     <title>Awestruct 0.5.1 Released</title>
-    <updated>2023-04-11T22:07:11+02:00</updated>
+    <updated>2023-04-11T22:37:54+02:00</updated>
     <published>2013-05-13T00:00:00+00:00</published>
     <link href="https://awestruct.github.com/awestruct.org/news/2013/05/13/awestruct-0-5-1-released/" rel="alternate" type="text/html" />
     <author>
@@ -424,7 +424,7 @@
   <entry>
     <id>https://awestruct.github.com/awestruct.org/news/2013/03/25/awestruct-0-5-0-released/</id>
     <title>Awestruct 0.5.0 Released</title>
-    <updated>2023-04-11T22:07:11+02:00</updated>
+    <updated>2023-04-11T22:37:54+02:00</updated>
     <published>2013-03-25T00:00:00+00:00</published>
     <link href="https://awestruct.github.com/awestruct.org/news/2013/03/25/awestruct-0-5-0-released/" rel="alternate" type="text/html" />
     <author>
@@ -814,7 +814,7 @@
   <entry>
     <id>https://awestruct.github.com/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/</id>
     <title>Awestruct 0.2.7 On the Prowl</title>
-    <updated>2023-04-11T22:07:11+02:00</updated>
+    <updated>2023-04-11T22:37:54+02:00</updated>
     <published>2011-10-31T00:00:00+00:00</published>
     <link href="https://awestruct.github.com/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/" rel="alternate" type="text/html" />
     <author>
@@ -897,7 +897,7 @@
   <entry>
     <id>https://awestruct.github.com/awestruct.org/news/2011/07/12/awestruct-022-lives/</id>
     <title>Awestruct 0.2.2 Lives</title>
-    <updated>2023-04-11T22:07:11+02:00</updated>
+    <updated>2023-04-11T22:37:54+02:00</updated>
     <published>2011-07-12T00:00:00+00:00</published>
     <link href="https://awestruct.github.com/awestruct.org/news/2011/07/12/awestruct-022-lives/" rel="alternate" type="text/html" />
     <author>
@@ -932,7 +932,7 @@
   <entry>
     <id>https://awestruct.github.com/awestruct.org/news/2010/09/17/awestruct-011-released/</id>
     <title>Awestruct 0.1.1 Released</title>
-    <updated>2023-04-11T22:07:11+02:00</updated>
+    <updated>2023-04-11T22:37:54+02:00</updated>
     <published>2010-09-17T00:00:00+00:00</published>
     <link href="https://awestruct.github.com/awestruct.org/news/2010/09/17/awestruct-011-released/" rel="alternate" type="text/html" />
     <author>
@@ -958,7 +958,7 @@
   <entry>
     <id>https://awestruct.github.com/awestruct.org/news/2010/06/12/awestruct-006-released/</id>
     <title>Awestruct 0.0.6 Released</title>
-    <updated>2023-04-11T22:07:11+02:00</updated>
+    <updated>2023-04-11T22:37:54+02:00</updated>
     <published>2010-06-12T00:00:00+00:00</published>
     <link href="https://awestruct.github.com/awestruct.org/news/2010/06/12/awestruct-006-released/" rel="alternate" type="text/html" />
     <author>
@@ -990,7 +990,7 @@
   <entry>
     <id>https://awestruct.github.com/awestruct.org/news/2010/02/26/announcing-awestruct/</id>
     <title>Announcing Awestruct</title>
-    <updated>2023-04-11T22:07:11+02:00</updated>
+    <updated>2023-04-11T22:37:54+02:00</updated>
     <published>2010-02-26T00:00:00+00:00</published>
     <link href="https://awestruct.github.com/awestruct.org/news/2010/02/26/announcing-awestruct/" rel="alternate" type="text/html" />
     <author>
