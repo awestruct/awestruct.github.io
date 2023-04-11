@@ -18,13 +18,8 @@
         padding-top: 60px;
       }
     %link{ :rel=>'stylesheet', :href=>"#{site.base_url}/stylesheets/styles.css" }
-    %link{ :rel=>'stylesheet', :href=>'http://yandex.st/highlightjs/7.3/styles/default.min.css' }
+    %link{ :rel=>'stylesheet', :href=>'https://yandex.st/highlightjs/7.3/styles/default.min.css' }
 
-    /[if lt IE 9]
-      %script{ :type=>'text/javascript', :src=>'http://html5shim.googlecode.com/svn/trunk/html5.js' }
-    -#:javascript
-    -#  $.getJSON("https://rubygems.org/api/v1/versions/awestruct.json?callback=?", function(data) { alert( data.number ); });
-    
   %body
     .navbar.navbar-fixed-top
       .navbar-inner
@@ -92,9 +87,9 @@
           .well
             %h2 Build Status
             %p
-              Travis-CI
-              %a{:href=>'http://travis-ci.org/awestruct/awestruct'} 
-                %img{ :src => 'https://secure.travis-ci.org/awestruct/awestruct.png' }
+              GitHub Actions
+              %a{:href=>'https://github.com/awestruct/awestruct/actions'} 
+                %img{ :src => 'https://img.shields.io/github/actions/workflow/status/awestruct/awestruct/ci.yml' }
           #sidebar
             %ul.nav.nav-tabs.nav-stacked
               %li 
@@ -102,13 +97,11 @@
               %li 
                 %a{:href=>"#{site.base_url}/source/"} Source Code
               %li 
-                %a{:href=>"http://www.rubydoc.info/gems/awestruct/"} API Documentation
+                %a{:href=>"https://www.rubydoc.info/gems/awestruct/"} API Documentation
               %li 
                 %a{:href=>'mailto:talk-subscribe@awestruct.org?subject=subscribe'} Mailing List
               %li
-                %a{:href=>'http://talk-archive.awestruct.org/'} List Archives
-              %li
-                %a{:href=>'http://twitter.com/awestructed'} Twitter
+                %a{:href=>'https://twitter.com/awestructed'} Twitter
 
         .span8
           - if page.show_header
