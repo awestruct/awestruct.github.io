@@ -1,0 +1,9 @@
+<h3>Typical usage to tag blog posts, 10-per-page</h3>
+
+<pre><code>Awestruct::Extensions::Pipeline.new do
+  extension Awestruct::Extensions::Tagger.new( :posts, 
+                                               '/index', 
+                                               '/blog/tags', 
+                                               :per_page=&gt;10 )
+end
+</code></pre>

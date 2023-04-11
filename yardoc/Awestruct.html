@@ -1,23 +1,24 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
   Module: Awestruct
   
-    &mdash; Documentation by YARD 0.7.5
+    &mdash; Documentation by YARD 0.9.32
   
 </title>
 
-  <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
 
-  <link rel="stylesheet" href="css/common.css" type="text/css" media="screen" charset="utf-8" />
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
 
-<script type="text/javascript" charset="utf-8">
+<script type="text/javascript">
+  pathId = "Awestruct";
   relpath = '';
-  if (relpath != '') relpath += '/';
 </script>
+
 
   <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
 
@@ -26,127 +27,78 @@
 
   </head>
   <body>
-    <script type="text/javascript" charset="utf-8">
-      if (window.top.frames.main) document.body.className = 'frames';
-    </script>
-    
-    <div id="header">
-      <div id="menu">
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
   
-    <a href="_index.html">Index (A)</a> &raquo; 
+    <a href="_index.html">Index (A)</a> &raquo;
     
     
     <span class="title">Awestruct</span>
   
-  
-  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
 </div>
 
-      <div id="search">
+        <div id="search">
   
-    <a id="class_list_link" href="#">Class List</a>
-  
-    <a id="method_list_link" href="#">Method List</a>
-  
-    <a id="file_list_link" href="#">File List</a>
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
   
 </div>
-      <div class="clear"></div>
-    </div>
-    
-    <iframe id="search_frame"></iframe>
-    
-    <div id="content"><h1>Module: Awestruct
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Module: Awestruct
   
   
   
 </h1>
+<div class="box_info">
+  
 
-<dl class="box">
-  
-  
-    
-  
-    
   
   
   
-    <dt class="r1 last">Defined in:</dt>
-    <dd class="r1 last">lib/awestruct/extensions/minify.rb<span class="defines">,<br />
-  lib/awestruct/site.rb,<br /> lib/awestruct/config.rb,<br /> lib/awestruct/engine.rb,<br /> lib/awestruct/erbable.rb,<br /> lib/awestruct/version.rb,<br /> lib/awestruct/erb_file.rb,<br /> lib/awestruct/hamlable.rb,<br /> lib/awestruct/scss_file.rb,<br /> lib/awestruct/sass_file.rb,<br /> lib/awestruct/haml_file.rb,<br /> lib/awestruct/renderable.rb,<br /> lib/awestruct/textilable.rb,<br /> lib/awestruct/orgmodeable.rb,<br /> lib/awestruct/asciidocable.rb,<br /> lib/awestruct/textile_file.rb,<br /> lib/awestruct/markdownable.rb,<br /> lib/awestruct/orgmode_file.rb,<br /> lib/awestruct/markdown_file.rb,<br /> lib/awestruct/commands/init.rb,<br /> lib/awestruct/verbatim_file.rb,<br /> lib/awestruct/asciidoc_file.rb,<br /> lib/awestruct/context_helper.rb,<br /> lib/awestruct/renderable_file.rb,<br /> lib/awestruct/commands/deploy.rb,<br /> lib/awestruct/commands/server.rb,<br /> lib/awestruct/extensions/gsub.rb,<br /> lib/awestruct/extensions/posts.rb,<br /> lib/awestruct/extensions/disqus.rb,<br /> lib/awestruct/extensions/assets.rb,<br /> lib/awestruct/extensions/flattr.rb,<br /> lib/awestruct/commands/generate.rb,<br /> lib/awestruct/front_matter_file.rb,<br /> lib/awestruct/extensions/tagger.rb,<br /> lib/awestruct/extensions/partial.rb,<br /> lib/awestruct/extensions/sitemap.rb,<br /> lib/awestruct/extensions/relative.rb,<br /> lib/awestruct/extensions/atomizer.rb,<br /> lib/awestruct/extensions/data_dir.rb,<br /> lib/awestruct/extensions/pipeline.rb,<br /> lib/awestruct/extensions/paginator.rb,<br /> lib/awestruct/extensions/obfuscate.rb,<br /> lib/awestruct/extensions/tag_cloud.rb,<br /> lib/awestruct/restructuredtextable.rb,<br /> lib/awestruct/extensions/indexifier.rb,<br /> lib/awestruct/restructuredtext_file.rb,<br /> lib/awestruct/commands/git_hub_pages.rb,<br /> lib/awestruct/extensions/cachebuster.rb,<br /> lib/awestruct/extensions/remotePartial.rb,<br /> lib/awestruct/extensions/intense_debate.rb,<br /> lib/awestruct/extensions/google_analytics.rb,<br /> lib/awestruct/sassable.rb,<br /> lib/awestruct/commands/manifest.rb</span>
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>lib/awestruct/cli/manifest.rb<span class="defines">,<br />
+  lib/awestruct/page.rb,<br /> lib/awestruct/site.rb,<br /> lib/awestruct/config.rb,<br /> lib/awestruct/engine.rb,<br /> lib/awestruct/astruct.rb,<br /> lib/awestruct/context.rb,<br /> lib/awestruct/layouts.rb,<br /> lib/awestruct/scm/git.rb,<br /> lib/awestruct/version.rb,<br /> lib/awestruct/cli/auto.rb,<br /> lib/awestruct/cli/init.rb,<br /> lib/awestruct/pipeline.rb,<br /> lib/awestruct/rack/app.rb,<br /> lib/awestruct/deployers.rb,<br /> lib/awestruct/cli/deploy.rb,<br /> lib/awestruct/cli/server.rb,<br /> lib/awestruct/rack/debug.rb,<br /> lib/awestruct/cli/invoker.rb,<br /> lib/awestruct/cli/options.rb,<br /> lib/awestruct/page_loader.rb,<br /> lib/awestruct/cli/generate.rb,<br /> lib/awestruct/dependencies.rb,<br /> lib/awestruct/astruct_mixin.rb,<br /> lib/awestruct/handler_chain.rb,<br /> lib/awestruct/rack/generate.rb,<br /> lib/awestruct/context_helper.rb,<br /> lib/awestruct/handler_chains.rb,<br /> lib/awestruct/extensions/gsub.rb,<br /> lib/awestruct/deploy/s3_deploy.rb,<br /> lib/awestruct/extensions/posts.rb,<br /> lib/awestruct/extensions/assets.rb,<br /> lib/awestruct/extensions/disqus.rb,<br /> lib/awestruct/extensions/flattr.rb,<br /> lib/awestruct/extensions/minify.rb,<br /> lib/awestruct/extensions/tagger.rb,<br /> lib/awestruct/deploy/base_deploy.rb,<br /> lib/awestruct/extensions/partial.rb,<br /> lib/awestruct/extensions/sitemap.rb,<br /> lib/awestruct/deploy/rsync_deploy.rb,<br /> lib/awestruct/extensions/atomizer.rb,<br /> lib/awestruct/extensions/data_dir.rb,<br /> lib/awestruct/extensions/pipeline.rb,<br /> lib/awestruct/extensions/relative.rb,<br /> lib/awestruct/extensions/obfuscate.rb,<br /> lib/awestruct/extensions/paginator.rb,<br /> lib/awestruct/extensions/tag_cloud.rb,<br /> lib/awestruct/extensions/indexifier.rb,<br /> lib/awestruct/handlers/base_handler.rb,<br /> lib/awestruct/handlers/file_handler.rb,<br /> lib/awestruct/handlers/tilt_handler.rb,<br /> lib/awestruct/handlers/yaml_handler.rb,<br /> lib/awestruct/util/exception_helper.rb,<br /> lib/awestruct/extensions/cachebuster.rb,<br /> lib/awestruct/handlers/no_op_handler.rb,<br /> lib/awestruct/handlers/layout_handler.rb,<br /> lib/awestruct/handlers/string_handler.rb,<br /> lib/awestruct/handlers/template/sassc.rb,<br /> lib/awestruct/extensions/remotePartial.rb,<br /> lib/awestruct/extensions/intense_debate.rb,<br /> lib/awestruct/handlers/css_tilt_handler.rb,<br /> lib/awestruct/handlers/redirect_handler.rb,<br /> lib/awestruct/deploy/github_pages_deploy.rb,<br /> lib/awestruct/handlers/base_tilt_handler.rb,<br /> lib/awestruct/handlers/template/asciidoc.rb,<br /> lib/awestruct/extensions/google_analytics.rb,<br /> lib/awestruct/handlers/javascript_handler.rb,<br /> lib/awestruct/handlers/asciidoctor_handler.rb,<br /> lib/awestruct/compass/default_configuration.rb,<br /> lib/awestruct/handlers/front_matter_handler.rb,<br /> lib/awestruct/handlers/interpolation_handler.rb,<br /> lib/awestruct/handlers/verbatim_file_handler.rb,<br /> lib/awestruct/handlers/page_delegating_handler.rb</span>
 </dd>
+  </dl>
   
-</dl>
-<div class="clear"></div>
+</div>
 
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
-    <p>
-Awestruct:Extensions:Minify is a transformer that minimizes JavaScript, CSS
-and HTML files. The transform runs on the rendered stream before it&#8217;s
-written to the output path.
-</p>
-<p>
-Minification is performed by the following three libraries:
-</p>
-<pre class="code ruby"><code>
-  htmlcompressor (minifies HTML): http://code.google.com/p/htmlcompressor/
-  yuicompressor (minifies JavaScript and CSS): http://developer.yahoo.com/yui/compressor/
-  pngcrush (minifies PNG): http://pmt.sourceforge.net/pngcrush/
-</code></pre>
-<p>
-These commands must be available on your PATH in order to use them.
-</p>
-<p>
-This class is loaded as a transformer in the Awestruct pipeline. The
-constructor accepts an array of symbols representing the file types to
-minimize.
-</p>
-<pre class="code ruby"><code>
-  <span class='id identifier rubyid_extension'>extension</span> <span class='const'>Awestruct</span><span class='op'>::</span><span class='const'>Extensions</span><span class='op'>::</span><span class='const'>Minify</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
-</code></pre>
-<p>
-This transform recognizes the following symbols:
-</p>
-<pre class="code ruby"><code>
-  :css - CSS files with extension .css
-  :js - JavaScript files with extension .js
-  :html - HTML files with extension .html
-  :png - PNG files with extension .png
-</code></pre>
-<p>
-If no types are specified, the default value [:css, :js] is used.
-</p>
-<p>
-In addition to registering the transformer in the pipeline, it must be
-enabled by setting the following site property in _ext/config.yml:
-</p>
-<pre class="code ruby"><code>
-  minify: true
-</code></pre>
-<p>
-You can limit activation to one or more profiles: 
-</p>
-<pre class="code ruby"><code>
-  profiles:
-    production:
-      minify: true
-</code></pre>
-<p>
-You can also configure the option arguments passed to the compressor
-programs. Here&#8217;s how you specify options arguments for the
-htmlcompressor command:
-</p>
-<pre class="code ruby"><code>
-  minify_html_opts:
-    remove_intertag_spaces: true
-    compress_js: true
-    compress_css: true
-</code></pre>
-<p>
-Note that any hypen (-) must be represented as an underscore (_) in the
-configuration.
-</p>
+    
+<p>in your site.yml specify</p>
+
+<p>google_analytics:</p>
+
+<pre class="code ruby"><code class="ruby">account: UA-something
+anonymizeIp: true
+bounceTime: 15
+demographics: true
+linkAttribution: true</code></pre>
+
+<p>of course only “account” is required</p>
 
 
   </div>
@@ -156,25 +108,29 @@ configuration.
 
 </div><h2>Defined Under Namespace</h2>
 <p class="children">
-   
+  
     
-      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Awestruct/AsciiDocable.html" title="Awestruct::AsciiDocable (module)">AsciiDocable</a></span>, <span class='object_link'><a href="Awestruct/Commands.html" title="Awestruct::Commands (module)">Commands</a></span>, <span class='object_link'><a href="Awestruct/ContextHelper.html" title="Awestruct::ContextHelper (module)">ContextHelper</a></span>, <span class='object_link'><a href="Awestruct/Erbable.html" title="Awestruct::Erbable (module)">Erbable</a></span>, <span class='object_link'><a href="Awestruct/Extensions.html" title="Awestruct::Extensions (module)">Extensions</a></span>, <span class='object_link'><a href="Awestruct/Hamlable.html" title="Awestruct::Hamlable (module)">Hamlable</a></span>, <span class='object_link'><a href="Awestruct/Markdownable.html" title="Awestruct::Markdownable (module)">Markdownable</a></span>, <span class='object_link'><a href="Awestruct/Orgmodeable.html" title="Awestruct::Orgmodeable (module)">Orgmodeable</a></span>, <span class='object_link'><a href="Awestruct/ReStructuredTextable.html" title="Awestruct::ReStructuredTextable (module)">ReStructuredTextable</a></span>, <span class='object_link'><a href="Awestruct/Sassable.html" title="Awestruct::Sassable (module)">Sassable</a></span>, <span class='object_link'><a href="Awestruct/Textilable.html" title="Awestruct::Textilable (module)">Textilable</a></span>
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Awestruct/AStructMixin.html" title="Awestruct::AStructMixin (module)">AStructMixin</a></span>, <span class='object_link'><a href="Awestruct/CLI.html" title="Awestruct::CLI (module)">CLI</a></span>, <span class='object_link'><a href="Awestruct/Compass.html" title="Awestruct::Compass (module)">Compass</a></span>, <span class='object_link'><a href="Awestruct/ContextHelper.html" title="Awestruct::ContextHelper (module)">ContextHelper</a></span>, <span class='object_link'><a href="Awestruct/Deploy.html" title="Awestruct::Deploy (module)">Deploy</a></span>, <span class='object_link'><a href="Awestruct/Extensions.html" title="Awestruct::Extensions (module)">Extensions</a></span>, <span class='object_link'><a href="Awestruct/Handlers.html" title="Awestruct::Handlers (module)">Handlers</a></span>, <span class='object_link'><a href="Awestruct/Rack.html" title="Awestruct::Rack (module)">Rack</a></span>, <span class='object_link'><a href="Awestruct/Scm.html" title="Awestruct::Scm (module)">Scm</a></span>, <span class='object_link'><a href="Awestruct/Tilt.html" title="Awestruct::Tilt (module)">Tilt</a></span>
     
-   
+  
     
-      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Awestruct/AsciiDocFile.html" title="Awestruct::AsciiDocFile (class)">AsciiDocFile</a></span>, <span class='object_link'><a href="Awestruct/Config.html" title="Awestruct::Config (class)">Config</a></span>, <span class='object_link'><a href="Awestruct/Engine.html" title="Awestruct::Engine (class)">Engine</a></span>, <span class='object_link'><a href="Awestruct/ErbFile.html" title="Awestruct::ErbFile (class)">ErbFile</a></span>, <span class='object_link'><a href="Awestruct/FrontMatterFile.html" title="Awestruct::FrontMatterFile (class)">FrontMatterFile</a></span>, <span class='object_link'><a href="Awestruct/HamlFile.html" title="Awestruct::HamlFile (class)">HamlFile</a></span>, <span class='object_link'><a href="Awestruct/MarkdownFile.html" title="Awestruct::MarkdownFile (class)">MarkdownFile</a></span>, <span class='object_link'><a href="Awestruct/OrgmodeFile.html" title="Awestruct::OrgmodeFile (class)">OrgmodeFile</a></span>, <span class='object_link'><a href="Awestruct/ReStructuredTextFile.html" title="Awestruct::ReStructuredTextFile (class)">ReStructuredTextFile</a></span>, <span class='object_link'><a href="Awestruct/Renderable.html" title="Awestruct::Renderable (class)">Renderable</a></span>, <span class='object_link'><a href="Awestruct/RenderableFile.html" title="Awestruct::RenderableFile (class)">RenderableFile</a></span>, <span class='object_link'><a href="Awestruct/SassFile.html" title="Awestruct::SassFile (class)">SassFile</a></span>, <span class='object_link'><a href="Awestruct/ScssFile.html" title="Awestruct::ScssFile (class)">ScssFile</a></span>, <span class='object_link'><a href="Awestruct/Site.html" title="Awestruct::Site (class)">Site</a></span>, <span class='object_link'><a href="Awestruct/TextileFile.html" title="Awestruct::TextileFile (class)">TextileFile</a></span>, <span class='object_link'><a href="Awestruct/VerbatimFile.html" title="Awestruct::VerbatimFile (class)">VerbatimFile</a></span>
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="Awestruct/AStruct.html" title="Awestruct::AStruct (class)">AStruct</a></span>, <span class='object_link'><a href="Awestruct/Config.html" title="Awestruct::Config (class)">Config</a></span>, <span class='object_link'><a href="Awestruct/Context.html" title="Awestruct::Context (class)">Context</a></span>, <span class='object_link'><a href="Awestruct/Dependencies.html" title="Awestruct::Dependencies (class)">Dependencies</a></span>, <span class='object_link'><a href="Awestruct/Deployers.html" title="Awestruct::Deployers (class)">Deployers</a></span>, <span class='object_link'><a href="Awestruct/Engine.html" title="Awestruct::Engine (class)">Engine</a></span>, <span class='object_link'><a href="Awestruct/ExceptionHelper.html" title="Awestruct::ExceptionHelper (class)">ExceptionHelper</a></span>, <span class='object_link'><a href="Awestruct/HandlerChain.html" title="Awestruct::HandlerChain (class)">HandlerChain</a></span>, <span class='object_link'><a href="Awestruct/HandlerChains.html" title="Awestruct::HandlerChains (class)">HandlerChains</a></span>, <span class='object_link'><a href="Awestruct/Layouts.html" title="Awestruct::Layouts (class)">Layouts</a></span>, <span class='object_link'><a href="Awestruct/Page.html" title="Awestruct::Page (class)">Page</a></span>, <span class='object_link'><a href="Awestruct/PageLoader.html" title="Awestruct::PageLoader (class)">PageLoader</a></span>, <span class='object_link'><a href="Awestruct/Pipeline.html" title="Awestruct::Pipeline (class)">Pipeline</a></span>, <span class='object_link'><a href="Awestruct/Site.html" title="Awestruct::Site (class)">Site</a></span>
     
   
 </p>
 
-  <h2>Constant Summary</h2>
   
+    <h2>
+      Constant Summary
+      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
     <dl class="constants">
       
         <dt id="VERSION-constant" class="">VERSION =
           
         </dt>
-        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>'</span><span class='tstring_content'>0.2.18</span><span class='tstring_end'>'</span></span></pre></dd>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>0.5.7</span><span class='tstring_end'>&#39;</span></span></pre></dd>
       
     </dl>
   
@@ -188,12 +144,13 @@ configuration.
 
 
 </div>
-    
-    <div id="footer">
-  Generated on Fri Apr 13 10:23:50 2012 by 
-  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
-  0.7.5 (ruby-1.9.2).
+
+      <div id="footer">
+  Generated on Tue Apr 11 22:07:47 2023 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.32 (ruby-3.1.0).
 </div>
 
+    </div>
   </body>
 </html>

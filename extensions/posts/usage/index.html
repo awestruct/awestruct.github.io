@@ -55,7 +55,7 @@ properties you've set upon them.</p>
 <p>For instance, in a given post, you can provide navigational links:</p>
 
 <pre><code>- if page.next_post
-  %a{:href=&gt;page.next_post.url} Next: #{page.next_post.title}
+  %a{:href=&gt;page.next_post.url} Next: \#{page.next_post.title}
 </code></pre>
 
 <h2>Usage</h2>
@@ -73,5 +73,5 @@ as posts.</p>
     %h2 
       = post.date.strftime( '%d %B %Y' )
     .content
-      = post.content
+      ~ post.content
 </code></pre>

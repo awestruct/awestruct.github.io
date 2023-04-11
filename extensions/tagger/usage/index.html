@@ -1,0 +1,54 @@
+<p>Given the configuration of:</p>
+
+<pre><code>  extension Awestruct::Extensions::Tagger.new( :posts, 
+                                               '/index', 
+                                               '/blog/tags', 
+                                               :per_page=&gt;10 )
+</code></pre>
+
+<p>The extension will scan <code>site.posts</code> for every item with a <code>tags</code> attribute.
+For each observed tag, a structure is created with the following behaviour</p>
+
+<p>These structures will be sorted by popularity, trimmed to the top 100 tags,
+and placed into <code>site.posts_tags</code> as an ordered array.  This array</p>
+
+<table>
+<thead>
+<tr>
+<th>Method </th>
+<th> Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>to_s</code>        </td>
+<td> The seen tag </td>
+</tr>
+<tr>
+<td><code>primary_page</code> </td>
+<td> First page in this tag's index collection  </td>
+</tr>
+<tr>
+<td><code>pages</code>  </td>
+<td> All pages with the tag </td>
+</tr>
+<tr>
+<td><code>group</code>  </td>
+<td> Which group is this tag in terms of popularity </td>
+</tr>
+</tbody>
+</table>
+
+
+<p>From this analysis, the extension will create a paginated index for
+each of the top 100 tags.  The <code>input_path</code> page denotes which page should
+be used to iterate the tag's page collection.</p>
+
+<p>The <code>page.posts</code> collection, in this case, will hold the page's worth
+of posts with a given tag.</p>
+
+<p>The indexes will be output under the <code>output_prefix</code> directory.</p>
+
+<p>The pages listing all posts of 1 specific tag (so filtering out other posts), have a <code>page.selected_tag</code> variable with the name of the tag, which is usefull to adjust the page title accordingly.</p>
+
+<p>To draw a full tag-cloud, the <a href="/extensions/tag_cloud/">TagCloud extension</a> should be used.</p>

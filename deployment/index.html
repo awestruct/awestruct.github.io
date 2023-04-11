@@ -1,123 +1,145 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8' />
-    <title>awestruct: deploy</title>
-    <link href='/news.atom' rel='alternate' type='application/atom+xml' />
-    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
-    <style type='text/css'>
-      /*<![CDATA[*/
-        body {
-          padding-top: 60px;
-        }
-      /*]]>*/
+    <meta charset="utf-8">
+    <title>Site deployment { :awestruct }</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Awestruct is a static site baking and deployment tool" name="description">
+    <meta content="summary" name="twitter:card">
+    <meta content="@awestructed" name="twitter:site">
+    <meta content="Site deployment" name="twitter:title">
+    <meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
+    <link href="/news.atom" rel="alternate" type="application/atom+xml">
+    <style>
+      body {
+        padding-top: 60px;
+      }
     </style>
-    <link href='http://awestruct.github.com/awestruct.org/stylesheets/styles.css' rel='stylesheet' type='text/css' />
+    <link href="https://awestruct.github.com/awestruct.org/stylesheets/styles.css" rel="stylesheet">
+    <link href="http://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
-      <script src='http://html5shim.googlecode.com/svn/trunk/html5.js' type='text/javascript'></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
   </head>
   <body>
-    <div class='navbar navbar-fixed-top'>
-      <div class='navbar-inner'>
-        <div class='container'>
-          <a class='brand' href='http://awestruct.github.com/awestruct.org'>{:awestruct}</a>
-          <ul class='nav'>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="github-banner">
+            <a href="https://github.com/awestruct/awestruct">
+              <img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
+            </a>
+          </div>
+          <a class="brand" href="https://awestruct.github.com/awestruct.org">{:awestruct}</a>
+          <ul class="nav">
             <li>
-              <a href='http://awestruct.github.com/awestruct.org'>Home</a>
+              <a href="https://awestruct.github.com/awestruct.org">Home</a>
             </li>
             <li>
-              <a href='http://awestruct.github.com/awestruct.org/news/'>News</a>
+              <a href="https://awestruct.github.com/awestruct.org/news/">News</a>
             </li>
-            <li class='dropdown' id='getting-started-menu'>
-              <a class='dropdown-toggle' data-toggle='dropdown' href='#getting-started-menu'>
+            <li class="dropdown" id="getting-started-menu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
                 Documentation
-                <b class='caret'></b>
+                <b class="caret"></b>
               </a>
-              <ul class='dropdown-menu'>
+              <ul class="dropdown-menu">
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/getting_started/'>Getting Started</a>
+                  <a href="https://awestruct.github.com/awestruct.org/getting_started/">Getting Started</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/layout/'>Project Layout</a>
+                  <a href="https://awestruct.github.com/awestruct.org/layout/">Project Layout</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/profiles/'>Site Profiles</a>
+                  <a href="https://awestruct.github.com/awestruct.org/profiles/">Site Profiles</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/file_types/'>File Types</a>
+                  <a href="https://awestruct.github.com/awestruct.org/file_types/">File Types</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/skins/'>Skins</a>
+                  <a href="https://awestruct.github.com/awestruct.org/skins/">Skins</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/template_context/'>Template Context</a>
+                  <a href="https://awestruct.github.com/awestruct.org/template_context/">Template Context</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/deployment/'>Site Deployment</a>
+                  <a href="https://awestruct.github.com/awestruct.org/deployment/">Site Deployment</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
                 </li>
               </ul>
             </li>
-            <li class='dropdown' id='extensions-menu'>
-              <a class='dropdown-toggle' data-toggle='dropdown' href='#extensions-menu'>
+            <li class="dropdown" id="extensions-menu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
                 Extensions
-                <b class='caret'></b>
+                <b class="caret"></b>
               </a>
-              <ul class='dropdown-menu'>
+              <ul class="dropdown-menu">
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/'>Overview</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/">Overview</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/atomizer/'>Atomizer</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/atomizer/">Atomizer</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/data_dir/'>DataDir</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/data_dir/">DataDir</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/disqus/'>Disqus</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/disqus/">Disqus</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/flattr/'>Flattr</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/flattr/">Flattr</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/indexifier/'>Indexifier</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/indexifier/">Indexifier</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/intense_debate/'>IntenseDebate</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/paginator/'>Paginator</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/paginator/">Paginator</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/posts/'>Posts</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/posts/">Posts</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/sitemap/'>Sitemap</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/relative/">Relative</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/tag_cloud/'>TagCloud</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/sitemap/">Sitemap</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/tagger/'>Tagger</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/tag_cloud/">TagCloud</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/textile/'>Textile</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/tagger/">Tagger</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/textile/">Textile</a>
                 </li>
               </ul>
             </li>
-            <li class='dropdown' id='helpers-menu'>
-              <a class='dropdown-toggle' data-toggle='dropdown' href='#helpers-menu'>
+            <li class="dropdown" id="helpers-menu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
                 Helpers
-                <b class='caret'></b>
+                <b class="caret"></b>
               </a>
-              <ul class='dropdown-menu'>
+              <ul class="dropdown-menu">
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/helpers/'>Overview</a>
+                  <a href="https://awestruct.github.com/awestruct.org/helpers/">Overview</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/helpers/partial/'>Partial</a>
+                  <a href="https://awestruct.github.com/awestruct.org/helpers/partial/">Partial</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/helpers/google_analytics/'>Google Analytics</a>
+                  <a href="https://awestruct.github.com/awestruct.org/helpers/google_analytics/">Google Analytics</a>
                 </li>
               </ul>
             </li>
@@ -125,121 +147,280 @@
         </div>
       </div>
     </div>
-    <div class='container'>
-      <div class='row'>
-        <div class='span4'>
-          <div class='hero-unit'>
-            <h2>
-              {:awestruct}
-            </h2>
-            <a href='http://travis-ci.org/awestruct/awestruct'>
-              <img src='https://secure.travis-ci.org/awestruct/awestruct.png' />
-            </a>
-            <h3>
-              Latest version is 0.2.18
-            </h3>
+    <div class="container">
+      <div class="row">
+        <div class="span3">
+          <div class="well">
+            <h2>Build Status</h2>
             <p>
-              A static site-baking tool.
-              <br />
-              Have you been awestructed?
-            </p>
-            <p>
-              <a class='btn btn-primary btn-large' href='http://awestruct.github.com/awestruct.org/getting_started/'>Get Started!</a>
+              Travis-CI
+              <a href="http://travis-ci.org/awestruct/awestruct">
+                <img src="https://secure.travis-ci.org/awestruct/awestruct.png">
+              </a>
             </p>
           </div>
-          <div id='sidebar'>
-            <ul class='nav nav-tabs nav-stacked'>
+          <div id="sidebar">
+            <ul class="nav nav-tabs nav-stacked">
               <li>
-                <a href='http://awestruct.github.com/awestruct.org/gallery/'>Gallery</a>
+                <a href="https://awestruct.github.com/awestruct.org/gallery/">Gallery</a>
               </li>
               <li>
-                <a href='http://awestruct.github.com/awestruct.org/source/'>Source Code</a>
+                <a href="https://awestruct.github.com/awestruct.org/source/">Source Code</a>
               </li>
               <li>
-                <a href='http://awestruct.github.com/awestruct.org/yardoc/'>API Documentation</a>
+                <a href="http://www.rubydoc.info/gems/awestruct/">API Documentation</a>
               </li>
               <li>
-                <a href='mailto:talk-subscribe@awestruct.org?subject=subscribe'>Mailing List</a>
+                <a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
               </li>
               <li>
-                <a href='http://talk-archive.awestruct.org/'>List Archives</a>
+                <a href="http://talk-archive.awestruct.org/">List Archives</a>
               </li>
               <li>
-                <a href='http://twitter.com/awestructed'>Twitter</a>
+                <a href="http://twitter.com/awestructed">Twitter</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class='span8'>
-          
-          
+        <div class="span8">
           <div class="page-header">
-          <h1>Deploy</h1>
+            <h1>Site deployment</h1>
           </div>
-          
-          
-          <p>Awestruct makes deploying your site easy. There are two ways to deploy:
-          to <a href="http://pages.github.com">GitHub Pages</a>, or to an arbitrary server
-          using <code>rsync</code> and <code>ssh</code>.  You use <a href="/profiles/">site profiles</a>, to configure
-          your deployment. Once you're configured, deploying is just a single command.</p>
-          
-          <pre><code>$ awestruct -P production --deploy&#x000A;</code></pre>
-          
-          <h2>GitHub Pages</h2>
-          
-          <p>To deploy your site to GitHub pages, you will need to be using [GitHub]
-          (http://github.com) as a source repository for the site you want to pubish.</p>
-          
-          <p><span class="label label-info">Configuration</span></p>
-          
-          <p>Open <code>_config/site.yml</code> file and add a deployment profile. Set <code>host</code> to
-          <code>github_pages</code> and set the <code>base_url</code> to the github pages URL. This can be your
-          own domain if you set it up correctly in github. In this example, it's just the
-          default domain that github provides.</p>
-          
-          <pre><code>profiles: &#x000A;  production: &#x000A;    base_url: http://awestruct.github.com/github_pages &#x000A;    deploy: &#x000A;      host: github_pages &#x000A;</code></pre>
-          
-          <p>This will publish your site to the default <code>gh-pages</code> branch, used by GitHub
-          for site publication. To publish to the master branch, add <code>branch: master</code>
-          to your deployment yaml.</p>
-          
-          <pre><code>profiles: &#x000A;  production: &#x000A;    base_url: http://awestruct.github.com/github_pages &#x000A;    deploy: &#x000A;      host: github_pages &#x000A;      branch: master&#x000A;</code></pre>
-          
-          <h2>Rsync and SSH</h2>
-          
-          <p>Rsync and SSH require a little more configuration than GitHub pages, but
-          in general, this is the more flexible option. Since this deployment method
-          depends on SSH, make sure you have your public and private keys setup on
-          your server and local system before deploying.</p>
-          
-          <p><span class="label label-info">Configuration</span></p>
-          
-          <p>In your <code>_config/site.yml</code>, you should define a <code>profiles</code> block,
-          and a profile for each deployment environment.  The names are
-          arbitrary.</p>
-          
-          <p>Make sure <code>base_url</code> is set correctly for each profile.</p>
-          
-          <p>To these profiles, add a <code>deploy</code> hash with <code>host</code> and <code>path</code> properties to specify
-          where the resulting site should be copied to using <code>rsync</code>.</p>
-          
-          <pre><code>profiles:&#x000A;  development:&#x000A;  staging:&#x000A;    base_url: http://staging.awestruct.org/&#x000A;    deploy:&#x000A;      host: awestruct.org&#x000A;      path: /var/www/domains/awestruct.org/staging/htdocs/ &#x000A;  production:&#x000A;    base_url: http://awestruct.org/&#x000A;    deploy:&#x000A;      host: awestruct.org&#x000A;      path: /var/www/domains/awestruct.org/www/htdocs/ &#x000A;</code></pre>
-          
-          <p><span class="label label-info">Info</span></p>
-          
-          <p>The <code>rsync</code> command executed looks like</p>
-          
-          <pre><code>rsync -rv --delete _site/ #{host}:#{path}&#x000A;</code></pre>
+          <div id="preamble">
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>Awestruct provides several automated options to deploy your site, which makes publishing online easy!</p>
+          </div>
+          <div class="paragraph">
+          <p>Using Awestruct, you can deploy your site to any of these destinations:</p>
+          </div>
+          <div class="olist arabic">
+          <ol class="arabic">
+          <li>
+          <p><a href="http://pages.github.com">GitHub Pages</a></p>
+          </li>
+          <li>
+          <p>an arbitrary server using rsync and ssh</p>
+          </li>
+          <li>
+          <p><a href="http://aws.amazon.com/s3">Amazon S3</a></p>
+          </li>
+          </ol>
+          </div>
+          <div class="paragraph">
+          <p>You use <a href="/profiles">site profiles</a>, to configure your deployment.
+          Once you&#8217;re configured, deploying is just a single command.</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ awestruct -P production --deploy</pre>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="configuration"><a class="anchor" href="#configuration"></a>Configuration</h2>
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>In your _config/site.yml, you should define a profiles block, and a profile for each deployment environment.
+          The names are arbitrary.</p>
+          </div>
+          <div class="listingblock">
+          <div class="content">
+          <pre class="highlight nowrap"><code class="language-yaml" data-lang="yaml">profiles:&#x000A;  development:&#x000A;  staging:&#x000A;  production:</code></pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Awestruct can gzip the contents of your html, css and javascript files, before deploying.
+          This can be usefull to avoid extra CPU usage on your server.</p>
+          </div>
+          <div class="listingblock">
+          <div class="content">
+          <pre class="highlight nowrap"><code class="language-yaml" data-lang="yaml">profiles:&#x000A;  development:&#x000A;  staging:&#x000A;  production:&#x000A;    deploy:&#x000A;      gzip: true</code></pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>By default, Awestruct will use the highest compression level.
+          You can change the compression level by adding the gzip_level.
+          The value must be between 1 (low compression) and 9 (high compression).</p>
+          </div>
+          <div class="listingblock">
+          <div class="content">
+          <pre class="highlight nowrap"><code class="language-yaml" data-lang="yaml">profiles:&#x000A;  development:&#x000A;  staging:&#x000A;  production:&#x000A;    deploy:&#x000A;      gzip: true&#x000A;      gzip_level: 5</code></pre>
+          </div>
+          </div>
+          <div class="admonitionblock warning">
+          <table>
+          <tr>
+          <td class="icon">
+          <div class="title">Warning</div>
+          </td>
+          <td class="content">
+          Help! Awestruct keeps complaining that I have uncommitted changes when deploying
+          </td>
+          </tr>
+          </table>
+          </div>
+          <div class="paragraph">
+          <p>Awestruct deployments will fail if you have uncommitted changes in your git local history.
+          While this is fine for most, there are occasions when you may wish to deploy to a stagging site to inspect your changes without adding a commit.
+          Simply add uncommitted: true to your deploy config.</p>
+          </div>
+          <div class="listingblock">
+          <div class="content">
+          <pre class="highlight nowrap"><code class="language-yaml" data-lang="yaml">profiles:&#x000A;  development:&#x000A;  staging:&#x000A;    deploy:&#x000A;      uncommitted: true&#x000A;  production:</code></pre>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="github-pages"><a class="anchor" href="#github-pages"></a>GitHub Pages</h2>
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>To deploy your site to GitHub pages,
+          you will need to be using <a href="http://github.com">GitHub</a> as a source repository for the site you want to publish.</p>
+          </div>
+          <div class="admonitionblock note">
+          <table>
+          <tr>
+          <td class="icon">
+          <div class="title">Note</div>
+          </td>
+          <td class="content">
+          To enable GitHub Pages deployment,
+          set host to github_pages and set the base_url to the github pages URL.
+          </td>
+          </tr>
+          </table>
+          </div>
+          <div class="paragraph">
+          <p>The base_url can be your own domain if you set it up correctly in GitHub.
+          In this example, it&#8217;s just the default domain that GitHub provides.</p>
+          </div>
+          <div class="listingblock">
+          <div class="content">
+          <pre class="highlight nowrap"><code class="language-yaml" data-lang="yaml">profiles:&#x000A;  production:&#x000A;    base_url: http://awestruct.github.com/github_pages&#x000A;    deploy:&#x000A;      host: github_pages</code></pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>This will publish your site to the default gh-pages branch, used by GitHub for site publication.
+          To publish to the master branch, add branch: master to your deployment configuration.</p>
+          </div>
+          <div class="listingblock">
+          <div class="content">
+          <pre class="highlight nowrap"><code class="language-yaml" data-lang="yaml">profiles:&#x000A;  production:&#x000A;    base_url: http://awestruct.github.com/github_pages&#x000A;    deploy:&#x000A;      host: github_pages&#x000A;      branch: master</code></pre>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="amazon-s3"><a class="anchor" href="#amazon-s3"></a>Amazon S3</h2>
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>If you host your site on Amazon S3, you can also deploy to different buckets for each of your profiles.</p>
+          </div>
+          <div class="admonitionblock note">
+          <table>
+          <tr>
+          <td class="icon">
+          <div class="title">Note</div>
+          </td>
+          <td class="content">
+          To enable Amazon S3 deployment,
+          set type to s3 and set bucket to the S3 bucket URL (that starts with s3://).
+          </td>
+          </tr>
+          </table>
+          </div>
+          <div class="listingblock">
+          <div class="content">
+          <pre class="highlight nowrap"><code class="language-yaml" data-lang="yaml">profiles:&#x000A;  development:&#x000A;  staging:&#x000A;    deploy:&#x000A;      type: s3&#x000A;      bucket: s3://staging.awestruct.org&#x000A;    production:&#x000A;      deploy:&#x000A;      type: s3&#x000A;      bucket: s3://awestruct.org</code></pre>
+          </div>
+          </div>
+          <div class="admonitionblock note">
+          <table>
+          <tr>
+          <td class="icon">
+          <div class="title">Note</div>
+          </td>
+          <td class="content">
+          Wait, what command are you actually using?
+          </td>
+          </tr>
+          </table>
+          </div>
+          <div class="paragraph">
+          <p>The deployment to Amazon S3 is using the ruby-s3cmd gem and the executed command looks like</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ s3cmd sync _site/ $S3_BUCKET</pre>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="rsync-and-ssh"><a class="anchor" href="#rsync-and-ssh"></a>Rsync and SSH</h2>
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>Rsync and SSH require a little more configuration than GitHub pages, but in general, this is the more flexible option.
+          Before deploying, make sure you have your public and private SSH keys setup on your server and local system before deploying.</p>
+          </div>
+          <div class="admonitionblock note">
+          <table>
+          <tr>
+          <td class="icon">
+          <div class="title">Note</div>
+          </td>
+          <td class="content">
+          To enable rsync deployment,
+          set host and path to specify where the resulting site should be copied to.
+          Also make sure that base_url is set correctly for each profile.
+          </td>
+          </tr>
+          </table>
+          </div>
+          <div class="listingblock">
+          <div class="content">
+          <pre class="highlight nowrap"><code class="language-yaml" data-lang="yaml">profiles:&#x000A;  development:&#x000A;  staging:&#x000A;    base_url: http://staging.awestruct.org&#x000A;    deploy:&#x000A;      host: awestruct.org&#x000A;      path: /var/www/domains/awestruct.org/staging/htdocs/&#x000A;    production:&#x000A;      base_url: http://awestruct.org&#x000A;      deploy:&#x000A;        host: awestruct.org&#x000A;        path: /var/www/domains/awestruct.org/www/htdocs/</code></pre>
+          </div>
+          </div>
+          <div class="admonitionblock note">
+          <table>
+          <tr>
+          <td class="icon">
+          <div class="title">Note</div>
+          </td>
+          <td class="content">
+          Wait, what command are you actually using?
+          </td>
+          </tr>
+          </table>
+          </div>
+          <div class="paragraph">
+          <p>The rsync command executed looks like</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ rsync -rv --delete _site/ $HOST:$PATH</pre>
+          </div>
+          </div>
+          </div>
+          </div>
         </div>
       </div>
-      <div class='row'>
-        <hr />
+      <div class="row">
+        <hr>
         <footer>
-          <p>&copy; Bob McWhirter 2012</p>
-          <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
-          <script src='http://awestruct.github.com/awestruct.org/javascript/bootstrap-dropdown.js' type='text/javascript'></script>
+          <p>&copy; Bob McWhirter 2023</p>
         </footer>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://awestruct.github.com/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
+    <script src="https://awestruct.github.com/awestruct.org/javascript/highlight-20130326.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </body>
 </html>

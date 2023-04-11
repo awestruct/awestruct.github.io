@@ -1,123 +1,145 @@
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset='utf-8' />
-    <title>awestruct:</title>
-    <link href='/news.atom' rel='alternate' type='application/atom+xml' />
-    <meta content='width=device-width, initial-scale=1.0' name='viewport' />
-    <style type='text/css'>
-      /*<![CDATA[*/
-        body {
-          padding-top: 60px;
-        }
-      /*]]>*/
+    <meta charset="utf-8">
+    <title> { :awestruct }</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Awestruct is a static site baking and deployment tool" name="description">
+    <meta content="summary" name="twitter:card">
+    <meta content="@awestructed" name="twitter:site">
+    <meta content="{ :awestruct }" name="twitter:title">
+    <meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
+    <link href="/news.atom" rel="alternate" type="application/atom+xml">
+    <style>
+      body {
+        padding-top: 60px;
+      }
     </style>
-    <link href='http://awestruct.github.com/awestruct.org/stylesheets/styles.css' rel='stylesheet' type='text/css' />
+    <link href="https://awestruct.github.com/awestruct.org/stylesheets/styles.css" rel="stylesheet">
+    <link href="http://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
     <!--[if lt IE 9]>
-      <script src='http://html5shim.googlecode.com/svn/trunk/html5.js' type='text/javascript'></script>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
     <![endif]-->
   </head>
   <body>
-    <div class='navbar navbar-fixed-top'>
-      <div class='navbar-inner'>
-        <div class='container'>
-          <a class='brand' href='http://awestruct.github.com/awestruct.org'>{:awestruct}</a>
-          <ul class='nav'>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="github-banner">
+            <a href="https://github.com/awestruct/awestruct">
+              <img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
+            </a>
+          </div>
+          <a class="brand" href="https://awestruct.github.com/awestruct.org">{:awestruct}</a>
+          <ul class="nav">
             <li>
-              <a href='http://awestruct.github.com/awestruct.org'>Home</a>
+              <a href="https://awestruct.github.com/awestruct.org">Home</a>
             </li>
             <li>
-              <a href='http://awestruct.github.com/awestruct.org/news/'>News</a>
+              <a href="https://awestruct.github.com/awestruct.org/news/">News</a>
             </li>
-            <li class='dropdown' id='getting-started-menu'>
-              <a class='dropdown-toggle' data-toggle='dropdown' href='#getting-started-menu'>
+            <li class="dropdown" id="getting-started-menu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
                 Documentation
-                <b class='caret'></b>
+                <b class="caret"></b>
               </a>
-              <ul class='dropdown-menu'>
+              <ul class="dropdown-menu">
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/getting_started/'>Getting Started</a>
+                  <a href="https://awestruct.github.com/awestruct.org/getting_started/">Getting Started</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/layout/'>Project Layout</a>
+                  <a href="https://awestruct.github.com/awestruct.org/layout/">Project Layout</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/profiles/'>Site Profiles</a>
+                  <a href="https://awestruct.github.com/awestruct.org/profiles/">Site Profiles</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/file_types/'>File Types</a>
+                  <a href="https://awestruct.github.com/awestruct.org/file_types/">File Types</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/skins/'>Skins</a>
+                  <a href="https://awestruct.github.com/awestruct.org/skins/">Skins</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/template_context/'>Template Context</a>
+                  <a href="https://awestruct.github.com/awestruct.org/template_context/">Template Context</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/deployment/'>Site Deployment</a>
+                  <a href="https://awestruct.github.com/awestruct.org/deployment/">Site Deployment</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
                 </li>
               </ul>
             </li>
-            <li class='dropdown' id='extensions-menu'>
-              <a class='dropdown-toggle' data-toggle='dropdown' href='#extensions-menu'>
+            <li class="dropdown" id="extensions-menu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
                 Extensions
-                <b class='caret'></b>
+                <b class="caret"></b>
               </a>
-              <ul class='dropdown-menu'>
+              <ul class="dropdown-menu">
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/'>Overview</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/">Overview</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/atomizer/'>Atomizer</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/atomizer/">Atomizer</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/data_dir/'>DataDir</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/data_dir/">DataDir</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/disqus/'>Disqus</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/disqus/">Disqus</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/flattr/'>Flattr</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/flattr/">Flattr</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/indexifier/'>Indexifier</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/indexifier/">Indexifier</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/intense_debate/'>IntenseDebate</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/paginator/'>Paginator</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/paginator/">Paginator</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/posts/'>Posts</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/posts/">Posts</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/sitemap/'>Sitemap</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/relative/">Relative</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/tag_cloud/'>TagCloud</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/sitemap/">Sitemap</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/tagger/'>Tagger</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/tag_cloud/">TagCloud</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/extensions/textile/'>Textile</a>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/tagger/">Tagger</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/textile/">Textile</a>
                 </li>
               </ul>
             </li>
-            <li class='dropdown' id='helpers-menu'>
-              <a class='dropdown-toggle' data-toggle='dropdown' href='#helpers-menu'>
+            <li class="dropdown" id="helpers-menu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
                 Helpers
-                <b class='caret'></b>
+                <b class="caret"></b>
               </a>
-              <ul class='dropdown-menu'>
+              <ul class="dropdown-menu">
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/helpers/'>Overview</a>
+                  <a href="https://awestruct.github.com/awestruct.org/helpers/">Overview</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/helpers/partial/'>Partial</a>
+                  <a href="https://awestruct.github.com/awestruct.org/helpers/partial/">Partial</a>
                 </li>
                 <li>
-                  <a href='http://awestruct.github.com/awestruct.org/helpers/google_analytics/'>Google Analytics</a>
+                  <a href="https://awestruct.github.com/awestruct.org/helpers/google_analytics/">Google Analytics</a>
                 </li>
               </ul>
             </li>
@@ -125,53 +147,43 @@
         </div>
       </div>
     </div>
-    <div class='container'>
-      <div class='row'>
-        <div class='span4'>
-          <div class='hero-unit'>
-            <h2>
-              {:awestruct}
-            </h2>
-            <a href='http://travis-ci.org/awestruct/awestruct'>
-              <img src='https://secure.travis-ci.org/awestruct/awestruct.png' />
-            </a>
-            <h3>
-              Latest version is 0.2.18
-            </h3>
+    <div class="container">
+      <div class="row">
+        <div class="span3">
+          <div class="well">
+            <h2>Build Status</h2>
             <p>
-              A static site-baking tool.
-              <br />
-              Have you been awestructed?
-            </p>
-            <p>
-              <a class='btn btn-primary btn-large' href='http://awestruct.github.com/awestruct.org/getting_started/'>Get Started!</a>
+              Travis-CI
+              <a href="http://travis-ci.org/awestruct/awestruct">
+                <img src="https://secure.travis-ci.org/awestruct/awestruct.png">
+              </a>
             </p>
           </div>
-          <div id='sidebar'>
-            <ul class='nav nav-tabs nav-stacked'>
+          <div id="sidebar">
+            <ul class="nav nav-tabs nav-stacked">
               <li>
-                <a href='http://awestruct.github.com/awestruct.org/gallery/'>Gallery</a>
+                <a href="https://awestruct.github.com/awestruct.org/gallery/">Gallery</a>
               </li>
               <li>
-                <a href='http://awestruct.github.com/awestruct.org/source/'>Source Code</a>
+                <a href="https://awestruct.github.com/awestruct.org/source/">Source Code</a>
               </li>
               <li>
-                <a href='http://awestruct.github.com/awestruct.org/yardoc/'>API Documentation</a>
+                <a href="http://www.rubydoc.info/gems/awestruct/">API Documentation</a>
               </li>
               <li>
-                <a href='mailto:talk-subscribe@awestruct.org?subject=subscribe'>Mailing List</a>
+                <a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
               </li>
               <li>
-                <a href='http://talk-archive.awestruct.org/'>List Archives</a>
+                <a href="http://talk-archive.awestruct.org/">List Archives</a>
               </li>
               <li>
-                <a href='http://twitter.com/awestructed'>Twitter</a>
+                <a href="http://twitter.com/awestructed">Twitter</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class='span8'>
-          <div class='page-header'>
+        <div class="span8">
+          <div class="page-header">
             <h1>TagCloud</h1>
             <small>
               <h2>Awestruct::Extensions::TagCloud</h2>
@@ -182,75 +194,85 @@
           <h2>Usage</h2>
           
           <h2>Parameters</h2>
-          <pre>Awestruct::Extensions::TagCloud.new(var_name, output_path, opts)&#x000A;</pre>
-          <table>
+          <pre>Awestruct::Extensions::TagCloud.new(var_name, output_path, opts)&#x000A;&#x000A;</pre>
+          <table class="parameters">
             <tr>
-              <th>
-                var_name
-              </th>
+              <th>Parameter</th>
+              <th>Description</th>
+            </tr>
+            <tr>
+              <td>
+                <code>var_name</code>
+              </td>
               <td>
                 Name of property on `site` to act as a source of tagged pages, typically an array.
               </td>
             </tr>
             <tr>
-              <th>
-                output_path
-              </th>
               <td>
-                Path prefix to emit the resulting tag-cloud page.
+                <code>output_path</code>
+              </td>
+              <td>
+                /extensions/tag_cloud/usage.html
               </td>
             </tr>
             <tr>
-              <th>
-                opts
-              </th>
+              <td>
+                <code>opts</code>
+              </td>
               <td>
                 Additional optiosn hash to set the `title` and `layout` parameters of the tag cloud page.
               </td>
             </tr>
           </table>
-          <h3>Options</h3>
-          <table>
-            <tr>
-              <th>
-                layout
-              </th>
-              <td>
-                The layout of the resulting page
-              </td>
-            </tr>
-            <tr>
-              <th>
-                title
-              </th>
-              <td>
-                The title of the resulting page.
-              </td>
-            </tr>
-          </table>
+          <div class="options">
+            <h3>Options</h3>
+            <table>
+              <tr>
+                <th>
+                  layout
+                </th>
+                <td>
+                  The layout of the resulting page
+                </td>
+              </tr>
+              <tr>
+                <th>
+                  title
+                </th>
+                <td>
+                  The title of the resulting page.
+                </td>
+              </tr>
+            </table>
+          </div>
           <h2>Examples</h2>
           <h3>Generic Installation</h3>
-          <pre>Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::TagCloud.new(var_name, output_path, opts)&#x000A;end&#x000A;</pre>
+          <pre><code class="ruby">Awestruct::Extensions::Pipeline.new do&#x000A;  extension Awestruct::Extensions::TagCloud.new(var_name, output_path, opts)&#x000A;end&#x000A;</code></pre>
           
           <h2>See Also</h2>
           <ul>
             <li>
-              <a href='/extensions/posts/'>Posts</a>
+              <a href="/extensions/posts/">Posts</a>
             </li>
             <li>
-              <a href='/extensions/tagger/'>Tagger</a>
+              <a href="/extensions/tagger/">Tagger</a>
             </li>
           </ul>
         </div>
       </div>
-      <div class='row'>
-        <hr />
+      <div class="row">
+        <hr>
         <footer>
-          <p>&copy; Bob McWhirter 2012</p>
-          <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js' type='text/javascript'></script>
-          <script src='http://awestruct.github.com/awestruct.org/javascript/bootstrap-dropdown.js' type='text/javascript'></script>
+          <p>&copy; Bob McWhirter 2023</p>
         </footer>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://awestruct.github.com/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
+    <script src="https://awestruct.github.com/awestruct.org/javascript/highlight-20130326.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
   </body>
 </html>

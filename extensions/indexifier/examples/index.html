@@ -4,3 +4,9 @@
   extension Awestruct::Extensions::Indexifier.new
 end
 </code></pre>
+
+<h3>Avoiding some paths</h3>
+
+<p>Awestruct::Extensions::Pipeline.new do
+  extension Awestruct::Extensions::Indexifier.new(['path_regex_expression','another_path_expression'])
+end</p>

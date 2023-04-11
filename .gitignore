@@ -1,7 +1,0 @@
-tmp
-*.swp
-_site
-_tmp
-.sass-cache
-.DS_Store
-Gemfile.lock

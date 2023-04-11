@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Automated deployment to GitHub Pages { :awestruct }</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Awestruct is a static site baking and deployment tool" name="description">
+    <meta content="summary" name="twitter:card">
+    <meta content="@awestructed" name="twitter:site">
+    <meta content="Automated deployment to GitHub Pages" name="twitter:title">
+    <meta content="Awestruct is a static site baking and deployment tool" name="twitter:description">
+    <link href="/news.atom" rel="alternate" type="application/atom+xml">
+    <style>
+      body {
+        padding-top: 60px;
+      }
+    </style>
+    <link href="https://awestruct.github.com/awestruct.org/stylesheets/styles.css" rel="stylesheet">
+    <link href="http://yandex.st/highlightjs/7.3/styles/default.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <div class="github-banner">
+            <a href="https://github.com/awestruct/awestruct">
+              <img alt="Fork me on GitHub" src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png" style="position: absolute; top: 0; right: 0; border: 0;z-index: 900;">
+            </a>
+          </div>
+          <a class="brand" href="https://awestruct.github.com/awestruct.org">{:awestruct}</a>
+          <ul class="nav">
+            <li>
+              <a href="https://awestruct.github.com/awestruct.org">Home</a>
+            </li>
+            <li>
+              <a href="https://awestruct.github.com/awestruct.org/news/">News</a>
+            </li>
+            <li class="dropdown" id="getting-started-menu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#getting-started-menu">
+                Documentation
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/getting_started/">Getting Started</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/layout/">Project Layout</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/profiles/">Site Profiles</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/file_types/">File Types</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/skins/">Skins</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/template_context/">Template Context</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/deployment/">Site Deployment</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/auto-deploy-to-github-pages/">Auto Deploy to GitHub Pages</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/using-page-data-in-a-layout/">Using Page variables in a layout</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/adding-tilt-template/">Adding a Tilt Template</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown" id="extensions-menu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#extensions-menu">
+                Extensions
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/">Overview</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/atomizer/">Atomizer</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/data_dir/">DataDir</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/disqus/">Disqus</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/flattr/">Flattr</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/indexifier/">Indexifier</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/intense_debate/">IntenseDebate</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/paginator/">Paginator</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/posts/">Posts</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/relative/">Relative</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/sitemap/">Sitemap</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/tag_cloud/">TagCloud</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/tagger/">Tagger</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/extensions/textile/">Textile</a>
+                </li>
+              </ul>
+            </li>
+            <li class="dropdown" id="helpers-menu">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#helpers-menu">
+                Helpers
+                <b class="caret"></b>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/helpers/">Overview</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/helpers/partial/">Partial</a>
+                </li>
+                <li>
+                  <a href="https://awestruct.github.com/awestruct.org/helpers/google_analytics/">Google Analytics</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="span3">
+          <div class="well">
+            <h2>Build Status</h2>
+            <p>
+              Travis-CI
+              <a href="http://travis-ci.org/awestruct/awestruct">
+                <img src="https://secure.travis-ci.org/awestruct/awestruct.png">
+              </a>
+            </p>
+          </div>
+          <div id="sidebar">
+            <ul class="nav nav-tabs nav-stacked">
+              <li>
+                <a href="https://awestruct.github.com/awestruct.org/gallery/">Gallery</a>
+              </li>
+              <li>
+                <a href="https://awestruct.github.com/awestruct.org/source/">Source Code</a>
+              </li>
+              <li>
+                <a href="http://www.rubydoc.info/gems/awestruct/">API Documentation</a>
+              </li>
+              <li>
+                <a href="mailto:talk-subscribe@awestruct.org?subject=subscribe">Mailing List</a>
+              </li>
+              <li>
+                <a href="http://talk-archive.awestruct.org/">List Archives</a>
+              </li>
+              <li>
+                <a href="http://twitter.com/awestructed">Twitter</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="span8">
+          <div class="page-header">
+            <h1>Automated deployment to GitHub Pages</h1>
+          </div>
+          <div id="preamble">
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>This guide walks you through the steps of publishing a website that is built using <a href="http://awestruct.org">Awestruct</a> to <a href="http://pages.github.com">GitHub Pages</a> from <a href="http://travis-ci.org">Travis CI</a>, <em>automatically!</em></p>
+          </div>
+          <div class="paragraph">
+          <p>In this guide, you&#8217;ll learn:</p>
+          </div>
+          <div class="ulist">
+          <ul>
+          <li>
+          <p>How to setup a git repository for your website and share it on GitHub</p>
+          </li>
+          <li>
+          <p>How to add a branch to your repository that gets deployed to GitHub Pages</p>
+          </li>
+          <li>
+          <p>How to publish your website to GitHub pages using the Awestruct deployer</p>
+          </li>
+          <li>
+          <p>How to activate Travis CI on your repository</p>
+          </li>
+          <li>
+          <p>How to configure Travis CI to publish your website automatically</p>
+          </li>
+          </ul>
+          </div>
+          <div class="paragraph">
+          <p>After reading this guide, you&#8217;ll be able to make a change to your website source, commit it and push it to your GitHub repository.
+          Then, just a few minutes later, the change will automatically appear on your website!</p>
+          </div>
+          <div class="paragraph">
+          <p>You&#8217;ll soon discover that publishing a website has never been so easy!</p>
+          </div>
+          <div class="admonitionblock note">
+          <table>
+          <tr>
+          <td class="icon">
+          <div class="title">Note</div>
+          </td>
+          <td class="content">
+          Throughout this tutorial, replace <code>&lt;username&gt;</code> with your GitHub username and <code>demosite</code> with the name of your website repository.
+          </td>
+          </tr>
+          </table>
+          </div>
+          <div class="admonitionblock note">
+          <table>
+          <tr>
+          <td class="icon">
+          <div class="title">Note</div>
+          </td>
+          <td class="content">
+          A code block that begin with <code>$</code> indicates a command that you should type in your terminal.
+          When you type the command, <strong>don&#8217;t include the <code>$</code> prefix</strong>.
+          </td>
+          </tr>
+          </table>
+          </div>
+          <div class="paragraph">
+          <p>We&#8217;ll assume that you&#8217;ve already setup an Awestruct-based website on your computer.
+          If not, follow the <a href="http://awestruct.org/getting_started">Getting Started</a> guide on the Awestruct website to quickly get one setup.
+          Once you have an Awestruct website ready, we&#8217;ll begin by turning the project into a git repository and sharing it on GitHub.</p>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="git-setup"><a class="anchor" href="#git-setup"></a>Git setup</h2>
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>Open a terminal and switch to the directory containing your Awestruct project.</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ cd demosite</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Next, initialize a git repository by typing the following git command:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git init</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Your project is now a git repository.
+          It doesn&#8217;t have any files or history, though, so we&#8217;ll need to add some.
+          Before we do that, let&#8217;s first tell git and Awestruct what files to ignore.</p>
+          </div>
+          <div class="sect2">
+          <h3 id="ignore-files"><a class="anchor" href="#ignore-files"></a>Ignore files</h3>
+          <div class="paragraph">
+          <p>Ignore files are used to tell version control systems and build tools which files to ignore.
+          When Awestruct runs, it generates some temporary files and directories that we don&#8217;t want git to manage.
+          Let&#8217;s add the names of those files and directories to git&#8217;s ignore file, <code>.gitignore</code>:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ cat &gt; .gitignore &lt;&lt; LINES&#x000A;/.awestruct/&#x000A;/.bundle/&#x000A;/.sass-cache/&#x000A;/_site/&#x000A;/_tmp/&#x000A;/Gemfile.lock&#x000A;LINES</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>There are also some files in the project (or will be) used to launch Awestruct that we don&#8217;t want Awestruct to put into the website it generates.
+          Let&#8217;s add the names of those files to Awestruct&#8217;s ignore file, <code>.awestruct_ignore</code>:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ cat &gt; .awestruct_ignore &lt;&lt; LINES&#x000A;Gemfile&#x000A;Gemfile.lock&#x000A;Rakefile&#x000A;vendor&#x000A;LINES</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Since you&#8217;re deploying to GitHub Pages, you should be aware that Jekyll normally run on the files on the publish branch.
+          The our site is pre-built by Awestruct, we don&#8217;t need Jekyll and, besides, it would slow down the publishing step.
+          Fortunately, Jekyll can be disabled by including an empty <code>.nojekyll</code> file in the project.
+          Create the file using this command:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ touch .nojekyll</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Now all that should be ignore is being ignored, let&#8217;s move on to adding the remaining files to the git repository.</p>
+          </div>
+          </div>
+          <div class="sect2">
+          <h3 id="initial-source-import"><a class="anchor" href="#initial-source-import"></a>Initial source import</h3>
+          <div class="paragraph">
+          <p>We&#8217;ll now do an initial import of files.
+          Add all non-ignored files to the git repository using this command:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git add .</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Next, commit the files, recording it as an initial import:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git commit -m "Initial import of website sources"</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>By default, the files get added to the <strong>master</strong> branch.
+          Keep in mind, we&#8217;ll be storing both the source and published files in the same repository.
+          In one case, the <strong>master</strong> branch is reserved for the published files.
+          Therefore, we&#8217;ll follow the convention to use a different name for the branch holding the source files.</p>
+          </div>
+          <div class="paragraph">
+          <p>Rename the current branch to <strong>develop</strong>:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git branch -m master develop</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>The branch for the source files has been created.
+          Now let&#8217;s create the branch for the published files.</p>
+          </div>
+          </div>
+          <div class="sect2">
+          <h3 id="the-publish-branch"><a class="anchor" href="#the-publish-branch"></a>The &#8220;publish&#8221; branch</h3>
+          <div class="paragraph">
+          <p>GitHub Pages monitors the publish branch of your website repository and synchronizes the files in that branch to a web server whenever new commits appear.</p>
+          </div>
+          <div class="paragraph">
+          <p>In most cases, the name of this branch is <strong>gh-pages</strong>.
+          For legacy reasons, if the name of the repository follows the pattern &lt;username&gt;.github.io, then the name of the publish branch is <strong>master</strong>.
+          Thus, the pattern is:</p>
+          </div>
+          <table class="tableblock frame-all grid-all stretch">
+          <caption class="title">Table 1. Name of publish branch</caption>
+          <colgroup>
+          <col style="width: 50%;">
+          <col style="width: 50%;">
+          </colgroup>
+          <thead>
+          <tr>
+          <th class="tableblock halign-left valign-top">Repository name</th>
+          <th class="tableblock halign-left valign-top">Branch name</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td class="tableblock halign-left valign-top"><p class="tableblock">&lt;username&gt;.github.io</p></td>
+          <td class="tableblock halign-left valign-top"><p class="tableblock">master</p></td>
+          </tr>
+          <tr>
+          <td class="tableblock halign-left valign-top"><p class="tableblock">any other name</p></td>
+          <td class="tableblock halign-left valign-top"><p class="tableblock">gh-pages</p></td>
+          </tr>
+          </tbody>
+          </table>
+          <div class="paragraph">
+          <p>Since the name of our repository is <strong>demosite</strong>, we&#8217;ll be using the <strong>gh-pages</strong> branch as the publish branch.</p>
+          </div>
+          </div>
+          <div class="sect2">
+          <h3 id="creating-the-publish-branch"><a class="anchor" href="#creating-the-publish-branch"></a>Creating the &#8220;publish&#8221; branch</h3>
+          <div class="paragraph">
+          <p>The source branch and the publish branch are going to hold different sets of files that don&#8217;t share a common history.
+          Therefore, when we want create the publish branch, we want to make it an <strong>orphaned</strong> branch, which gives it its own history.</p>
+          </div>
+          <div class="paragraph">
+          <p>Create the <strong>gh-pages</strong> branch as an orphan using the following <code>checkout</code> command:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git checkout --orphan gh-pages</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>The history from the <strong>develop</strong> branch is not transfered to this branch, but we need to cleanup the files that are now lying around.
+          Execute these commands to wipe the slate clean:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ rm -rf *&#x000A;$ rm -rf .awestruct* .sass-cache .gitignore&#x000A;$ git rm --cached *</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>If you type <code>ls</code>, you should see that the project is now clean.
+          Don&#8217;t worry, the project files are stored safely in the <strong>develop</strong> branch.
+          You can confirm they are still there using git&#8217;s <code>ls-tree</code> command:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git ls-tree --name-only develop</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Let&#8217;s commit these changes:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git add --all .&#x000A;$ git commit -m "clean publish branch"</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>To wrap-up the creation of the publish branch, let&#8217;s give it a stub history:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ echo "GitHub Pages placeholder" &gt; index.html&#x000A;$ git add index.html&#x000A;$ git commit -m "Seed publish branch for GitHub Pages"</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>By running git&#8217;s <code>ls-tree</code> command, you can see that there are two files in the repository:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git ls-tree --name-only gh-pages</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Your output should look like this:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">.nojekyll&#x000A;.index.html</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>The source (<strong>develop</strong>) and publish (<strong>gh-pages</strong>) branches are all setup.
+          You&#8217;re now ready to publish the repository to GitHub and put GitHub Pages into action.</p>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="github-push"><a class="anchor" href="#github-push"></a>GitHub push</h2>
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>To publish the repository to GitHub, you first need to create a place to push the files.</p>
+          </div>
+          <div class="olist arabic">
+          <ol class="arabic">
+          <li>
+          <p>Sign in to GitHub</p>
+          </li>
+          <li>
+          <p>Click the "Create a new repo" button.</p>
+          <div class="admonitionblock tip">
+          <table>
+          <tr>
+          <td class="icon">
+          <div class="title">Tip</div>
+          </td>
+          <td class="content">
+          You can go directly to <a href="http://github.com/new" class="bare">http://github.com/new</a> if you can&#8217;t find the button.
+          </td>
+          </tr>
+          </table>
+          </div>
+          </li>
+          <li>
+          <p>Enter the following information into the form:</p>
+          <div class="dlist">
+          <dl>
+          <dt class="hdlist1">Owner</dt>
+          <dd>
+          <p><code>&lt;username&gt;</code></p>
+          </dd>
+          <dt class="hdlist1">Repository name</dt>
+          <dd>
+          <p>demosite</p>
+          </dd>
+          <dt class="hdlist1">Description (optional)</dt>
+          <dd>
+          <p>An Awestruct demo site</p>
+          </dd>
+          </dl>
+          </div>
+          </li>
+          <li>
+          <p>Finally, click the "Create repository" button.</p>
+          </li>
+          </ol>
+          </div>
+          <div class="paragraph">
+          <p>You will be presented with instructions about how to push files to the repository.
+          Since we already have a git repository to push, we are interested in the box label: <em>Push an existing repository from the command line</em>.</p>
+          </div>
+          <div class="paragraph">
+          <p>Add the link to the remote repository on GitHub:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git remote add origin git@github.com:&lt;username&gt;/demosite.git</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Make sure you&#8217;re on your local <strong>develop</strong> branch:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git checkout develop</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Then, push the <strong>develop</strong> branch to the remote repository:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git push -u origin develop</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Also push the <strong>gh-pages</strong> branch:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git checkout gh-pages&#x000A;$ git push -u origin gh-pages</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>By pushing the <strong>gh-pages</strong> branch, you also activated GitHub Pages to publish your website. Check it out!
+          (It could take up to ten minutes for changes to be updated)</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">http://&lt;username&gt;.github.io/demosite</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>You should see the contents of the index page that you created when you setup the <strong>gh-pages</strong> branch.</p>
+          </div>
+          <div class="paragraph">
+          <p><em>Where&#8217;s the Awestruct site?</em></p>
+          </div>
+          <div class="paragraph">
+          <p>Ah, that&#8217;s where the Awestruct deployer comes in.
+          We still need to do a little bit of work.</p>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="awestruct-deployer"><a class="anchor" href="#awestruct-deployer"></a>Awestruct deployer</h2>
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>We&#8217;ll now setup Awestruct to publish the generated website to the <strong>gh-pages</strong> branch, which will subsequently be deployed to the web server by GitHub Pages.</p>
+          </div>
+          <div class="paragraph">
+          <p>We need to tell Awestruct how to publish the site.
+          For that, we&#8217;ll use a configuration profile.</p>
+          </div>
+          <div class="paragraph">
+          <p>Switch to the <strong>develop</strong> branch:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git checkout develop</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Next, add the following content to the bottom of the <code>_config/site.yml</code> file:</p>
+          </div>
+          <div class="listingblock">
+          <div class="content">
+          <pre class="highlight nowrap"><code class="language-yaml" data-lang="yaml">profiles:&#x000A;  production:&#x000A;    base_url: http://&lt;username&gt;.github.io/demosite&#x000A;    deploy:&#x000A;      host: github_pages&#x000A;      # use gh-branch for repositories other than &lt;username&gt;.github.io&#x000A;      branch: gh-pages&#x000A;      # use master branch for &lt;username&gt;.github.io repository&#x000A;      #branch: master</code></pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>The <code>host</code> property controls which Awestruct deployer is used. The value <code>github_pages</code> is a special token that tells Awestruct it&#8217;s working with a website deployed to GitHub Pages.</p>
+          </div>
+          <div class="paragraph">
+          <p>Commit your changes and push them to the remote repository:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git add _config/site.yml&#x000A;$ git commit -m "Add profile for production deployment"&#x000A;$ git push origin develop</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Now you can tell Awestruct to build <em>and publish</em> your site:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ awestruct -P production -g --deploy</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Once that command completes successfully, check out your site again.</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">http://&lt;username&gt;.github.io/demosite</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Your Awestruct-based website is now live, and available worldwide!</p>
+          </div>
+          <div class="paragraph">
+          <p>Of course, your first thought might be, "Yikes, that&#8217;s a generic site. I want to customize it."</p>
+          </div>
+          <div class="paragraph">
+          <p>Let&#8217;s discuss changes.</p>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="manual-publish-workflow"><a class="anchor" href="#manual-publish-workflow"></a>Manual publish workflow</h2>
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>Making a change to the website and publishing it is easy.
+          You just need to edit the file, commit it and run Awestruct again.</p>
+          </div>
+          <div class="paragraph">
+          <p>Let&#8217;s walk through the process.
+          Say you want to change the title on the site.</p>
+          </div>
+          <div class="olist arabic">
+          <ol class="arabic">
+          <li>
+          <p>Open up the <code>_layouts/base.html.haml</code> file in your editor.</p>
+          </li>
+          </ol>
+          </div>
+          <div class="paragraph">
+          <p>This is no longer true. Project name is set in the site.yml
+          . Find the words "Built on Foundation. Baked by Awestruct." and
+          replace them with "Built by &lt;username&gt;"</p>
+          </div>
+          <div class="olist arabic">
+          <ol class="arabic">
+          <li>
+          <p>Save the file</p>
+          </li>
+          <li>
+          <p>Add the changed file to git</p>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git add _layouts/base.html.haml</pre>
+          </div>
+          </div>
+          </li>
+          <li>
+          <p>Commit the change, leaving a description of what you changed</p>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git commit -m "Change built by to username"</pre>
+          </div>
+          </div>
+          </li>
+          <li>
+          <p>Push the change to the remote repository</p>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git push origin develop</pre>
+          </div>
+          </div>
+          </li>
+          <li>
+          <p>Generate and publish the site using Awestruct</p>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ awestruct -P production -g --deploy</pre>
+          </div>
+          </div>
+          </li>
+          </ol>
+          </div>
+          <div class="paragraph">
+          <p>Wait for the command to finish (a moment or two longer), then view
+          your website again to see the change (It can take up to ten minutes
+          to display).</p>
+          </div>
+          <div class="paragraph">
+          <p>That&#8217;s the basic workflow for changing the site.
+          But there&#8217;s certain room for automation.
+          Let&#8217;s see how to use a continous integration (CI) server to automate the build and publish step.</p>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="automated-publishing-using-travis-ci"><a class="anchor" href="#automated-publishing-using-travis-ci"></a>Automated publishing using Travis CI</h2>
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p><a href="https://travis-ci.org">Travis</a> is a sleek continuous integration (CI) server that&#8217;s tightly integrated with GitHub.
+          Like GitHub, it&#8217;s a hosted service so you don&#8217;t have to worry about setting anything up.
+          All you need to do is <a href="https://travis-ci.org">sign in</a> using your GitHub account.</p>
+          </div>
+          <div class="paragraph">
+          <p>Once you&#8217;ve signed in, hover over your name and click on the "Accounts" link, which will take you to <a href="https://travis-ci.org/profile">your profile</a>.
+          Scroll down to the &lt;username&gt;/demosite repository and click the radio button from <strong>Off</strong> to <strong>On</strong>.</p>
+          </div>
+          <div class="admonitionblock note">
+          <table>
+          <tr>
+          <td class="icon">
+          <div class="title">Note</div>
+          </td>
+          <td class="content">
+          If you don&#8217;t see your repository, you need to click the "Sync now" button.
+          </td>
+          </tr>
+          </table>
+          </div>
+          <div class="paragraph">
+          <p>Travis is now ready and waiting for instructions about how to build your project.
+          Let&#8217;s give it the details.</p>
+          </div>
+          <div class="sect2">
+          <h3 id="travis-build-configuration"><a class="anchor" href="#travis-build-configuration"></a>Travis build configuration</h3>
+          <div class="paragraph">
+          <p>You control Travis from a configuration file in the root of your project named <code>.travis.yml</code>.
+          This file puts a <a href="http://about.travis-ci.org/docs">wealth of automation</a> at your fingertips.
+          We&#8217;re only going to tap into a small part of it.</p>
+          </div>
+          <div class="paragraph">
+          <p>Create the file <code>.travis.yml</code> and populate it with the following configuration:</p>
+          </div>
+          <div class="listingblock">
+          <div class="title">travis.yml</div>
+          <div class="content">
+          <pre class="highlight nowrap"><code class="language-yaml" data-lang="yaml">language: ruby&#x000A;rvm:&#x000A;- 1.9.3&#x000A;branches:&#x000A;  only:&#x000A;  - develop&#x000A;script: rake travis</code></pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>This configuration tells Travis the following things:</p>
+          </div>
+          <div class="ulist">
+          <ul>
+          <li>
+          <p>Our project has a Ruby build</p>
+          </li>
+          <li>
+          <p>We want to use Ruby 1.9.3</p>
+          </li>
+          <li>
+          <p>We only want to build the <strong>develop</strong> branch</p>
+          </li>
+          <li>
+          <p>We want to run the command <code>rake travis</code></p>
+          </li>
+          </ul>
+          </div>
+          <div class="paragraph">
+          <p>Travis will setup the appropriate Ruby environment, checkout the repository and run the requested command.
+          So what does <code>rake travis</code> do?
+          We need to define it.</p>
+          </div>
+          </div>
+          <div class="sect2">
+          <h3 id="a-rake-for-travis"><a class="anchor" href="#a-rake-for-travis"></a>A rake for Travis</h3>
+          <div class="paragraph">
+          <p>We&#8217;re going to use Rake to bundle up the commands we want Travis to execute.
+          <a href="http://rake.rubyforge.org">Rake</a> (Ruby Make) is a build tool for Ruby projects.</p>
+          </div>
+          <div class="paragraph">
+          <p>Here are the steps we want this <code>travis</code> task to perform (above setting up the Ruby environment and cloning the repository):</p>
+          </div>
+          <div class="dlist">
+          <dl>
+          <dt class="hdlist1">If triggered by a pull request</dt>
+          <dd>
+          <div class="ulist">
+          <ul>
+          <li>
+          <p>Build the site with Awestruct and exit</p>
+          </li>
+          </ul>
+          </div>
+          </dd>
+          <dt class="hdlist1">If triggered by a commit</dt>
+          <dd>
+          <div class="ulist">
+          <ul>
+          <li>
+          <p>Configure git to be able to push to the remote repository</p>
+          </li>
+          <li>
+          <p>Setup the git credentials to allow a commit to be pushed</p>
+          </li>
+          <li>
+          <p>Run Awestruct to generate and publish the site to the publish branch</p>
+          </li>
+          </ul>
+          </div>
+          </dd>
+          </dl>
+          </div>
+          <div class="paragraph">
+          <p>Here&#8217;s the Rake build file, <code>Rakefile</code>, that defines the <code>travis</code> task:</p>
+          </div>
+          <div class="listingblock">
+          <div class="title">Rakefile</div>
+          <div class="content">
+          <pre class="highlight nowrap"><code class="language-ruby" data-lang="ruby">require 'rubygems'&#x000A;&#x000A;desc 'Generate site from Travis CI and publish site to GitHub Pages'&#x000A;task :travis do&#x000A;  # if this is a pull request, do a simple build of the site and stop&#x000A;  if ENV['TRAVIS_PULL_REQUEST'].to_s.to_i &gt; 0&#x000A;    puts 'Pull request detected. Executing build only.'&#x000A;    system 'bundle exec awestruct -P production -g'&#x000A;    next&#x000A;  end&#x000A;&#x000A;  repo = %x(git config remote.origin.url).gsub(/^git:/, 'https:')&#x000A;  deploy_branch = 'gh-pages'&#x000A;  if repo.match(/github\.com\.git$/)&#x000A;    deploy_branch = 'master'&#x000A;  end&#x000A;  system "git remote set-url --push origin #{repo}"&#x000A;  system "git remote set-branches --add origin #{deploy_branch}"&#x000A;  system 'git fetch -q'&#x000A;  system "git config user.name '#{ENV['GIT_NAME']}'"&#x000A;  system "git config user.email '#{ENV['GIT_EMAIL']}'"&#x000A;  system 'git config credential.helper "store --file=.git/credentials"'&#x000A;  File.open('.git/credentials', 'w') do |f|&#x000A;    f.write("https://#{ENV['GH_TOKEN']}:x-oauth-basic@github.com")&#x000A;  end&#x000A;  system "git branch #{deploy_branch} origin/#{deploy_branch}"&#x000A;  system 'bundle exec awestruct -P production -g --deploy'&#x000A;  File.delete '.git/credentials'&#x000A;end</code></pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Don&#8217;t let that script scare you.
+          Most of the code involves configuring git so that Awestruct can commit and push the changes to the publish branch, using the HTTPS protocol along with a token-based authentication.
+          In the future, this may get rolled into the Awestruct deployer.</p>
+          </div>
+          </div>
+          <div class="sect2">
+          <h3 id="github-commits-from-travis"><a class="anchor" href="#github-commits-from-travis"></a>GitHub commits from Travis</h3>
+          <div class="paragraph">
+          <p>You&#8217;ll notice references to three environment variables in the <code>travis</code> task:</p>
+          </div>
+          <div class="ulist">
+          <ul>
+          <li>
+          <p>GIT_NAME</p>
+          </li>
+          <li>
+          <p>GIT_EMAIL</p>
+          </li>
+          <li>
+          <p>GH_TOKEN</p>
+          </li>
+          </ul>
+          </div>
+          <div class="paragraph">
+          <p>This is crucial information for this process to work, but also sensitive.
+          That&#8217;s why Travis provides a way to encrypt this data so that it can be safely stored in your git repository.
+          Once you encrypt the information, it won&#8217;t be visible anywhere except on Travis during the build.</p>
+          </div>
+          <div class="paragraph">
+          <p>Before we encrypt, we need to get a new authentication token from GitHub.
+          An authentication token allows a script to have the permission to push changes to your repository using the HTTPS protocol, instead of using the ssh protocol which would require you to deploy your private key on Travis.</p>
+          </div>
+          <div class="paragraph">
+          <p>The following <code>curl</code> command will send an OAuth token creation request on github:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ curl -u &lt;username&gt; \&#x000A;  -d '{"scopes":["public_repo"],"note":"CI: demosite"}' \&#x000A;  https://api.github.com/authorizations</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Enter your GitHub password at the prompt.
+          In the output, you&#8217;ll see a token property.
+          Save that value.</p>
+          </div>
+          <div class="paragraph">
+          <p>(If you have two factor authentication enabled on GitHub, it is easier
+          to go to your settings page and generate a new OAuth token there.)</p>
+          </div>
+          <div class="paragraph">
+          <p>Next, install the <code>travis</code> gem:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ gem install travis</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>The Travis gem provides the <code>travis</code> command.
+          Use the <code>travis</code> command to encrypt the three environment variables listed above.
+          Replace <code>&lt;token&gt;</code> with your GitHub authentication token:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ travis encrypt GIT_NAME=&lt;Your_Name&gt; --add&#x000A;$ travis encrypt GIT_EMAIL=&lt;Your_Email&gt; --add&#x000A;$ travis encrypt GH_TOKEN=&lt;token&gt; --add</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Each call to the encrypt command will output a long string that looks like:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">secure: ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123ABC123...</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>directly into the <code>.travis.yml</code> file under the <code>env</code> / <code>global</code> node.</p>
+          </div>
+          <div class="listingblock">
+          <div class="content">
+          <pre class="nowrap">env:&#x000A;  global:&#x000A;  - secure: "&lt;encrypted string for the github user name&gt;"&#x000A;  - secure: "&lt;encrypted string for the github user email&gt;"&#x000A;  - secure: "&lt;encrypted string for the github user token&gt;"</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Each <code>secure</code> string contains one of the environment variable encrypted using Travis' public key.
+          It can only be unencrypted by Travis' private key (secured in some vault, somewhere).</p>
+          </div>
+          <div class="paragraph">
+          <p>That defines the secure environment variables, which Travis will decrypt at the start of the build, so that they can be used by the build task (in our case, <code>rake travis</code>).</p>
+          </div>
+          <div class="paragraph">
+          <p>All that&#8217;s left is to commit your changes, push them to GitHub and let Travis work it&#8217;s magic.</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ git add .&#x000A;$ git commit -m "Configure Travis to build and publish site"&#x000A;$ git push origin develop</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>You&#8217;ll have to wait a little longer this time before viewing the site.
+          It takes a few minutes for your build to make it it to the top of the queue and for Travis to setup the build environment.
+          Aside from the extra steps, Travis is effectively running the command you previously had to run manually:</p>
+          </div>
+          <div class="literalblock">
+          <div class="content">
+          <pre class="nowrap">$ awestruct -P production -g --deploy</pre>
+          </div>
+          </div>
+          <div class="paragraph">
+          <p>Now, to make changes to your site, you just have to push to the <strong>develop</strong> branch, <strong>then sit back and wait</strong>!</p>
+          </div>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="revise-in-the-browser"><a class="anchor" href="#revise-in-the-browser"></a>Revise in the browser</h2>
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>Now that you have Travis CI monitoring your repository for commits, you don&#8217;t even need to use git to make changes to your site.
+          You can use GitHub&#8217;s in-browser editor to edit and commit files.</p>
+          </div>
+          <div class="paragraph">
+          <p>Navigate to your repository at GitHub in your browser.
+          Select one of the files in your repository, perhaps a blog entry.
+          Then click the "Edit" button and type away.
+          You can even go into full-screen mode by clicking the box in the lower right-hand corner of the editor.
+          <strong>How zen.</strong></p>
+          </div>
+          <div class="paragraph">
+          <p>When you are done editing, just click "Commit Changes", entring an optional message if you choose.
+          Once again, sit back and wait.
+          Those changes are headed to your website!</p>
+          </div>
+          <div class="paragraph">
+          <p>Not only can you edit files in the browser, you can also create new ones.
+          That means you can create and publish blog entries directly from the GitHub website using this setup!</p>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="gotchas"><a class="anchor" href="#gotchas"></a>Gotchas</h2>
+          <div class="sectionbody">
+          <div class="ulist">
+          <ul>
+          <li>
+          <p>The GitHub Pages deployer in Awestruct only adds files to deployment, does not compute removed files</p>
+          </li>
+          </ul>
+          </div>
+          </div>
+          </div>
+          <div class="sect1">
+          <h2 id="summary"><a class="anchor" href="#summary"></a>Summary</h2>
+          <div class="sectionbody">
+          <div class="paragraph">
+          <p>In this tutorial, you learned how to get Travis CI to do the work of deploying your site as soon as you push to the develop branch.
+          In fact, you can create and edit files directly in the browser!</p>
+          </div>
+          <div class="paragraph">
+          <p>To begin, you took one of your Awestruct sites and turned it into a git repository.
+          Then, you created an orphan gh-pages branch to hold the production version of the site.
+          Once both branches were setup correctly, you pushed them to GitHub.
+          Next, you configured Awestruct to use the GitHub Pages deployer to build and publish the site to that branch.
+          Finally, you configured Travis to watch for changes and run the Awestruct deployer with the git credentials and GitHub token you passed to it securely.</p>
+          </div>
+          <div class="paragraph">
+          <p><strong>You are blogging like a hacker now!</strong></p>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <hr>
+        <footer>
+          <p>&copy; Bob McWhirter 2023</p>
+        </footer>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://awestruct.github.com/awestruct.org/javascript/bootstrap-2.3.1.js"></script>
+    <script src="https://awestruct.github.com/awestruct.org/javascript/highlight-20130326.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
+  </body>
+</html>
