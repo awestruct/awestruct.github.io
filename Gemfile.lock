@@ -79,7 +79,8 @@ GEM
       guard (~> 2.8)
       guard-compat (~> 1.0)
       multi_json (~> 1.8)
-    haml (4.0.7)
+    haml (5.2.2)
+      temple (>= 0.8.0)
       tilt
     htmlcompressor (0.0.7)
       yui-compressor (~> 0.9.6)
@@ -132,6 +133,7 @@ GEM
       ast
     sass (3.4.25)
     shellany (0.0.1)
+    temple (0.10.0)
     thor (1.2.1)
     tilt (2.1.0)
     uglifier (1.3.0)
@@ -156,7 +158,7 @@ DEPENDENCIES
   compass-blueprint
   erubis (~> 2.7)
   git (~> 1.2)
-  haml (~> 4.0)
+  haml (~> 5.0)
   htmlcompressor (~> 0.0.5)
   kramdown (~> 1.0.1)
   rake (~> 13)
