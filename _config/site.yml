@@ -21,7 +21,7 @@ profiles:
       path: /var/www/domains/awestruct.org/staging/htdocs/ 
       uncommitted: true
   github:
-    base_url: https://awestruct.github.io/awestruct.org/
+    base_url: https://awestruct.github.io/
     deploy:
       host: github_pages
       uncommitted: true
