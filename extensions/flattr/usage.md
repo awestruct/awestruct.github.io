@@ -44,7 +44,7 @@ This is okay to invoke it several times per page and ie put several Flattr butto
   
 By default, the Flattr button will be associated with
 
-* the page URL eg [http://awestruct.org/extensions/flattr](http://awestruct.org/extensions/flattr)
+* the page URL eg [https://awestruct.github.io/extensions/flattr](https://awestruct.github.io/extensions/flattr)
 * the page title as Flattr title
 * the Flattr text category
 

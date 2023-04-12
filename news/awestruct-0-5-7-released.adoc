@@ -39,8 +39,8 @@ The debug flag outputs more information now, however, I STRONG RECOMMEND AGAINST
 Lastly, for those using ruby 1.9, I suggest you upgrade.
 Awestruct is no longer being tested against version 1.9 and I will not be supporting it in later versions.
 
-Homepage:: http://awestruct.org
-Download:: http://rubygems.org/gems/awestruct
+Homepage:: https://awestruct.github.io
+Download:: https://rubygems.org/gems/awestruct
 
 == Thanks!
 

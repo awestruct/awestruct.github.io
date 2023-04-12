@@ -4,7 +4,8 @@ Dan Allen
 :awestruct-show_header: true
 :compat-mode:
 
-This guide walks you through the steps of publishing a website that is built using http://awestruct.org[Awestruct] to http://pages.github.com[GitHub Pages] from http://travis-ci.org[Travis CI], 'automatically!'
+This guide walks you through the steps of publishing a website that is built using https://awestruct.github.io[Awestruct] to https://pages.github.com[GitHub Pages] 
+from https://travis-ci.com[Travis CI], 'automatically!'
 
 In this guide, you'll learn:
 
@@ -25,7 +26,7 @@ NOTE: A code block that begin with +$+ indicates a command that you should type 
 When you type the command, *don't include the +$+ prefix*.
 
 We'll assume that you've already setup an Awestruct-based website on your computer.
-If not, follow the http://awestruct.org/getting_started[Getting Started] guide on the Awestruct website to quickly get one setup.
+If not, follow the https://awestruct.github.io/getting_started[Getting Started] guide on the Awestruct website to quickly get one setup.
 Once you have an Awestruct website ready, we'll begin by turning the project into a git repository and sharing it on GitHub.
 
 == Git setup
@@ -170,7 +171,7 @@ To publish the repository to GitHub, you first need to create a place to push th
 
 . Click the "Create a new repo" button.
 +
-TIP: You can go directly to http://github.com/new if you can't find the button.
+TIP: You can go directly to https://github.com/new if you can't find the button.
 
 . Enter the following information into the form:
 +

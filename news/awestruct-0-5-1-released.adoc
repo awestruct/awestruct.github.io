@@ -13,8 +13,8 @@ The main fixes (and one enhancement) are detailed below:
 * Layout in the Posts extension is now `post`
 * Support for Zurb Foundation (http://foundation.zurb.com)
 
-Homepage:: http://awestruct.org
-Download:: http://rubygems.org/gems/awestruct
+Homepage:: https://awestruct.github.io
+Download:: https://rubygems.org/gems/awestruct
 
 == Foundation Support
 
@@ -25,9 +25,9 @@ It be use at the start of project creation:
 
 == Automated Build and Deploy
 
-I'd like to highlight a new documentation section that was added between the 0.5.0 and this release: http://awestruct.org/auto-deploy-to-github-pages/[Automated deployment to GitHub Pages] by Dan Allen.
+I'd like to highlight a new documentation section that was added between the 0.5.0 and this release: http://awestruct.github.io/auto-deploy-to-github-pages/[Automated deployment to GitHub Pages] by Dan Allen.
 This documents how to easily get a site up and running and published on GitHub pages, but it doesn't stop there!
-Dan demonstrates how to use https://travis-ci.org/[Travis] to do automatic site deployment on git commit! 
+Dan demonstrates how to use https://travis-ci.com/[Travis] to do automatic site deployment on git commit! 
 It's never been easier to publish an Awestruct site.
 
 == Thanks!

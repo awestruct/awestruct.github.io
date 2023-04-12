@@ -24,8 +24,8 @@ The smaller list of improvements:
 * You can exclude paths from the `Indexifier` extension based on a regexp
 * minification is less chatty
 
-Homepage:: http://awestruct.org
-Download:: http://rubygems.org/gems/awestruct
+Homepage:: https://awestruct.github.io
+Download:: https://rubygems.org/gems/awestruct
 
 == Thanks!
 

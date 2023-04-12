@@ -11,9 +11,9 @@ Source is kept on GitHub:
 
 * <https://github.com/awestruct/awestruct/>
 
-The source for the `awestruct.org` site is also available on GitHub:
+The source for the `awestruct.github.io` site is also available on GitHub:
 
-* <https://github.com/awestruct/awestruct.org/>
+* <https://github.com/awestruct/awestruct.github.io/>
 
 The source for an example site generated with awestruct and published
 on GitHub pages is also available.

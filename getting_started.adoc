@@ -10,22 +10,22 @@ Jason Porter; Lance Ball
 
 We've noticed, and had quite a lot of feedback about it being difficult to get up and running easily with *Awestruct*.
 The first thing that makes this difficult is the Ruby environment you'll be developing your site.
-We strongly recommend you install and use http://rvm.io[rvm], and install the latest Ruby 2.3.0 environment.
-We have found Ruby 2.3.0 to be the best environment at the moment to use with *Awestruct*.
+We strongly recommend you install and use http://rvm.io[rvm] to install the Ruby environment.
+You can use Ruby 2.6 or later with *Awestruct*.
 
 === Installing rvm on Linux and Mac OSX
 
 To correctly install rvm open a terminal and execute:
 
- $ curl -L https://get.rvm.io | bash -s stable --ruby=2.3.0
+ $ curl -L https://get.rvm.io | bash -s stable --ruby=3.2.0
 
-This will download and install the latest stable version of Ruby version 2.3.0 in a directory in your HOME directory, eliminating the need to have root access to update or install new gems.
+This will download and install the latest specified version of Ruby in a directory in your HOME directory, eliminating the need to have root access to update or install new gems.
 
 === Installing Ruby on Windows
 
 Creating a great working environment on Windows can be difficult.
-We recommend using the http://rubyinstaller.org/[RubyInstaller for Windows].
-http://rubyinstaller.org/downloads/[Download] the latest version of Ruby 2.3.0 and follow any instructions it gives you.
+We recommend using the https://rubyinstaller.org/[RubyInstaller for Windows].
+https://rubyinstaller.org/downloads/[Download] the latest version of Ruby 3.2.0 and follow any instructions it gives you.
 
 == Install Awestruct and start a new project
 
@@ -135,7 +135,7 @@ If you need to clear out the generated site from a previous run, simply run
 
 === Deploying your site
 
-Information about setting up your site for deployment can be found at the http://awestruct.org/deployment/[deployment documentation page].
+Information about setting up your site for deployment can be found at the https://awestruct.github.io/deployment/[deployment documentation page].
 As soon as you have your site setup and ready to deploy you can easily run a deploy via rake:
 
  $ rake deploy

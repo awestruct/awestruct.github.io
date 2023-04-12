@@ -15,24 +15,24 @@ The major highlights of this release are:
 * Integration of https://github.com/rtomayko/tilt[Tilt] to handle rendering
 * Dependencies cut in half (from 22 down to 11)
 * Improved compatibility with JRuby
-* Tight AsciiDoc integration powered by http://asciidoctor.org[Asciidoctor]
+* Tight AsciiDoc integration powered by https://asciidoctor.org[Asciidoctor]
 * An Amazon S3 deployer
 * Switched to Ruby's Logger class to output messages
 
 This release is an important step towards achieving Awestruct's primary goal: to make static websites trivially easy to create 'and publish'.
 We hope when you try it, you'll agree.
 
-Homepage:: http://awestruct.org
-Download:: http://rubygems.org/gems/awestruct
+Homepage:: https://awestruct.github.io
+Download:: https://rubygems.org/gems/awestruct
 
 == Setup and migration
 
-Awestruct is bundled as a Ruby gem and published to http://rubygems.org/gems/awestruct[rubygems.org].
+Awestruct is bundled as a Ruby gem and published to https://rubygems.org/gems/awestruct[rubygems.org].
 You can install it using:
 
  $ gem install awestruct
 
-If this is your first time using Awestruct, you can create a new website based on http://twitter.github.com/bootstrap[Bootstrap] by running the following command inside a _new_ directory:
+If this is your first time using Awestruct, you can create a new website based on https://github.com/twbs/bootstrap[Bootstrap] by running the following command inside a _new_ directory:
 
  $ awestruct -i -f bootstrap
 
@@ -117,7 +117,7 @@ In other words, an AsciiDoc document can be used in an Awestruct site without an
 === Amazon S3 deployer
 
 In addition to the rsync and GitHub Pages deployers, Awestruct can now deploy a site to Amazon S3.
-For instructions on how to set it up, see the http://awestruct.org/deployment[site deployment] page on the Awestruct website.
+For instructions on how to set it up, see the https://awestruct.github.io/deployment[site deployment] page on the Awestruct website.
 
 === Rakefile
 
@@ -164,7 +164,7 @@ Since Awestruct has a transitive dependency on this library, it will be upgraded
 If you want to keep using an older version of Bootstrap, just declare the version explicitly in your Gemfile.
 
 That about wraps it up.
-For more details about what's in this release, see the {migration-guide}[migration guide] or just http://awestruct.org/getting_started[try it for yourself].
+For more details about what's in this release, see the {migration-guide}[migration guide] or just https://awestruct.github.io/getting_started[try it for yourself].
 
 == Thanks!
 

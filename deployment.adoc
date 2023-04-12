@@ -6,9 +6,9 @@ Awestruct provides several automated options to deploy your site, which makes pu
 
 Using Awestruct, you can deploy your site to any of these destinations:
 
-. http://pages.github.com[GitHub Pages]
+. https://pages.github.com[GitHub Pages]
 . an arbitrary server using +rsync+ and +ssh+
-. http://aws.amazon.com/s3[Amazon S3]
+. https://aws.amazon.com/s3[Amazon S3]
 
 You use link:/profiles[site profiles], to configure your deployment.
 Once you're configured, deploying is just a single command.
@@ -119,11 +119,11 @@ profiles:
   staging:
     deploy:
       type: s3
-      bucket: s3://staging.awestruct.org
+      bucket: s3://staging.example.com
     production:
       deploy:
       type: s3
-      bucket: s3://awestruct.org
+      bucket: s3://example.com
 --
 
 NOTE: Wait, what command are you actually using? 
@@ -146,15 +146,15 @@ Also make sure that +base_url+ is set correctly for each profile.
 profiles:
   development:
   staging:
-    base_url: http://staging.awestruct.org
+    base_url: https://staging.example.com
     deploy:
-      host: awestruct.org
-      path: /var/www/domains/awestruct.org/staging/htdocs/ 
+      host: example.com
+      path: /var/www/domains/staging.example.com/staging/htdocs/ 
     production:
-      base_url: http://awestruct.org
+      base_url: https://example.com
       deploy:
-        host: awestruct.org
-        path: /var/www/domains/awestruct.org/www/htdocs/ 
+        host: example.com
+        path: /var/www/domains/example.com/www/htdocs/ 
 --
 
 NOTE: Wait, what command are you actually using?

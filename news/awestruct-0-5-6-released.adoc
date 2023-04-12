@@ -16,8 +16,8 @@ For those interested in the actual commit history, it can be found at {commit-hi
 There were 28 bugs squashed in this release, 7 in 0.5.5, 58 in 0.5.4, and 1 in 0.5.3 for a grand total of 94 bugs squashed in the past two years!
 You can see all the issues fixed by looking at the different https://github.com/awestruct/awestruct/milestones?state=closed[milestones].
 
-Homepage:: http://awestruct.org
-Download:: http://rubygems.org/gems/awestruct
+Homepage:: https://awestruct.github.io
+Download:: https://rubygems.org/gems/awestruct
 
 == Thanks!
 
