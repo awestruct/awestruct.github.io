@@ -1,6 +1,6 @@
 title: '{ :awestruct }'
 description: Awestruct is a static site baking and deployment tool
-gem_version: 0.5.7
+gem_version: 0.6.4
 #gem_pre_version: 0.5.6.beta9
 
 asciidoctor:
@@ -14,23 +14,10 @@ asciidoctor:
 profiles:
   development:
     deploy: nil
-  staging:
-    base_url: http://staging.awestruct.org/
-    deploy:
-      host: awestruct.org
-      path: /var/www/domains/awestruct.org/staging/htdocs/ 
-      uncommitted: true
   github:
     base_url: https://awestruct.github.io/
     deploy:
       host: github_pages
-      uncommitted: true
-  production:
-    base_url: http://awestruct.org/
-    minify: true
-    deploy:
-      host: awestruct.org
-      path: /var/www/domains/awestruct.org/www/htdocs/ 
       uncommitted: true
 
 intense_debate_acct: fa224495874e8d96bbf6f2dbcc26dac5
