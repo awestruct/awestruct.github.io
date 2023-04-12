@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
-<id>https://awestruct.github.io/awestruct.org/</id>
+<id>https://awestruct.github.io/</id>
 <title>{ :awestruct }</title>
-<updated>2023-04-11T22:51:25+02:00</updated>
-<link href="https://awestruct.github.io/awestruct.org/news.atom" rel="self" type="application/atom+xml" />
-<link href="https://awestruct.github.io/awestruct.org/" rel="alternate" type="text/html" />
+<updated>2023-04-11T23:02:01+02:00</updated>
+<link href="https://awestruct.github.io/news.atom" rel="self" type="application/atom+xml" />
+<link href="https://awestruct.github.io/" rel="alternate" type="text/html" />
 <entry>
-<id>https://awestruct.github.io/awestruct.org/news/2016/02/09/awestruct-0-5-7-released/</id>
+<id>https://awestruct.github.io/news/2016/02/09/awestruct-0-5-7-released/</id>
 <title>Awestruct 0.5.7 Released</title>
-<updated>2023-04-11T22:51:25+02:00</updated>
+<updated>2023-04-11T23:02:01+02:00</updated>
 <published>2016-02-09T00:00:00+00:00</published>
-<link href="https://awestruct.github.io/awestruct.org/news/2016/02/09/awestruct-0-5-7-released/" rel="alternate" type="text/html" />
+<link href="https://awestruct.github.io/news/2016/02/09/awestruct-0-5-7-released/" rel="alternate" type="text/html" />
 <author>
 <name>Jason Porter</name>
 </author>
@@ -101,11 +101,11 @@ We’re honored to have you as part of the community!&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>https://awestruct.github.io/awestruct.org/news/2015/08/28/awestruct-0-5-6-released/</id>
+<id>https://awestruct.github.io/news/2015/08/28/awestruct-0-5-6-released/</id>
 <title>Awestruct 0.5.6 Released</title>
-<updated>2023-04-11T22:51:25+02:00</updated>
+<updated>2023-04-11T23:02:01+02:00</updated>
 <published>2015-08-28T00:00:00+00:00</published>
-<link href="https://awestruct.github.io/awestruct.org/news/2015/08/28/awestruct-0-5-6-released/" rel="alternate" type="text/html" />
+<link href="https://awestruct.github.io/news/2015/08/28/awestruct-0-5-6-released/" rel="alternate" type="text/html" />
 <author>
 <name>Jason Porter</name>
 </author>
@@ -171,11 +171,11 @@ We’re honored to have you as part of the community!&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>https://awestruct.github.io/awestruct.org/news/2013/06/19/awestruct-0-5-2-released/</id>
+<id>https://awestruct.github.io/news/2013/06/19/awestruct-0-5-2-released/</id>
 <title>Awestruct 0.5.2 Released</title>
-<updated>2023-04-11T22:51:25+02:00</updated>
+<updated>2023-04-11T23:02:01+02:00</updated>
 <published>2013-06-19T00:00:00+00:00</published>
-<link href="https://awestruct.github.io/awestruct.org/news/2013/06/19/awestruct-0-5-2-released/" rel="alternate" type="text/html" />
+<link href="https://awestruct.github.io/news/2013/06/19/awestruct-0-5-2-released/" rel="alternate" type="text/html" />
 <author>
 <name>Jason Porter</name>
 </author>
@@ -281,11 +281,11 @@ We’re honored to have you as part of the community!&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>https://awestruct.github.io/awestruct.org/news/2013/05/13/awestruct-0-5-1-released/</id>
+<id>https://awestruct.github.io/news/2013/05/13/awestruct-0-5-1-released/</id>
 <title>Awestruct 0.5.1 Released</title>
-<updated>2023-04-11T22:51:25+02:00</updated>
+<updated>2023-04-11T23:02:01+02:00</updated>
 <published>2013-05-13T00:00:00+00:00</published>
-<link href="https://awestruct.github.io/awestruct.org/news/2013/05/13/awestruct-0-5-1-released/" rel="alternate" type="text/html" />
+<link href="https://awestruct.github.io/news/2013/05/13/awestruct-0-5-1-released/" rel="alternate" type="text/html" />
 <author>
 <name>Jason Porter</name>
 </author>
@@ -422,11 +422,11 @@ We’re honored to have you as part of the community!&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>https://awestruct.github.io/awestruct.org/news/2013/03/25/awestruct-0-5-0-released/</id>
+<id>https://awestruct.github.io/news/2013/03/25/awestruct-0-5-0-released/</id>
 <title>Awestruct 0.5.0 Released</title>
-<updated>2023-04-11T22:51:25+02:00</updated>
+<updated>2023-04-11T23:02:01+02:00</updated>
 <published>2013-03-25T00:00:00+00:00</published>
-<link href="https://awestruct.github.io/awestruct.org/news/2013/03/25/awestruct-0-5-0-released/" rel="alternate" type="text/html" />
+<link href="https://awestruct.github.io/news/2013/03/25/awestruct-0-5-0-released/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 </author>
@@ -812,11 +812,11 @@ We’re honored to have you as part of the community!&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>https://awestruct.github.io/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/</id>
+<id>https://awestruct.github.io/news/2011/10/31/awestruct-027-on-the-prowl/</id>
 <title>Awestruct 0.2.7 On the Prowl</title>
-<updated>2023-04-11T22:51:25+02:00</updated>
+<updated>2023-04-11T23:02:01+02:00</updated>
 <published>2011-10-31T00:00:00+00:00</published>
-<link href="https://awestruct.github.io/awestruct.org/news/2011/10/31/awestruct-027-on-the-prowl/" rel="alternate" type="text/html" />
+<link href="https://awestruct.github.io/news/2011/10/31/awestruct-027-on-the-prowl/" rel="alternate" type="text/html" />
 <author>
 <name>Dan Allen</name>
 </author>
@@ -850,9 +850,9 @@ recently on twitter.&lt;/p&gt;
 
 &lt;p&gt;Here&#39;s a taste of the treats in store for you.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;https://awestruct.github.io/awestruct.org/images/news/ontheprowl.jpg&quot; alt=&quot;Cat on the prowl&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://awestruct.github.io/images/news/ontheprowl.jpg&quot; alt=&quot;Cat on the prowl&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;http://github.com/aslakknutsen&quot;&gt;Aslak&lt;/a&gt; improved the &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/posts&quot;&gt;Posts&lt;/a&gt; extension to read page.date as a alternative to
+&lt;p&gt;&lt;a href=&quot;http://github.com/aslakknutsen&quot;&gt;Aslak&lt;/a&gt; improved the &lt;a href=&quot;https://awestruct.github.io/extensions/posts&quot;&gt;Posts&lt;/a&gt; extension to read page.date as a alternative to
 the post filename, part of the preparation for a feature that enables
 automatic generation of blog entries for project releases (like this one!).&lt;/p&gt;
 
@@ -874,11 +874,11 @@ block markup. The hooks are now in place. We&#39;ll be documenting how to make u
 of them soon. You can see an example
 &lt;a href=&quot;https://github.com/arquillian/arquillian.github.com/blob/develop/_ext/textile_plus.rb&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Dan documented the &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/disqus&quot;&gt;Disqus&lt;/a&gt; extension, an extension which snuck into a
+&lt;p&gt;Dan documented the &lt;a href=&quot;https://awestruct.github.io/extensions/disqus&quot;&gt;Disqus&lt;/a&gt; extension, an extension which snuck into a
 previous release without much ado. He also added an option to have the
 extension generate the Disqus identifier automatically from the date and slug
 of the post. Disqus is an alternative JavaScript-based comment system for
-Awestruct &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/posts&quot;&gt;Posts&lt;/a&gt; which offers a very elegant interface for both users and
+Awestruct &lt;a href=&quot;https://awestruct.github.io/extensions/posts&quot;&gt;Posts&lt;/a&gt; which offers a very elegant interface for both users and
 administrators.&lt;/p&gt;
 
 &lt;p&gt;Finally, &lt;a href=&quot;http://github.com/tombentley&quot;&gt;Tom&lt;/a&gt;&#39;s gsub transformer finally got merged in, so you can slice and
@@ -896,11 +896,11 @@ dice the pages as they exit the pipeline.&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>https://awestruct.github.io/awestruct.org/news/2011/07/12/awestruct-022-lives/</id>
+<id>https://awestruct.github.io/news/2011/07/12/awestruct-022-lives/</id>
 <title>Awestruct 0.2.2 Lives</title>
-<updated>2023-04-11T22:51:25+02:00</updated>
+<updated>2023-04-11T23:02:01+02:00</updated>
 <published>2011-07-12T00:00:00+00:00</published>
-<link href="https://awestruct.github.io/awestruct.org/news/2011/07/12/awestruct-022-lives/" rel="alternate" type="text/html" />
+<link href="https://awestruct.github.io/news/2011/07/12/awestruct-022-lives/" rel="alternate" type="text/html" />
 <author>
 <name>Bob McWhirter</name>
 </author>
@@ -920,7 +920,7 @@ gem install awestruct...
 &lt;p&gt;Thanks to recent interest from Torsten Curdt, Emmanuel Bernard and others in the community,
 activity around Awestruct has increased as of late.&lt;/p&gt;
 
-&lt;p&gt;Emmanuel gives us the &lt;a href=&quot;https://awestruct.github.io/awestruct.org/extensions/flattr&quot;&gt;Flattr&lt;/a&gt; extension, plus a really nice &lt;a href=&quot;http://blog.emmanuelbernard.com/2011/07/awestruct-building-dynamic-static-web-sites/&quot;&gt;blog post&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Emmanuel gives us the &lt;a href=&quot;https://awestruct.github.io/extensions/flattr&quot;&gt;Flattr&lt;/a&gt; extension, plus a really nice &lt;a href=&quot;http://blog.emmanuelbernard.com/2011/07/awestruct-building-dynamic-static-web-sites/&quot;&gt;blog post&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;Torsten gives us RDiscount for Markdown instead of Bluecloth.  Holler if it breaks your stuff.&lt;/p&gt;
 
@@ -932,11 +932,11 @@ activity around Awestruct has increased as of late.&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>https://awestruct.github.io/awestruct.org/news/2010/09/17/awestruct-011-released/</id>
+<id>https://awestruct.github.io/news/2010/09/17/awestruct-011-released/</id>
 <title>Awestruct 0.1.1 Released</title>
-<updated>2023-04-11T22:51:25+02:00</updated>
+<updated>2023-04-11T23:02:01+02:00</updated>
 <published>2010-09-17T00:00:00+00:00</published>
-<link href="https://awestruct.github.io/awestruct.org/news/2010/09/17/awestruct-011-released/" rel="alternate" type="text/html" />
+<link href="https://awestruct.github.io/news/2010/09/17/awestruct-011-released/" rel="alternate" type="text/html" />
 <author>
 <name>Bob McWhirter</name>
 </author>
@@ -959,11 +959,11 @@ the same skin, including pipelines, pages and layouts.&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>https://awestruct.github.io/awestruct.org/news/2010/06/12/awestruct-006-released/</id>
+<id>https://awestruct.github.io/news/2010/06/12/awestruct-006-released/</id>
 <title>Awestruct 0.0.6 Released</title>
-<updated>2023-04-11T22:51:25+02:00</updated>
+<updated>2023-04-11T23:02:01+02:00</updated>
 <published>2010-06-12T00:00:00+00:00</published>
-<link href="https://awestruct.github.io/awestruct.org/news/2010/06/12/awestruct-006-released/" rel="alternate" type="text/html" />
+<link href="https://awestruct.github.io/news/2010/06/12/awestruct-006-released/" rel="alternate" type="text/html" />
 <author>
 <name>Bob McWhirter</name>
 </author>
@@ -992,11 +992,11 @@ Sass used by the tool.&lt;/p&gt;
 </content>
 </entry>
 <entry>
-<id>https://awestruct.github.io/awestruct.org/news/2010/02/26/announcing-awestruct/</id>
+<id>https://awestruct.github.io/news/2010/02/26/announcing-awestruct/</id>
 <title>Announcing Awestruct</title>
-<updated>2023-04-11T22:51:25+02:00</updated>
+<updated>2023-04-11T23:02:01+02:00</updated>
 <published>2010-02-26T00:00:00+00:00</published>
-<link href="https://awestruct.github.io/awestruct.org/news/2010/02/26/announcing-awestruct/" rel="alternate" type="text/html" />
+<link href="https://awestruct.github.io/news/2010/02/26/announcing-awestruct/" rel="alternate" type="text/html" />
 <author>
 <name>Bob McWhirter</name>
 </author>
