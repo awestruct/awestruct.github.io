@@ -1722,7 +1722,7 @@ table td[class*="span"], table th[class*="span"], .row-fluid table td[class*="sp
   *margin-right: .3em;
   line-height: 14px;
   vertical-align: text-top;
-  background-image: url(https://awestruct.github.io/images/glyphicons-halflings.png?1681333857);
+  background-image: url(https://awestruct.github.io/images/glyphicons-halflings.png?1681334461);
   background-position: 14px 14px;
   background-repeat: no-repeat;
   margin-top: 1px; }
@@ -1730,7 +1730,7 @@ table td[class*="span"], table th[class*="span"], .row-fluid table td[class*="sp
 /* White icons with optional class, or on hover/focus/active states of certain elements */
 /* line 32, /home/zbynek/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_sprites.scss */
 .icon-white, .nav-pills > .active > a > [class^="icon-"], .nav-pills > .active > a > [class*=" icon-"], .nav-list > .active > a > [class^="icon-"], .nav-list > .active > a > [class*=" icon-"], .navbar-inverse .nav > .active > a > [class^="icon-"], .navbar-inverse .nav > .active > a > [class*=" icon-"], .dropdown-menu > li > a:hover > [class^="icon-"], .dropdown-menu > li > a:focus > [class^="icon-"], .dropdown-menu > li > a:hover > [class*=" icon-"], .dropdown-menu > li > a:focus > [class*=" icon-"], .dropdown-menu > .active > a > [class^="icon-"], .dropdown-menu > .active > a > [class*=" icon-"], .dropdown-submenu:hover > a > [class^="icon-"], .dropdown-submenu:focus > a > [class^="icon-"], .dropdown-submenu:hover > a > [class*=" icon-"], .dropdown-submenu:focus > a > [class*=" icon-"] {
-  background-image: url(https://awestruct.github.io/images/glyphicons-halflings-white.png?1681333857); }
+  background-image: url(https://awestruct.github.io/images/glyphicons-halflings-white.png?1681334461); }
 
 /* line 52, /home/zbynek/.rbenv/versions/3.2.0/lib/ruby/gems/3.2.0/gems/bootstrap-sass-2.3.2.2/vendor/assets/stylesheets/bootstrap/_sprites.scss */
 .icon-glass {

@@ -186,8 +186,8 @@ GitHub Actions
 <div class="paragraph">
 <p>We&#8217;ve noticed, and had quite a lot of feedback about it being difficult to get up and running easily with <strong>Awestruct</strong>.
 The first thing that makes this difficult is the Ruby environment you&#8217;ll be developing your site.
-We strongly recommend you install and use <a href="http://rvm.io">rvm</a>, and install the latest Ruby 2.3.0 environment.
-We have found Ruby 2.3.0 to be the best environment at the moment to use with <strong>Awestruct</strong>.</p>
+We strongly recommend you install and use <a href="http://rvm.io">rvm</a> to install the Ruby environment.
+You can use Ruby 2.6 or later with <strong>Awestruct</strong>.</p>
 </div>
 <div class="sect2">
 <h3 id="installing-rvm-on-linux-and-mac-osx"><a class="anchor" href="#installing-rvm-on-linux-and-mac-osx"></a>Installing rvm on Linux and Mac OSX</h3>
@@ -196,19 +196,19 @@ We have found Ruby 2.3.0 to be the best environment at the moment to use with <s
 </div>
 <div class="literalblock">
 <div class="content">
-<pre class="nowrap">$ curl -L https://get.rvm.io | bash -s stable --ruby=2.3.0</pre>
+<pre class="nowrap">$ curl -L https://get.rvm.io | bash -s stable --ruby=3.2.0</pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This will download and install the latest stable version of Ruby version 2.3.0 in a directory in your HOME directory, eliminating the need to have root access to update or install new gems.</p>
+<p>This will download and install the latest specified version of Ruby in a directory in your HOME directory, eliminating the need to have root access to update or install new gems.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="installing-ruby-on-windows"><a class="anchor" href="#installing-ruby-on-windows"></a>Installing Ruby on Windows</h3>
 <div class="paragraph">
 <p>Creating a great working environment on Windows can be difficult.
-We recommend using the <a href="http://rubyinstaller.org/">RubyInstaller for Windows</a>.
-<a href="http://rubyinstaller.org/downloads/">Download</a> the latest version of Ruby 2.3.0 and follow any instructions it gives you.</p>
+We recommend using the <a href="https://rubyinstaller.org/">RubyInstaller for Windows</a>.
+<a href="https://rubyinstaller.org/downloads/">Download</a> the latest version of Ruby 3.2.0 and follow any instructions it gives you.</p>
 </div>
 </div>
 </div>
@@ -380,7 +380,7 @@ If you need to clear out the generated site from a previous run, simply run</p>
 <div class="sect2">
 <h3 id="deploying-your-site"><a class="anchor" href="#deploying-your-site"></a>Deploying your site</h3>
 <div class="paragraph">
-<p>Information about setting up your site for deployment can be found at the <a href="http://awestruct.org/deployment/">deployment documentation page</a>.
+<p>Information about setting up your site for deployment can be found at the <a href="https://awestruct.github.io/deployment/">deployment documentation page</a>.
 As soon as you have your site setup and ready to deploy you can easily run a deploy via rake:</p>
 </div>
 <div class="literalblock">

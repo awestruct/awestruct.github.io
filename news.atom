@@ -2,13 +2,13 @@
 <feed xml:lang="en-US" xmlns="http://www.w3.org/2005/Atom">
 <id>https://awestruct.github.io/</id>
 <title>{ :awestruct }</title>
-<updated>2023-04-12T23:10:59+02:00</updated>
+<updated>2023-04-12T23:31:51+02:00</updated>
 <link href="https://awestruct.github.io/news.atom" rel="self" type="application/atom+xml" />
 <link href="https://awestruct.github.io/" rel="alternate" type="text/html" />
 <entry>
 <id>https://awestruct.github.io/news/2016/02/09/awestruct-0-5-7-released/</id>
 <title>Awestruct 0.5.7 Released</title>
-<updated>2023-04-12T23:10:59+02:00</updated>
+<updated>2023-04-12T23:31:51+02:00</updated>
 <published>2016-02-09T00:00:00+00:00</published>
 <link href="https://awestruct.github.io/news/2016/02/09/awestruct-0-5-7-released/" rel="alternate" type="text/html" />
 <author>
@@ -76,11 +76,11 @@ Awestruct is no longer being tested against version 1.9 and I will not be suppor
 &lt;dl&gt;
 &lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://awestruct.github.io&quot; class=&quot;bare&quot;&gt;https://awestruct.github.io&lt;/a&gt;&lt;/p&gt;
 &lt;/dd&gt;
 &lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;https://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
 &lt;/dd&gt;
 &lt;/dl&gt;
 &lt;/div&gt;
@@ -103,7 +103,7 @@ We’re honored to have you as part of the community!&lt;/p&gt;
 <entry>
 <id>https://awestruct.github.io/news/2015/08/28/awestruct-0-5-6-released/</id>
 <title>Awestruct 0.5.6 Released</title>
-<updated>2023-04-12T23:10:59+02:00</updated>
+<updated>2023-04-12T23:30:19+02:00</updated>
 <published>2015-08-28T00:00:00+00:00</published>
 <link href="https://awestruct.github.io/news/2015/08/28/awestruct-0-5-6-released/" rel="alternate" type="text/html" />
 <author>
@@ -146,11 +146,11 @@ You can see all the issues fixed by looking at the different &lt;a href=&quot;ht
 &lt;dl&gt;
 &lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://awestruct.github.io&quot; class=&quot;bare&quot;&gt;https://awestruct.github.io&lt;/a&gt;&lt;/p&gt;
 &lt;/dd&gt;
 &lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;https://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
 &lt;/dd&gt;
 &lt;/dl&gt;
 &lt;/div&gt;
@@ -173,7 +173,7 @@ We’re honored to have you as part of the community!&lt;/p&gt;
 <entry>
 <id>https://awestruct.github.io/news/2013/06/19/awestruct-0-5-2-released/</id>
 <title>Awestruct 0.5.2 Released</title>
-<updated>2023-04-12T23:10:59+02:00</updated>
+<updated>2023-04-12T23:31:15+02:00</updated>
 <published>2013-06-19T00:00:00+00:00</published>
 <link href="https://awestruct.github.io/news/2013/06/19/awestruct-0-5-2-released/" rel="alternate" type="text/html" />
 <author>
@@ -253,11 +253,11 @@ Here are the list of bug fixes:&lt;/p&gt;
 &lt;dl&gt;
 &lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://awestruct.github.io&quot; class=&quot;bare&quot;&gt;https://awestruct.github.io&lt;/a&gt;&lt;/p&gt;
 &lt;/dd&gt;
 &lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;https://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
 &lt;/dd&gt;
 &lt;/dl&gt;
 &lt;/div&gt;
@@ -283,7 +283,7 @@ We’re honored to have you as part of the community!&lt;/p&gt;
 <entry>
 <id>https://awestruct.github.io/news/2013/05/13/awestruct-0-5-1-released/</id>
 <title>Awestruct 0.5.1 Released</title>
-<updated>2023-04-12T23:10:59+02:00</updated>
+<updated>2023-04-12T23:54:10+02:00</updated>
 <published>2013-05-13T00:00:00+00:00</published>
 <link href="https://awestruct.github.io/news/2013/05/13/awestruct-0-5-1-released/" rel="alternate" type="text/html" />
 <author>
@@ -311,11 +311,11 @@ Support for Zurb Foundation (http://foundation.zurb.com)
 
 Homepage
 
-http://awestruct.org
+https://awestruct.github.io
 
 Download
 
-http://rubygems.org/gems/awestruct
+https://rubygems.org/gems/awestruct
 
 
 
@@ -369,11 +369,11 @@ The main fixes (and one enhancement) are detailed below:&lt;/p&gt;
 &lt;dl&gt;
 &lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://awestruct.github.io&quot; class=&quot;bare&quot;&gt;https://awestruct.github.io&lt;/a&gt;&lt;/p&gt;
 &lt;/dd&gt;
 &lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;https://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
 &lt;/dd&gt;
 &lt;/dl&gt;
 &lt;/div&gt;
@@ -400,9 +400,9 @@ It be use at the start of project creation:&lt;/p&gt;
 &lt;h2 id=&quot;automated-build-and-deploy&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#automated-build-and-deploy&quot; /&gt;Automated Build and Deploy&lt;/h2&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;I’d like to highlight a new documentation section that was added between the 0.5.0 and this release: &lt;a href=&quot;http://awestruct.org/auto-deploy-to-github-pages/&quot;&gt;Automated deployment to GitHub Pages&lt;/a&gt; by Dan Allen.
+&lt;p&gt;I’d like to highlight a new documentation section that was added between the 0.5.0 and this release: &lt;a href=&quot;http://awestruct.github.io/auto-deploy-to-github-pages/&quot;&gt;Automated deployment to GitHub Pages&lt;/a&gt; by Dan Allen.
 This documents how to easily get a site up and running and published on GitHub pages, but it doesn’t stop there!
-Dan demonstrates how to use &lt;a href=&quot;https://travis-ci.org/&quot;&gt;Travis&lt;/a&gt; to do automatic site deployment on git commit!
+Dan demonstrates how to use &lt;a href=&quot;https://travis-ci.com/&quot;&gt;Travis&lt;/a&gt; to do automatic site deployment on git commit!
 It’s never been easier to publish an Awestruct site.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -424,7 +424,7 @@ We’re honored to have you as part of the community!&lt;/p&gt;
 <entry>
 <id>https://awestruct.github.io/news/2013/03/25/awestruct-0-5-0-released/</id>
 <title>Awestruct 0.5.0 Released</title>
-<updated>2023-04-12T23:10:59+02:00</updated>
+<updated>2023-04-12T23:35:29+02:00</updated>
 <published>2013-03-25T00:00:00+00:00</published>
 <link href="https://awestruct.github.io/news/2013/03/25/awestruct-0-5-0-released/" rel="alternate" type="text/html" />
 <author>
@@ -470,11 +470,11 @@ We hope when you try it, you&#8217;ll agree.
 
 Homepage
 
-http://awestruct.org
+https://awestruct.github.io
 
 Download
 
-http://rubygems.org/gems/awestruct
+https://rubygems.org/gems/awestruct
 
 
 
@@ -511,7 +511,7 @@ The focus of this release has been on &lt;strong&gt;ease of installation&lt;/str
 &lt;p&gt;Improved compatibility with JRuby&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Tight AsciiDoc integration powered by &lt;a href=&quot;http://asciidoctor.org&quot;&gt;Asciidoctor&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Tight AsciiDoc integration powered by &lt;a href=&quot;https://asciidoctor.org&quot;&gt;Asciidoctor&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;An Amazon S3 deployer&lt;/p&gt;
@@ -529,11 +529,11 @@ We hope when you try it, you’ll agree.&lt;/p&gt;
 &lt;dl&gt;
 &lt;dt class=&quot;hdlist1&quot;&gt;Homepage&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;&lt;a href=&quot;http://awestruct.org&quot; class=&quot;bare&quot;&gt;http://awestruct.org&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://awestruct.github.io&quot; class=&quot;bare&quot;&gt;https://awestruct.github.io&lt;/a&gt;&lt;/p&gt;
 &lt;/dd&gt;
 &lt;dt class=&quot;hdlist1&quot;&gt;Download&lt;/dt&gt;
 &lt;dd&gt;
-&lt;p&gt;&lt;a href=&quot;http://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;http://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://rubygems.org/gems/awestruct&quot; class=&quot;bare&quot;&gt;https://rubygems.org/gems/awestruct&lt;/a&gt;&lt;/p&gt;
 &lt;/dd&gt;
 &lt;/dl&gt;
 &lt;/div&gt;
@@ -543,7 +543,7 @@ We hope when you try it, you’ll agree.&lt;/p&gt;
 &lt;h2 id=&quot;setup-and-migration&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#setup-and-migration&quot; /&gt;Setup and migration&lt;/h2&gt;
 &lt;div class=&quot;sectionbody&quot;&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;Awestruct is bundled as a Ruby gem and published to &lt;a href=&quot;http://rubygems.org/gems/awestruct&quot;&gt;rubygems.org&lt;/a&gt;.
+&lt;p&gt;Awestruct is bundled as a Ruby gem and published to &lt;a href=&quot;https://rubygems.org/gems/awestruct&quot;&gt;rubygems.org&lt;/a&gt;.
 You can install it using:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;literalblock&quot;&gt;
@@ -552,7 +552,7 @@ You can install it using:&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
-&lt;p&gt;If this is your first time using Awestruct, you can create a new website based on &lt;a href=&quot;http://twitter.github.com/bootstrap&quot;&gt;Bootstrap&lt;/a&gt; by running the following command inside a &lt;em&gt;new&lt;/em&gt; directory:&lt;/p&gt;
+&lt;p&gt;If this is your first time using Awestruct, you can create a new website based on &lt;a href=&quot;https://github.com/twbs/bootstrap&quot;&gt;Bootstrap&lt;/a&gt; by running the following command inside a &lt;em&gt;new&lt;/em&gt; directory:&lt;/p&gt;
 &lt;/div&gt;
 &lt;div class=&quot;literalblock&quot;&gt;
 &lt;div class=&quot;content&quot;&gt;
@@ -690,7 +690,7 @@ We&#39;re thrilled to announce the release of Awestruct 0.5.0!&lt;/pre&gt;
 &lt;h3 id=&quot;amazon-s3-deployer&quot;&gt;&lt;a class=&quot;anchor&quot; href=&quot;#amazon-s3-deployer&quot; /&gt;Amazon S3 deployer&lt;/h3&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;In addition to the rsync and GitHub Pages deployers, Awestruct can now deploy a site to Amazon S3.
-For instructions on how to set it up, see the &lt;a href=&quot;http://awestruct.org/deployment&quot;&gt;site deployment&lt;/a&gt; page on the Awestruct website.&lt;/p&gt;
+For instructions on how to set it up, see the &lt;a href=&quot;https://awestruct.github.io/deployment&quot;&gt;site deployment&lt;/a&gt; page on the Awestruct website.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;div class=&quot;sect2&quot;&gt;
@@ -774,7 +774,7 @@ Since Awestruct has a transitive dependency on this library, it will be upgraded
 &lt;/div&gt;
 &lt;div class=&quot;paragraph&quot;&gt;
 &lt;p&gt;That about wraps it up.
-For more details about what’s in this release, see the &lt;a href=&quot;https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0&quot;&gt;migration guide&lt;/a&gt; or just &lt;a href=&quot;http://awestruct.org/getting_started&quot;&gt;try it for yourself&lt;/a&gt;.&lt;/p&gt;
+For more details about what’s in this release, see the &lt;a href=&quot;https://github.com/awestruct/awestruct/wiki/Migrating-to-Awestruct-0.5.0&quot;&gt;migration guide&lt;/a&gt; or just &lt;a href=&quot;https://awestruct.github.io/getting_started&quot;&gt;try it for yourself&lt;/a&gt;.&lt;/p&gt;
 &lt;/div&gt;
 &lt;/div&gt;
 &lt;/div&gt;
@@ -814,7 +814,7 @@ We’re honored to have you as part of the community!&lt;/p&gt;
 <entry>
 <id>https://awestruct.github.io/news/2011/10/31/awestruct-027-on-the-prowl/</id>
 <title>Awestruct 0.2.7 On the Prowl</title>
-<updated>2023-04-12T23:10:59+02:00</updated>
+<updated>2023-04-12T23:21:03+02:00</updated>
 <published>2011-10-31T00:00:00+00:00</published>
 <link href="https://awestruct.github.io/news/2011/10/31/awestruct-027-on-the-prowl/" rel="alternate" type="text/html" />
 <author>
@@ -898,7 +898,7 @@ dice the pages as they exit the pipeline.&lt;/p&gt;
 <entry>
 <id>https://awestruct.github.io/news/2011/07/12/awestruct-022-lives/</id>
 <title>Awestruct 0.2.2 Lives</title>
-<updated>2023-04-12T23:10:59+02:00</updated>
+<updated>2023-04-12T23:21:03+02:00</updated>
 <published>2011-07-12T00:00:00+00:00</published>
 <link href="https://awestruct.github.io/news/2011/07/12/awestruct-022-lives/" rel="alternate" type="text/html" />
 <author>
@@ -934,7 +934,7 @@ activity around Awestruct has increased as of late.&lt;/p&gt;
 <entry>
 <id>https://awestruct.github.io/news/2010/09/17/awestruct-011-released/</id>
 <title>Awestruct 0.1.1 Released</title>
-<updated>2023-04-12T23:10:59+02:00</updated>
+<updated>2023-04-12T23:21:03+02:00</updated>
 <published>2010-09-17T00:00:00+00:00</published>
 <link href="https://awestruct.github.io/news/2010/09/17/awestruct-011-released/" rel="alternate" type="text/html" />
 <author>
@@ -961,7 +961,7 @@ the same skin, including pipelines, pages and layouts.&lt;/p&gt;
 <entry>
 <id>https://awestruct.github.io/news/2010/06/12/awestruct-006-released/</id>
 <title>Awestruct 0.0.6 Released</title>
-<updated>2023-04-12T23:10:59+02:00</updated>
+<updated>2023-04-12T23:21:03+02:00</updated>
 <published>2010-06-12T00:00:00+00:00</published>
 <link href="https://awestruct.github.io/news/2010/06/12/awestruct-006-released/" rel="alternate" type="text/html" />
 <author>
@@ -994,7 +994,7 @@ Sass used by the tool.&lt;/p&gt;
 <entry>
 <id>https://awestruct.github.io/news/2010/02/26/announcing-awestruct/</id>
 <title>Announcing Awestruct</title>
-<updated>2023-04-12T23:10:59+02:00</updated>
+<updated>2023-04-12T23:21:03+02:00</updated>
 <published>2010-02-26T00:00:00+00:00</published>
 <link href="https://awestruct.github.io/news/2010/02/26/announcing-awestruct/" rel="alternate" type="text/html" />
 <author>
