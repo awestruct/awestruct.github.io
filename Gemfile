@@ -21,7 +21,7 @@ gem 'bootstrap-sass', '~> 2.3.2'
 # required if you want to use the minify extension
 gem 'htmlcompressor', '~> 0.0.5'
 gem 'coffee-script', '~> 2.2'
-gem 'uglifier', '~> 1.3'
+gem 'uglifier', '~> 2.7'
 
 # Required by cloudbees
 gem 'rdoc', '~> 4.2'
