@@ -24,7 +24,7 @@ gem 'coffee-script', '~> 2.2'
 gem 'uglifier', '~> 2.7'
 
 # Required by cloudbees
-gem 'rdoc', '~> 4.2'
+gem 'rdoc', '~> 6.1'
 
 # Required to push to github
 gem 'git', '~> 1.2'
