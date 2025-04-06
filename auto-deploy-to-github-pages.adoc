@@ -130,8 +130,7 @@ Create the *gh-pages* branch as an orphan using the following +checkout+ command
 The history from the *develop* branch is not transfered to this branch, but we need to cleanup the files that are now lying around.
 Execute these commands to wipe the slate clean:
 
- $ rm -rf *
- $ rm -rf .awestruct* .sass-cache .gitignore
+ $ git clean -fdx
  $ git rm --cached *
 
 If you type +ls+, you should see that the project is now clean.
